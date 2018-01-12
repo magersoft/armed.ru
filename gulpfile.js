@@ -31,7 +31,7 @@ gulp.task('preload', function () {
 });
 
 gulp.task('js', function() {
-    gulp.src(['app/include/**/*.js']) // файлы, которые обрабатываем
+    gulp.src(['app/libs/jquery/dist/jquery.js','app/include/**/*.js']) // файлы, которые обрабатываем
         .pipe(concat('site.js')) // склеиваем все JS
         //.pipe(uglify()) // получившуюся "портянку" минифицируем
         .pipe(gulp.dest('pre-relise')) // результат пишем по указанному адресу
