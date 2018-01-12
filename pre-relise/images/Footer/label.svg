@@ -1,0 +1,16 @@
+<svg width="12" height="16" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>ic_room</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(9688 13086)">
+<g id="ic_room">
+<g id="Icon 24px">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(-9687.25 -13085.5)" fill="#828282"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 5.25 0C 2.3475 0 0 2.3475 0 5.25C 0 9.1875 5.25 15 5.25 15C 5.25 15 10.5 9.1875 10.5 5.25C 10.5 2.3475 8.1525 0 5.25 0ZM 5.25 7.125C 4.215 7.125 3.375 6.285 3.375 5.25C 3.375 4.215 4.215 3.375 5.25 3.375C 6.285 3.375 7.125 4.215 7.125 5.25C 7.125 6.285 6.285 7.125 5.25 7.125Z"/>
+</defs>
+</svg>

@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-/*Шрифты*/
+/* --- Вспомогатнельные стили --- */
 @font-face
 {
     font-family: 'Roboto';
@@ -198,12 +198,25 @@
     src: url('fonts/Rubik/Rubik-Bold.ttf') format('truetype');
 }
 
-.robotoFonts
+html,
+body,
+menu,
+h2,
+h1,
+li,
+a,
+footer,
+header,
+nav,
+div,
+p,
+a,
+img
 {
-    font-family: 'Roboto';
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
 }
 
-.rubikFonts
-{
-    font-family: 'Rubik';
-}
+/*Стили блоков*/
