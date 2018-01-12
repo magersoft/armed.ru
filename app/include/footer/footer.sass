@@ -1,0 +1,86 @@
+.footer
+  max-width: 100%
+  color: $footerTextColor
+  &__head
+    color: $headerFooterColor
+    font-family: 'Rubik'
+    font-size: 1.8em
+    font-weight: 500
+    border-left: 3px solid #C62828
+    padding-left: 10px
+    margin-bottom: 19px
+  &__wrapp
+    max-width: $maxWidth
+    margin: 0 auto
+    padding: 15px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    flex-wrap: wrap
+  &__logo
+    &-link
+      margin-bottom: 15px
+  &__contacts, &__menu, &__info
+    list-style: none
+    display: flex
+    flex-direction: column
+  &__contacts
+    width: 350px
+    margin-bottom:
+    &-item
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+      &:not(:last-child)
+        margin-bottom: 15px
+    &-text
+      width: 90%
+      font-size: 1.4em
+      &-wrap
+        width: 90%
+    &-image
+      margin-right: 5px
+      margin-top: 3px
+    &-link
+      color: $linkFooterColor
+      text-decoration: none
+      &:hover
+        color: $linkHoverFooterColor
+  &__menu, &__info
+    width: 267px
+    &-item
+      &:not(:last-child)
+        margin-bottom: 13px
+    &-link
+      font-size: 1.4em
+      color: $linkFooterColor
+      text-decoration: none
+      &:hover
+        color: $linkHoverFooterColor
+  &__info
+    width: 215px
+
+
+@media screen and (max-width: 1024px)
+  .footer
+    &__wrapp
+      justify-content: space-around
+    &__menu
+      width: 148px
+@media screen and (max-width: 768px)
+  .footer
+    &__contacts
+      margin-bottom: 15px
+
+@media screen and (max-width: 425px)
+  .footer
+    &__contacts
+      order: 3
+      margin-top: 15px
+
+@media screen and (max-width: 400px)
+  .footer
+    &__info, &__menu
+      width: 100%
+    &__menu
+      margin-bottom: 15px
