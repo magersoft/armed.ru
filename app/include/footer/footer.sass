@@ -12,11 +12,19 @@
   &__wrapp
     max-width: $maxWidth
     margin: 0 auto
-    padding: 15px
+    padding: 31px 15px
     display: flex
     justify-content: space-between
     align-items: flex-start
     flex-wrap: wrap
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 3px
+      bottom: 0
+      background-image: linear-gradient(to right, rgba(224,224,224,0) 0%, rgba(224,224,224,1) 50%, rgba(224,224,224,0) 100%)
   &__logo
     &-link
       margin-bottom: 15px

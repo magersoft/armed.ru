@@ -210,8 +210,9 @@ header,
 nav,
 div,
 p,
-a,
-img
+img,
+ul,
+li
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; 
@@ -246,13 +247,15 @@ body
 }
 .footer__wrapp
 {
+    position: relative; 
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 
     max-width: 1366px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 31px 15px;
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -262,6 +265,19 @@ body
     align-items: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+}
+.footer__wrapp:before
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    content: '';
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(224, 224, 224, 0)), color-stop(50%, #e0e0e0), to(rgba(224, 224, 224, 0)));
+    background-image: linear-gradient(to right, rgba(224, 224, 224, 0) 0%, #e0e0e0 50%, rgba(224, 224, 224, 0) 100%);
 }
 .footer__logo-link
 {
@@ -399,5 +415,228 @@ body
     .footer__menu
     {
         margin-bottom: 15px;
+    }
+}
+
+.copyright
+{
+    width: 100%; 
+    margin-top: 31px;
+}
+.copyright__wrapp
+{
+    position: relative;
+
+    max-width: 1366px;
+    margin: 0 auto;
+    padding-bottom: 31px;
+}
+.copyright__wrapp:before
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    content: '';
+
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(224, 224, 224, 0)), color-stop(50%, #e0e0e0), to(rgba(224, 224, 224, 0)));
+    background-image: linear-gradient(to right, rgba(224, 224, 224, 0) 0%, #e0e0e0 50%, rgba(224, 224, 224, 0) 100%);
+}
+.copyright__list
+{
+    margin-bottom: 18px;
+}
+.copyright__text
+{
+    font-size: 1.4em;
+
+    text-align: center;
+
+    color: #888;
+}
+
+.social
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    list-style: none;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.social__element
+{
+    position: relative; 
+
+    width: 33px;
+    height: 33px;
+}
+.social__element:not(:last-child)
+{
+    margin-right: 20px;
+}
+.social__element-link
+{
+    position: absolute; 
+
+    width: 33px;
+    height: 33px;
+
+    background-image: url('images/Copyright/social__sprite.svg');
+    background-repeat: no-repeat;
+}
+.social__element .social__element_vk
+{
+    background-position: 0 0;
+}
+.social__element .social__element_fb
+{
+    background-position: 0 -33px;
+}
+.social__element .social__element_od
+{
+    background-position: 0 -66px;
+}
+.social__element .social__element_in
+{
+    background-position: 0 -99px;
+}
+.social__element .social__element_tw
+{
+    background-position: 0 -132px;
+}
+.social__element .social__element_tg
+{
+    background-position: 0 -165px;
+}
+.social__element .social__element_you
+{
+    background-position: 0 -198px;
+}
+.social__element .social__element_g
+{
+    background-position: 0 -231px;
+}
+.social__element .social__element_y
+{
+    background-position: 0 -264px;
+}
+.social__element .social__element_s
+{
+    background-position: 0 -297px;
+}
+.social__element .social__element_wh
+{
+    background-position: 0 -330px;
+}
+.social__element .social__element_v
+{
+    background-position: 0 -363px;
+}
+.social__element .social__element_vk:hover
+{
+    background-position: -33px 0;
+}
+.social__element .social__element_fb:hover
+{
+    background-position: -33px -33px;
+}
+.social__element .social__element_od:hover
+{
+    background-position: -33px -66px;
+}
+.social__element .social__element_in:hover
+{
+    background-position: -33px -99px;
+}
+.social__element .social__element_tw:hover
+{
+    background-position: -33px -132px;
+}
+.social__element .social__element_tg:hover
+{
+    background-position: -33px -165px;
+}
+.social__element .social__element_you:hover
+{
+    background-position: -33px -198px;
+}
+.social__element .social__element_g:hover
+{
+    background-position: -33px -231px;
+}
+.social__element .social__element_y:hover
+{
+    background-position: -33px -264px;
+}
+.social__element .social__element_s:hover
+{
+    background-position: -33px -297px;
+}
+.social__element .social__element_wh:hover
+{
+    background-position: -33px -330px;
+}
+.social__element .social__element_v:hover
+{
+    background-position: -33px -363px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .social
+    {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .social__element:not(:last-child)
+    {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .social__element
+    {
+        margin-top: 5px;
+    }
+}
+
+.attention
+{
+    width: 100%;
+    margin-top: 12px;
+}
+.attention__wrapp
+{
+    font-size: 2.7em;
+    font-weight: 300;
+
+    max-width: 1366px;
+    margin: 0 auto;
+
+    text-align: center; 
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    color: #828282;
+}
+
+@media screen and (max-width: 400px)
+{
+    .attention__wrapp
+    {
+        font-size: 1.5em;
     }
 }

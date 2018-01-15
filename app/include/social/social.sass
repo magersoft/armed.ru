@@ -1,0 +1,36 @@
+.social
+  display: flex
+  justify-content: center
+  align-items: center
+  list-style: none
+  flex-wrap: wrap
+  &__element
+    width: 33px
+    height: 33px
+    position: relative
+    &:not(:last-child)
+      margin-right: 20px
+    &-link
+      background-image: url('images/Copyright/social__sprite.svg')
+      background-repeat: no-repeat
+      width: 33px
+      height: 33px
+      position: absolute
+    @each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
+      .social__element_#{$soc}
+        background-position: 0 $position
+    @each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
+      .social__element_#{$soc}:hover
+        background-position: -33px $position
+@media screen and (max-width: 768px)
+  .social
+    justify-content: space-around
+    &__element
+      &:not(:last-child)
+        margin-right: 0
+
+@media screen and (max-width: 400px)
+  .social
+    &__element
+      margin-top: 5px
+
