@@ -830,6 +830,10 @@ body
 
     color: #4f4f4f;
 }
+.popapCitySelection__city-city:hover
+{
+    color: #c62828;
+}
 
 .blurBody
 {
