@@ -1,10 +1,173 @@
 #modal_CitySelection.modal
     .modal__content_city.modal__content
         span#close_CitySelection.modal__close
-            img.modal__close-image(src="images/Modal/close__modal.svg" alt="Закрыть модальное окно")
+            //img.modal__close-image(src="images/Modal/close__modal.svg" alt="Закрыть модальное окно")
         h3.modal__head Выбор города
         form.popapCitySelection__form
             label.popapCitySelection__coose(for="city") Выберете ваш город
             input.popapCitySelection__input(type="text" id="city" name="city" placeholder="Введите название")
             img.popapCitySelection__search-icon(src="images/Modal/loop.svg")
-
+        ul.popapCitySelection__country-list
+            li.popapCitySelection__country-item
+                a.popapCitySelection__country-flag.flag.flag_russia(href="#")
+                a.popapCitySelection__country-country(href="#") Москва
+                a.popapCitySelection__country-country(href="#") Санкт-Петербург
+                a.popapCitySelection__country-country(href="#") Екатеренбург
+            li.popapCitySelection__country-item
+                a.popapCitySelection__country-flag.flag.flag_belarus(href="#")
+                a.popapCitySelection__country-country(href="#") Беларусь
+            li.popapCitySelection__country-item
+                a.popapCitySelection__country-flag.flag.flag_kazah(href="#")
+                a.popapCitySelection__country-country(href="#") Казахстан
+            li.popapCitySelection__country-item
+                a.popapCitySelection__country-flag.flag.flag_armen(href="#")
+                a.popapCitySelection__country-country(href="#") Армения
+            li.popapCitySelection__country-item
+                a.popapCitySelection__country-flag.flag.flag_kirgiz(href="#")
+                a.popapCitySelection__country-country(href="#") Киргизия
+        ul.popapCitySelection__city-list
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter А
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Архангельск
+                    a.popapCitySelection__city-city(href="#") Астрахань
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Б
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Барнаул
+                    a.popapCitySelection__city-city(href="#") Белгород
+                    a.popapCitySelection__city-city(href="#") Биробиджан
+                    a.popapCitySelection__city-city(href="#") Благовещенск
+                    a.popapCitySelection__city-city(href="#") Брянск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter В
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Великие Луки (Псковская обл.)
+                    a.popapCitySelection__city-city(href="#") Великий Новгород
+                    a.popapCitySelection__city-city(href="#") Владивосток
+                    a.popapCitySelection__city-city(href="#") Владикавказ
+                    a.popapCitySelection__city-city(href="#") Владимир
+                    a.popapCitySelection__city-city(href="#") Волгоград
+                    a.popapCitySelection__city-city(href="#") Вологда
+                    a.popapCitySelection__city-city(href="#") Воронеж
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Г
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Горно-Алтайск
+                    a.popapCitySelection__city-city(href="#") Грозный
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Е
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Екатеринбург
+                    a.popapCitySelection__city-city(href="#") Елец (Липецкая обл.)
+                    a.popapCitySelection__city-city(href="#") Ессентуки
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter И
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Иваново
+                    a.popapCitySelection__city-city(href="#") Ижевск
+                    a.popapCitySelection__city-city(href="#") Иркутск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Й
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Йошкар-Ола
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter К
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Казань
+                    a.popapCitySelection__city-city(href="#") Калининград
+                    a.popapCitySelection__city-city(href="#") Калуга
+                    a.popapCitySelection__city-city(href="#") Кемерово
+                    a.popapCitySelection__city-city(href="#") Казань
+                    a.popapCitySelection__city-city(href="#") Киров
+                    a.popapCitySelection__city-city(href="#") Ковров (Владимирская обл.)
+                    a.popapCitySelection__city-city(href="#") Кострома
+                    a.popapCitySelection__city-city(href="#") Краснодар
+                    a.popapCitySelection__city-city(href="#") Красноярск
+                    a.popapCitySelection__city-city(href="#") Курск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Л
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Липецк
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter М
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Майкоп
+                    a.popapCitySelection__city-city(href="#") Махачкала
+                    a.popapCitySelection__city-city(href="#") Минск
+                    a.popapCitySelection__city-city(href="#") Москва
+                    a.popapCitySelection__city-city(href="#") Муром (Владимирская обл.)
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Н
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Назрань
+                    a.popapCitySelection__city-city(href="#") Нальчик
+                    a.popapCitySelection__city-city(href="#") Нижний Новгород
+                    a.popapCitySelection__city-city(href="#") Новокузнецк
+                    a.popapCitySelection__city-city(href="#") Новокуйбышевск
+                    a.popapCitySelection__city-city(href="#") Новомосковск (Тульская обл.)
+                    a.popapCitySelection__city-city(href="#") Новосибирск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter О
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Обнинск (Калужская обл.)
+                    a.popapCitySelection__city-city(href="#") Омск
+                    a.popapCitySelection__city-city(href="#") Орел
+                    a.popapCitySelection__city-city(href="#") Оренбург
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter П
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Пенза
+                    a.popapCitySelection__city-city(href="#") Пермь
+                    a.popapCitySelection__city-city(href="#") Псков
+                    a.popapCitySelection__city-city(href="#") Пятигорск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Р
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Ростов-на-Дону
+                    a.popapCitySelection__city-city(href="#") Рыбинск (Ярославская обл.)
+                    a.popapCitySelection__city-city(href="#") Рязань
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter С
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Самара
+                    a.popapCitySelection__city-city(href="#") Санкт-Петербург
+                    a.popapCitySelection__city-city(href="#") Саранск
+                    a.popapCitySelection__city-city(href="#") Севастополь
+                    a.popapCitySelection__city-city(href="#") Северодвинск
+                    a.popapCitySelection__city-city(href="#") Смоленск
+                    a.popapCitySelection__city-city(href="#") Сочи
+                    a.popapCitySelection__city-city(href="#") Ставрополь
+                    a.popapCitySelection__city-city(href="#") Старый Оскол (Белгородская обл.)
+                    a.popapCitySelection__city-city(href="#") Сызрань
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Т
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Тамбов
+                    a.popapCitySelection__city-city(href="#") Тверь
+                    a.popapCitySelection__city-city(href="#") Тольятти
+                    a.popapCitySelection__city-city(href="#") Томск
+                    a.popapCitySelection__city-city(href="#") Тула
+                    a.popapCitySelection__city-city(href="#") Тюмень
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter У
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Улан-Удэ
+                    a.popapCitySelection__city-city(href="#") Ульяновск
+                    a.popapCitySelection__city-city(href="#") Уфа
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Х
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Хабаровск
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Ч
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Чебоксары
+                    a.popapCitySelection__city-city(href="#") Челябинск
+                    a.popapCitySelection__city-city(href="#") Череповец (Вологодская обл.)
+                    a.popapCitySelection__city-city(href="#") Черкесск
+                    a.popapCitySelection__city-city(href="#") Чита
+            li.popapCitySelection__city-item
+                span.popapCitySelection__city-letter Я
+                .popapCitySelection__city-wrapp
+                    a.popapCitySelection__city-city(href="#") Ярославль

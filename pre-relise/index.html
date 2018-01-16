@@ -80,12 +80,82 @@
       </div>
     </main>
     <div class="modal" id="modal_CitySelection">
-      <div class="modal__content_city modal__content"><span class="modal__close" id="close_CitySelection"><img class="modal__close-image" src="images/Modal/close__modal.svg" alt="Закрыть модальное окно"></span>
+      <div class="modal__content_city modal__content"><span class="modal__close" id="close_CitySelection">
+          <!--img.modal__close-image(src="images/Modal/close__modal.svg" alt="Закрыть модальное окно")--></span>
         <h3 class="modal__head">Выбор города</h3>
         <form class="popapCitySelection__form">
           <label class="popapCitySelection__coose" for="city">Выберете ваш город</label>
           <input class="popapCitySelection__input" type="text" id="city" name="city" placeholder="Введите название"><img class="popapCitySelection__search-icon" src="images/Modal/loop.svg">
         </form>
+        <ul class="popapCitySelection__country-list">
+          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_russia" href="#"></a><a class="popapCitySelection__country-country" href="#">Москва</a><a class="popapCitySelection__country-country" href="#">Санкт-Петербург</a><a class="popapCitySelection__country-country" href="#">Екатеренбург</a></li>
+          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_belarus" href="#"></a><a class="popapCitySelection__country-country" href="#">Беларусь</a></li>
+          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_kazah" href="#"></a><a class="popapCitySelection__country-country" href="#">Казахстан</a></li>
+          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_armen" href="#"></a><a class="popapCitySelection__country-country" href="#">Армения</a></li>
+          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_kirgiz" href="#"></a><a class="popapCitySelection__country-country" href="#">Киргизия</a></li>
+        </ul>
+        <ul class="popapCitySelection__city-list">
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">А</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Архангельск</a><a class="popapCitySelection__city-city" href="#">Астрахань</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Б</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Барнаул</a><a class="popapCitySelection__city-city" href="#">Белгород</a><a class="popapCitySelection__city-city" href="#">Биробиджан</a><a class="popapCitySelection__city-city" href="#">Благовещенск</a><a class="popapCitySelection__city-city" href="#">Брянск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">В</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Великие Луки (Псковская обл.)</a><a class="popapCitySelection__city-city" href="#">Великий Новгород</a><a class="popapCitySelection__city-city" href="#">Владивосток</a><a class="popapCitySelection__city-city" href="#">Владикавказ</a><a class="popapCitySelection__city-city" href="#">Владимир</a><a class="popapCitySelection__city-city" href="#">Волгоград</a><a class="popapCitySelection__city-city" href="#">Вологда</a><a class="popapCitySelection__city-city" href="#">Воронеж</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Г</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Горно-Алтайск</a><a class="popapCitySelection__city-city" href="#">Грозный</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Е</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Екатеринбург</a><a class="popapCitySelection__city-city" href="#">Елец (Липецкая обл.)</a><a class="popapCitySelection__city-city" href="#">Ессентуки</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">И</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Иваново</a><a class="popapCitySelection__city-city" href="#">Ижевск</a><a class="popapCitySelection__city-city" href="#">Иркутск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Й</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Йошкар-Ола</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">К</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Казань</a><a class="popapCitySelection__city-city" href="#">Калининград</a><a class="popapCitySelection__city-city" href="#">Калуга</a><a class="popapCitySelection__city-city" href="#">Кемерово</a><a class="popapCitySelection__city-city" href="#">Казань</a><a class="popapCitySelection__city-city" href="#">Киров</a><a class="popapCitySelection__city-city" href="#">Ковров (Владимирская обл.)</a><a class="popapCitySelection__city-city" href="#">Кострома</a><a class="popapCitySelection__city-city" href="#">Краснодар</a><a class="popapCitySelection__city-city" href="#">Красноярск</a><a class="popapCitySelection__city-city" href="#">Курск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Л</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Липецк</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">М</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Майкоп</a><a class="popapCitySelection__city-city" href="#">Махачкала</a><a class="popapCitySelection__city-city" href="#">Минск</a><a class="popapCitySelection__city-city" href="#">Москва</a><a class="popapCitySelection__city-city" href="#">Муром (Владимирская обл.)</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Н</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Назрань</a><a class="popapCitySelection__city-city" href="#">Нальчик</a><a class="popapCitySelection__city-city" href="#">Нижний Новгород</a><a class="popapCitySelection__city-city" href="#">Новокузнецк</a><a class="popapCitySelection__city-city" href="#">Новокуйбышевск</a><a class="popapCitySelection__city-city" href="#">Новомосковск (Тульская обл.)</a><a class="popapCitySelection__city-city" href="#">Новосибирск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">О</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Обнинск (Калужская обл.)</a><a class="popapCitySelection__city-city" href="#">Омск</a><a class="popapCitySelection__city-city" href="#">Орел</a><a class="popapCitySelection__city-city" href="#">Оренбург</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">П</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Пенза</a><a class="popapCitySelection__city-city" href="#">Пермь</a><a class="popapCitySelection__city-city" href="#">Псков</a><a class="popapCitySelection__city-city" href="#">Пятигорск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Р</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Ростов-на-Дону</a><a class="popapCitySelection__city-city" href="#">Рыбинск (Ярославская обл.)</a><a class="popapCitySelection__city-city" href="#">Рязань</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">С</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Самара</a><a class="popapCitySelection__city-city" href="#">Санкт-Петербург</a><a class="popapCitySelection__city-city" href="#">Саранск</a><a class="popapCitySelection__city-city" href="#">Севастополь</a><a class="popapCitySelection__city-city" href="#">Северодвинск</a><a class="popapCitySelection__city-city" href="#">Смоленск</a><a class="popapCitySelection__city-city" href="#">Сочи</a><a class="popapCitySelection__city-city" href="#">Ставрополь</a><a class="popapCitySelection__city-city" href="#">Старый Оскол (Белгородская обл.)</a><a class="popapCitySelection__city-city" href="#">Сызрань</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Т</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Тамбов</a><a class="popapCitySelection__city-city" href="#">Тверь</a><a class="popapCitySelection__city-city" href="#">Тольятти</a><a class="popapCitySelection__city-city" href="#">Томск</a><a class="popapCitySelection__city-city" href="#">Тула</a><a class="popapCitySelection__city-city" href="#">Тюмень</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">У</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Улан-Удэ</a><a class="popapCitySelection__city-city" href="#">Ульяновск</a><a class="popapCitySelection__city-city" href="#">Уфа</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Х</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Хабаровск</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Ч</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Чебоксары</a><a class="popapCitySelection__city-city" href="#">Челябинск</a><a class="popapCitySelection__city-city" href="#">Череповец (Вологодская обл.)</a><a class="popapCitySelection__city-city" href="#">Черкесск</a><a class="popapCitySelection__city-city" href="#">Чита</a></div>
+          </li>
+          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Я</span>
+            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Ярославль</a></div>
+          </li>
+        </ul>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">

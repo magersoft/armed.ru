@@ -10,9 +10,58 @@
     color: $inputModalColor
     padding: 12px 12px 12px 35px
     width: 290px
+    border: 1px solid #E0E0E0
   &__form
     position: relative
+    display: flex
+    justify-content: center
+    align-items: center
   &__search-icon
     position: absolute
     top: 12px
     left: 533px
+  &__country
+    &-list
+      margin-top: 25px
+      list-style: none
+      display: flex
+      font-size: 1.6em
+      padding: 0 25px
+    &-item:first-child
+      flex-grow: 2
+    &-item
+      display: flex
+      align-items: center
+    &-item:not(:last-child)
+      margin-right: 10px
+    &-country
+      font-weight: 500
+      margin-left: 10px
+      color: $linkCountryModalColor
+      text-decoration: none
+      &:hover
+        color: $GlobalColor
+  &__city
+    &-list
+      columns: 4
+      list-style: none
+      padding: 25px
+    &-item
+      display: flex
+      align-items: flex-start
+      margin-bottom: 3px
+    &-letter
+      color: $GlobalColor
+      font-size: 1.6em
+      margin-right: 8px
+    &-wrapp
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &-city
+      font-size: 1.4em
+      color: $linkCityModalColor
+      text-decoration: none
+      margin-bottom: 2px
+      &:hover
+        color: $GlobalColor
