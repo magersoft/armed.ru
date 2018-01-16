@@ -2,13 +2,16 @@ doctype html
 html(lang="ru")
     include ../include/head/head
     body
-        include ../include/preloader/preload
+        main
+            include ../include/preloader/preload
+            a.modalLink(href="#" data-id="CitySelection") открыть выбор города
 
 
-        include ../include/footer/footer
-        include ../include/copyright/copyright
-        include ../include/attention/attention
 
+            include ../include/footer/footer
+            include ../include/copyright/copyright
+            include ../include/attention/attention
+        include ../include/popapCityS​selection/popapCityS​selection
         //- Весь вонтент до данного коментария
         link(rel="stylesheet" type="text/css" href="style.css")
         script(src='site.js')
