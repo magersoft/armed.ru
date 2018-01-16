@@ -43,25 +43,27 @@
         color: $GlobalColor
   &__city
     &-list
-      columns: 4
-      list-style: none
-      padding: 25px
+      columns: 4 200px
+      padding: 20px 25px
     &-item
-      display: flex
-      align-items: flex-start
-      margin-bottom: 3px
+      list-style: none
+      page-break-inside: avoid
+      text-align: left
+      margin-bottom: 20px
+      margin-left: 30px
+      position: relative
     &-letter
+      position: absolute
+      top: 0
+      left: -25px
+      font-size: 2em
+      font-family: 'Rubik'
       color: $GlobalColor
-      font-size: 1.6em
-      margin-right: 8px
     &-wrapp
       display: flex
       flex-direction: column
-      align-items: flex-start
     &-city
       font-size: 1.4em
+      line-height: 1.6em
       color: $linkCityModalColor
       text-decoration: none
-      margin-bottom: 2px
-      &:hover
-        color: $GlobalColor

@@ -777,32 +777,34 @@ body
 
 .popapCitySelection__city-list
 {
-    padding: 25px; 
+    padding: 20px 25px; 
 
-    list-style: none;
-
-    -webkit-columns: 4;
-            columns: 4;
+    -webkit-columns: 4 200px;
+            columns: 4 200px;
 }
 
 .popapCitySelection__city-item
 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative; 
 
-    margin-bottom: 3px; 
+    margin-bottom: 20px;
+    margin-left: 30px;
 
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+    list-style: none;
+
+    text-align: left;
+
+    page-break-inside: avoid;
 }
 
 .popapCitySelection__city-letter
 {
-    font-size: 1.6em;
+    font-family: 'Rubik';
+    font-size: 2em;
 
-    margin-right: 8px; 
+    position: absolute;
+    top: 0;
+    left: -25px;
 
     color: #c62828;
 }
@@ -812,29 +814,21 @@ body
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-        flex-direction: column;
+        flex-direction: column; 
 
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
 }
 
 .popapCitySelection__city-city
 {
     font-size: 1.4em;
+    line-height: 1.6em;
 
-    margin-bottom: 2px; 
-
-    text-decoration: none;
+    text-decoration: none; 
 
     color: #4f4f4f;
-}
-.popapCitySelection__city-city:hover
-{
-    color: #c62828;
 }
 
 .blurBody
