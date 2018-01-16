@@ -1,18 +1,27 @@
-<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>&#208;&#163;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#184;&#209;&#130;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#178;&#208;&#176;&#209;&#128;</title>
+<svg width="25" height="50" viewBox="0 0 25 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#208;&#161;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#185;&#209;&#130; &#208;&#151;&#208;&#176;&#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#140;</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(6662 19922)">
-<g id="&#208;&#163;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#184;&#209;&#130;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#178;&#208;&#176;&#209;&#128;">
-<g id="ic_cancel">
-<g id="Icon 24px">
-<g id="Shape">
-<use xlink:href="#path0_fill" transform="translate(-6659.5 -19919.5)" fill="#828282"/>
+<g id="Canvas" transform="translate(23600 18932)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -23600 -18932L -23575 -18932L -23575 -18882L -23600 -18882L -23600 -18932Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="&#208;&#161;&#208;&#191;&#209;&#128;&#208;&#176;&#208;&#185;&#209;&#130; &#208;&#151;&#208;&#176;&#208;&#186;&#209;&#128;&#209;&#139;&#209;&#130;&#209;&#140;" clip-path="url(#clip-0)">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-23600 -18932)" fill="#828282"/>
 </g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-23593.7 -18925.8)" fill="#FFFFFF"/>
 </g>
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-23600 -18907)" fill="#C62828"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-23593.7 -18900.8)" fill="#FFFFFF"/>
 </g>
 </g>
 </g>
 <defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 12.5 0C 5.5875 0 0 5.5875 0 12.5C 0 19.4125 5.5875 25 12.5 25C 19.4125 25 25 19.4125 25 12.5C 25 5.5875 19.4125 0 12.5 0ZM 18.751 16.9855L 16.9885 18.748L 12.501 14.2605L 8.01348 18.748L 6.25098 16.9855L 10.7385 12.498L 6.25098 8.01055L 8.01348 6.24805L 12.501 10.7355L 16.9885 6.24805L 18.751 8.01055L 14.2635 12.498L 18.751 16.9855Z"/>
+<path id="path0_fill" fill-rule="evenodd" d="M 12.5 0C 5.5875 0 0 5.5875 0 12.5C 0 19.4125 5.5875 25 12.5 25C 19.4125 25 25 19.4125 25 12.5C 25 5.5875 19.4125 0 12.5 0L 12.5 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 12.5 10.7375L 10.7375 12.5L 6.25 8.0125L 1.7625 12.5L 0 10.7375L 4.4875 6.25L 0 1.7625L 1.7625 0L 6.25 4.4875L 10.7375 0L 12.5 1.7625L 8.0125 6.25L 12.5 10.7375L 12.5 10.7375Z"/>
 </defs>
 </svg>

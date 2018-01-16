@@ -884,14 +884,18 @@ body
     top: 21px;
     right: 33px;
 
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
 
     cursor: pointer;
 
     background-image: url('images/Modal/close__modal.svg');
     background-repeat: no-repeat; 
     background-position: 0 0;
+}
+.modal__close:hover
+{
+    background-position: 0 -25px;
 }
 .modal__head
 {
