@@ -803,7 +803,7 @@ body
     font-size: 2em;
 
     position: absolute;
-    top: 0;
+    top: 1px;
     left: -25px;
 
     color: #c62828;
