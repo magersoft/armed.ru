@@ -213,7 +213,9 @@ div,
 p,
 img,
 ul,
-li
+li,
+input,
+label
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; 
@@ -631,41 +633,6 @@ body
     background-position: -33px -363px;
 }
 
-@media screen and (max-width: 768px)
-{
-    .social
-    {
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
-    .social__element
-    {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-
-        width: calc(100%/6);
-        margin-top: 20px; 
-
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .social__element:not(:last-child)
-    {
-        margin-right: 0;
-    }
-}
-
-@media screen and (max-width: 400px)
-{
-    .social__element
-    {
-        margin-top: 5px;
-    }
-}
-
 .attention
 {
     width: 100%;
@@ -710,6 +677,40 @@ body
     }
 }
 
+.popapCitySelection__coose
+{
+    font-size: 1.6em;
+
+    padding-right: 30px; 
+
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    color: #4f4f4f;
+}
+
+.popapCitySelection__input
+{
+    font-size: 1.2em;
+
+    width: 290px; 
+    padding: 12px 12px 12px 35px;
+
+    color: #828282;
+}
+
+.popapCitySelection__form
+{
+    position: relative;
+}
+
+.popapCitySelection__search-icon
+{
+    position: absolute;
+    top: 12px;
+    left: 533px;
+}
+
 .blurBody
 {
     -webkit-filter: blur(5px);
@@ -735,6 +736,11 @@ body
 .modal__content
 {
     position: absolute;
+
+    text-align: center;
+}
+.modal__content_city
+{
     top: calc(50% - 440px);
     left: calc(50% - 555px);
 
@@ -754,15 +760,18 @@ body
 
     width: 25px;
     height: 25px;
+
+    cursor: pointer;
 }
 .modal__head
 {
     font-size: 2.2em;
 
     margin-top: 21px;
+    margin-bottom: 46px; 
 
     text-align: center;
-    letter-spacing: .1em; 
+    letter-spacing: .1em;
     text-transform: uppercase;
 
     color: #4f4f4f;

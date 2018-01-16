@@ -1,5 +1,10 @@
 #modal_CitySelection.modal
-    .modal__content
+    .modal__content_city.modal__content
         span#close_CitySelection.modal__close
             img.modal__close-image(src="images/Modal/close__modal.svg" alt="Закрыть модальное окно")
         h3.modal__head Выбор города
+        form.popapCitySelection__form
+            label.popapCitySelection__coose(for="city") Выберете ваш город
+            input.popapCitySelection__input(type="text" id="city" name="city" placeholder="Введите название")
+            img.popapCitySelection__search-icon(src="images/Modal/loop.svg")
+
