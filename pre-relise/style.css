@@ -2964,7 +2964,7 @@ body
 .card_present__icon
 {
     position: absolute;
-    top: 12px;
+    top: 9px;
     left: 23px;
 
     background-position: 0 -24px;
@@ -3011,4 +3011,28 @@ body
 {
     width: 83px;
     margin-right: 20px;
+}
+.card_present__selected
+{
+    font-family: Rubik;
+    font-size: 1.2em;
+    font-weight: 300;
+
+    display: none;
+
+    height: 100%;
+    margin-right: 31px;
+
+    letter-spacing: .05em;
+    text-transform: uppercase; 
+
+    color: #7dc472;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.card_present__selected-icon
+{
+    background-position: 0 -144px;
 }
