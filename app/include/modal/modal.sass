@@ -15,6 +15,13 @@
   &__content
     position: absolute
     text-align: center
+    //overflow: hidden
+    &_present
+      width: 878px
+      height: 680px
+      top: calc(50% - 340px)
+      left: calc(50% - 489px)
+      background-color: $bgModalColor
     &_city
       width: 1110px
       height: 880px
@@ -28,7 +35,7 @@
     font-family: 'Rubik'
     position: absolute
     top: 21px
-    right: 33px
+    right: 30px
     width: 25px
     height: 25px
     cursor: pointer
@@ -44,6 +51,9 @@
     color: $h3ModalColor
     text-align: center
     margin-top: 21px
+    margin-bottom: 60px
     text-transform: uppercase
     letter-spacing: 0.1em
-    margin-bottom: 46px
+  &__present
+    &-list
+      height: 82%

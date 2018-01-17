@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="preload.css">
   </head>
   <body>
-    <main>
-      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a>
+    <main class="blur">
+      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a><br><a class="modalLink" href="#" data-id="Present">открыть выбор подарка</a>
       <footer class="footer">
         <div class="footer__wrapp">
           <div class="footer__contacts"><a class="footer__logo-link" href="#"><img class="footer__logo-image" src="images/Footer/logo.png" alt="логотип космпании Армед"></a>
@@ -80,8 +80,7 @@
       </div>
     </main>
     <div class="modal" id="modal_CitySelection">
-      <div class="modal__content_city modal__content"><span class="modal__close" id="close_CitySelection">
-          <!--img.modal__close-image(src="images/Modal/close__modal.svg" alt="Закрыть модальное окно")--></span>
+      <div class="modal__content_city modal__content"><span class="modal__close" id="close_CitySelection"></span>
         <h3 class="modal__head">Выбор города</h3>
         <form class="popapCitySelection__form">
           <label class="popapCitySelection__coose" for="city">Выберете ваш город</label>
@@ -156,6 +155,88 @@
             <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Ярославль</a></div>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="modal" id="modal_Present">
+      <div class="modal__content_present modal__content"><span class="modal__close" id="close_Present"></span>
+        <h3 class="modal__head">Выбор подарка</h3>
+        <main class="modal__present-list mCustomScrollbar" data-mcs-theme="dark">
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+          <section class="card card_present">
+            <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
+          </section>
+        </main>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
