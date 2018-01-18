@@ -1,9 +1,9 @@
 $(".modal__present-list").mCustomScrollbar({
-    theme:"minimal-dark"
+    theme:"dark"
 });
 
 $('.card_present__button').click(function () {
-    $('.card_present__button').css('display', 'none');
-    $('.card_present__selected').css('display', 'flex');
+    $(this).css('display', 'none');
+    $(this).next().css('display', 'flex');
     return false
 });

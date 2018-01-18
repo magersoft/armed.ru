@@ -11,7 +11,7 @@
   </head>
   <body>
     <main class="blur">
-      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a><br><a class="modalLink" href="#" data-id="Present">открыть выбор подарка</a>
+      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a><br><a class="modalLink" href="#" data-id="Present">открыть выбор подарка</a><br><a class="modalLink" href="#" data-id="Pick">открыть где купить</a><br><a class="modalLink" href="#" data-id="Autoriz">Войти на сайт</a>
       <footer class="footer">
         <div class="footer__wrapp">
           <div class="footer__contacts"><a class="footer__logo-link" href="#"><img class="footer__logo-image" src="images/Footer/logo.png" alt="логотип космпании Армед"></a>
@@ -160,7 +160,7 @@
     <div class="modal" id="modal_Present">
       <div class="modal__content_present modal__content"><span class="modal__close" id="close_Present"></span>
         <h3 class="modal__head">Выбор подарка</h3>
-        <main class="modal__present-list mCustomScrollbar" data-mcs-theme="dark">
+        <main class="modal__present-list">
           <section class="card card_present">
             <div class="card_present__mod1"><img class="card__image card_present__image" src="images/Card/vstryah.png" alt="Изображение подарка"><a class="card__link card_present__link" href="#">Коктейлер (сосуд) кислородный "Armed" LDPE BAG</a></div><a class="card_present__button" href="#">Выбрать<span class="card__icon card_present__icon"></span></a>
             <p class="card_present__selected"><span class="card__icon card_present__selected-icon"></span>
@@ -312,6 +312,19 @@
             </p><a class="card__icon card__icon_heart" href="#"></a><a class="card__icon card__icon_comparison" href="#"></a>
           </section>
         </main>
+      </div>
+    </div>
+    <div class="modal" id="modal_Pick">
+      <div class="modal__content_present modal__content"><span class="modal__close" id="close_Pick"></span>
+        <h3 class="modal__head">Где купить</h3>
+        <main class="modal__pick-list"></main>
+      </div>
+    </div>
+    <div class="modal" id="modal_Autoriz">
+      <div class="modal__content_present modal__content"><span class="modal__close" id="close_Autoriz"></span>
+        <h3 class="modal__head">Авторизация
+          <div class="autoriz"></div>
+        </h3>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">

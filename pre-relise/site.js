@@ -12714,6 +12714,7 @@ and dependencies (minified).
 
 
 
+
 $(function(){
     $('.modalLink').click(function(){
         var element_id = $(this).attr('data-id');
@@ -12740,15 +12741,18 @@ $(function(){
     });
 });
 
-$(window).on('load', function () {
-   $('.preload').delay(500).fadeOut(1000);
-});
 $(".modal__present-list").mCustomScrollbar({
-    theme:"minimal-dark"
+    theme:"dark"
 });
 
 $('.card_present__button').click(function () {
-    $('.card_present__button').css('display', 'none');
-    $('.card_present__selected').css('display', 'flex');
+    $(this).css('display', 'none');
+    $(this).next().css('display', 'flex');
     return false
+});
+$(".modal__pick-list").mCustomScrollbar({
+    theme:"dark"
+});
+$(window).on('load', function () {
+   $('.preload').delay(500).fadeOut(1000);
 });
