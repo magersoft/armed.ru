@@ -12741,6 +12741,9 @@ $(function(){
     });
 });
 
+$(".modal__pick-list").mCustomScrollbar({
+    theme:"dark"
+});
 $(".modal__present-list").mCustomScrollbar({
     theme:"dark"
 });
@@ -12749,9 +12752,6 @@ $('.card_present__button').click(function () {
     $(this).css('display', 'none');
     $(this).next().css('display', 'flex');
     return false
-});
-$(".modal__pick-list").mCustomScrollbar({
-    theme:"dark"
 });
 $(window).on('load', function () {
    $('.preload').delay(500).fadeOut(1000);
