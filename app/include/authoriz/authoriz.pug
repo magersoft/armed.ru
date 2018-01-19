@@ -1,2 +1,44 @@
 .autoriz
-    
+    .autoriz__wrapp
+        ul.autoriz__list-tabs
+            li.autoriz__list-item
+                a.autoriz__list-link(href="#tabs1")
+                    span.button__icon.button__icon_phone
+                    |Телефон
+            li.autoriz__list-item
+                a.autoriz__list-link(href="#tabs2")
+                    span.button__icon.button__icon_mail
+                    |E-mail
+        .autoriz__tabs#tabs1
+              form.autoriz__form
+                  label.autoriz__form-label(for="phone") Номер телефона:
+                  input.autoriz__form-input(type="text" name="phone" id="phone")
+                  button.autoriz__form-button.button.button_icon
+                    span.button__text
+                        span.button__icon.button__icon_tel
+                        |Получить смс
+        .autoriz__tabs#tabs2
+            form.autoriz__form
+                label.autoriz__form-label(for="mail") E-mail:
+                input.autoriz__form-input(type="mail" name="mail" id="mail")
+                label.autoriz__form-label(for="pass") Пароль:
+                input.autoriz__form-input(type="mail" name="pass" id="pass")
+                a.autoriz__recovery(href="#") Забыли пароль?
+                button.autoriz__button.button.button_icon
+                    span.button__text
+                        span.button__icon.button__icon_entry
+                        |Войти на сайт
+    h6.autoriz__ili или
+    p.autoriz__text используя соцсети
+    .autoriz__social.social
+        a.autoriz__social-link.social__element_vk.social__element-link(href="#")
+        a.autoriz__social-link.social__element_fb.social__element-link(href="#")
+        a.autoriz__social-link.social__element_od.social__element-link(href="#")
+        a.autoriz__social-link.social__element_in.social__element-link(href="#")
+        a.autoriz__social-link.social__element_you.social__element-link(href="#")
+    .autoriz__border
+p.autoriz__text У вас всё ещё нет аккаунта? Зарегестрируйтесь сейчас
+button.autoriz__button.button.button_white.button_icon
+    span.button__text.button__text_white
+        |Регистрация
+        span.button__icon.button__icon_arrow

@@ -1,0 +1,43 @@
+.button
+  width: 255px
+  height: 65px
+  border: 0
+  background-color: $buttonRedBgColor
+  color: $buttonRedTextColor
+  text-transform: uppercase
+  margin-top: 20px
+  cursor: pointer
+  border-radius: 2px
+  &:hover
+    background-color: $buttonRedBgHoverColor
+  &:active
+    background-color: $buttonRedBgHoverColor
+  &__text
+    display: flex
+    justify-content: center
+    align-items: center
+    letter-spacing: 0.05em;
+    &_white
+      color: $buttonWhiteTextColor
+  &__icon
+    width: 20px
+    height: 20px
+    background-image: url("images/Button/button__icon.svg")
+    background-repeat: no-repeat
+    &_tel
+      background-position: -20px -120px
+      margin-right: 5px
+    &_entry
+      background-position: -20px -60px
+      margin-right: 12px
+    &_phone
+      background-position: 0 0
+    &_mail
+      background-position: 0 -20px
+    &_arrow
+      background-position: -20px -140px
+  //Модификатор белой кнопки
+  &_white
+    background-color: $buttonWhiteBgColor
+    &:hover
+      background-color: $buttonWhiteBgColor

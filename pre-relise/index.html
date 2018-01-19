@@ -321,10 +321,38 @@
       </div>
     </div>
     <div class="modal" id="modal_Autoriz">
-      <div class="modal__content_present modal__content"><span class="modal__close" id="close_Autoriz"></span>
-        <h3 class="modal__head">Авторизация
-          <div class="autoriz"></div>
-        </h3>
+      <div class="modal__content_autoriz modal__content"><span class="modal__close" id="close_Autoriz"></span>
+        <h3 class="modal__head">Авторизация</h3>
+        <div class="autoriz">
+          <div class="autoriz__wrapp">
+            <ul class="autoriz__list-tabs">
+              <li class="autoriz__list-item"><a class="autoriz__list-link" href="#tabs1"><span class="button__icon button__icon_phone"></span>Телефон</a></li>
+              <li class="autoriz__list-item"><a class="autoriz__list-link" href="#tabs2"><span class="button__icon button__icon_mail"></span>E-mail</a></li>
+            </ul>
+            <div class="autoriz__tabs" id="tabs1">
+              <form class="autoriz__form">
+                <label class="autoriz__form-label" for="phone">Номер телефона:</label>
+                <input class="autoriz__form-input" type="text" name="phone" id="phone">
+                <button class="autoriz__form-button button button_icon"><span class="button__text"><span class="button__icon button__icon_tel"></span>Получить смс</span></button>
+              </form>
+            </div>
+            <div class="autoriz__tabs" id="tabs2">
+              <form class="autoriz__form">
+                <label class="autoriz__form-label" for="mail">E-mail:</label>
+                <input class="autoriz__form-input" type="mail" name="mail" id="mail">
+                <label class="autoriz__form-label" for="pass">Пароль:</label>
+                <input class="autoriz__form-input" type="mail" name="pass" id="pass"><a class="autoriz__recovery" href="#">Забыли пароль?</a>
+                <button class="autoriz__button button button_icon"><span class="button__text"><span class="button__icon button__icon_entry"></span>Войти на сайт</span></button>
+              </form>
+            </div>
+          </div>
+          <h6 class="autoriz__ili">или</h6>
+          <p class="autoriz__text">используя соцсети</p>
+          <div class="autoriz__social social"><a class="autoriz__social-link social__element_vk social__element-link" href="#"></a><a class="autoriz__social-link social__element_fb social__element-link" href="#"></a><a class="autoriz__social-link social__element_od social__element-link" href="#"></a><a class="autoriz__social-link social__element_in social__element-link" href="#"></a><a class="autoriz__social-link social__element_you social__element-link" href="#"></a></div>
+          <div class="autoriz__border"></div>
+        </div>
+        <p class="autoriz__text">У вас всё ещё нет аккаунта? Зарегестрируйтесь сейчас</p>
+        <button class="autoriz__button button button_white button_icon"><span class="button__text button__text_white">Регистрация<span class="button__icon button__icon_arrow"></span></span></button>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
