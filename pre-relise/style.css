@@ -2152,9 +2152,11 @@ input,
 label
 {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; 
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    outline: none;
 }
 
 body
@@ -2543,11 +2545,18 @@ body
 }
 .button_white
 {
+    border: 1px solid #e0e0e0; 
     background-color: white;
 }
 .button_white:hover
 {
-    background-color: white;
+    border-color: #d8d8d8; 
+    background-color: #fbfbfb;
+}
+.button_white:avtive
+{
+    border-color: #d8d8d8; 
+    background-color: #f7f7f7;
 }
 
 .attention

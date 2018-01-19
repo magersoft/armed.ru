@@ -31421,8 +31421,6 @@ var widgetsTooltip = $.ui.tooltip;
 $(window).on('load', function () {
    $('.preload').delay(500).fadeOut(1000);
 });
-
-
 $(function(){
     $('.modalLink').click(function(){
         var element_id = $(this).attr('data-id');
@@ -31461,6 +31459,8 @@ $('.card_present__button').click(function () {
     $(this).next().css('display', 'flex');
     return false
 });
+
+
 $( function() {
     $( ".auth__wrapp" ).tabs({
         active: 2,
