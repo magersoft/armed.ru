@@ -37,3 +37,32 @@
         font-weight: 400
         &:hover
           color: $headerItemHoverColor
+      .city-selection
+        text-decoration: underline
+        padding: 0 0 0 20px
+      &-icon
+        position: absolute
+        background: url(../../images/Header/icon__loc.svg) center no-repeat
+        width: 12px
+        height: 16px
+
+.primary-menu
+  position: relative
+  background-color: $headerPrimaryMenuBgColor
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  height: 60px
+  &__catalog
+    position: relative
+    margin: 0 30px
+    &-link
+      text-decoration: none
+      color: $headerItemColor
+      font-weight: 400
+      font-size: 1.6em
+      letter-spacing: 0.05em
+    &-icon
+  &__catalog_dropdown
+    display: none

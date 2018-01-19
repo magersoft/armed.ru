@@ -5,7 +5,8 @@
         .topbar__nav
             ul.topbar__nav_menu
                 li.topbar__nav_menu-item.city-selection
-                    a.topbar__nav_menu-link(href="#") Москва
+                    i.topbar__nav_menu-icon
+                    a.topbar__nav_menu-link.city-selection.modalLink(href="#" data-id="CitySelection") Москва
                 li.topbar__nav_menu-item
                     a.topbar__nav_menu-link(href="#") Магазины
                 li.topbar__nav_menu-item
@@ -14,10 +15,12 @@
                     a.topbar__nav_menu-link(href="#") Оптовикам
     .primary-menu
         .primary-menu__catalog
-            svg
-            | Каталог
-            svg
-                .primary-menu__catalog_dropdown
+            a(href="#").primary-menu__catalog-link
+                i.burger
+                | Каталог
+                i.primary-menu__catalog-icon
+            .primary-menu__catalog_dropdown
+                | Выпадашка
         .primary-menu__widgets
             .primary-menu__search
             .primary-menu__phone
