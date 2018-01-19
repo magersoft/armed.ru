@@ -6,3 +6,11 @@ $( function() {
         }
     });
 } );
+
+$(function(){
+    $('.button__icon_tel').on('click', function(){
+        $('.modal__change').empty();
+
+    });
+    return false;
+});
