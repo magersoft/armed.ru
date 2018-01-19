@@ -31449,6 +31449,9 @@ $(function(){
     });
 });
 
+$(".modal__pick-list").mCustomScrollbar({
+    theme:"dark"
+});
 $(".modal__present-list").mCustomScrollbar({
     theme:"dark"
 });
@@ -31457,9 +31460,6 @@ $('.card_present__button').click(function () {
     $(this).css('display', 'none');
     $(this).next().css('display', 'flex');
     return false
-});
-$(".modal__pick-list").mCustomScrollbar({
-    theme:"dark"
 });
 $( function() {
     $( ".auth__wrapp" ).tabs({
