@@ -7,10 +7,15 @@ $( function() {
     });
 } );
 
-$(function(){
-    $('.button__icon_tel').on('click', function(){
-        $('.modal__change').empty();
 
+$('#button__phone').on('click', function(){
+    var content = $('.modal__change').next();
+    console.log(content);
+    $('.modal__change').removeClass('modal_view').addClass('modal_hide');
+    $('.code').removeClass('code_hide').addClass('code_view');
+    $('#return').on('click', function(){
+        $('.modal__change').removeClass('modal_hide').addClass('modal_view');
+        $('.code').removeClass('code_view').addClass('code_hide');
     });
     return false;
 });

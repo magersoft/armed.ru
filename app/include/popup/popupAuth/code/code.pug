@@ -1,0 +1,17 @@
+.code.code_hide
+    label.code__label(for="cod")
+        |Введите одноразовый код из смс&nbsp
+        span.code__phone +7 (888) 888 88 88
+        br
+        |&nbspили эл. письма
+    input.code__input(type="tel" name="cod" id="cod" placeholder="0000" maxlength="4")
+
+    p.code__text
+        |Через&nbsp
+        span.code__time 10
+        |&nbspсек. можно будет выслать код повторно
+    a.code__link#return(href="#") Вернуться и исправить номер телефона
+    button.auth__button.button.button_icon
+        span.button__text
+            span.button__icon.button__icon_entry
+            | Войти на сайт
