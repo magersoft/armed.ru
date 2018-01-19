@@ -2149,7 +2149,8 @@ img,
 ul,
 li,
 input,
-label
+label,
+button
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
