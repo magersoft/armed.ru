@@ -1,0 +1,23 @@
+{
+  "name": "armed.ru",
+  "description": "armed.ru",
+  "main": "index.js",
+  "authors": [
+    "ARMED\\mager_v <147@armed.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "jquery": "^3.2.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.5"
+  }
+}

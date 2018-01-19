@@ -35,7 +35,7 @@ gulp.task('js', function() {
             'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
             'app/libs/jquery-ui/jquery-ui.js',
             'app/include/**/*.js']) // файлы, которые обрабатываем
-        .pipe(concat('site.js')) // склеиваем все JS
+        .pipe(concat('main.js')) // склеиваем все JS
         //.pipe(uglify()) // получившуюся "портянку" минифицируем
         .pipe(gulp.dest('pre-relise')) // результат пишем по указанному адресу
         .pipe(browserSync.reload({stream: true})) // Обновляем браузер
@@ -103,9 +103,9 @@ gulp.task('prodaction', function() {
 
 
 gulp.task('default', ['liveReload', 'sass', 'image', 'js', 'font', 'pug'], function () {
-    gulp.watch('app/**/**/*.sass', ['sass']);
-    gulp.watch('app/**/**/*.pug', ['pug']);
-    gulp.watch('app/**/**/*.js', ['js']);
+    gulp.watch('app/**/*.sass', ['sass']);
+    gulp.watch('app/**/*.pug', ['pug']);
+    gulp.watch('app/**/*.js', ['js']);
     gulp.watch('app/images/**/*', ['image']);
     gulp.watch('app/font/**/*', ['font']);
 });

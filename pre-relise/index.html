@@ -11,7 +11,8 @@
   </head>
   <body>
     <main class="blur">
-      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a><br><a class="modalLink" href="#" data-id="Present">открыть выбор подарка</a><br><a class="modalLink" href="#" data-id="Pick">открыть где купить</a><br><a class="modalLink" href="#" data-id="Autoriz">Войти на сайт</a>
+      <div class="preload"><img class="preload__image" src="images/Global/Cube.svg"></div>
+      <div class="header"></div><a class="modalLink" href="#" data-id="CitySelection">открыть выбор города</a><br><a class="modalLink" href="#" data-id="Present">открыть выбор подарка</a><br><a class="modalLink" href="#" data-id="Pick">открыть где купить</a><br><a class="modalLink" href="#" data-id="Auth">Войти на сайт</a>
       <footer class="footer">
         <div class="footer__wrapp">
           <div class="footer__contacts"><a class="footer__logo-link" href="#"><img class="footer__logo-image" src="images/Footer/logo.png" alt="логотип космпании Армед"></a>
@@ -51,108 +52,108 @@
             <li class="footer__info-item"><a class="footer__info-link" href="#">Катра сайта</a></li>
           </menu>
         </div>
+        <div class="copyright">
+          <div class="copyright__wrapp">
+            <ul class="copyright__list social">
+              <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_vk social__element-link" href="#"></a></li>
+              <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_fb social__element-link" href="#"></a></li>
+              <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_od social__element-link" href="#"></a></li>
+              <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_in social__element-link" href="#"></a></li>
+              <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_you social__element-link" href="#"></a></li>
+            </ul>
+            <p class="copyright__copy-text">Copyright 2017 © Армед</p>
+            <p class="copyright__text">
+              ОБРАЩАЕМ ВАШЕ ВНИМАНИЕ, что данный интернет-сайт и материалы,
+              размещенные на нем, носят исключительно информационный характер
+              и ни при каких условиях не являются публичной офертой, определяемой
+              положениями статьи 437 Гражданского кодекса РФ.
+            </p>
+          </div>
+        </div>
+        <div class="attention">
+          <div class="attention__wrapp">
+            <p class="attention__text">
+              ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, ПЕРЕД ИСПОЛЬЗОВАНИЕМ НЕОБХОДИМО ОЗНАКОМИТЬСЯ
+              С ИНСТРУКЦИЕЙ И пРОКОНСУЛЬТИРОВАТЬСЯ С ВРАЧОМ
+            </p>
+          </div>
+        </div>
       </footer>
-      <div class="copyright">
-        <div class="copyright__wrapp">
-          <ul class="copyright__list social">
-            <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_vk social__element-link" href="#"></a></li>
-            <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_fb social__element-link" href="#"></a></li>
-            <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_od social__element-link" href="#"></a></li>
-            <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_in social__element-link" href="#"></a></li>
-            <li class="copyright__list-item social__element"><a class="copyright__list-link social__element_you social__element-link" href="#"></a></li>
-          </ul>
-          <p class="copyright__copy-text">Copyright 2017 © Армед</p>
-          <p class="copyright__text">
-            ОБРАЩАЕМ ВАШЕ ВНИМАНИЕ, что данный интернет-сайт и материалы,
-            размещенные на нем, носят исключительно информационный характер
-            и ни при каких условиях не являются публичной офертой, определяемой
-            положениями статьи 437 Гражданского кодекса РФ.
-          </p>
-        </div>
-      </div>
-      <div class="attention">
-        <div class="attention__wrapp">
-          <p class="attention__text">
-            ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, ПЕРЕД ИСПОЛЬЗОВАНИЕМ НЕОБХОДИМО ОЗНАКОМИТЬСЯ
-            С ИНСТРУКЦИЕЙ И пРОКОНСУЛЬТИРОВАТЬСЯ С ВРАЧОМ
-          </p>
-        </div>
-      </div>
     </main>
     <div class="modal" id="modal_CitySelection">
       <div class="modal__content_city modal__content"><span class="modal__close" id="close_CitySelection"></span>
         <h3 class="modal__head">Выбор города</h3>
-        <form class="popapCitySelection__form">
-          <label class="popapCitySelection__coose" for="city">Выберете ваш город</label>
-          <input class="popapCitySelection__input" type="text" id="city" name="city" placeholder="Введите название"><img class="popapCitySelection__search-icon" src="images/Modal/loop.svg">
+        <form class="popupCitySelection__form">
+          <label class="popupCitySelection__coose" for="city">Выберете ваш город</label>
+          <input class="popupCitySelection__input" type="text" id="city" name="city" placeholder="Введите название"><img class="popupCitySelection__search-icon" src="images/Modal/loop.svg">
         </form>
-        <ul class="popapCitySelection__country-list">
-          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_russia" href="#"></a><a class="popapCitySelection__country-country" href="#">Москва</a><a class="popapCitySelection__country-country" href="#">Санкт-Петербург</a><a class="popapCitySelection__country-country" href="#">Екатеренбург</a></li>
-          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_belarus" href="#"></a><a class="popapCitySelection__country-country" href="#">Беларусь</a></li>
-          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_kazah" href="#"></a><a class="popapCitySelection__country-country" href="#">Казахстан</a></li>
-          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_armen" href="#"></a><a class="popapCitySelection__country-country" href="#">Армения</a></li>
-          <li class="popapCitySelection__country-item"><a class="popapCitySelection__country-flag flag flag_kirgiz" href="#"></a><a class="popapCitySelection__country-country" href="#">Киргизия</a></li>
+        <ul class="popupCitySelection__country-list">
+          <li class="popupCitySelection__country-item"><a class="popupCitySelection__country-flag flag flag_russia" href="#"></a><a class="popupCitySelection__country-country" href="#">Москва</a><a class="popupCitySelection__country-country" href="#">Санкт-Петербург</a><a class="popupCitySelection__country-country" href="#">Екатеренбург</a></li>
+          <li class="popupCitySelection__country-item"><a class="popupCitySelection__country-flag flag flag_belarus" href="#"></a><a class="popupCitySelection__country-country" href="#">Беларусь</a></li>
+          <li class="popupCitySelection__country-item"><a class="popupCitySelection__country-flag flag flag_kazah" href="#"></a><a class="popupCitySelection__country-country" href="#">Казахстан</a></li>
+          <li class="popupCitySelection__country-item"><a class="popupCitySelection__country-flag flag flag_armen" href="#"></a><a class="popupCitySelection__country-country" href="#">Армения</a></li>
+          <li class="popupCitySelection__country-item"><a class="popupCitySelection__country-flag flag flag_kirgiz" href="#"></a><a class="popupCitySelection__country-country" href="#">Киргизия</a></li>
         </ul>
-        <ul class="popapCitySelection__city-list">
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">А</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Архангельск</a><a class="popapCitySelection__city-city" href="#">Астрахань</a></div>
+        <ul class="popupCitySelection__city-list">
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">А</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Архангельск</a><a class="popupCitySelection__city-city" href="#">Астрахань</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Б</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Барнаул</a><a class="popapCitySelection__city-city" href="#">Белгород</a><a class="popapCitySelection__city-city" href="#">Биробиджан</a><a class="popapCitySelection__city-city" href="#">Благовещенск</a><a class="popapCitySelection__city-city" href="#">Брянск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Б</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Барнаул</a><a class="popupCitySelection__city-city" href="#">Белгород</a><a class="popupCitySelection__city-city" href="#">Биробиджан</a><a class="popupCitySelection__city-city" href="#">Благовещенск</a><a class="popupCitySelection__city-city" href="#">Брянск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">В</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Великие Луки (Псковская обл.)</a><a class="popapCitySelection__city-city" href="#">Великий Новгород</a><a class="popapCitySelection__city-city" href="#">Владивосток</a><a class="popapCitySelection__city-city" href="#">Владикавказ</a><a class="popapCitySelection__city-city" href="#">Владимир</a><a class="popapCitySelection__city-city" href="#">Волгоград</a><a class="popapCitySelection__city-city" href="#">Вологда</a><a class="popapCitySelection__city-city" href="#">Воронеж</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">В</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Великие Луки (Псковская обл.)</a><a class="popupCitySelection__city-city" href="#">Великий Новгород</a><a class="popupCitySelection__city-city" href="#">Владивосток</a><a class="popupCitySelection__city-city" href="#">Владикавказ</a><a class="popupCitySelection__city-city" href="#">Владимир</a><a class="popupCitySelection__city-city" href="#">Волгоград</a><a class="popupCitySelection__city-city" href="#">Вологда</a><a class="popupCitySelection__city-city" href="#">Воронеж</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Г</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Горно-Алтайск</a><a class="popapCitySelection__city-city" href="#">Грозный</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Г</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Горно-Алтайск</a><a class="popupCitySelection__city-city" href="#">Грозный</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Е</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Екатеринбург</a><a class="popapCitySelection__city-city" href="#">Елец (Липецкая обл.)</a><a class="popapCitySelection__city-city" href="#">Ессентуки</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Е</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Екатеринбург</a><a class="popupCitySelection__city-city" href="#">Елец (Липецкая обл.)</a><a class="popupCitySelection__city-city" href="#">Ессентуки</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">И</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Иваново</a><a class="popapCitySelection__city-city" href="#">Ижевск</a><a class="popapCitySelection__city-city" href="#">Иркутск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">И</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Иваново</a><a class="popupCitySelection__city-city" href="#">Ижевск</a><a class="popupCitySelection__city-city" href="#">Иркутск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Й</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Йошкар-Ола</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Й</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Йошкар-Ола</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">К</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Казань</a><a class="popapCitySelection__city-city" href="#">Калининград</a><a class="popapCitySelection__city-city" href="#">Калуга</a><a class="popapCitySelection__city-city" href="#">Кемерово</a><a class="popapCitySelection__city-city" href="#">Казань</a><a class="popapCitySelection__city-city" href="#">Киров</a><a class="popapCitySelection__city-city" href="#">Ковров (Владимирская обл.)</a><a class="popapCitySelection__city-city" href="#">Кострома</a><a class="popapCitySelection__city-city" href="#">Краснодар</a><a class="popapCitySelection__city-city" href="#">Красноярск</a><a class="popapCitySelection__city-city" href="#">Курск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">К</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Казань</a><a class="popupCitySelection__city-city" href="#">Калининград</a><a class="popupCitySelection__city-city" href="#">Калуга</a><a class="popupCitySelection__city-city" href="#">Кемерово</a><a class="popupCitySelection__city-city" href="#">Казань</a><a class="popupCitySelection__city-city" href="#">Киров</a><a class="popupCitySelection__city-city" href="#">Ковров (Владимирская обл.)</a><a class="popupCitySelection__city-city" href="#">Кострома</a><a class="popupCitySelection__city-city" href="#">Краснодар</a><a class="popupCitySelection__city-city" href="#">Красноярск</a><a class="popupCitySelection__city-city" href="#">Курск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Л</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Липецк</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Л</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Липецк</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">М</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Майкоп</a><a class="popapCitySelection__city-city" href="#">Махачкала</a><a class="popapCitySelection__city-city" href="#">Минск</a><a class="popapCitySelection__city-city" href="#">Москва</a><a class="popapCitySelection__city-city" href="#">Муром (Владимирская обл.)</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">М</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Майкоп</a><a class="popupCitySelection__city-city" href="#">Махачкала</a><a class="popupCitySelection__city-city" href="#">Минск</a><a class="popupCitySelection__city-city" href="#">Москва</a><a class="popupCitySelection__city-city" href="#">Муром (Владимирская обл.)</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Н</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Назрань</a><a class="popapCitySelection__city-city" href="#">Нальчик</a><a class="popapCitySelection__city-city" href="#">Нижний Новгород</a><a class="popapCitySelection__city-city" href="#">Новокузнецк</a><a class="popapCitySelection__city-city" href="#">Новокуйбышевск</a><a class="popapCitySelection__city-city" href="#">Новомосковск (Тульская обл.)</a><a class="popapCitySelection__city-city" href="#">Новосибирск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Н</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Назрань</a><a class="popupCitySelection__city-city" href="#">Нальчик</a><a class="popupCitySelection__city-city" href="#">Нижний Новгород</a><a class="popupCitySelection__city-city" href="#">Новокузнецк</a><a class="popupCitySelection__city-city" href="#">Новокуйбышевск</a><a class="popupCitySelection__city-city" href="#">Новомосковск (Тульская обл.)</a><a class="popupCitySelection__city-city" href="#">Новосибирск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">О</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Обнинск (Калужская обл.)</a><a class="popapCitySelection__city-city" href="#">Омск</a><a class="popapCitySelection__city-city" href="#">Орел</a><a class="popapCitySelection__city-city" href="#">Оренбург</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">О</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Обнинск (Калужская обл.)</a><a class="popupCitySelection__city-city" href="#">Омск</a><a class="popupCitySelection__city-city" href="#">Орел</a><a class="popupCitySelection__city-city" href="#">Оренбург</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">П</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Пенза</a><a class="popapCitySelection__city-city" href="#">Пермь</a><a class="popapCitySelection__city-city" href="#">Псков</a><a class="popapCitySelection__city-city" href="#">Пятигорск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">П</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Пенза</a><a class="popupCitySelection__city-city" href="#">Пермь</a><a class="popupCitySelection__city-city" href="#">Псков</a><a class="popupCitySelection__city-city" href="#">Пятигорск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Р</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Ростов-на-Дону</a><a class="popapCitySelection__city-city" href="#">Рыбинск (Ярославская обл.)</a><a class="popapCitySelection__city-city" href="#">Рязань</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Р</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Ростов-на-Дону</a><a class="popupCitySelection__city-city" href="#">Рыбинск (Ярославская обл.)</a><a class="popupCitySelection__city-city" href="#">Рязань</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">С</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Самара</a><a class="popapCitySelection__city-city" href="#">Санкт-Петербург</a><a class="popapCitySelection__city-city" href="#">Саранск</a><a class="popapCitySelection__city-city" href="#">Севастополь</a><a class="popapCitySelection__city-city" href="#">Северодвинск</a><a class="popapCitySelection__city-city" href="#">Смоленск</a><a class="popapCitySelection__city-city" href="#">Сочи</a><a class="popapCitySelection__city-city" href="#">Ставрополь</a><a class="popapCitySelection__city-city" href="#">Старый Оскол (Белгородская обл.)</a><a class="popapCitySelection__city-city" href="#">Сызрань</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">С</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Самара</a><a class="popupCitySelection__city-city" href="#">Санкт-Петербург</a><a class="popupCitySelection__city-city" href="#">Саранск</a><a class="popupCitySelection__city-city" href="#">Севастополь</a><a class="popupCitySelection__city-city" href="#">Северодвинск</a><a class="popupCitySelection__city-city" href="#">Смоленск</a><a class="popupCitySelection__city-city" href="#">Сочи</a><a class="popupCitySelection__city-city" href="#">Ставрополь</a><a class="popupCitySelection__city-city" href="#">Старый Оскол (Белгородская обл.)</a><a class="popupCitySelection__city-city" href="#">Сызрань</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Т</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Тамбов</a><a class="popapCitySelection__city-city" href="#">Тверь</a><a class="popapCitySelection__city-city" href="#">Тольятти</a><a class="popapCitySelection__city-city" href="#">Томск</a><a class="popapCitySelection__city-city" href="#">Тула</a><a class="popapCitySelection__city-city" href="#">Тюмень</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Т</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Тамбов</a><a class="popupCitySelection__city-city" href="#">Тверь</a><a class="popupCitySelection__city-city" href="#">Тольятти</a><a class="popupCitySelection__city-city" href="#">Томск</a><a class="popupCitySelection__city-city" href="#">Тула</a><a class="popupCitySelection__city-city" href="#">Тюмень</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">У</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Улан-Удэ</a><a class="popapCitySelection__city-city" href="#">Ульяновск</a><a class="popapCitySelection__city-city" href="#">Уфа</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">У</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Улан-Удэ</a><a class="popupCitySelection__city-city" href="#">Ульяновск</a><a class="popupCitySelection__city-city" href="#">Уфа</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Х</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Хабаровск</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Х</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Хабаровск</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Ч</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Чебоксары</a><a class="popapCitySelection__city-city" href="#">Челябинск</a><a class="popapCitySelection__city-city" href="#">Череповец (Вологодская обл.)</a><a class="popapCitySelection__city-city" href="#">Черкесск</a><a class="popapCitySelection__city-city" href="#">Чита</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Ч</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Чебоксары</a><a class="popupCitySelection__city-city" href="#">Челябинск</a><a class="popupCitySelection__city-city" href="#">Череповец (Вологодская обл.)</a><a class="popupCitySelection__city-city" href="#">Черкесск</a><a class="popupCitySelection__city-city" href="#">Чита</a></div>
           </li>
-          <li class="popapCitySelection__city-item"><span class="popapCitySelection__city-letter">Я</span>
-            <div class="popapCitySelection__city-wrapp"><a class="popapCitySelection__city-city" href="#">Ярославль</a></div>
+          <li class="popupCitySelection__city-item"><span class="popupCitySelection__city-letter">Я</span>
+            <div class="popupCitySelection__city-wrapp"><a class="popupCitySelection__city-city" href="#">Ярославль</a></div>
           </li>
         </ul>
       </div>
@@ -320,42 +321,42 @@
         <main class="modal__pick-list"></main>
       </div>
     </div>
-    <div class="modal" id="modal_Autoriz">
-      <div class="modal__content_autoriz modal__content"><span class="modal__close" id="close_Autoriz"></span>
+    <div class="modal" id="modal_Auth">
+      <div class="modal__content_auth modal__content"><span class="modal__close" id="close_Auth"></span>
         <h3 class="modal__head">Авторизация</h3>
-        <div class="autoriz">
-          <div class="autoriz__wrapp">
-            <ul class="autoriz__list-tabs">
-              <li class="autoriz__list-item"><a class="autoriz__list-link" href="#tabs1"><span class="button__icon button__icon_phone"></span>Телефон</a></li>
-              <li class="autoriz__list-item"><a class="autoriz__list-link" href="#tabs2"><span class="button__icon button__icon_mail"></span>E-mail</a></li>
+        <div class="auth">
+          <div class="auth__wrapp">
+            <ul class="auth__list-tabs">
+              <li class="auth__list-item"><a class="auth__list-link" href="#tabs1"><span class="button__icon button__icon_phone"></span>Телефон</a></li>
+              <li class="auth__list-item"><a class="auth__list-link" href="#tabs2"><span class="button__icon button__icon_mail"></span>E-mail</a></li>
             </ul>
-            <div class="autoriz__tabs" id="tabs1">
-              <form class="autoriz__form">
-                <label class="autoriz__form-label" for="phone">Номер телефона:</label>
-                <input class="autoriz__form-input" type="text" name="phone" id="phone">
-                <button class="autoriz__form-button button button_icon"><span class="button__text"><span class="button__icon button__icon_tel"></span>Получить смс</span></button>
+            <div class="auth__tabs" id="tabs1">
+              <form class="auth__form">
+                <label class="auth__form-label" for="phone">Номер телефона:</label>
+                <input class="auth__form-input" type="text" name="phone" id="phone">
+                <button class="auth__form-button button button_icon"><span class="button__text"><span class="button__icon button__icon_tel"></span>Получить смс</span></button>
               </form>
             </div>
-            <div class="autoriz__tabs" id="tabs2">
-              <form class="autoriz__form">
-                <label class="autoriz__form-label" for="mail">E-mail:</label>
-                <input class="autoriz__form-input" type="mail" name="mail" id="mail">
-                <label class="autoriz__form-label" for="pass">Пароль:</label>
-                <input class="autoriz__form-input" type="mail" name="pass" id="pass"><a class="autoriz__recovery" href="#">Забыли пароль?</a>
-                <button class="autoriz__button button button_icon"><span class="button__text"><span class="button__icon button__icon_entry"></span>Войти на сайт</span></button>
+            <div class="auth__tabs" id="tabs2">
+              <form class="auth__form">
+                <label class="auth__form-label" for="mail">E-mail:</label>
+                <input class="auth__form-input" type="mail" name="mail" id="mail">
+                <label class="auth__form-label" for="pass">Пароль:</label>
+                <input class="auth__form-input" type="mail" name="pass" id="pass"><a class="auth__recovery" href="#">Забыли пароль?</a>
+                <button class="auth__button button button_icon"><span class="button__text"><span class="button__icon button__icon_entry"></span>Войти на сайт</span></button>
               </form>
             </div>
           </div>
-          <h6 class="autoriz__ili">или</h6>
-          <p class="autoriz__text">используя соцсети</p>
-          <div class="autoriz__social social"><a class="autoriz__social-link social__element_vk social__element-link" href="#"></a><a class="autoriz__social-link social__element_fb social__element-link" href="#"></a><a class="autoriz__social-link social__element_od social__element-link" href="#"></a><a class="autoriz__social-link social__element_in social__element-link" href="#"></a><a class="autoriz__social-link social__element_you social__element-link" href="#"></a></div>
-          <div class="autoriz__border"></div>
+          <h6 class="auth__ili">или</h6>
+          <p class="auth__text">используя соцсети</p>
+          <div class="auth__social social"><a class="auth__social-link social__element_vk social__element-link" href="#"></a><a class="auth__social-link social__element_fb social__element-link" href="#"></a><a class="auth__social-link social__element_od social__element-link" href="#"></a><a class="auth__social-link social__element_in social__element-link" href="#"></a><a class="auth__social-link social__element_you social__element-link" href="#"></a></div>
+          <div class="auth__border"></div>
         </div>
-        <p class="autoriz__text">У вас всё ещё нет аккаунта? Зарегестрируйтесь сейчас</p>
-        <button class="autoriz__button button button_white button_icon"><span class="button__text button__text_white">Регистрация<span class="button__icon button__icon_arrow"></span></span></button>
+        <p class="auth__text">У вас всё ещё нет аккаунта? Зарегестрируйтесь сейчас</p>
+        <button class="auth__button button button_white button_icon"><span class="button__text button__text_white">Регистрация<span class="button__icon button__icon_arrow"></span></span></button>
       </div>
     </div>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="site.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -31448,10 +31448,10 @@ $(function(){
         return false
     });
 });
+
 $(".modal__pick-list").mCustomScrollbar({
     theme:"dark"
 });
-
 $(".modal__present-list").mCustomScrollbar({
     theme:"dark"
 });

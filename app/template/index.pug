@@ -1,27 +1,23 @@
 doctype html
 html(lang="ru")
-    include ../include/head/head
+    include ../include/Global/head/head
     body
         main.blur
-            include ../include/preloader/preload
+            include ../include/Global/preloader/preload
+            include ../include/header/header
             a.modalLink(href="#" data-id="CitySelection") открыть выбор города
             br
             a.modalLink(href="#" data-id="Present") открыть выбор подарка
             br
             a.modalLink(href="#" data-id="Pick") открыть где купить
             br
-            a.modalLink(href="#" data-id="Autoriz") Войти на сайт
+            a.modalLink(href="#" data-id="Auth") Войти на сайт
 
 
 
             include ../include/footer/footer
-            include ../include/copyright/copyright
-            include ../include/attention/attention
-        include ../include/popapCityS​selection/popapCityS​selection
-        include ../include/popapPresent/popapPresent
-        include ../include/popapPick/popapPick
-        include ../include/popapAutoriz/popapAutoriz
+        include ../include/popup/popup
 
         //- Весь вонтент до данного коментария
         link(rel="stylesheet" type="text/css" href="style.css")
-        script(src='site.js')
+        script(src='main.js')
