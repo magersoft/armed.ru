@@ -1,1 +1,24 @@
-.header.row
+.header
+    .topbar
+        .topbar__logo
+            a.topbar__logo-image(href="/")
+        .topbar__nav
+            ul.topbar__nav_menu
+                li.topbar__nav_menu-item.city-selection
+                    a(href="#") Москва
+                li.topbar__nav_menu-item
+                    a(href="#") Магазины
+                li.topbar__nav_menu-item
+                    a(href="#") Информация
+                li.topbar__nav_menu-item
+                    a(href="#") Оптовикам
+    .primary-menu
+        .primary-menu__catalog
+            svg
+            | Каталог
+            svg
+                .primary-menu__catalog_dropdown
+        .primary-menu__widgets
+            .primary-menu__search
+            .primary-menu__phone
+            .primary-menu__icon
