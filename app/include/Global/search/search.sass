@@ -3,13 +3,19 @@
   width: 290px
   height: 355px
   border: 1px solid $searchBorderColor
-  top: 39px
-  right: 311px
   background-color: $searchBgColor
   z-index: 100
   justify-content: flex-start
   align-items: center
   color: #000
+  &_city
+    top: 39px
+    right: 311px
+  &_primary-menu
+    top: 35px
+    right: 390px
+    width: 450px
+    border: 1px solid $headerSearchBorderColor
   &__content
     margin-left: 11px
     width: 90%
@@ -51,3 +57,8 @@
   &_hide
     display: none
 
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration
+  display: none

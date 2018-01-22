@@ -23,7 +23,33 @@
                 | Выпадашка
         .primary-menu__widgets
             .primary-menu__search
-                input(type="search")
+                label.primary-menu__search-label
+                    input.primary-menu__search-input(type="search" id="search" name="search" placeholder="Поиск по сайту")
+                    img.primary-menu__search-icon(src="images/Global/loop.svg")
+                .search.search_hide.search_primary-menu
+                    .search__content
+                        section.search__address
+                            h4.search__head Продукция
+                            a.search__text.search__link(href="#") Балашиха
+                                span.search__description Московская область
+                            a.search__text.search__link(href="#") Балбаново
+                                span.search__description Боровский район, Калужская область
+                            a.search__text.search__link(href="#") Балушевы Починки
+                                span.search__description Касимовский район, Рязанская область
+                        section.search__address
+                            h4.search__head Категория
+                            a.search__text.search__link(href="#") Балажевичи
+                                span.search__description Гомельская область
+                            a.search__text.search__link(href="#") Балашевка
+                                span.search__description Речицкий район, Гомельская область
+                        section.search__address
+                            h4.search__head Казахстан
+                            a.search__text.search__link(href="#") Бала би
+                                span.search__description Чиилийский район, Кызылординская область
+                            a.search__text.search__link(href="#") Балатопар
+                                span.search__description Балхаский район, Алматинская область
+                            a.search__text.search__link(href="#") Балапанова
+                                span.search__description Тылдыкорган, Алматиская область
             .primary-menu__phone
                 span.primary-menu__phone-item
                     a(href="tel:+74951062676") 8 (495) 106-26-76
@@ -32,9 +58,7 @@
             .primary-menu__icon
                 a(href="#" data-id="Auth").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal
                 a(href="#").primary-menu__icon-item.primary-menu__icon-item_compare
-                    span.primary-menu__icon-notification
-                        | 2
+                    span.primary-menu__icon-notification 2
                 a(href="#").primary-menu__icon-item.primary-menu__icon-item_favorite
                 a(href="#").primary-menu__icon-item.primary-menu__icon-item_cart
-                    span.primary-menu__icon-notification
-                        | 12
+                    span.primary-menu__icon-notification 12
