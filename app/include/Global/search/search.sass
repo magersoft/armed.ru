@@ -1,0 +1,51 @@
+.search
+  position: absolute
+  width: 290px
+  height: 355px
+  border: 1px solid $searchBorderColor
+  top: 39px
+  right: 311px
+  background-color: $searchBgColor
+  z-index: 100
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  color: #000
+  &__content
+    margin-left: 11px
+    width: 90%
+    height: 95%
+
+  &__address
+    padding: 10px 0 15px 0
+    border-bottom: 1px solid $searchAddressBorderColor
+    text-align: left
+    display: flex
+    flex-direction: column
+  &__link
+    text-decoration: none
+    color: $searchLinkColor
+    display: flex
+    flex-direction: column
+    &:hover
+      color: $searchLinkHoverColor
+    &:hover > search__description
+      color: $searchLinkHoverColor
+  &__head
+    font-family: Rubik
+    font-size: 1.4em
+    color: $searchHeadColor
+    font-weight: 500
+    letter-spacing: 0.05em
+    margin-bottom: 10px
+  &__text
+    color: $searchTextColor
+    font-size: 1.4em
+    font-weight: 500
+    margin-left: 15px
+  &__description
+    font-size: 0.7em
+    color: $searchTextColor
+    margin-bottom: 5px
+    font-weight: 400
+
