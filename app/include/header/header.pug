@@ -29,12 +29,12 @@
                     a(href="tel:+74951062676") 8 (495) 106-26-76
                 span.primary-menu__phone-item
                     a(href="tel:88002006734") 8 (800) 200-67-34
-            ul.primary-menu__icon
-                li.primary-menu__icon-item
-                    a(href="#").shape
-                li.primary-menu__icon-item
-                    a(href="#").notification
-                li.primary-menu__icon-item
-                    a(href="#")
-                li.primary-menu__icon-item
-                    a(href="#").notification
+            .primary-menu__icon
+                a(href="#" data-id="Auth").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal
+                a(href="#").primary-menu__icon-item.primary-menu__icon-item_compare
+                    span.primary-menu__icon-notification
+                        | 2
+                a(href="#").primary-menu__icon-item.primary-menu__icon-item_favorite
+                a(href="#").primary-menu__icon-item.primary-menu__icon-item_cart
+                    span.primary-menu__icon-notification
+                        | 12
