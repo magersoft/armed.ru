@@ -72,7 +72,7 @@ y-axis
 		bottom: 0;
 	}
 
-	.mCSB_outside + .mCSB_scrollTools{ right: 10px; } /* scrollbar position: outside */
+	.mCSB_outside + .mCSB_scrollTools{ right: -18px; } /* scrollbar position: outside */
 	
 	.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools, 
 	.mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools{ /* RTL direction/left-side scrollbar */
