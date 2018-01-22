@@ -16,12 +16,25 @@
     .primary-menu
         .primary-menu__catalog
             a(href="#").primary-menu__catalog-link
-                i.burger
+                span.burger-button
                 | Каталог
                 i.primary-menu__catalog-icon
             .primary-menu__catalog_dropdown
                 | Выпадашка
         .primary-menu__widgets
             .primary-menu__search
+                input(type="search")
             .primary-menu__phone
-            .primary-menu__icon
+                span.primary-menu__phone-item
+                    a(href="tel:+74951062676") 8 (495) 106-26-76
+                span.primary-menu__phone-item
+                    a(href="tel:88002006734") 8 (800) 200-67-34
+            ul.primary-menu__icon
+                li.primary-menu__icon-item
+                    a(href="#").shape
+                li.primary-menu__icon-item
+                    a(href="#").notification
+                li.primary-menu__icon-item
+                    a(href="#")
+                li.primary-menu__icon-item
+                    a(href="#").notification
