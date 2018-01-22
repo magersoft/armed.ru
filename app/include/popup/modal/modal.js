@@ -16,17 +16,17 @@ $(function(){
         $(function(){
             $(element_id).fadeIn(400);
             $('body').css('overflow', 'hidden');
-            $('.blur').addClass('blurBody');
+            $('.home').addClass('blurBody');
         });
         $(element_close).click(function(){
             $(element_id).fadeOut(400);
             $('body').css('overflow', 'auto');
-            $('.blur').removeClass('blurBody');
+            $('.home').removeClass('blurBody');
         });
         $(close_class).click(function(){
             $(element_id).fadeOut(400);
             $('body').css('overflow', 'auto');
-            $('.blur').removeClass('blurBody');
+            $('.home').removeClass('blurBody');
         });
 
         return false
