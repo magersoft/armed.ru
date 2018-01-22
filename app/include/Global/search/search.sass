@@ -7,7 +7,6 @@
   right: 311px
   background-color: $searchBgColor
   z-index: 100
-  display: flex
   justify-content: flex-start
   align-items: center
   color: #000
@@ -15,7 +14,6 @@
     margin-left: 11px
     width: 90%
     height: 95%
-
   &__address
     padding: 10px 0 15px 0
     border-bottom: 1px solid $searchAddressBorderColor
@@ -48,4 +46,8 @@
     color: $searchTextColor
     margin-bottom: 5px
     font-weight: 400
+  &_active
+    display: flex
+  &_hide
+    display: none
 
