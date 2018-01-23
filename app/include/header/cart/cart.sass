@@ -36,6 +36,28 @@
       &:hover
         color: $headerItemHoverColor
     &-article
-      font-size: 1.2em
+      font-size: 1.1em
       color: $headerItemColor
-      padding: 10px 0
+      padding: 5px 0 10px 0
+    &-price
+      display: flex
+      &_cost
+        font-size: 1.2em
+        font-weight: 500
+        padding: 0 10px 0 0
+        color: $headerCartTitle
+      &_oldcost
+        color: $headerCartOldcost
+        padding: 0 15px 0 0
+    &_minus, &_plus
+      color: $headerItemColor
+      font-size: 1.5em
+      cursor: pointer
+    &_entry
+      width: 15px
+      border: none
+      background-color: #fff
+      margin: 0 5px
+      color: $headerCartVolume
+      font-size: 1.4em
+      text-align: center
