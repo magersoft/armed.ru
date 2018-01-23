@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery-ui": "^1.12.1",
     "jquery": "^3.2.1",
-    "malihu-custom-scrollbar-plugin": "^3.1.5"
+    "malihu-custom-scrollbar-plugin": "^3.1.5",
+    "roboto-fontface": "^0.8.0"
   }
 }

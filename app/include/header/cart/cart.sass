@@ -1,0 +1,41 @@
+.primary-menu__cart
+  position: absolute
+  //display: none
+  width: 335px
+  height: 470px
+  background: #fff
+  border: 1px solid #f6f6f6
+  top: 60px
+  right: 0px
+  padding: 15px
+  &_title
+    color: $headerCartTitle
+    font-family: $fontFamilyAdditionally
+    font-size: 1.4em
+    font-weight: 400
+    letter-spacing: 0.05em
+  &_inner
+    position: relative
+    height: 307px
+    overflow: auto
+    margin: 10px 0
+  &_product
+    display: flex
+    border-top: 1px solid $searchAddressBorderColor
+    padding: 10px 0
+    &-col-1, &-col-2
+      padding: 0 10px
+    &-image
+      width: 76px
+      height: 76px
+    &-title a
+      font-size: 1.2em
+      color: $headerCartTitle
+      font-weight: normal
+      text-decoration: none
+      &:hover
+        color: $headerItemHoverColor
+    &-article
+      font-size: 1.2em
+      color: $headerItemColor
+      padding: 10px 0

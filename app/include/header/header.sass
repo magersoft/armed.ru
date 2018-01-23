@@ -112,12 +112,11 @@
       font-size: 1.4em
       letter-spacing: 0.03em
       font-weight: 400
-      &:hover
-        color: $headerItemHoverColor
   &__icon
     display: flex
     align-items: center
     flex-wrap: wrap
+    height: 60px
     &-item
       position: relative
       background: url(images/Icon/primary-menu__icon.svg) center no-repeat
@@ -141,6 +140,11 @@
         background-position: 0 -72px
         &:hover
           background-position: -24px -72px
+    &-wrapper
+      display: flex
+      height: 100%
+      align-items: center
+      justify-content: center
     &-notification
       position: absolute
       display: flex
@@ -177,8 +181,8 @@
   list-style: none
   background: #fff
   position: absolute
-  top: 45px
-  right: 185px
+  top: 60px
+  right: 165px
   border: 1px solid #F6F6F6
   z-index: 100
   width: 173px
@@ -193,5 +197,4 @@
     text-decoration: none
     color: $headerItemColor
 
-.primary-menu__icon-item_personal:hover + .personal__auth
-  display: block
+@import "cart/cart"
