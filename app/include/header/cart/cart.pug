@@ -19,9 +19,14 @@
                     .primary-menu__cart_product-price_cost
                         | 21 200 &#8381;
                     .primary-menu__cart_product-price_oldcost
-                        | 21 200 &#8381;
-                    .primary-menu__cart_product-price_volume
-                        input(type="number")
+                        strike
+                            | 21 200 &#8381;
+                    .primary-menu__cart_product_volume
+                        button.primary-menu__cart_product_minus
+                            | -
+                        input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                        button.primary-menu__cart_product_plus
+                            | +
         .primary-menu__delete
         - }
     .primary-menu__cart_price
