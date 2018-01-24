@@ -1,5 +1,17 @@
 $(function(){
     $('.modalLink').click(function(){
+
+        var modal = $(document).find('.modalLink');
+
+        for (var i = 0; i < modal.length; i++) {
+                console.log(modal[i].getAttribute('data-id'));
+                var element_id = '#modal_' + modal[i].getAttribute('data-id');
+                console.log(element_id);
+                $(element_id).fadeOut(400);
+            }
+
+
+
         var element_id = $(this).attr('data-id');
         var close_class = $(this).attr('data-id');
         var element_close = $(this).attr('data-id');
@@ -8,10 +20,6 @@ $(function(){
         close_class = '.close_' + close_class;
         //получение id для открытия модального окна
         element_id = '#modal_' + element_id;
-        console.log(element_close);
-        console.log(close_class);
-        console.log(element_id);
-
 
         $(function(){
             $(element_id).fadeIn(400);

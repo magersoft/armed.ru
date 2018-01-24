@@ -26,7 +26,7 @@
                 label.auth__form-label(for="pass") Пароль:
                     span.alert Пароль не верен
                 input.auth__form-input(type="mail" name="pass" id="pass")
-                a.auth__recovery(href="#") Забыли пароль?
+                a.auth__recovery.modalLink(href="#" data-id="passRecovery") Забыли пароль?
                 button.auth__button.button.button_icon
                     span.button__text
                         span.button__icon.button__icon_entry
@@ -41,7 +41,7 @@
     a.social__element.social__element_you-lg.social__element_lg.social__link(href="#")
 .auth__border
 p.auth__text У вас всё ещё нет аккаунта? Зарегистрируйтесь сейчас
-button.auth__button.button.button_white.button_icon
+button.auth__button.button.button_white.button_icon.modalLink(data-id="Check")
     span.button__text.button__text_white
         |Регистрация
         span.button__icon.button__icon_arrow
