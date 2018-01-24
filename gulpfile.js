@@ -22,7 +22,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('preload', function () {
-    gulp.src('app/include/preloader/preload.sass')
+    gulp.src('app/include/Global/preloader/preload.sass')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(csscomb())
@@ -107,7 +107,7 @@ gulp.task('prodaction', ['clean'], function() {
 });
 
 
-gulp.task('default', ['liveReload', 'sass', 'image', 'js', 'font', 'pug', 'pre-clean'], function () {
+gulp.task('default', ['pre-clean', 'preload', 'liveReload', 'sass', 'image', 'js', 'font', 'pug'], function () {
     gulp.watch('app/**/*.sass', ['sass']);
     gulp.watch('app/**/*.pug', ['pug']);
     gulp.watch('app/**/*.js', ['js']);
