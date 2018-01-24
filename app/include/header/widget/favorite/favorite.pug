@@ -1,0 +1,41 @@
+.primary-menu__favorite
+    .primary-menu__favorite_title
+        | Всего товаров:&nbsp;
+        span#cart-volume
+            | 12
+        span
+            | &nbsp;шт.
+    .primary-menu__favorite_inner.primary-menu__widget-inner
+        - var x = 12;
+        - for (var i=1; i<=x; i++) {
+        .primary-menu__favorite_product.primary-menu__widget-item
+            .primary-menu__favorite_product-col-1
+                .primary-menu__favorite_product-image
+                    a(href="#")
+                        img(src="images/Header/cart_product-image.png" alt="Отсасыватель хирургический 7A-32B")
+            .primary-menu__favorite_product-col-2
+                .primary-menu__favorite_product-title
+                    a(href="#")
+                        | Отсасыватель хирургический 7A-23B
+                .primary-menu__favorite_product-article
+                    | Артикул: 165444321894
+                .primary-menu__favorite_product-price
+                    .primary-menu__favorite_product-price_cost
+                        | 21 200 &#8381;
+                    .primary-menu__favorite_product-price_oldcost
+                        strike
+                            | 21 200 &#8381;
+            .primary-menu__favorite_delete.primary-menu__widget-delete
+        - }
+    .primary-menu__favorite_price
+        | Итого:&nbsp;
+        span.primary-menu__favorite_price-number#cart-price
+            | 264 218
+        span.primary-menu__favorite_price-valute
+            |&nbsp;&#8381;
+    .primary-menu__favorite_button
+        a(href="#").primary-menu__favorite_button-favorite
+            | Перейти в Избранное
+        a(href="#").primary-menu__favorite_button-order
+            | Оформить заказ
+

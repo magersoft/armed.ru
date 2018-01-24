@@ -1,4 +1,4 @@
-.primary-menu__cart
+.primary-menu__compare
   position: absolute
   display: none
   width: 335px
@@ -50,30 +50,6 @@
       &_oldcost
         color: $headerCartOldcost
         padding: 0 15px 0 0
-    &_volume
-      display: flex
-      align-items: center
-    &_minus, &_plus
-      cursor: pointer
-      background: url(images/Icon/cart_product-volume__icon.svg) center no-repeat
-      width: 12px
-      height: 12px
-    &_minus
-      background-position: -12px 0
-      &:hover
-        background-position: -24px 0
-    &_plus
-      background-position: -12px -12px
-      &:hover
-        background-position: -24px -12px
-    &_entry
-      width: 15px
-      border: none
-      background-color: #fff
-      margin: 0 5px
-      color: $headerCartVolume
-      font-size: 1.4em
-      text-align: center
   &_price
     display: flex
     color: $headerCartTitle
@@ -90,7 +66,7 @@
     justify-content: space-between
     align-items: center
     flex-direction: row
-    &-cart, &-order
+    &-favorite, &-order
       background-color: $buttonRedBgColor
       color: #fff
       font-family: Rubik
@@ -98,6 +74,10 @@
       letter-spacing: 0.05em
       padding: 15px
       text-decoration: none
+      &:hover
+        background-color: $buttonRedBgHoverColor
+    &-favorite
+      padding: 15px 8px
       &:hover
         background-color: $buttonRedBgHoverColor
   &_delete
