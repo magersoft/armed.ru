@@ -114,10 +114,58 @@
     &:hover
       background-color: $productQuestionHovertBgColor
     &-window
-      z-index: 200
+      display: none
+      padding: 15px
+      top: 13px
+      left: 170px
+      z-index: 250
       position: absolute
       width: 272px
       height: 288px
       background-color: $productQuestionWindowBgColor
       box-shadow: 0 0 4px $productQuestionWindowsShadowColor
+    &-head
+      color: $productQuestionWindowHeadColor
+      font-size: 1.6em
+      letter-spacing: 0.05em
+      font-weight: 500
+      text-transform: uppercase
+    &-you-price,
+    &-retail-price,
+    &-income
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 25px
+    &-you-price,
+    &-retail-price
+      padding-bottom: 15px
+      border-bottom: 1px solid #E0E0E0;
+    &-name
+      font-size: 1.4em
+    &-oldprice
+      font-size: 1em
+      text-decoration: line-through
+    &-newprice
+      font-size: 1.4em
+      font-weight: 500
+    &-price
+      text-align: right
+    &-link
+      color: $productQuestionLinkColor
+      font-size: 1.6em
+      letter-spacing: 0.05em
+      font-family: 'Rubik'
+      text-decoration: none
+      display: flex
+      justify-content: center
+      margin-top: 15px
+      &:hover
+        color: $GlobalColor
+.you-price_color
+  color: $productQuestionYouColor
+.retail-price_color
+  color: $productQuestionRetailColor
+.income_color
+  color: $ConfirmColor
 
