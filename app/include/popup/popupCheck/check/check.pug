@@ -1,0 +1,34 @@
+.check
+    .check__wrapp
+        form.check__form
+            label.check__form-label(for="phone") Имя:
+            input.check__form-input(type="text" name="name" id="name")
+            label.check__form-label(for="phone") Номер телефона:
+            input.check__form-input(type="text" name="phone" id="phone")
+            label.check__form-label(for="email") E-mail:
+            input.check__form-input(type="email" name="email" id="email")
+            label.check__form-label(for="password") Пароль:
+            input.check__form-input(type="text" name="password" id="password")
+            label.check__form-label(for="returnpassword") Подтвердите пароль:
+            input.check__form-input(type="text" name="returnpassword" id="returnpassword")
+            .check__form-checkbox
+                label.control.control-checkbox(for="checkbox")
+                    input.check__form-input--checkbox(type="checkbox" id="checkbox")
+                    .control_indicator
+                span.check__form-checkbox--information
+                    | Юридическое лицо
+            label.check__form-label(for="entity") ОГРН/ОГРНИП:
+            input.check__form-input(type="text" name="entity" id="entity" disabled)
+            button.check__form-button.button.button_icon
+                span.button__text
+                    span.button__icon.button__icon_tel
+                    | Зарегистрироваться
+            span.check__info Нажимая на кнопку, Вы даете согласие на обработку своих персональных данных
+    h6.check__ili или
+    p.check__text используя соцсети
+.check__social.social
+    a.social__element.social__element_vk-lg.social__element_lg.social__link(href="#")
+    a.social__element.social__element_fb-lg.social__element_lg.social__link(href="#")
+    a.social__element.social__element_od-lg.social__element_lg.social__link(href="#")
+    a.social__element.social__element_in-lg.social__element_lg.social__link(href="#")
+    a.social__element.social__element_you-lg.social__element_lg.social__link(href="#")
