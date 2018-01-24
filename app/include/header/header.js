@@ -1,4 +1,4 @@
-$(".primary-menu__cart_inner").mCustomScrollbar({
+$(".primary-menu__widget-inner").mCustomScrollbar({
     theme:"dark",
     scrollbarPosition: "outside"
 });
@@ -13,8 +13,27 @@ $("#personal")
         $(".personal__auth").hide(400);
     });
 
+// Выпадающее окно при наведении на иконку Compare
+$("#dropdownCompare")
+    .mouseover(function() {
+        $(".primary-menu__compare").show(200);
+    });
+$("#compare")
+    .mouseleave(function() {
+        $(".primary-menu__compare").hide(400);
+    });
+
+// Выпадающее окно при наведении на иконку Favorite
+$("#dropdownFavorite")
+    .mouseover(function() {
+        $(".primary-menu__favorite").show(200);
+    });
+$("#favorite")
+    .mouseleave(function() {
+        $(".primary-menu__favorite").hide(400);
+    });
+
 // Выпадающее окно при наведении на иконку Cart
-/*
 $("#dropdownCart")
     .mouseover(function() {
         $(".primary-menu__cart").show(200);
@@ -23,7 +42,6 @@ $("#cart")
     .mouseleave(function() {
         $(".primary-menu__cart").hide(400);
     });
-*/
 
 // Frontend - value in dropdown cart
 $(document).ready(function() {
@@ -31,14 +49,14 @@ $(document).ready(function() {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;
         if (count > 0 || (count - 1) == -1) {
-            var total = parseInt($('#value-dishes').html() - 1);
-            var total_cost = parseInt($('#value-totalcost').html());
+            var total = parseInt($('#cart-volume').html() - 1);
+            var total_cost = parseInt($('#cart-price').html());
             var $cost_element = $(this).parent().parent().find('.primary-menu__cart_product-price_cost');
             var cost = parseInt($cost_element.html());
             total_cost = total_cost - cost;
             total = total < 0 ? 0 : total;
-            $('#value-totalcost').html(total_cost);
-            $('#value-dishes').html(total);
+            $('#cart-price').html(total_cost);
+            $('#cart-volume').html(total);
         }
         count = count < 0 ? 0 : count;
         $input.val(count);
@@ -48,24 +66,37 @@ $(document).ready(function() {
     $('.primary-menu__cart_product_plus').click(function () {
         var $input = $(this).parent().find('input');
         $input.val(parseInt($input.val()) + 1);
-        var total = parseInt($('#value-dishes').html());
+        var total = parseInt($('#cart-volume').html());
         total++;
-        var total_cost = parseInt($('#value-totalcost').html());
+        var total_cost = parseInt($('#cart-price').html());
         var $cost_element = $(this).parent().parent().find('.primary-menu__cart_product-price_cost');
         var cost = parseInt($cost_element.html());
         total_cost = total_cost + cost;
-        $('#value-totalcost').html(total_cost);
-        $('#value-dishes').html(total);
+        $('#cart-price').html(total_cost);
+        $('#cart-volume').html(total);
         $input.change();
         return false;
     });
 });
 
-$('.primary-menu__cart_product')
-    .mouseover(function () {
-        $('.primary-menu__cart_delete').show(200);
+
+/* TODO при "value=0" менять background-position иконки минус
+$('.primary-menu__cart_product_minus').click(function() {
+    var test = [];
+
+    $('.primary-menu__cart_product_volume').find(':input').each(function(i, input) {
+        test.push($(input).val());
     });
-$('.primary-menu__cart_product')
-    .mouseleave(function () {
-        $('.primary-menu__cart_delete').hide(400);
+
+    alert(test);
+
+});
+*/
+
+
+$('.primary-menu__widget-item').mouseover(function () {
+        $(this).children('.primary-menu__widget-delete').show();
+    });
+$('.primary-menu__widget-item').mouseleave(function () {
+        $('.primary-menu__widget-delete').hide();
 });

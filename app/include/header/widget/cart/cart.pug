@@ -1,14 +1,14 @@
 .primary-menu__cart
     .primary-menu__cart_title
         | Всего товаров:&nbsp;
-        span#value-dishes
+        span#cart-volume
             | 12
         span
             | &nbsp;шт.
-    .primary-menu__cart_inner
+    .primary-menu__cart_inner.primary-menu__widget-inner
         - var x = 12;
         - for (var i=1; i<=x; i++) {
-        .primary-menu__cart_product
+        .primary-menu__cart_product.primary-menu__widget-item
             .primary-menu__cart_product-col-1
                 .primary-menu__cart_product-image
                     a(href="#")
@@ -27,16 +27,13 @@
                             | 21 200 &#8381;
                     .primary-menu__cart_product_volume
                         span.primary-menu__cart_product_minus
-                            | -
                         input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
                         span.primary-menu__cart_product_plus
-                            | +
-            .primary-menu__cart_delete
-                | del
+            .primary-menu__cart_delete.primary-menu__widget-delete
         - }
     .primary-menu__cart_price
         | Итого:&nbsp;
-        span.primary-menu__cart_price-number#value-totalcost
+        span.primary-menu__cart_price-number#cart-price
             | 264 218
         span.primary-menu__cart_price-valute
             |&nbsp;&#8381;
