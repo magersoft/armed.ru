@@ -31,16 +31,18 @@
                         input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
                         span.primary-menu__cart_product_plus
                             | +
-        .primary-menu__delete
+            .primary-menu__cart_delete
+                | del
         - }
     .primary-menu__cart_price
         | Итого:&nbsp;
         span.primary-menu__cart_price-number#value-totalcost
-            | 0
+            | 264 218
         span.primary-menu__cart_price-valute
             |&nbsp;&#8381;
-    .primary-menu__cart_button-cart
-        | Перейти в корзину
-    .primary-menu__cart_button-order
-        | Оформить заказ
+    .primary-menu__cart_button
+        a(href="#").primary-menu__cart_button-cart
+            | Перейти в корзину
+        a(href="#").primary-menu__cart_button-order
+            | Оформить заказ
 

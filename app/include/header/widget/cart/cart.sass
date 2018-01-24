@@ -23,8 +23,8 @@
     display: flex
     border-top: 1px solid $searchAddressBorderColor
     padding: 10px 0
-    &-col-1, &-col-2
-      padding: 0 10px
+    &-col-2
+      padding: 0 40px 0 0
     &-image
       width: 76px
       height: 76px
@@ -61,3 +61,33 @@
       color: $headerCartVolume
       font-size: 1.4em
       text-align: center
+  &_price
+    display: flex
+    color: $headerCartTitle
+    font-size: 1.4em
+    margin: 20px 0 15px 0
+    &-number
+      font-weight: 500
+    &-valute
+      font-size: 12px
+      display: flex
+      align-items: center
+  &_button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    &-cart, &-order
+      background-color: $headerBurgerButton
+      color: #fff
+      font-family: Rubik
+      font-size: 1.2em
+      letter-spacing: 0.05em
+      padding: 15px
+      text-decoration: none
+  &_delete
+    position: relative
+    top: 0px
+    right: 10px
+    display: none
+

@@ -60,3 +60,12 @@ $(document).ready(function() {
         return false;
     });
 });
+
+$('.primary-menu__cart_product')
+    .mouseover(function () {
+        $('.primary-menu__cart_delete').show(200);
+    });
+$('.primary-menu__cart_product')
+    .mouseleave(function () {
+        $('.primary-menu__cart_delete').hide(400);
+});
