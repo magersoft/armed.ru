@@ -3,17 +3,17 @@ $(".primary-menu__widget-inner").mCustomScrollbar({
     scrollbarPosition: "outside"
 });
 
-// Выпадающее окно при наведении на иконку Personal
-/*
-$("#dropdownPersonal")
+
+/* ===================== START DROPDOWN ===================== */
+// Выпадающее меню КАТАЛОГ в Header
+$("#dropdownCart")
     .click(function() {
-        $(".personal__auth").show(200);
+        $(".primary-menu__cart").show(200);
     });
-$("#personal")
+$("#cart")
     .mouseleave(function() {
-        $(".personal__auth").hide(400);
+        $(".primary-menu__cart").hide(400);
     });
-*/
 
 // Выпадающее окно при наведении на иконку Compare
 $("#dropdownCompare")
@@ -44,6 +44,8 @@ $("#cart")
     .mouseleave(function() {
         $(".primary-menu__cart").hide(400);
     });
+/* ===================== END DROPDOWN ===================== */
+
 
 // Frontend - value in dropdown cart
 $(document).ready(function() {
