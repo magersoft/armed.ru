@@ -1,0 +1,93 @@
+.pick
+  margin: 0 auto
+  &__icon
+    background-image: url("images/Card/card__sprite.svg")
+    background-repeat: no-repeat
+    width: 24px
+    height: 24px
+    &_heart
+      background-position: 0 0
+      margin: 0 15px
+      &:hover
+        background-position: -24px 0
+    &_comparison
+      background-position: 0 -72px
+      margin-right: 10px
+      &:hover
+        background-position: -24px -72px
+
+  &_pickup
+    width: 90%
+    height: 85px
+    background-color: $cardBgColor
+    border: 1px solid $cardBorderColor
+    display: flex
+    align-items: center
+    justify-content: space-around
+    padding: 0 10px
+    margin-bottom: 10px
+    &:hover
+      border: 1px solid $cardBorderHoverCard
+    &__text
+      text-align: left
+      font:
+        size: 1.4em
+        weight: 400
+      color: $textPickColor
+      &-address
+        @extend .pick_pickup__text
+        flex: 0.8
+      &-time
+        flex: 0.2
+        @extend .pick_pickup__text
+      &-mode
+        flex: 0.3
+        @extend .pick_pickup__text
+      &-amt
+        flex: 0.2
+        @extend .pick_pickup__text
+    &__icon
+      position: absolute
+      top: 9px
+      left: 23px
+      background-position: 0 -24px
+    &__button
+      position: relative
+      background: $cardButtonBgColor
+      border: 1px solid $cardButtonBorderColor
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 15px 30px 15px 48px
+      font-size: 1.2em
+      text-transform: uppercase
+      text-decoration: none
+      color: $cardButtonColor
+      letter-spacing: 0.05em
+      font-weight: 400
+      font-family: 'Rubik'
+      &:hover
+        border: 1px solid $cardButtonBorderHoverColor
+    &__mod1
+      display: flex
+      align-items: center
+      flex-grow: 2
+    &__image
+      width: 83px
+      margin-right: 20px
+    &__selected
+      margin-right: 31px
+      display: none
+      height: 100%
+      //display: flex
+      align-items: center
+      font-family: Rubik
+      font-weight: 300
+      font-size: 1.2em
+      letter-spacing: 0.05em
+      color: $ConfirmColor
+      text-transform: uppercase
+      &-icon
+        background-position: 0 -144px
+
+#modal_Pick
+  display: block
