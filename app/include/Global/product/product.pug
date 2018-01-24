@@ -7,14 +7,40 @@
             p.product__cost 47 990
                 span.product__value &nbsp₽
             a.product__question(href="#")
+
             .product__question-window
+                h5.product__question-head Возможные варианты цен на этот товар
+                .product__question-you-price.you-price_color
+                    p.product__question-name Ваша цена
+                    .product__question-price
+                        p.product__question-oldprice 67 640
+                            span.product__question-val &nbsp₽
+                        p.product__question-newprice 47 400
+                            span.product__question-val &nbsp₽
+
+                .product__question-retail-price.retail-price_color
+                    p.product__question-name Рек. розничная цена
+                    .product__question-price
+                        p.product__question-oldprice 67 640
+                            span.product__question-val &nbsp₽
+                        p.product__question-newprice 57 400
+                            span.product__question-val &nbsp₽
+
+                .product__question-income.income_color
+                    p.product__question-name Доход
+                    .product__question-price
+                        p.product__question-newprice 10 000
+                            span.product__question-val &nbsp₽
+
+                a.product__question-link(href="#") Узнать больше
+                    span.button__icon.button__icon_arrow
 
         p.product__oldcost 56 892 ₽
         img.product__rating(src="images/product/rating.png" alt="рейтинг")
     .product__buttonWrapp.product__buttonWrapp_hide
         button.product__button.button.button_icon.button_product
             span.button__text
-                span.button__icon.button__icon_basket
+                span.button__icon.button__icon_arrow
                 | В корзину
 
 
