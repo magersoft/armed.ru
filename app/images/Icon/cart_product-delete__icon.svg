@@ -1,0 +1,28 @@
+<svg width="14" height="28" viewBox="0 0 14 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(24873 18546)">
+<g id="Group 4">
+<g id="&#208;&#163;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#184;&#209;&#130;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#178;&#208;&#176;&#209;&#128;">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-24871.8 -18544.8)" fill="#BDBDBD"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-24868.9 -18541.9)" fill="#FFFFFF"/>
+</g>
+</g>
+<g id="&#208;&#163;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#184;&#209;&#130;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#178;&#208;&#176;&#209;&#128;">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-24871.8 -18530.8)" fill="#C62828"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-24868.9 -18527.9)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 5.83333 0C 2.6075 0 0 2.6075 0 5.83333C 0 9.05917 2.6075 11.6667 5.83333 11.6667C 9.05917 11.6667 11.6667 9.05917 11.6667 5.83333C 11.6667 2.6075 9.05917 0 5.83333 0L 5.83333 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 5.83333 5.01083L 5.01083 5.83333L 2.91667 3.73917L 0.8225 5.83333L 0 5.01083L 2.09417 2.91667L 0 0.8225L 0.8225 0L 2.91667 2.09417L 5.01083 0L 5.83333 0.8225L 3.73917 2.91667L 5.83333 5.01083L 5.83333 5.01083Z"/>
+</defs>
+</svg>
