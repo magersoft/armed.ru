@@ -4,9 +4,7 @@ $(function(){
         var modal = $(document).find('.modalLink');
 
         for (var i = 0; i < modal.length; i++) {
-                console.log(modal[i].getAttribute('data-id'));
                 var element_id = '#modal_' + modal[i].getAttribute('data-id');
-                console.log(element_id);
                 $(element_id).fadeOut(400);
             }
 
@@ -32,6 +30,10 @@ $(function(){
             $('.home').removeClass('blurBody');
         });
         $(close_class).click(function(){
+            value = $(this).text();
+            var date = new Date(new Date().getTime() + 60 * 1000);
+            document.cookie =  "city=" + value + "; path=/; expires=" + date.toUTCString();
+            console.log("set city " + value);
             $(element_id).fadeOut(400);
             $('body').css('overflow', 'auto');
             $('.home').removeClass('blurBody');

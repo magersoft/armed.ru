@@ -1,49 +1,81 @@
-$(".primary-menu__widget-inner").mCustomScrollbar({
-    theme:"dark",
-    scrollbarPosition: "outside"
+/* ==================== START FIXED HEADER ================= */
+$(function(){
+    var fixHeader = 50;
+    $(window).scroll(function() {
+        var scroll = getCurrentScroll();
+        if ( scroll >= fixHeader ) {
+            $('.topbar').slideUp(400);
+            $('.primary-menu__fix-logo').show();
+            $('.burger-button').hide();
+            $('.primary-menu__catalog-link').css('margin-left', '15px')
+        }
+        else {
+            $('.topbar').slideDown(400);
+            $('.primary-menu__fix-logo').hide();
+            $('.burger-button').show();
+            $('.primary-menu__catalog-link').css('margin-left', '0px')
+        }
+    });
+    function getCurrentScroll() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
 });
-
+/* ===================== END FIXED HEADER =================== */
 
 /* ===================== START DROPDOWN ===================== */
 // Выпадающее меню КАТАЛОГ в Header
-$("#dropdownCart")
+$("#dropdownCatalog")
     .click(function() {
-        $(".primary-menu__cart").show(200);
+        $(".dropdown-catalog").show();
     });
-$("#cart")
+$("#primary-menu__catalog")
     .mouseleave(function() {
-        $(".primary-menu__cart").hide(400);
+        $(".dropdown-catalog").slideUp(400);
     });
 
 // Выпадающее окно при наведении на иконку Compare
 $("#dropdownCompare")
     .click(function() {
-        $(".primary-menu__compare").show(200);
+        $(".primary-menu__compare").show();
     });
 $("#compare")
     .mouseleave(function() {
-        $(".primary-menu__compare").hide(400);
+        $(".primary-menu__compare").slideUp(400);
     });
 
 // Выпадающее окно при наведении на иконку Favorite
 $("#dropdownFavorite")
     .click(function() {
-        $(".primary-menu__favorite").show(200);
+        $(".primary-menu__favorite").show();
     });
 $("#favorite")
     .mouseleave(function() {
-        $(".primary-menu__favorite").hide(400);
+        $(".primary-menu__favorite").slideUp(400);
     });
 
 // Выпадающее окно при наведении на иконку Cart
 $("#dropdownCart")
     .click(function() {
-        $(".primary-menu__cart").show(200);
+        $(".primary-menu__cart").show();
     });
 $("#cart")
     .mouseleave(function() {
-        $(".primary-menu__cart").hide(400);
+        $(".primary-menu__cart").slideUp(200);
     });
+
+// Scrollbar in dropdown item
+$(".primary-menu__widget-inner").mCustomScrollbar({
+    theme:"dark",
+    scrollbarPosition: "outside"
+});
+
+// Появление крестика "удалить" из выпадашки при наведении на элемент
+$('.primary-menu__widget-item').mouseover(function () {
+    $(this).children('.primary-menu__widget-delete').show();
+});
+$('.primary-menu__widget-item').mouseleave(function () {
+    $('.primary-menu__widget-delete').hide();
+});
 /* ===================== END DROPDOWN ===================== */
 
 
@@ -96,11 +128,3 @@ $('.primary-menu__cart_product_minus').click(function() {
 
 });
 */
-
-
-$('.primary-menu__widget-item').mouseover(function () {
-        $(this).children('.primary-menu__widget-delete').show();
-    });
-$('.primary-menu__widget-item').mouseleave(function () {
-        $('.primary-menu__widget-delete').hide();
-});
