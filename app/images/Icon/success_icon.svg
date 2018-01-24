@@ -1,0 +1,30 @@
+<svg width="94" height="94" viewBox="0 0 94 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Check ico</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(13452 20996)">
+<g id="Check ico">
+<g id="Ellipse">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-13452 -20996)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-13452 -20996)" fill="#7DC472"/>
+</g>
+</g>
+<g id="Vector">
+<g id="ic_done">
+<g id="Icon 24px">
+<g id="Shape">
+<use xlink:href="#path2_fill" transform="translate(-13425.1 -20963.9)" fill="#7DC472"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 94 47C 94 72.9574 72.9574 94 47 94C 21.0426 94 0 72.9574 0 47C 0 21.0426 21.0426 0 47 0C 72.9574 0 94 21.0426 94 47Z"/>
+<path id="path1_stroke_2x" d="M 90 47C 90 70.7482 70.7482 90 47 90L 47 98C 75.1665 98 98 75.1665 98 47L 90 47ZM 47 90C 23.2518 90 4 70.7482 4 47L -4 47C -4 75.1665 18.8335 98 47 98L 47 90ZM 4 47C 4 23.2518 23.2518 4 47 4L 47 -4C 18.8335 -4 -4 18.8335 -4 47L 4 47ZM 47 4C 70.7482 4 90 23.2518 90 47L 98 47C 98 18.8335 75.1665 -4 47 -4L 47 4Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 13.0667 24.7333L 3.26667 14.9333L 0 18.2L 13.0667 31.2667L 41.0667 3.26667L 37.8 0L 13.0667 24.7333Z"/>
+</defs>
+</svg>

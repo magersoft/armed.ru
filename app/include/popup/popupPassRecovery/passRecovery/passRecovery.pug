@@ -1,0 +1,14 @@
+.passRecovery
+    .passRecovery__wrapp
+        form.passRecovery__form
+            label.passRecovery__form-label(for="e-mail") E-mail:
+                span.alert Email указан неверно
+            input.passRecovery__form-input(type="email" name="email" id="e-mail")
+            button.passRecovery__button.button.button_icon#button__recovery
+                span.button__text
+                    span.button__icon.button__icon_lock
+                    |Восстановить
+.passRecovery__border
+p.passRecovery__text У вас всё ещё нет аккаунта?&nbsp
+    a.passRecovery__checkIn(href="#") Зарегистрируйтесь
+    |&nbspсейчас
