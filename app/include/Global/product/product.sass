@@ -1,42 +1,63 @@
 .product
   background-color: $productBgColor
-  border: 1px solid $productBorderColor
   width: 255px
   height: 380px
   display: flex
   flex-direction: column
   align-items: center
   justify-content: flex-start
-  margin: 200px
+  margin: 20px
   text-align: center
   position: relative
+  &_hover
+    border-top: 1px solid $productBorderHoverColor
+    border-right: 1px solid $productBorderHoverColor
+    border-left: 1px solid $productBorderHoverColor
+    border-bottom: none
+    box-shadow: 0 -6px 10px $productShadowColor
+  &_nothover
+    border: 1px solid $productBorderColor
   &__head
-    font-family: Rubik
+    font-family: 'Rubik'
     font-size: 1.6em
     text-transform: uppercase
     padding: 15px 20px 22px 20px
     color: $productHeadColor
   &__button
     &Wrapp
-      border: 1px solid $productBorderColor
+      background-color: $productBgColor
       position: absolute
-      bottom: -87px
+      bottom: 0px
       width: 255px
       height: auto
-      display: flex
       align-items: center
       justify-content: center
+      z-index: 200
+      &_active
+        display: flex
+        bottom: -85px
+        transition: 0.4s
+        border-bottom: 1px solid $productBorderHoverColor
+        border-left: 1px solid $productBorderHoverColor
+        border-right: 1px solid $productBorderHoverColor
+        box-shadow: 0 6px 10px $productShadowColor
+      &_hide
+        display: none
   &__asside
     width: 60px
     height: 380px
     position: absolute
     top: -1px
-    right: 0px
-    display: flex
+    right: -60px
     flex-direction: column
     align-items: center
     justify-content: flex-start
     padding-top: 85px
+    &_active
+      display: flex
+      right: 0
+    &_hide
+      display: none
   &__icon
     width: 33px
     height: 33px
