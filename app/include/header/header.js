@@ -3,19 +3,21 @@ $(".primary-menu__widget-inner").mCustomScrollbar({
     scrollbarPosition: "outside"
 });
 
-// Выпадающее окно при наведении на иконку Personal
-$("#dropdownPersonal")
-    .mouseover(function() {
-        $(".personal__auth").show(200);
+
+/* ===================== START DROPDOWN ===================== */
+// Выпадающее меню КАТАЛОГ в Header
+$("#dropdownCart")
+    .click(function() {
+        $(".primary-menu__cart").show(200);
     });
-$("#personal")
+$("#cart")
     .mouseleave(function() {
-        $(".personal__auth").hide(400);
+        $(".primary-menu__cart").hide(400);
     });
 
 // Выпадающее окно при наведении на иконку Compare
 $("#dropdownCompare")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__compare").show(200);
     });
 $("#compare")
@@ -25,7 +27,7 @@ $("#compare")
 
 // Выпадающее окно при наведении на иконку Favorite
 $("#dropdownFavorite")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__favorite").show(200);
     });
 $("#favorite")
@@ -35,13 +37,15 @@ $("#favorite")
 
 // Выпадающее окно при наведении на иконку Cart
 $("#dropdownCart")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__cart").show(200);
     });
 $("#cart")
     .mouseleave(function() {
         $(".primary-menu__cart").hide(400);
     });
+/* ===================== END DROPDOWN ===================== */
+
 
 // Frontend - value in dropdown cart
 $(document).ready(function() {

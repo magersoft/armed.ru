@@ -9,6 +9,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     csscomb = require('gulp-csscomb'),
     pug = require('gulp-pug');
+    del = require('del');
 
 gulp.task('sass', function () {
     gulp.src('app/template/index.sass')
@@ -21,13 +22,21 @@ gulp.task('sass', function () {
 });
 
 gulp.task('preload', function () {
-    gulp.src('app/include/preloader/preload.sass')
+    gulp.src('app/include/Global/preloader/preload.sass')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(csscomb())
         .pipe(rename('preload.css'))
         .pipe(gulp.dest('pre-relise'))
         .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('pre-clean', function() {
+    return del.sync('pre-relise');
+});
+
+gulp.task('clean', function() {
+    return del.sync('production');
 });
 
 gulp.task('js', function() {
@@ -81,28 +90,24 @@ gulp.task('liveReload', function () {
 });
 */
 
-gulp.task('prodaction', function() {
+gulp.task('prodaction', ['clean'], function() {
     gulp.src('pre-relise/*.html')
-        .pipe(gulp.dest('prodaction/'))
-    gulp.src('pre-relise/site.js')
+        .pipe(gulp.dest('prodaction/'));
+    gulp.src('pre-relise/main.js')
         .pipe(uglify())
-        .pipe(gulp.dest('prodaction/'))
+        .pipe(gulp.dest('prodaction/'));
     gulp.src('pre-relise/style.css')
         .pipe(cssmin())
-        .pipe(gulp.dest('prodaction/'))
+        .pipe(gulp.dest('prodaction/'));
     gulp.src('pre-relise/images/**/*')
-        .pipe(imagemin()) // оптимизируем изображения для веба
-        .pipe(gulp.dest('prodaction/images/')) // результат пишем по указанному адресу
-    browserSync({
-        server: {
-            baseDir: 'prodaction/' /*Указываем главную папку со скриптами*/
-        },
-        notify: false /*Отключаем уведомления в браузере для комфортной работы*/
-    })
+        .pipe(imagemin())
+        .pipe(gulp.dest('prodaction/images/'));
+    gulp.src('pre-relise/fonts/**/*')
+        .pipe(gulp.dest('prodaction/fonts'));
 });
 
 
-gulp.task('default', ['liveReload', 'sass', 'image', 'js', 'font', 'pug'], function () {
+gulp.task('default', ['pre-clean', 'preload', 'liveReload', 'sass', 'image', 'js', 'font', 'pug'], function () {
     gulp.watch('app/**/*.sass', ['sass']);
     gulp.watch('app/**/*.pug', ['pug']);
     gulp.watch('app/**/*.js', ['js']);

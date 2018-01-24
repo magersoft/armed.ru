@@ -19,8 +19,7 @@
                 span.burger-button
                 | Каталог
                 i.primary-menu__catalog-icon
-            .primary-menu__catalog_dropdown
-                | Выпадашка
+            include catalog/catalog
         .primary-menu__widgets
             .primary-menu__search
                 label.primary-menu__search-label
@@ -54,7 +53,7 @@
             .primary-menu__icon
                 .primary-menu__icon-wrapper#personal
                     a(href="#" data-id="Auth").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal#dropdownPersonal
-                    ul.personal__auth
+                    //ul.personal__auth
                         li.personal__auth-item
                             a.personal__auth-login.modalLink(href="#" data-id="Auth") Войти на сайт
                         li.personal__auth-item

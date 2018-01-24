@@ -86,6 +86,7 @@
     display: flex
     justify-content: center
     align-items: center
+    position: relative
   &__cost
     color: $productCostColor
     font-size: 1.8em
@@ -112,3 +113,11 @@
     background-position: 1px 1px
     &:hover
       background-color: $productQuestionHovertBgColor
+    &-window
+      z-index: 200
+      position: absolute
+      width: 272px
+      height: 288px
+      background-color: $productQuestionWindowBgColor
+      box-shadow: 0 0 4px $productQuestionWindowsShadowColor
+
