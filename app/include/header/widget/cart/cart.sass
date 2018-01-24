@@ -1,0 +1,93 @@
+.primary-menu__cart
+  position: absolute
+  //display: none
+  width: 335px
+  height: 470px
+  background: #fff
+  border: 1px solid #f6f6f6
+  top: 60px
+  right: 0px
+  padding: 15px
+  &_title
+    color: $headerCartTitle
+    font-family: $fontFamilyAdditionally
+    font-size: 1.4em
+    font-weight: 400
+    letter-spacing: 0.05em
+  &_inner
+    position: relative
+    height: 307px
+    overflow: auto
+    margin: 10px 0
+  &_product
+    display: flex
+    border-top: 1px solid $searchAddressBorderColor
+    padding: 10px 0
+    &-col-2
+      padding: 0 40px 0 0
+    &-image
+      width: 76px
+      height: 76px
+    &-title a
+      font-size: 1.2em
+      color: $headerCartTitle
+      font-weight: normal
+      text-decoration: none
+      &:hover
+        color: $headerItemHoverColor
+    &-article
+      font-size: 1.1em
+      color: $headerItemColor
+      padding: 5px 0 10px 0
+    &-price
+      display: flex
+      &_cost
+        font-size: 1.2em
+        font-weight: 500
+        padding: 0 10px 0 0
+        color: $headerCartTitle
+      &_oldcost
+        color: $headerCartOldcost
+        padding: 0 15px 0 0
+    &_minus, &_plus
+      color: $headerItemColor
+      font-size: 1.5em
+      cursor: pointer
+    &_entry
+      width: 15px
+      border: none
+      background-color: #fff
+      margin: 0 5px
+      color: $headerCartVolume
+      font-size: 1.4em
+      text-align: center
+  &_price
+    display: flex
+    color: $headerCartTitle
+    font-size: 1.4em
+    margin: 20px 0 15px 0
+    &-number
+      font-weight: 500
+    &-valute
+      font-size: 12px
+      display: flex
+      align-items: center
+  &_button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    &-cart, &-order
+      background-color: $headerBurgerButton
+      color: #fff
+      font-family: Rubik
+      font-size: 1.2em
+      letter-spacing: 0.05em
+      padding: 15px
+      text-decoration: none
+  &_delete
+    position: relative
+    top: 0px
+    right: 10px
+    display: none
+

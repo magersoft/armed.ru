@@ -5,7 +5,8 @@
         .topbar__nav
             ul.topbar__nav_menu
                 li.topbar__nav_menu-item.city-selection
-                    a.topbar__nav_menu-link(href="#") Москва
+                    i.topbar__nav_menu-icon
+                    a.topbar__nav_menu-link.city-selection.modalLink(href="#" data-id="CitySelection") Москва
                 li.topbar__nav_menu-item
                     a.topbar__nav_menu-link(href="#") Магазины
                 li.topbar__nav_menu-item
@@ -14,11 +15,56 @@
                     a.topbar__nav_menu-link(href="#") Оптовикам
     .primary-menu
         .primary-menu__catalog
-            svg
-            | Каталог
-            svg
-                .primary-menu__catalog_dropdown
+            a(href="#").primary-menu__catalog-link
+                span.burger-button
+                | Каталог
+                i.primary-menu__catalog-icon
+            .primary-menu__catalog_dropdown
+                | Выпадашка
         .primary-menu__widgets
             .primary-menu__search
+                label.primary-menu__search-label
+                    input.primary-menu__search-input(type="search" id="search" name="search" placeholder="Поиск по сайту")
+                    img.primary-menu__search-icon(src="images/Global/loop.svg")
+                .search.search_hide.search_primary-menu
+                    .search__content
+                        section.search__address
+                            h4.search__head Продукция
+                            a.search__text.search__link(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                            a.search__text.search__link(href="#") Концентратор кислорода Armed (Армед) 8F-1 (бук)
+                            a.search__text.search__link(href="#") Концентратор кислорода Armed (Армед) LF-H-10A
+                            a.search__text.search__link(href="#") Концентратор кислорода Armed (Армед) 7F-5
+                            a.search__text.search__link(href="#") Концентратор кислорода Armed (Армед) 8F-5
+                            a.search__text.search__link(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                            a.search__text.search__link(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                            a.search__text.search__link(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                        section.search__address
+                            h4.search__head Категории
+                            a.search__text.search__link(href="#") Кислородные концентраторы (17)
+                            a.search__text.search__link(href="#") Расходные материалы для кислородных концентрат...
+                            a.search__text.search__link(href="#") Кислородные концентраторы (17)
+                        section.search__address
+                            h4.search__head
+                            a.search__text.search__link(href="#") Запчасти (17)
             .primary-menu__phone
+                span.primary-menu__phone-item
+                    a(href="tel:+74951062676") 8 (495) 106-26-76
+                span.primary-menu__phone-item
+                    a(href="tel:88002006734") 8 (800) 200-67-34
             .primary-menu__icon
+                .primary-menu__icon-wrapper#personal
+                    a(href="#" data-id="Auth").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal#dropdownPersonal
+                    ul.personal__auth
+                        li.personal__auth-item
+                            a.personal__auth-login(href="#") Войти на сайт
+                        li.personal__auth-item
+                            a.personal__auth-reg(href="#") Зарегистрироваться
+                .primary-menu__icon-wrapper#compare
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_compare
+                        span.primary-menu__icon-notification 2
+                .primary-menu__icon-wrapper#favorite
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_favorite
+                .primary-menu__icon-wrapper#cart
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_cart#dropdownCart
+                        span.primary-menu__icon-notification 12
+                    include widget/cart/cart

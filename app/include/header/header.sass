@@ -9,20 +9,20 @@
   justify-content: space-between
   align-items: center
   height: 53px
+  padding: 0 30px
   &__logo
     position: relative
     width: 149px
     height: 45px
-    margin: 4px 30px
+    margin: 4px 0
     &-image
       position: absolute
       width: 100%
       height: 100%
-      background: url(../../images/Global/logo.png) center no-repeat
+      background: url(images/Header/logo.png) center no-repeat
       background-size: contain
   &__nav
     position: relative
-    margin: 0 30px
     &_menu
       padding: 0
       margin: 0 auto
@@ -37,3 +37,164 @@
         font-weight: 400
         &:hover
           color: $headerItemHoverColor
+      .city-selection
+        text-decoration: underline
+        padding: 0 0 0 20px
+      &-icon
+        position: absolute
+        background: url(images/Header/icon__loc.svg) center no-repeat
+        width: 12px
+        height: 16px
+
+.primary-menu
+  position: relative
+  background-color: $headerPrimaryMenuBgColor
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  height: 60px
+  padding: 0 30px
+  &__catalog
+    position: relative
+    &-link
+      text-decoration: none
+      color: $headerItemColor
+      font-weight: 400
+      font-size: 1.6em
+      letter-spacing: 0.05em
+      padding: 10px 30px
+    &-icon
+      position: absolute
+      background: url(images/Icon/arrow-down.png) center no-repeat
+      width: 10px
+      height: 13px
+      right: 10px
+      top: 4px
+  &__catalog_dropdown
+    display: none
+  .burger-button
+    position: absolute
+    background-color: $headerBurgerButton
+    width: 18px
+    height: 2px
+    top: 70%
+    left: 0
+    margin-top: -5px
+    &::after, &::before
+      content: ""
+      display: block
+      position: absolute
+      background-color: $headerBurgerButton
+      height: 2px
+      width: 18px
+      top: 70%
+      left: 0
+      margin-top: 3px
+    &::before
+      margin-top: -5px
+  &__widgets
+    position: relative
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  &__phone
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 0 28px
+    &-item a
+      color: $headerItemColor
+      text-decoration: none
+      font-size: 1.4em
+      letter-spacing: 0.03em
+      font-weight: 400
+  &__icon
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    height: 60px
+    &-item
+      position: relative
+      background: url(images/Icon/primary-menu__icon.svg) center no-repeat
+      width: 24px
+      height: 24px
+      margin: 0 15px
+      padding: 12px
+      &_personal
+        background-position: 0 -48px
+        &:hover
+          background-position: -24px -48px
+      &_compare
+        background-position: 0px -24px
+        &:hover
+          background-position: -24px -24px
+      &_favorite
+        background-position: 0 0
+        &:hover
+          background-position: -24px 0
+      &_cart
+        background-position: 0 -72px
+        &:hover
+          background-position: -24px -72px
+    &-wrapper
+      display: flex
+      height: 100%
+      align-items: center
+      justify-content: center
+    &-notification
+      position: absolute
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 22px
+      min-height: 22px
+      top: -10px
+      right: -10px
+      color: $headerBurgerButton
+      text-decoration: none
+      font-size: 1.2em
+      font-weight: 500
+      border: 2px solid $headerBurgerButton
+      background-color: #fff
+      border-radius: 50%
+  &__search
+    &-input
+      position: relative
+      width: 290px
+      border: 1px solid $headerSearchBorderColor
+      color: $inputModalColor
+      padding: 10px
+      font-size: 1.2em
+    &-label
+      position: relative
+    &-icon
+      position: absolute
+      top: -2px
+      right: 10px
+      cursor: pointer
+
+.personal__auth
+  list-style: none
+  background: #fff
+  position: absolute
+  top: 60px
+  right: 165px
+  border: 1px solid #F6F6F6
+  z-index: 100
+  width: 173px
+  height: 74px
+  padding: 10px
+  display: none
+  &-item
+    padding: 6px 0
+    transition: all 0.2s ease-in-out
+  &-login, &-reg
+    font-size: 1.2em
+    text-decoration: none
+    color: $headerItemColor
+
+@import "widget/cart/cart"

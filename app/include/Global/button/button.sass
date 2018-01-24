@@ -25,17 +25,20 @@
     background-image: url("images/Button/button__icon.svg")
     background-repeat: no-repeat
     &_tel
-      background-position: -20px -120px
+      background-position: 0 -120px
       margin-right: 5px
     &_entry
-      background-position: -20px -60px
+      background-position: 0 -60px
       margin-right: 12px
     &_phone
       background-position: 0 0
     &_mail
       background-position: 0 -20px
     &_arrow
-      background-position: -20px -140px
+      background-position: 0 -140px
+    &_basket
+      background-position: 0 -180px
+      padding-left: 25px
   //Модификатор белой кнопки
   &_white
     background-color: $buttonWhiteBgColor
@@ -46,3 +49,8 @@
     &:avtive
       background-color: $buttonWhiteActiveBgColor
       border-color: $buttonWhiteActiveBorderColor
+
+  &_product
+    width: 165px
+    height: 45px
+    margin: 15px 0
