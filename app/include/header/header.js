@@ -4,18 +4,20 @@ $(".primary-menu__widget-inner").mCustomScrollbar({
 });
 
 // Выпадающее окно при наведении на иконку Personal
+/*
 $("#dropdownPersonal")
-    .mouseover(function() {
+    .click(function() {
         $(".personal__auth").show(200);
     });
 $("#personal")
     .mouseleave(function() {
         $(".personal__auth").hide(400);
     });
+*/
 
 // Выпадающее окно при наведении на иконку Compare
 $("#dropdownCompare")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__compare").show(200);
     });
 $("#compare")
@@ -25,7 +27,7 @@ $("#compare")
 
 // Выпадающее окно при наведении на иконку Favorite
 $("#dropdownFavorite")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__favorite").show(200);
     });
 $("#favorite")
@@ -35,7 +37,7 @@ $("#favorite")
 
 // Выпадающее окно при наведении на иконку Cart
 $("#dropdownCart")
-    .mouseover(function() {
+    .click(function() {
         $(".primary-menu__cart").show(200);
     });
 $("#cart")
