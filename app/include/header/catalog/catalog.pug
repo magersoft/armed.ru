@@ -10,19 +10,9 @@
                 .dropdown-catalog__category_title
                     | Лабораторное оборудование
                 .dropdown-catalog__category_wrapper
-                    a.dropdown-catalog__category_link(href="#")
-                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
-                        span.dropdown-catalog__category_text
-                            | Микроскопы
-                    a.dropdown-catalog__category_link(href="#")
-                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
-                        span.dropdown-catalog__category_text
-                            | Микроскопы
-                    a.dropdown-catalog__category_link(href="#")
-                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
-                        span.dropdown-catalog__category_text
-                            | Микроскопы
-                    a.dropdown-catalog__category_link(href="#")
-                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
-                        span.dropdown-catalog__category_text
-                            | Микроскопы
+                    include data/cat-1
+                    each item in cat1
+                        a.dropdown-catalog__category_link(href= item.link)
+                            img.dropdown-catalog__category_image(src= item.image)
+                            span.dropdown-catalog__category_text
+                                | #{item.name}
