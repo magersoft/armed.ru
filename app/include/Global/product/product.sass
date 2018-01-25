@@ -21,7 +21,7 @@
     font-family: 'Rubik'
     font-size: 1.6em
     text-transform: uppercase
-    padding: 15px 20px 22px 20px
+    padding: 15px 3px 22px 3px
     color: $productHeadColor
   &__button
     &Wrapp
@@ -113,6 +113,18 @@
     background-position: 1px 1px
     &:hover
       background-color: $productQuestionHovertBgColor
+    &_close
+      position: absolute
+      width: 17px
+      height: 17px
+      top: 5px
+      right: 12px
+      background-image: url("images/product/question__close.svg")
+      background-position: 0 0
+      background-repeat: no-repeat
+      cursor: pointer
+      &:hover
+        background-position: 0px -17px
     &-window
       display: none
       padding: 15px
@@ -125,6 +137,9 @@
       background-color: $productQuestionWindowBgColor
       box-shadow: 0 0 4px $productQuestionWindowsShadowColor
     &-head
+      font-family: 'Rubik'
+      margin-top: 10px
+      margin-bottom: 25px
       color: $productQuestionWindowHeadColor
       font-size: 1.6em
       letter-spacing: 0.05em
@@ -135,8 +150,10 @@
     &-income
       display: flex
       justify-content: space-between
-      align-items: center
-      margin-top: 25px
+      align-items: flex-end
+      margin-top: 3px
+    &-income
+      margin-top: 15px
     &-you-price,
     &-retail-price
       padding-bottom: 15px
@@ -146,6 +163,7 @@
     &-oldprice
       font-size: 1em
       text-decoration: line-through
+      color: $productOldCostColor
     &-newprice
       font-size: 1.4em
       font-weight: 500
@@ -159,7 +177,7 @@
       text-decoration: none
       display: flex
       justify-content: center
-      margin-top: 15px
+      margin-top: 25px
       &:hover
         color: $GlobalColor
 .you-price_color

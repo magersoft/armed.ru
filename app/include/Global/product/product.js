@@ -12,3 +12,12 @@ $('.product').hover(
         $(this).children('.product__buttonWrapp').removeClass('product__buttonWrapp_active').addClass('product__buttonWrapp_hide');
     }
 );
+
+$('.product__question').click(function(){
+
+    $(this).next().slideDown(400);
+    $('.product__question_close').click(function(){
+        $(this).parent().slideUp(400);
+    });
+    return false
+});

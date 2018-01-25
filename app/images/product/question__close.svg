@@ -1,0 +1,34 @@
+<svg width="17" height="34" viewBox="0 0 17 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 5</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(24841 18547)">
+<g id="Group 5">
+<g id="&#208;&#163;&#208;&#180;&#208;&#176;&#208;&#187;&#208;&#184;&#209;&#130;&#209;&#140; &#209;&#130;&#208;&#190;&#208;&#178;&#208;&#176;&#209;&#128;">
+<g id="ic_cancel">
+<g id="Icon 24px">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-24839.6 -18545.6)" fill="#BDBDBD"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-24836 -18542)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<g id="ic_cancel">
+<g id="Icon 24px">
+<g id="Path">
+<use xlink:href="#path0_fill" transform="translate(-24839.6 -18528.6)" fill="#C62828"/>
+</g>
+<g id="Path">
+<use xlink:href="#path1_fill" transform="translate(-24836 -18525)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 7.08333 0C 3.16625 0 0 3.16625 0 7.08333C 0 11.0004 3.16625 14.1667 7.08333 14.1667C 11.0004 14.1667 14.1667 11.0004 14.1667 7.08333C 14.1667 3.16625 11.0004 0 7.08333 0L 7.08333 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 7.08333 6.08458L 6.08458 7.08333L 3.54167 4.54042L 0.99875 7.08333L 0 6.08458L 2.54292 3.54167L 0 0.99875L 0.99875 0L 3.54167 2.54292L 6.08458 0L 7.08333 0.99875L 4.54042 3.54167L 7.08333 6.08458L 7.08333 6.08458Z"/>
+</defs>
+</svg>
