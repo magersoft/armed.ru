@@ -16,10 +16,11 @@
     .primary-menu
         a(href="/").primary-menu__fix-logo
         .primary-menu__catalog#primary-menu__catalog
-            .primary-menu__catalog-link#dropdownCatalog
-                span.burger-button
-                | Каталог
-                i.primary-menu__catalog-icon
+            .primary-menu__catalog_wrapper
+                .primary-menu__catalog-link#dropdownCatalog
+                    span.burger-button
+                    | Каталог
+                    i.primary-menu__catalog-icon
             include catalog/catalog
         .primary-menu__widgets
             .primary-menu__search
