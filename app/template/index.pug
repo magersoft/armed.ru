@@ -6,22 +6,27 @@ html(lang="ru")
             include ../include/Global/preloader/preload
             include ../include/header/header
 
-            .container
-                include ../include/content/index/home/home
-                include ../include/content/index/banner/banner
-                a(href="lk.html" style="font-size: 20px") Личный кабинет
-                //Временный стиль
-                .cardTovaraWrap
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
+            section#home
+                .container-fluid
+                    include ../include/content/index/home/home
+            section#banner
+                .container-fluid
+                    include ../include/content/index/banner/banner
+            section#card
+                .container
+                    a(href="lk.html" style="font-size: 20px") Личный кабинет
+                    //Временный стиль
+                    .cardTovaraWrap
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
 
 
             include ../include/footer/footer
