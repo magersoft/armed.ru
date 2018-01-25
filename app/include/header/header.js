@@ -119,6 +119,16 @@ $(document).ready(function() {
     });
 });
 
+// Определение страницы и установка необходимого хедара
+$(function(){
+    var path = window.location.pathname.slice(1);
+    if (path == 'lk.html') {
+        $('.primary-menu').css('display', 'none');
+    } else {
+        $('.infolk').css('display', 'none');
+    }
+});
+
 
 /* TODO при "value=0" менять background-position иконки минус
 $('.primary-menu__cart_product_minus').click(function() {
