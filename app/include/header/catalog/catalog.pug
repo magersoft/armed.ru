@@ -2,5 +2,5 @@
     ul.dropdown-catalog__inner
         - var categories = [{"name":"ABC-Logistic","file": "Abc-logistic","link": "abc-logistic.co.jp"},{"name":"Art-TEK","file": "ArtTEK","link": "arttek-dv.ru"},{"name":"Ногтевой салон Maki","file": "maki-nails","link": "maki-nails.ru"},{"name":"ПримКомпСервис","file": "PrimCompService","link": "primcompservice.ru"},{"name":"Восточные Лета","file": "vostochnieleta","link": "vostochnieleta.ru"}];
         each item in categories
-            li.dropdown-catalog__item(class=['#{item.file}'])
-                a.dropdown-catalog__item_link(href='#{item.link}') #{item.name}
+            li.dropdown-catalog__item(class= item.file)
+                a.dropdown-catalog__item_link(href= item.link) #{item.name}
