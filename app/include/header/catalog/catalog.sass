@@ -20,15 +20,20 @@
     box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.03)
   &__inner
     position: relative
+    display: none
     width: 857px
     height: 500px
   &__item
     font-size: 1.6em
     list-style: none
     padding: 10px 0
+    transition: all 0.3s ease
+    &:hover
+      padding-left: 5px
     &_link
       color: $headerItemColor
       text-decoration: none
+      transition: all 0.3s ease
       &:hover
         color: $headerItemHoverColor
   &__category
@@ -55,13 +60,16 @@
       height: 75px
       border-bottom: 1px solid #E0E0E0
       padding: 60px 0
+      text-decoration: none
+      color: $headerItemColor
       &:nth-last-child(-n+1)
         border: none
+      &:hover
+        color: $headerItemHoverColor
     &_image
       width: 78px
       height: 78px
     &_text
       font-size: 1.4em
-      color: $headerItemColor
       padding: 10px
 
