@@ -14,10 +14,16 @@ $('.product').hover(
 );
 
 $('.product__question').click(function(){
-
     $(this).next().slideDown(400);
-    $('.product__question_close').click(function(){
-        $(this).parent().slideUp(400);
-    });
+
     return false
+});
+
+//TODO: Доработать закрытие всплывашки
+$(document).click(function(e){
+    var obj = $('.product__question-window');
+    if (!obj.is(e.target) // если клик был не по нашему блоку
+        && obj.has(e.target).length === 0) { // и не по его дочерним элементам
+        obj.slideUp(400); // скрываем его
+    }
 });
