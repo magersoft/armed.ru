@@ -14,16 +14,30 @@
     display: flex
     justify-content: center
     border-right: 1px solid #f2f2f2
+  &__link
+    display: flex
+    align-items: center
   &__info
     flex-grow: 1
     display: flex
+    &-text
+      font-family: 'Rubik'
+      font-size: 1.6em;
+      color: $headerInfolkTextColor
+      letter-spacing: 0.05em;
+      margin-left: 30px;
+      margin-right: 15px;
     &-foto
       width: 36px
       height: 36px
       border-radius: 50%
+      margin-right: 11px
+    &-name
+      font-size: 1.4em
+      color: $headerInfolkNameColor
     &-manager
       display: flex
-
+      align-items: center
       &-wrapp
         display: flex
         justify-content: flex-start
@@ -50,9 +64,11 @@
     &_ring
       background-position: 0 -24px
     &_exit
-      background-position: 0 0px
-    &_tel
       background-position: 0 0
+    &_tel
+      background-position: 0 -125px
+    &_mailsm
+      background-position: 0 145px
   &__mail, &__ring
     width: 24px
     height: 24px
