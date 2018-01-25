@@ -9,6 +9,27 @@
   margin-bottom: 20px
   text-align: center
   position: relative
+  &__tool
+    position: absolute
+    width: 80%
+    height: 200px
+    top: 65px
+    left: -3px
+  &__rib
+    height: 20px
+    width: 100%
+    background-image: url("images/product/ribbon__sprite.svg")
+    background-repeat: no-repeat
+    position: relative
+    &_new
+      top: 0
+      background-position: 0 0
+    &_hit
+      top: -2px
+      background-position: 0 -20px
+    &_present
+      top: -4px
+      background-position: 0 -40px
   &_hover
     border-top: 1px solid $productBorderHoverColor
     border-right: 1px solid $productBorderHoverColor
