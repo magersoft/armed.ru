@@ -1,6 +1,28 @@
 .dropdown-catalog
-    ul.dropdown-catalog__inner
-        - var categories = [{"name":"ABC-Logistic","file": "Abc-logistic","link": "abc-logistic.co.jp"},{"name":"Art-TEK","file": "ArtTEK","link": "arttek-dv.ru"},{"name":"Ногтевой салон Maki","file": "maki-nails","link": "maki-nails.ru"},{"name":"ПримКомпСервис","file": "PrimCompService","link": "primcompservice.ru"},{"name":"Восточные Лета","file": "vostochnieleta","link": "vostochnieleta.ru"}];
-        each item in categories
-            li.dropdown-catalog__item(class= item.file)
-                a.dropdown-catalog__item_link(href= item.link) #{item.name}
+    .dropdown-catalog__main
+        ul.dropdown-catalog__wrapper
+            include data/categories
+            each item in categories
+                li.dropdown-catalog__item(id= item.id)
+                    a.dropdown-catalog__item_link(href= item.link) #{item.name}
+        .dropdown-catalog__inner
+            .dropdown-catalog__category(id="#")
+                .dropdown-catalog__category_title
+                    | Лабораторное оборудование
+                .dropdown-catalog__category_wrapper
+                    a.dropdown-catalog__category_link(href="#")
+                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
+                        span.dropdown-catalog__category_text
+                            | Микроскопы
+                    a.dropdown-catalog__category_link(href="#")
+                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
+                        span.dropdown-catalog__category_text
+                            | Микроскопы
+                    a.dropdown-catalog__category_link(href="#")
+                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
+                        span.dropdown-catalog__category_text
+                            | Микроскопы
+                    a.dropdown-catalog__category_link(href="#")
+                        img.dropdown-catalog__category_image(src="images/Header/catalog/dropdown-catalog__img-item--1.jpg")
+                        span.dropdown-catalog__category_text
+                            | Микроскопы
