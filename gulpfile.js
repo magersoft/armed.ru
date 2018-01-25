@@ -109,7 +109,7 @@ gulp.task('prodaction', ['clean'], function() {
 
 gulp.task('default', ['pre-clean', 'preload', 'liveReload', 'sass', 'image', 'js', 'font', 'pug'], function () {
     gulp.watch('app/**/*.sass', ['sass']);
-    gulp.watch('app/**/*.pug', ['pug']);
+    gulp.watch('app/**/**/**/*.pug', ['pug']);
     gulp.watch('app/**/*.js', ['js']);
     gulp.watch('app/images/**/*', ['image']);
     gulp.watch('app/font/**/*', ['font']);
