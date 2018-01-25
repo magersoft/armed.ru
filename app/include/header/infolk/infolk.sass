@@ -16,6 +16,18 @@
     border-right: 1px solid #f2f2f2
   &__info
     flex-grow: 1
+    display: flex
+    &-foto
+      width: 36px
+      height: 36px
+      border-radius: 50%
+    &-manager
+      display: flex
+
+      &-wrapp
+        display: flex
+        justify-content: flex-start
+        align-items: center
   &__exit
     height: 100%
     display: flex
@@ -39,7 +51,10 @@
       background-position: 0 -24px
     &_exit
       background-position: 0 0px
+    &_tel
+      background-position: 0 0
   &__mail, &__ring
     width: 24px
     height: 24px
     margin-right: 34px
+    display: flex
