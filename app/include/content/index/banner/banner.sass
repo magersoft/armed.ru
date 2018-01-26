@@ -1,7 +1,25 @@
 .banner-wrapper
   height: auto
-  background: green
 
 .banner-inner
-  align-items: center
-  height: 200px
+  position: relative
+  .banner-item
+    width: 25%
+    float: left
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+      transition: all .5s ease 0s
+  .horizontal
+    width: 50%
+
+@media (max-width: 991px)
+  .banner-inner
+    .banner-item
+      width: 50%
+
+@media (max-width: 767px)
+  .banner-inner
+    .banner-item
+      width: 100%

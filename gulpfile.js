@@ -43,6 +43,8 @@ gulp.task('js', function() {
     return gulp.src(['app/libs/jquery/dist/jquery.js',
             'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
             'app/libs/jquery-ui/jquery-ui.js',
+            'app/libs/isotope-layout/dist/isotope.pkgd.js',
+            'app/libs/slick-carousel/slick/slick.js',
             'app/include/**/*.js']) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
         //.pipe(uglify()) // получившуюся "портянку" минифицируем
