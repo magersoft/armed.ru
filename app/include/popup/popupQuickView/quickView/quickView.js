@@ -1,0 +1,1 @@
+$('.quickview_slider').slick();
