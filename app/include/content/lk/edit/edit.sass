@@ -1,6 +1,6 @@
 .edit
   width: $maxWidth
-  height: 600px
+  height: auto
   background-color: #fff
   padding: 30px
   border: 1px solid #e0e0e0
@@ -28,7 +28,10 @@
     padding-bottom: 2px
   &__tabs
     margin-top: 20px
-    font-size: 1.8em
+    &-wrapp
+      &_tabs1
+        margin: 0 auto
+        max-width: 852px
     &-list
       list-style: none
       display: flex
@@ -41,7 +44,13 @@
       text-decoration: none
       margin-bottom: 3px
       display: inline-block
+      font-size: 1.8em
       &_active
         border-bottom: 2px solid $GlobalColor
         & > a
           color: $lkLinkActiveColor
+    &-drope
+      width: 100%
+      height: 90px
+      background-image: url("images/lk/drope__zone.svg")
+      background-repeat: no-repeat
