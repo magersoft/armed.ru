@@ -41,25 +41,25 @@
                 .edit__tabs-drope
                 p.edit__tabs-text Или заполните формы ниже:
                 label.edit__tabs-label(for="company") Название компании
-                    input(type="text" id="company" placeholder="Название компании")
+                    input.edit__tabs-input(type="text" id="company" placeholder="Название компании")
                 label.edit__tabs-label(for="inn") ИНН:
-                    input(type="text" id="inn" placeholder="Введите ИНН")
+                    input.edit__tabs-input(type="text" id="inn" placeholder="Введите ИНН")
                 label.edit__tabs-label(for="legal") Юридический адрес:
-                    input(type="text" id="legal" placeholder="Юридический адрес")
+                    input.edit__tabs-input(type="text" id="legal" placeholder="Юридический адрес")
                 label.edit__tabs-label(for="bik") БИК:
-                    input(type="text" id="bik" placeholder="Введите БИК")
-                label.edit__tabs-label(for="bik") КПП:
-                    input(type="text" id="bik" placeholder="Введите КПП")
-                label.edit__tabs-label(for="bik") КС:
-                    input(type="text" id="bik" placeholder="0000 0000 0000 0000")
-                label.edit__tabs-label(for="bik") Расчетный счет:
-                    input(type="text" id="bik" placeholder="0000 0000 0000 0000")
-                label.edit__tabs-label(for="bik") ОГРН:
-                    input(type="text" id="bik" placeholder="000000000000000")
-                label.edit__tabs-label(for="bik") Банк:
-                    input(type="text" id="bik" placeholder="Введите название вашего банка")
-                label.edit__tabs-label(for="bik") Логотип:
-                    input(type="text" id="bik" placeholder="Выберите файл формата jpg или png")
+                    input.edit__tabs-input(type="text" id="bik" placeholder="Введите БИК")
+                label.edit__tabs-label(for="kpp") КПП:
+                    input.edit__tabs-input(type="text" id="kpp" placeholder="Введите КПП")
+                label.edit__tabs-label(for="ks") КС:
+                    input.edit__tabs-input(type="text" id="ks" placeholder="0000 0000 0000 0000")
+                label.edit__tabs-label(for="rs") Расчетный счет:
+                    input.edit__tabs-input(type="text" id="rs" placeholder="0000 0000 0000 0000")
+                label.edit__tabs-label(for="ogrn") ОГРН:
+                    input.edit__tabs-input(type="text" id="ogrn" placeholder="000000000000000")
+                label.edit__tabs-label(for="bank") Банк:
+                    input.edit__tabs-input(type="text" id="bank" placeholder="Введите название вашего банка")
+                label.edit__tabs-label(for="logo") Логотип:
+                    input(type="text" id="logo" placeholder="Выберите файл формата jpg или png")
                     button.product__button.button.button_icon.button_product
                         span.button__text
                             | Загрузить файл
@@ -72,7 +72,43 @@
 
 
         .edit__tabs#edit_tabs2
-            h1 Сотрудниуи
+            .edit__tabs-wrapp_tabs2
         .edit__tabs#edit_tabs3
-            h1 Адреса
-
+            .edit__tabs-wrapp_tabs3
+                p.edit__tabs-text Выберите адрес доставки из уже имеющихся или добавьте новый:
+                .edit__chuse-address
+                    label.control.control-checkbox(for="address_radio0")
+                        input.check__form-input--checkbox(type="radio" name="address" id="address_radio0")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Москва, Кремель, д. 1
+                    label.control.control-checkbox(for="address_radio1")
+                        input.check__form-input--checkbox(type="radio" name="address" id="address_radio1")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Москва, Кремель, д. 4  (склад)
+                    label.control.control-checkbox(for="address_radio2")
+                        input.check__form-input--checkbox(type="radio" name="address" id="address_radio2")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Москва, Кремель, д. 32 кор. 40 стр. 2 Офис 1
+                    label.control.control-checkbox(for="address_radio3")
+                        input.check__form-input--checkbox(type="radio" name="address" id="address_radio3")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Новый адрес компании
+                label.edit__tabs-label(for="city") Ваш Город
+                    input.edit__tabs-input(type="text" name="city" id="city" placeholder="Введите ваш город")
+                label.edit__tabs-label(for="street") Улица
+                    input.edit__tabs-input(type="text" name="street" id="street" placeholder="Введите вашу улицу")
+                label.edit__tabs-label(for="home") Дом
+                    input.edit__tabs-input(type="text" name="home" id="home" placeholder="")
+                label.edit__tabs-label(for="corpus") Корпус
+                    input.edit__tabs-input(type="text" name="corpus" id="corpus" placeholder="")
+                label.edit__tabs-label(for="office") Офис
+                    input.edit__tabs-input(type="text" name="office" id="office" placeholder="")
+                label.control.control-checkbox(for="stock")
+                    input.check__form-input--checkbox(type="checkbox" name="stock" id="stock")
+                    .control_indicator
+                    span.check__form-checkbox--information
+                        | Склад
