@@ -3,7 +3,7 @@
 
 .modal
   display: none
-  position: absolute
+  position: fixed
   top: 0
   bottom: 0
   left: 0
@@ -50,6 +50,11 @@
       height: 660px
       top: calc(50% - 360px)
       left: calc(50% - 330px)
+    &_quickview
+      width: 1000px
+      height: 659px
+      top: calc(50% - 360px)
+      left: calc(50% - 490px)
   &__close
     font-family: 'Rubik'
     position: absolute
@@ -73,6 +78,6 @@
     margin-bottom: 40px
     text-transform: uppercase
     letter-spacing: 0.1em
-  &__pick
+  &__pick,
     &-list
       height: 82%
