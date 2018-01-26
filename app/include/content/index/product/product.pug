@@ -1,0 +1,13 @@
+section#product
+    .container
+        .title-h2
+            h2 Популярная продукция
+        .product-wrapper
+            - var x = 10;
+            - for (var i=1; i<=x; i++) {
+            include ../../../Global/product/product
+            - }
+        .product-more
+            a(href="#").product-more__button
+                | Смотреть всё
+                i.product-more__button_icon.icon-right

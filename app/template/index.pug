@@ -6,33 +6,26 @@ html(lang="ru")
             include ../include/Global/preloader/preload
             include ../include/header/header
 
-            section#home
-                .container-fluid
-                    include ../include/content/index/home/home
-            section#banner
-                .container-fluid
-                    include ../include/content/index/banner/banner
-            section#card
-                .container
-                    a.modalLink(data-id="PickUnit" href="#" style="font-size: 20px") Юнити
-                    br
-                    a(href="lk.html" style="font-size: 20px") Личный кабинет
-                    br
-                    a.modalLink(data-id="PickList" href="#" style="font-size: 20px") Где купить v.3
-                    //Временный стиль
-                    .cardTovaraWrap
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
-                        include ../include/Global/product/product
+            //- SECTION HOME
+            include ../include/content/index/home/home
+
+            //- SECTION BANNER
+            include ../include/content/index/banner/banner
+
+            //- SECTION PRODUCT
+            include ../include/content/index/product/product
+
+            //- SECTION SALE
+            include ../include/content/index/sale/sale
+
+            //- SECTION NEWS
+            include ../include/content/index/news/news
+
+            //- SECTION FEEDBACK
+            include ../include/content/index/feedback/feedback
 
 
+            a(href="lk_edit.html" style="font-size: 20px") Личный кабинет
             include ../include/footer/footer
         include ../include/popup/popup
 

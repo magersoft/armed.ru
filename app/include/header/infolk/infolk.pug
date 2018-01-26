@@ -2,8 +2,10 @@
     .infolk__notifaction
         a.infolk__mail(href="#")
             span.infolk__icon.infolk__icon_mail
+            span.infolk__alarm.infolk__alarm_mail
         a.infolk__ring(href="#")
             span.infolk__icon.infolk__icon_ring
+            span.infolk__alarm.infolk__alarm_ring
     .infolk__info
         .infolk__info-manager-wrapp
             p.infolk__info-text Ваш менеджер:
@@ -18,7 +20,11 @@
                         span.infolk__icon.infolk__icon_mailsm
                         | armed@armed.ru
         .infolk__info-user
+            .infolk__user-data
+                p.infolk__user-company ООО "Рога и копыта"
+                p.infolk__user-name Фамилия Имя Отчество
+            img.infolk__user-foto(src="images/Header/user__face.png" alt="фото пользователя или логотип компании")
     .infolk__exit
-        a.infolk__exit-link(href="#")
+        a.infolk__exit-link(href="/")
             span.infolk__icon.infolk__icon_exit
             |Выйти
