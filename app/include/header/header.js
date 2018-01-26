@@ -1,6 +1,6 @@
 /* ==================== START FIXED HEADER ================= */
 $(function(){
-    var fixHeader = 50;
+    var fixHeader = 200;
     $(window).scroll(function() {
         var scroll = getCurrentScroll();
         if ( scroll >= fixHeader ) {
@@ -12,7 +12,7 @@ $(function(){
             $('.primary-menu__catalog-icon').css('right', '-5px')
         }
         else {
-            $('.topbar').slideDown(400);
+            $('.topbar').slideDown(200);
             $('.primary-menu__fix-logo').hide();
             $('.burger-button').show();
             $('.primary-menu__catalog-link').css('margin-left', '0px');

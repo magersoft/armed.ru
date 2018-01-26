@@ -32,6 +32,8 @@ body
   font-size: $fontSize
   background-color: $SiteBgColor
 
+/* =============== GRID SYSTEM ================ */
+// TODO сетка здесь, тут ее можно доработать и использовать по всему проекту
 .container
   position: relative
   max-width: $maxWidth
@@ -42,11 +44,43 @@ body
   position: relative
   max-width: 100vw
 
+.row
+  display: flex
+  flex-wrap: wrap
+
+.start-section
+  padding: 113px 0 0 0
+
+// GRID SYSTEM - Columns
+.col
+  flex-basis: 0
+  flex-grow: 1
+  max-width: 100%
+
+.col-center
+  display: flex
+  justify-content: center
+
+.col-left
+  display: flex
+  justify-content: start
+
+.col-right
+  display: flex
+  justify-content: end
+
+.col-between
+  display: flex
+  justify-content: space-between
+
+.col-around
+  display: flex
+  justify-content: space-around
+/* =============== GRID SYSTEM ================ */
+
+
 .cardTovaraWrap
   display: flex
   justify-content: space-around
   flex-wrap: wrap
   width: auto
-
-#home
-  padding: 113px 0 0 0
