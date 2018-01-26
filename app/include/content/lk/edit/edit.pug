@@ -1,5 +1,20 @@
 .edit
     h2.edit__head
         span.edit__icon.edit__icon_company
-        | Редаактирование компании
+        | Редактирование компании
         span.edit__name-company ООО "Рога и копыта"
+    .edit__tabs
+        ul.edit__tabs-list
+            li.edit__tabs-item
+                a(href="#edit_tabs1").edit__tabs-link Профиль
+            li.edit__tabs-item
+                a(href="#edit_tabs2").edit__tabs-link Сотрудники
+            li.edit__tabs-item
+                a(href="#edit_tabs3").edit__tabs-link Адреса
+        .edit__tabs#edit_tabs1
+
+        .edit__tabs#edit_tabs2
+            h1 Сотрудниуи
+        .edit__tabs#edit_tabs3
+            h1 Адреса
+
