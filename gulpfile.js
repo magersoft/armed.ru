@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     del = require('del');
 
 gulp.task('sass', function () {
-    gulp.src('app/template/index.sass')
+    return gulp.src('app/template/index.sass')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(csscomb())
@@ -22,7 +22,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('preload', function () {
-    gulp.src('app/include/Global/preloader/preload.sass')
+    return gulp.src('app/include/Global/preloader/preload.sass')
         .pipe(sass())
         .pipe(autoprefixer())
         .pipe(csscomb())
@@ -40,7 +40,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('js', function() {
-    gulp.src(['app/libs/jquery/dist/jquery.js',
+    return gulp.src(['app/libs/jquery/dist/jquery.js',
             'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
             'app/libs/jquery-ui/jquery-ui.js',
             'app/include/**/*.js']) // файлы, которые обрабатываем
@@ -51,19 +51,19 @@ gulp.task('js', function() {
 });
 
 gulp.task('image', function() {
-    gulp.src(['app/images/**/**/*']) // берем любые файлы в папке и ее подпапках
-    //.pipe(imagemin()) // оптимизируем изображения для веба
+    return gulp.src(['app/images/**/**/*']) // берем любые файлы в папке и ее подпапках
+        //.pipe(imagemin()) // оптимизируем изображения для веба
         .pipe(gulp.dest('pre-relise/images/')) // результат пишем по указанному адресу
         .pipe(browserSync.reload({stream: true})) // Обновляем браузер
 });
 
 gulp.task('font', function(){
-    gulp.src('app/fonts/**/*')
+    return gulp.src('app/fonts/**/*')
         .pipe(gulp.dest('pre-relise/fonts'))
 });
 
 gulp.task('pug', function () {
-    gulp.src('app/template/*.pug')
+    return gulp.src('app/template/*.pug')
         .pipe(pug({
             pretty: true
         }))
