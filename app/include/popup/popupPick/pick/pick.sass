@@ -1,33 +1,47 @@
 .pick
   margin: 0 auto
-  &__icon
-    background-image: url("images/Card/card__sprite.svg")
-    background-repeat: no-repeat
-    width: 24px
-    height: 24px
-    &_heart
-      background-position: 0 0
-      margin: 0 15px
-      &:hover
-        background-position: -24px 0
-    &_comparison
-      background-position: 0 -72px
-      margin-right: 10px
-      &:hover
-        background-position: -24px -72px
-
+  &_container
+    display: flex
+    flex-direction: row
+    padding: 15px
+    border-bottom: 1px solid $borderPickColor
+    &_wrapp
+      height:  518px
+      overflow: auto
+  &_header
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid $borderPickColor
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.02)
+    padding: 10px
+    &__text
+      color: $textHeaderPick
+      font:
+        size: 1.6em
+      text-align: left
+      &-address
+        @extend .pick_header__text
+        flex: .6
+      &-time
+        @extend .pick_header__text
+        flex: .2
+      &-mode
+        @extend .pick_header__text
+        flex: .2
+      &-amt
+        @extend .pick_header__text
+        flex: .1
+      &-button
+        flex: .2
   &_pickup
-    width: 90%
-    height: 85px
+    width: 957px
     background-color: $cardBgColor
     border: 1px solid $cardBorderColor
     display: flex
-    align-items: center
+    flex-direction: column
+    align-items: stretch
     justify-content: space-around
-    padding: 0 10px
     margin-bottom: 10px
-    &:hover
-      border: 1px solid $cardBorderHoverCard
     &__text
       text-align: left
       font:
@@ -36,30 +50,34 @@
       color: $textPickColor
       &-address
         @extend .pick_pickup__text
-        flex: 0.8
+        flex: 0.6
       &-time
         flex: 0.2
         @extend .pick_pickup__text
       &-mode
-        flex: 0.3
+        flex: 0.2
         @extend .pick_pickup__text
       &-amt
-        flex: 0.2
+        margin-top: 8px
+        color: #7DC472
+        flex: 0.1
         @extend .pick_pickup__text
     &__icon
       position: absolute
       top: 9px
       left: 23px
-      background-position: 0 -24px
+      background-position: 0 -160px
     &__button
+      height: 40px
+      flex: .1
+      flex-basis: 70px
       position: relative
       background: $cardButtonBgColor
       border: 1px solid $cardButtonBorderColor
-      box-sizing: border-box;
-      border-radius: 2px;
-      padding: 15px 30px 15px 48px
+      box-sizing: border-box
+      border-radius: 2px
+      padding: 11px 0
       font-size: 1.2em
-      text-transform: uppercase
       text-decoration: none
       color: $cardButtonColor
       letter-spacing: 0.05em
@@ -67,28 +85,6 @@
       font-family: 'Rubik'
       &:hover
         border: 1px solid $cardButtonBorderHoverColor
-    &__mod1
-      display: flex
-      align-items: center
-      flex-grow: 2
-    &__image
-      width: 83px
-      margin-right: 20px
-    &__selected
-      margin-right: 31px
-      display: none
-      height: 100%
-      //display: flex
-      align-items: center
-      font-family: Rubik
-      font-weight: 300
-      font-size: 1.2em
-      letter-spacing: 0.05em
-      color: $ConfirmColor
-      text-transform: uppercase
-      &-icon
-        background-position: 0 -144px
-
-// TODO модалка где купить
-#modal_Pick
-  display: none
+      &__icon
+        top: 9px
+        position: absolute

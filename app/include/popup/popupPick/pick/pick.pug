@@ -1,7 +1,18 @@
 section.pick.pick_pickup
-    p.pick_pickup__text-address м. «Калужская», ул. Обручева, д.34/63 Москва, ул. Обручева, д. 34/63
-    p.pick_pickup__text-time Сейчас же
-    p.pick_pickup__text-mode Ежедневно с 09:00 до 22:00
-    p.pick_pickup__text-amt Много
-    a.pick_pickup__button(href="#") Выбрать
-        span.pick__icon.pick_pickup__icon
+    .pick_header
+        p.pick_header__text-address Адрес
+        p.pick_header__text-time Забрать
+        p.pick_header__text-mode Режим работы
+        p.pick_header__text-amt Наличие
+        p.pick_header__text-button
+    .pick_container_wrapp
+        - var x = 12;
+        - for (var i=1; i<=x; i++) {
+        .pick_container
+            p.pick_pickup__text-address м. «Калужская», ул. Обручева, д.34/63 Москва, ул. Обручева, д. 34/63
+            p.pick_pickup__text-time В течении часа
+            p.pick_pickup__text-mode Ежедневно с 09:00 до 22:00
+            p.pick_pickup__text-amt много
+            a.pick_pickup__button(href="#") Выбрать
+                span.button__icon.pick_pickup__button__icon.button__icon_arrow
+        - }

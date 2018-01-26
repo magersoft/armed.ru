@@ -1,0 +1,110 @@
+.pickList
+  padding: 0 31px
+  height: 540px
+  &_head
+    &-text
+      margin-bottom: 10px
+      color: $textPickColor
+      font:
+        family: 'Rubik'
+        size: 1.6em
+        weight: 400
+      text:
+        transform: uppercase
+        align: left
+        indent: 1.2em
+
+  &_inner
+    margin: 0 auto
+    width: 957px
+    background-color: $cardBgColor
+    border: 1px solid $cardBorderColor
+    display: flex
+    flex-direction: column
+    align-items: stretch
+    justify-content: space-around
+    margin-bottom: 10px
+  &_container
+    display: flex
+    flex-direction: row
+    padding: 15px
+    border-bottom: 1px solid $borderPickColor
+    &__button
+      height: 40px
+      flex: .1
+      flex-basis: 70px
+      position: relative
+      background: $cardButtonBgColor
+      border: 1px solid $cardButtonBorderColor
+      box-sizing: border-box
+      border-radius: 2px
+      padding: 11px 0
+      font-size: 1.2em
+      text-decoration: none
+      color: $cardButtonColor
+      letter-spacing: 0.05em
+      font-weight: 400
+      font-family: 'Rubik'
+      &:hover
+        border: 1px solid $cardButtonBorderHoverColor
+      &__icon
+        position: absolute
+        top: 9px
+        background-position: 0 -140px
+    &__selected
+      @extend .pickUnit_container__button
+      display: none
+      padding:
+        left: 34px
+    &__text
+      text-align: left
+      font:
+        size: 1.4em
+        weight: 400
+      color: $textPickColor
+      &-address
+        @extend .pickUnit_container__text
+        flex: 0.6
+      &-time
+        flex: 0.2
+        @extend .pickUnit_container__text
+      &-mode
+        flex: 0.2
+        @extend .pickUnit_container__text
+      &-amt
+        margin-top: 8px
+        color: #7DC472
+        flex: 0.1
+        @extend .pickUnit_container__text
+    &_wrapp
+      overflow: auto
+  &_header
+    display: flex
+    flex-direction: row
+    border-bottom: 1px solid $borderPickColor
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.02)
+    padding: 10px
+    &__text
+      color: $textHeaderPick
+      font:
+        size: 1.6em
+      text-align: left
+      &-address
+        @extend .pickUnit_header__text
+        flex: .6
+      &-time
+        @extend .pickUnit_header__text
+        flex: .2
+      &-mode
+        @extend .pickUnit_header__text
+        flex: .2
+      &-amt
+        @extend .pickUnit_header__text
+        flex: .1
+      &-button
+        flex: .2
+.pickUp_container__selected--icon
+  background-position: 0 -144px
+  position: absolute
+  right: 26px
+  top: 7px

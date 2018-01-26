@@ -1,0 +1,27 @@
+section.pickUnit
+    - var y = 3;
+    - for (var o=1; o<=y; o++) {
+    p.pickUnit_head-text
+        span.pickUniti-changed Вся продукция из корзины
+        |&nbsp;доступна по адресам:
+    .pickUnit_inner
+        .pickUnit_header
+            p.pickUnit_header__text-address Адрес
+            p.pickUnit_header__text-time Забрать
+            p.pickUnit_header__text-mode Режим работы
+            p.pickUnit_header__text-amt Наличие
+            p.pickUnit_header__text-button
+        - var x = 3;
+        - for (var i=1; i<=x; i++) {
+        .pickUnit_container_wrapp
+            .pickUnit_container
+                p.pickUnit_container__text-address м. «Калужская», ул. Обручева, д.34/63 Москва, ул. Обручева, д. 34/63
+                p.pickUnit_container__text-time В течении часа
+                p.pickUnit_container__text-mode Ежедневно с 09:00 до 22:00
+                p.pickUnit_container__text-amt много
+                a.pickUnit_container__button(href="#") Выбрать
+                    span.button__icon.pickUnit_container__button__icon.button__icon_arrow
+                a.pickUnit_container__selected(href="#") Выбрано
+                    span.card__icon.pickUp_container__selected--icon
+        - }
+    - }
