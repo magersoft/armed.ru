@@ -122,7 +122,7 @@ $(document).ready(function() {
 // Определение страницы и установка необходимого хедара
 $(function(){
     var path = window.location.pathname.slice(1);
-    if (path == 'lk.html') {
+    if (path == 'lk_edit.html') {
         $('.primary-menu').css('display', 'none');
     } else {
         $('.infolk').css('display', 'none');
