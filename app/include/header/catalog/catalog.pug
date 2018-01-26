@@ -1,6 +1,18 @@
 .dropdown-catalog
-    ul.dropdown-catalog__inner
-        - var categories = ["Медицинское оборудование и сопутствующие товары", "Лабораторное оборудование", "Медицинская мебель", "Технические средства реабилитации", "Приспособления для ухода и помощи в быту", "Домашняя медтехника", "Товары для спорта и отдыха", "Ортопедические изделия и антиварикозное белье", "Запчасти", "Рекламные материалы"];
-        for item in categories
-            li.dropdown-catalog__item
-                a.dropdown-catalog__item_link(href="#")= item
+    .dropdown-catalog__main
+        ul.dropdown-catalog__wrapper
+            include data/categories
+            each item in categories
+                li.dropdown-catalog__item(id= item.id)
+                    a.dropdown-catalog__item_link(href= item.link) #{item.name}
+        .dropdown-catalog__inner
+            .dropdown-catalog__category(id="#")
+                .dropdown-catalog__category_title
+                    | Лабораторное оборудование
+                .dropdown-catalog__category_wrapper
+                    include data/cat-1
+                    each item in cat1
+                        a.dropdown-catalog__category_link(href= item.link)
+                            img.dropdown-catalog__category_image(src= item.image)
+                            span.dropdown-catalog__category_text
+                                | #{item.name}

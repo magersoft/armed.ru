@@ -7,13 +7,17 @@ $(function(){
             $('.topbar').slideUp(400);
             $('.primary-menu__fix-logo').show();
             $('.burger-button').hide();
-            $('.primary-menu__catalog-link').css('margin-left', '15px')
+            $('.primary-menu__catalog-link').css('margin-left', '15px');
+            $('.primary-menu').css('box-shadow', '0 10px 25px rgba(0, 0, 0, 0.05)');
+            $('.primary-menu__catalog-icon').css('right', '-5px')
         }
         else {
             $('.topbar').slideDown(400);
             $('.primary-menu__fix-logo').hide();
             $('.burger-button').show();
-            $('.primary-menu__catalog-link').css('margin-left', '0px')
+            $('.primary-menu__catalog-link').css('margin-left', '0px');
+            $('.primary-menu').css('box-shadow', 'none');
+            $('.primary-menu__catalog-icon').css('right', '10px')
         }
     });
     function getCurrentScroll() {
@@ -26,7 +30,7 @@ $(function(){
 // Выпадающее меню КАТАЛОГ в Header
 $("#dropdownCatalog")
     .click(function() {
-        $(".dropdown-catalog").show();
+        $(".dropdown-catalog").slideDown(200);
     });
 $("#primary-menu__catalog")
     .mouseleave(function() {
@@ -115,6 +119,28 @@ $(document).ready(function() {
     });
 });
 
+// Определение страницы и установка необходимого хедара
+$(function(){
+    var path = window.location.pathname.slice(1);
+    if (path == 'lk.html') {
+        $('.primary-menu').css('display', 'none');
+    } else {
+        $('.infolk').css('display', 'none');
+    }
+});
+
+// TODO доработать скрипт hover в выпадающем каталоге
+$("#cat-2")
+    .mouseover(function() {
+        $(".dropdown-catalog__inner").show(400);
+    })/*
+    .mouseleave(function () {
+        $(".dropdown-catalog__inner").hide(100);
+    })*/;
+$(".dropdown-catalog__category")
+    .mouseleave(function() {
+        $(".dropdown-catalog__inner").hide(400);
+    });
 
 /* TODO при "value=0" менять background-position иконки минус
 $('.primary-menu__cart_product_minus').click(function() {

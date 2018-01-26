@@ -5,19 +5,28 @@ html(lang="ru")
         main.home
             include ../include/Global/preloader/preload
             include ../include/header/header
-            .container
-                //Временный стиль
-                .cardTovaraWrap
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
-                    include ../include/Global/product/product
+
+            section#home
+                .container-fluid
+                    include ../include/content/index/home/home
+            section#banner
+                .container-fluid
+                    include ../include/content/index/banner/banner
+            section#card
+                .container
+                    a(href="lk.html" style="font-size: 20px") Личный кабинет
+                    //Временный стиль
+                    .cardTovaraWrap
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
+                        include ../include/Global/product/product
 
 
             include ../include/footer/footer

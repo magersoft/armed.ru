@@ -30,13 +30,23 @@ span
 body
   font-family: $fontFamilyDefault
   font-size: $fontSize
+  background-color: $SiteBgColor
 
 .container
-  padding-top: 113px
+  position: relative
+  max-width: $maxWidth
+  margin: 0 auto
+  height: auto
+
+.container-fluid
+  position: relative
+  max-width: 100vw
 
 .cardTovaraWrap
   display: flex
   justify-content: space-around
   flex-wrap: wrap
-  width: 1366px
-  margin: 0 auto
+  width: auto
+
+#home
+  padding: 113px 0 0 0

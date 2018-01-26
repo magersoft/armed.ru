@@ -1,6 +1,6 @@
 .header
   position: fixed
-  width: 100%
+  width: 100vw
   z-index: 1000
 
 .topbar
@@ -66,6 +66,10 @@
     z-index: 100
   &__catalog
     position: relative
+    flex-grow: 1
+    &_wrapper
+      width: 125px
+      position: relative
     &-link
       text-decoration: none
       color: $headerItemColor
@@ -80,7 +84,7 @@
       width: 10px
       height: 13px
       right: 10px
-      top: 41%
+      top: 42%
   .burger-button
     position: absolute
     background-color: $headerBurgerButton
@@ -210,6 +214,7 @@
 @import "widget/compare/compare"
 @import "widget/favorite/favorite"
 @import "widget/cart/cart"
+@import "infolk/infolk"
 
 // Fixed header
 .fix > .topbar
