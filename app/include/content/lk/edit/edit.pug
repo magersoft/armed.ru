@@ -12,6 +12,64 @@
             li.edit__tabs-item
                 a(href="#edit_tabs3").edit__tabs-link Адреса
         .edit__tabs#edit_tabs1
+            .edit__tabs-wrapp_tabs1
+                p.edit__tabs-text Выберите вашу компанию из уже имеющихся или добавьте новую:
+
+                .edit__chuse-company
+                    label.control.control-checkbox(for="checkbox0")
+                        input.check__form-input--checkbox(type="radio" name="company" id="checkbox0")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | ООО “ДИЗИГЕН”
+                    label.control.control-checkbox(for="checkbox1")
+                        input.check__form-input--checkbox(type="radio" name="company" id="checkbox1")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | ООО “ВЕРСТАЛЬЩИК”
+                    label.control.control-checkbox(for="checkbox2")
+                        input.check__form-input--checkbox(type="radio" name="company" id="checkbox2")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | ИП “SEOGURU”
+                    label.control.control-checkbox(for="checkbox3")
+                        input.check__form-input--checkbox(type="radio" name="company" id="checkbox3")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Новая компания
+                p.edit__tabs-text
+                    |Перенесите файл карточки предприятия в формате .pdf, .xls, .doc
+                .edit__tabs-drope
+                p.edit__tabs-text Или заполните формы ниже:
+                label.edit__tabs-label(for="company") Название компании
+                    input(type="text" id="company" placeholder="Название компании")
+                label.edit__tabs-label(for="inn") ИНН:
+                    input(type="text" id="inn" placeholder="Введите ИНН")
+                label.edit__tabs-label(for="legal") Юридический адрес:
+                    input(type="text" id="legal" placeholder="Юридический адрес")
+                label.edit__tabs-label(for="bik") БИК:
+                    input(type="text" id="bik" placeholder="Введите БИК")
+                label.edit__tabs-label(for="bik") КПП:
+                    input(type="text" id="bik" placeholder="Введите КПП")
+                label.edit__tabs-label(for="bik") КС:
+                    input(type="text" id="bik" placeholder="0000 0000 0000 0000")
+                label.edit__tabs-label(for="bik") Расчетный счет:
+                    input(type="text" id="bik" placeholder="0000 0000 0000 0000")
+                label.edit__tabs-label(for="bik") ОГРН:
+                    input(type="text" id="bik" placeholder="000000000000000")
+                label.edit__tabs-label(for="bik") Банк:
+                    input(type="text" id="bik" placeholder="Введите название вашего банка")
+                label.edit__tabs-label(for="bik") Логотип:
+                    input(type="text" id="bik" placeholder="Выберите файл формата jpg или png")
+                    button.product__button.button.button_icon.button_product
+                        span.button__text
+                            | Загрузить файл
+            button.product__button.button.button_icon.button_product
+                span.button__text
+                    | Загрузить файл
+            button.product__button.button.button_icon.button_product
+                span.button__text
+                    | Загрузить файл
+
 
         .edit__tabs#edit_tabs2
             h1 Сотрудниуи
