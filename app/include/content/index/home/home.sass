@@ -3,8 +3,66 @@
 
 .home-wrapper
   height: auto
-  background: url(images/page/index/home-bg.jpg) center no-repeat
+  background: url(images/page/home-bg.jpg) center no-repeat
 
 .home-inner
   align-items: center
   height: 565px
+
+.home__image
+  position: relative
+  background: url(images/page/home-image.png) center no-repeat
+  width: 720px
+  height: 550px
+
+.home__content
+  position: relative
+  max-width: 518px
+  height: auto
+  &_title
+    display: flex
+    font-family: $fontFamilyAdditionally
+    font-size: 3.6em
+    letter-spacing: 0.15em
+    text-transform: uppercase
+    color: $headerItemColor
+    font-weight: 500
+    line-height: 1.1em
+  &_subtitle
+    @extend .home__content_title
+    font-size: 2.8em
+  &_text
+    padding: 10px 0
+    &-item
+      font-family: $fontFamilyDefault
+      font-size: 2em
+      color: $headerItemColor
+      display: flex
+      &_red
+        color: $headerBurgerButton
+  &_button
+    margin: 40px 0
+    &-buy
+      position: relative
+      padding: 15px 50px
+      border-radius: 4px
+      font-size: 1.6em
+      font-family: $fontFamilyAdditionally
+      text-decoration: none
+      letter-spacing: 0.05em
+    &-info
+      position: relative
+      margin: 0 30px
+      font-size: 1.4em
+      text-decoration: none
+      letter-spacing: 0.05em
+      font-family: $fontFamilyDefault
+      color: $headerCartTitle
+      padding: 15px 15px 0 0
+    &-icon
+      position: absolute
+      background: url(images/Icon/arrow-right.png) center no-repeat
+      width: 10px
+      height: 10px
+      right: 0px
+      top: 60%
