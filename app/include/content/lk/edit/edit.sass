@@ -29,6 +29,7 @@
   &__tabs
     margin-top: 20px
     &-wrapp
+      height: 1100px
       &_tabs1
         margin: 0 auto
         max-width: 852px
@@ -53,7 +54,130 @@
         & > a
           color: $lkLinkActiveColor
     &-drope
+      margin-bottom: 15px
       width: 100%
       height: 90px
       background-image: url("images/lk/drope__zone.svg")
       background-repeat: no-repeat
+    &-text
+      color: $lkTextColor
+      font-size: 1.4em
+      margin-bottom: 15px
+    &-label
+      margin-top: 15px
+      font-size: 1.4em
+      font-weight: 300
+      color: $lkLabelColor
+    &-days
+      margin-top: 15px
+  &__map
+    display: flex
+    align-items: center
+    &-tick
+    &-text
+      font-size: 1.4em
+      color: $lkLabelColor
+    &-link
+      color: $lkTextColor
+      font-size: 1.4em
+      letter-spacing: 0.05em
+      &:hover
+        text-decoration: none
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &-label
+      width: 45%
+      display: flex
+      font-weight: 300
+      flex-wrap: wrap
+      color: $lkLabelColor
+      font-size: 1.4em
+      margin-bottom: 15px
+      &_logo
+        position: relative
+    &-input
+      width: 405px
+      height: 40px
+      margin-top: 5px
+    &-button
+      font-size: 1em
+      height: 40px
+      position: absolute
+      right: 0
+      top: 7px
+
+  &__chuse-company
+    margin-bottom: 15px
+  &__chuse-address
+    margin-bottom: 15px
+.form
+  &__address
+    &-city
+      display: flex
+      flex-wrap: wrap
+    &-home
+      display: flex
+      justify-content: space-between
+  &__city
+    &-label
+      width: 100%
+      font-weight: 300
+      display: flex
+      flex-wrap: wrap
+      color: $lkLabelColor
+      font-size: 1.4em
+      margin-bottom: 15px
+    &-input
+      width: 100%
+      height: 40px
+      margin-top: 5px
+  &__home
+    &-label
+      width: calc(100%/3 - 30px)
+      color: $lkLabelColor
+      font-size: 1.4em
+      font-weight: 300
+      margin-bottom: 15px
+    &-input
+      width: 100%
+      height: 40px
+.delete
+  &__break
+    width: 16px
+    height: 16px
+    background-image: url("images/lk/delete__break.png")
+    background-repeat: no-repeat
+    position: absolute
+    right: -20px
+    top: 8px
+    cursor: pointer
+.opening-hours, .break-hours
+  display: flex
+  flex-wrap: wrap
+  &__label
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+    font-size: 1.4em
+    color: $lkLabelColor
+  &__hour-start, &__minute-start, &__hour-end, &__minute-end
+    width: 42px
+    font-family: Roboto
+    height: 26px
+    font-size: 1em
+    color: $lkTextColor
+  &__delimiter
+    padding: 0 5px
+    font-size: 1.5em
+  &__add
+    font-size: 1.4em
+    width: 100%
+    cursor: pointer
+    color: $lkLinkColor
+    text-align: center
+    &:hover
+      color: #000

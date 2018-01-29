@@ -12,9 +12,8 @@
             li.edit__tabs-item
                 a(href="#edit_tabs3").edit__tabs-link Адреса
         .edit__tabs#edit_tabs1
-            .edit__tabs-wrapp_tabs1
+            .edit__tabs-wrapp.edit__tabs-wrapp_tabs1
                 p.edit__tabs-text Выберите вашу компанию из уже имеющихся или добавьте новую:
-
                 .edit__chuse-company
                     label.control.control-checkbox(for="checkbox0")
                         input.check__form-input--checkbox(type="radio" name="company" id="checkbox0")
@@ -40,41 +39,75 @@
                     |Перенесите файл карточки предприятия в формате .pdf, .xls, .doc
                 .edit__tabs-drope
                 p.edit__tabs-text Или заполните формы ниже:
-                label.edit__tabs-label(for="company") Название компании
-                    input.edit__tabs-input(type="text" id="company" placeholder="Название компании")
-                label.edit__tabs-label(for="inn") ИНН:
-                    input.edit__tabs-input(type="text" id="inn" placeholder="Введите ИНН")
-                label.edit__tabs-label(for="legal") Юридический адрес:
-                    input.edit__tabs-input(type="text" id="legal" placeholder="Юридический адрес")
-                label.edit__tabs-label(for="bik") БИК:
-                    input.edit__tabs-input(type="text" id="bik" placeholder="Введите БИК")
-                label.edit__tabs-label(for="kpp") КПП:
-                    input.edit__tabs-input(type="text" id="kpp" placeholder="Введите КПП")
-                label.edit__tabs-label(for="ks") КС:
-                    input.edit__tabs-input(type="text" id="ks" placeholder="0000 0000 0000 0000")
-                label.edit__tabs-label(for="rs") Расчетный счет:
-                    input.edit__tabs-input(type="text" id="rs" placeholder="0000 0000 0000 0000")
-                label.edit__tabs-label(for="ogrn") ОГРН:
-                    input.edit__tabs-input(type="text" id="ogrn" placeholder="000000000000000")
-                label.edit__tabs-label(for="bank") Банк:
-                    input.edit__tabs-input(type="text" id="bank" placeholder="Введите название вашего банка")
-                label.edit__tabs-label(for="logo") Логотип:
-                    input(type="text" id="logo" placeholder="Выберите файл формата jpg или png")
-                    button.product__button.button.button_icon.button_product
-                        span.button__text
-                            | Загрузить файл
-            button.product__button.button.button_icon.button_product
-                span.button__text
-                    | Загрузить файл
-            button.product__button.button.button_icon.button_product
-                span.button__text
-                    | Загрузить файл
+                form.edit__form
+                    label.edit__form-label(for="company") Название компании
+                        input.edit__form-input(type="text" id="company" placeholder="Название компании")
+                    label.edit__form-label(for="inn") ИНН:
+                        input.edit__form-input(type="text" id="inn" placeholder="Введите ИНН")
+                    label.edit__form-label(for="legal") Юридический адрес:
+                        input.edit__form-input(type="text" id="legal" placeholder="Юридический адрес")
+                    label.edit__form-label(for="bik") БИК:
+                        input.edit__form-input(type="text" id="bik" placeholder="Введите БИК")
+                    label.edit__form-label(for="kpp") КПП:
+                        input.edit__form-input(type="text" id="kpp" placeholder="Введите КПП")
+                    label.edit__form-label(for="ks") КС:
+                        input.edit__form-input(type="text" id="ks" placeholder="0000 0000 0000 0000")
+                    label.edit__form-label(for="rs") Расчетный счет:
+                        input.edit__form-input(type="text" id="rs" placeholder="0000 0000 0000 0000")
+                    label.edit__form-label(for="ogrn") ОГРН:
+                        input.edit__form-input(type="text" id="ogrn" placeholder="000000000000000")
+                    label.edit__form-label(for="bank") Банк:
+                        input.edit__form-input(type="text" id="bank" placeholder="Введите название вашего банка")
+                    label.edit__form-label.edit__form-label_logo(for="logo") Логотип:
+                        input.edit__form-input.edit__form-input_logo(type="text" id="logo" placeholder="Выберите файл" +
+                        " формата " +
+                        "jpg или png")
+                        button.product__button.button.button_icon.button_product.edit__form-button
+                            span.button__text
+                                | Загрузить файл
+
+
+
+
 
 
         .edit__tabs#edit_tabs2
-            .edit__tabs-wrapp_tabs2
+            .edit__tabs-wrapp.edit__tabs-wrapp_tabs2
+                .edit__users
+                    .edit__users-head
+                        a.edit__users-link(href="#")
+                            | Ф.И.О.
+                            span.edit__users-arrow
+                        a.edit__users-link(href="#")
+                            | Телефон
+                            span.edit__users-arrow
+                        a.edit__users-link(href="#")
+                            | E-mail
+                            span.edit__users-arrow
+                        a.edit__users-link(href="#")
+                            | Должность
+                            span.edit__users-arrow
+                        a.edit__users-link(href="#")
+                            | Действия
+                    .edit__users-body
+                        - for (var i=0; i<6; i++)
+                            .edit__user
+                                p.edit__user-fio Фамилия Имя Отчество
+                                a.edit__user-phone(href="tel:+78888888888") +7 (888) 888-88-88
+                                a.edit__user-mail(href="mailto:pochta@pochta.ru") pochta@pochta.ru
+                                p.edit__user-position Менеджер
+                                .edit__user-element
+                                    span.edit__user-icon.edit__user-icon_edit
+                                    span.edit__user-icon.edit__user-icon_copy
+                                    span.edit__user-icon.edit__user-icon_del
+
+
+
+
+
+
         .edit__tabs#edit_tabs3
-            .edit__tabs-wrapp_tabs3
+            .edit__tabs-wrapp.edit__tabs-wrapp_tabs3
                 p.edit__tabs-text Выберите адрес доставки из уже имеющихся или добавьте новый:
                 .edit__chuse-address
                     label.control.control-checkbox(for="address_radio0")
@@ -97,18 +130,161 @@
                         .control_indicator
                         span.check__form-checkbox--information
                             | Новый адрес компании
-                label.edit__tabs-label(for="city") Ваш Город
-                    input.edit__tabs-input(type="text" name="city" id="city" placeholder="Введите ваш город")
-                label.edit__tabs-label(for="street") Улица
-                    input.edit__tabs-input(type="text" name="street" id="street" placeholder="Введите вашу улицу")
-                label.edit__tabs-label(for="home") Дом
-                    input.edit__tabs-input(type="text" name="home" id="home" placeholder="")
-                label.edit__tabs-label(for="corpus") Корпус
-                    input.edit__tabs-input(type="text" name="corpus" id="corpus" placeholder="")
-                label.edit__tabs-label(for="office") Офис
-                    input.edit__tabs-input(type="text" name="office" id="office" placeholder="")
-                label.control.control-checkbox(for="stock")
-                    input.check__form-input--checkbox(type="checkbox" name="stock" id="stock")
-                    .control_indicator
-                    span.check__form-checkbox--information
-                        | Склад
+                form.form__address
+                    .form__address-city
+                        label.form__city-label(for="city") Ваш Город
+                            input.form__city-input(type="text" name="city" id="city" placeholder="Введите ваш город")
+                        label.form__city-label(for="street") Улица
+                            input.form__city-input(type="text" name="street" id="street" placeholder="Введите вашу " +
+                            "улицу")
+                    .form__address-home
+                        label.form__home-label(for="numberhome") Дом
+                            input.form__home-input(type="text" name="home" id="numberhome" placeholder="")
+                        label.form__home-label(for="corpus") Корпус
+                            input.form__home-input(type="text" name="corpus" id="corpus" placeholder="")
+                        label.form__home-label(for="office") Офис
+                            input.form__home-input(type="text" name="office" id="office" placeholder="")
+                    label.control.control-checkbox(for="stock")
+                        input.check__form-input--checkbox(type="checkbox" name="stock" id="stock")
+                        .control_indicator
+                        span.check__form-checkbox--information
+                            | Склад
+
+                p.edit__tabs-label Местоположение на карте:
+                .edit__map
+                    img.edit__map-tick(src="images/lk/edit__check.svg" alt="")
+                    p.edit__map-text
+                        |Определено с точностью до дома
+                        |&nbsp
+                    a.edit__map-link(href="#") Установить вручную
+                p.edit__tabs-label График работы:
+                .edit__tabs-days
+                    .day
+                        label.day__label(for="monday") пн
+                            input.day__input(type="checkbox" name="monday" id="monday")
+                        label.day__label(for="tuesday") вт
+                            input.day__input(type="checkbox" name="tuesday" id="tuesday")
+                        label.day__label(for="wednesday") ср
+                            input.day__input(type="checkbox" name="wednesday" id="wednesday")
+                        label.day__label(for="thursday") чт
+                            input.day__input(type="checkbox" name="thursday" id="thursday")
+                        label.day__label(for="friday") пт
+                            input.day__input(type="checkbox" name="friday" id="friday")
+                        label.day__label(for="saturday") сб
+                            input.day__input(type="checkbox" name="saturday" id="saturday")
+                        label.day__label(for="sunday") вс
+                            input.day__input(type="checkbox" name="sunday" id="sunday")
+                    .schedule
+                        label.schedule__label(for="weekdays") будни
+                            input.schedule__input(type="radio" name="schedule" id="weekdays")
+                        label.schedule__label(for="weekend") выходные
+                            input.schedule__input(type="radio" name="schedule" id="weekend")
+                        label.schedule__label(for="daily") ежедневно
+                            input.schedule__input(type="radio" name="schedule" id="daily")
+
+                    .opening-hours
+                        label.opening-hours__label() Часы работы:
+                            .opening-hours__label-wrap
+                                select.opening-hours__hour-start(name="opening_hour-start" size="1")
+                                    option(value="8") 08
+                                    option(value="9") 09
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
+                                span.opening-hours__delimiter :
+                                select.opening-hours__minute-start(name="opening_minute-start" size="1")
+                                    option(value="00") 00
+                                    option(value="10") 10
+                                    option(value="20") 20
+                                    option(value="30") 30
+                                    option(value="40") 40
+                                    option(value="50") 50
+                                span.opening-hours__delimiter -
+                                select.opening-hours__hour-end(name="opening_hour-end" size="1")
+                                    option(value="8") 08
+                                    option(value="9") 09
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
+                                span.opening-hours__delimiter :
+                                select.opening-hours__minute-end(name="opening_minute-end" size="1")
+                                    option(value="00") 00
+                                    option(value="10") 10
+                                    option(value="20") 20
+                                    option(value="30") 30
+                                    option(value="40") 40
+                                    option(value="50") 50
+
+                        label.break-hours__label() Перерыв:
+                            .break-hours__label-wrap
+                                select.break-hours__hour-start(name="break_hour-start" size="1")
+                                    option(value="8") 08
+                                    option(value="9") 09
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
+                                span.break-hours__delimiter :
+                                select.break-hours__minute-start(name="break_minute-start" size="1")
+                                    option(value="00") 00
+                                    option(value="10") 10
+                                    option(value="20") 20
+                                    option(value="30") 30
+                                    option(value="40") 40
+                                    option(value="50") 50
+                                span.break-hours__delimiter -
+                                select.break-hours__hour-end(name="break_hour-end" size="1")
+                                    option(value="8") 08
+                                    option(value="9") 09
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
+                                span.break-hours__delimiter :
+                                select.break-hours__minute-end(name="break_minute-end" size="1")
+                                    option(value="00") 00
+                                    option(value="10") 10
+                                    option(value="20") 20
+                                    option(value="30") 30
+                                    option(value="40") 40
+                                    option(value="50") 50
+                                span.delete__break
+                        p.opening-hours__add Добавить перерыв
+
+
+        button.product__button.button.button_icon.button_product
+            span.button__text
+                | Загрузить файл
+        button.product__button.button.button_icon.button_product
+            span.button__text
+                | Загрузить файл
