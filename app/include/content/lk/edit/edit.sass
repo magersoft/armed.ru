@@ -29,7 +29,7 @@
   &__tabs
     margin-top: 20px
     &-wrapp
-      height: 1100px
+      height: 670px
       &_tabs1
         margin: 0 auto
         max-width: 852px
@@ -181,3 +181,40 @@
     text-align: center
     &:hover
       color: #000
+.day
+  margin-bottom: 15px
+  &__label
+    border: 1px solid #F2F2F2
+    border-radius: 2px
+    padding: 8px 14px
+    margin-right: 5px
+    position: relative
+    font-size: 1.4em
+    letter-spacing: 0.05em
+  &__indicator
+    display: none
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    border-radius: 2px
+  &__input
+    display: none
+    &:checked + .day__indicator
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #fff
+      background-color: $ConfirmColor
+.schedule
+  margin-bottom: 15px
+  &__input
+    display: none
+    &:checked + .schedule__label
+      text-decoration: underline
+      color: $lkTextColor
+  &__label
+    font-size: 1.2em
+    color: $lkLabelColor
+    margin-right: 10px

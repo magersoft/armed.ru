@@ -162,25 +162,39 @@
                     .day
                         label.day__label(for="monday") пн
                             input.day__input(type="checkbox" name="monday" id="monday")
+                            .day__indicator
+                                p пн
                         label.day__label(for="tuesday") вт
                             input.day__input(type="checkbox" name="tuesday" id="tuesday")
+                            .day__indicator
+                                p вт
                         label.day__label(for="wednesday") ср
                             input.day__input(type="checkbox" name="wednesday" id="wednesday")
+                            .day__indicator
+                                p ср
                         label.day__label(for="thursday") чт
                             input.day__input(type="checkbox" name="thursday" id="thursday")
+                            .day__indicator
+                                p чт
                         label.day__label(for="friday") пт
                             input.day__input(type="checkbox" name="friday" id="friday")
+                            .day__indicator
+                                p пт
                         label.day__label(for="saturday") сб
                             input.day__input(type="checkbox" name="saturday" id="saturday")
+                            .day__indicator
+                                p сб
                         label.day__label(for="sunday") вс
                             input.day__input(type="checkbox" name="sunday" id="sunday")
+                            .day__indicator
+                                p вс
                     .schedule
+                        input.schedule__input(type="radio" name="schedule" id="weekdays")
                         label.schedule__label(for="weekdays") будни
-                            input.schedule__input(type="radio" name="schedule" id="weekdays")
+                        input.schedule__input(type="radio" name="schedule" id="weekend")
                         label.schedule__label(for="weekend") выходные
-                            input.schedule__input(type="radio" name="schedule" id="weekend")
+                        input.schedule__input(type="radio" name="schedule" id="daily")
                         label.schedule__label(for="daily") ежедневно
-                            input.schedule__input(type="radio" name="schedule" id="daily")
 
                     .opening-hours
                         label.opening-hours__label() Часы работы:
