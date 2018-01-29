@@ -45,6 +45,7 @@ gulp.task('js', function() {
             'app/libs/jquery-ui/jquery-ui.js',
             'app/libs/isotope-layout/dist/isotope.pkgd.js',
             'app/libs/slick-carousel/slick/slick.js',
+            'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/include/**/*.js']) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
         //.pipe(uglify()) // получившуюся "портянку" минифицируем

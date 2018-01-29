@@ -9,9 +9,12 @@
     float: left
     position: relative
     overflow: hidden
+    transition: all .5s ease
+    &:hover
+      //transform: scale(1.01)
     img
       width: 100%
-      transition: all .5s ease 0s
+      transition: all .8s ease 0s
   .horizontal
     width: 50%
 
@@ -25,7 +28,7 @@
   flex-direction: column
   align-items: start
   justify-content: space-between
-  &__title
+  &__title--1
     margin-top: 125px
     margin-left: 110px
     h3
@@ -44,7 +47,7 @@
       text-transform: uppercase
       text-align: center
       padding: 15px 0
-  &__link
+  &__link--1
     margin-bottom: 190px
     margin-left: 203px
     a
@@ -54,6 +57,179 @@
       font-size: 2em
       letter-spacing: 0.1em
       text-align: center
+      position: relative
+      .icon-right
+        top: 5%
+        right: -25px
+        background: url(images/Icon/arrow-right.svg) center no-repeat
+        background-position: 0 0
+        width: 27px
+        height: 24px
+  &__title--2
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 34px auto
+    h3
+      font-family: $fontFamilyAdditionally
+      font-weight: 500
+      text-align: center
+      font-size: 3em
+      letter-spacing: 0.15em
+      color: $headerCartTitle
+      text-transform: uppercase
+      span
+        color: $GlobalColor
+    p
+      font-family: $fontFamilyAdditionally
+      color: $headerItemColor
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      text-align: center
+  &__link--2
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: 21px auto
+    p
+      font-family: $fontFamilyAdditionally
+      color: $headerItemColor
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      text-align: center
+      padding: 7px 0
+      span
+        color: $GlobalColor
+    a
+      color: $GlobalColor
+      font-size: 2em
+      text-align: center
+      letter-spacing: 0.1em
+      text-transform: uppercase
+      text-decoration: none
+      position: relative
+      .icon-right
+        top: 5%
+        right: -25px
+        background: url(images/Icon/arrow-right.svg) center no-repeat
+        background-position: 0 -24px
+        width: 27px
+        height: 24px
+  &__title--3
+    margin: 34px 58px
+    h3
+      color: $bannerTitleColorNew
+      font-family: $fontFamilyAdditionally
+      font-weight: 500
+      font-size: 3em
+      letter-spacing: 0.15em
+      text-transform: uppercase
+      padding: 2px 0
+    p
+      font-family: $fontFamilyAdditionally
+      font-size: 2em
+      text-transform: uppercase
+      letter-spacing: 0.05em
+      color: $headerItemColor
+      padding: 2px 0
+      line-height: 1
+  &__link--3
+    padding-bottom: 52px
+    padding-left: 58px
+    a
+      position: relative
+      font-family: $fontFamilyAdditionally
+      color: $bannerTitleColorNew
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      text-align: center
+      text-decoration: none
+      .icon-right
+        top: 5%
+        right: -25px
+        background: url(images/Icon/arrow-right.svg) center no-repeat
+        background-position: 0 -72px
+        width: 27px
+        height: 24px
+  &__title--4
+    padding-left: 424px
+    padding-top: 65px
+    h3
+      font-family: $fontFamilyAdditionally
+      font-weight: 500
+      font-size: 3em
+      letter-spacing: 0.15em
+      text-transform: uppercase
+      color: $bannerTitleColorGreen
+    p
+      font-family: $fontFamilyAdditionally
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: $headerItemColor
+      margin: 20px 0
+  &__link--4
+    padding-bottom: 41px
+    padding-left: 423px
+    a
+      position: relative
+      font-family: $fontFamilyAdditionally
+      color: $bannerTitleColorGreen
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      text-align: center
+      text-decoration: none
+      .icon-right
+        top: 5%
+        right: -25px
+        background: url(images/Icon/arrow-right.svg) center no-repeat
+        background-position: 0 -48px
+        width: 27px
+        height: 24px
+  &__title--5
+    margin: 30px auto
+    display: flex
+    align-items: center
+    flex-direction: column
+    h3
+      font-family: $fontFamilyAdditionally
+      font-weight: 500
+      font-size: 3em
+      text-align: center
+      letter-spacing: 0.15em
+      text-transform: uppercase
+      color: $headerCartTitle
+      span
+        color: $bannerTitleColorYellow
+    p
+      font-family: $fontFamilyAdditionally
+      font-size: 2em
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: $headerItemColor
+      margin: 8px 0
+  &__link--5
+    margin: 34px auto
+    a
+      color: $bannerTitleColorYellow
+      font-family: $fontFamilyAdditionally
+      font-size: 2em
+      text-transform: uppercase
+      text-decoration: none
+      letter-spacing: 0.1em
+      text-align: center
+      position: relative
+      .icon-right
+        top: 5%
+        right: -25px
+        background: url(images/Icon/arrow-right.svg) center no-repeat
+        background-position: 0 -96px
+        width: 27px
+        height: 24px
 
 @media (max-width: 991px)
   .banner-inner
