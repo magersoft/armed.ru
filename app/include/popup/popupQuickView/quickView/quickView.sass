@@ -25,7 +25,8 @@
         color: #4f4f4f
     &_buy
       flex: 2
-      border: 5px solid lightgreen
+      justify-content: flex-start
+      align-items: flex-start
   &-inner
     &_about
       display: flex
@@ -37,7 +38,151 @@
     &_size
       &-box
         @extend .quickview-inner_color-box
+    &_buy
+      &__buybutton
+        display: flex
+        flex-direction: row
+      &__delivery
+        display: flex
+        flex-direction: column
+        margin: 20px 0 15px 0
+      &__icons
+        display: flex
+        flex-direction: row
+        &-like
+          margin-right: 10px
+          width: 44px
+          height: 44px
+          background:
+            image: url("images/icon/quickview__icon.svg")
+            position: 0 0
+            color: #F2F2F2
+            repeat: no-repeat
+          border-radius: 50%
+          &:hover
+            background-position: -44px 0
+        &-arrow
+          @extend .quickview-inner_buy__icons-like
+          background-position: 0 -44px
+          &:hover
+            background-position: -44px -44px
+        &-click
+          @extend .quickview-inner_buy__icons-like
+          background-position: 0 -90px
+          &:hover
+            background-position: -44px -90px
+      &__cost
+        display: flex
+        flex-direction: row
+        margin: 10px 0
+        justify-content: flex-start
+        align-items: flex-end
+      &__amount
+        display: flex
+        flex-direction: row
+
   &-item
+    &_buy
+      &__social
+        display: flex
+        flex-direction: row
+        &-icon
+          background: url("images/icon/social__quickview.svg")
+            repeat: no-repeat
+          width: 24px
+          height: 24px
+          margin-right: 6px
+          &__vk
+            @extend .quickview-item_buy__social-icon
+            background:
+              position: 0 0
+            &:hover
+              background-position: -24px 0
+          &__fb
+            @extend .quickview-item_buy__social-icon
+            background:
+              position: 0 -24px
+            &:hover
+              background-position: -24px -24px
+          &__yt
+            @extend .quickview-item_buy__social-icon
+            background:
+              position: 0 -48px
+            &:hover
+              background:
+                position: -24px -48px
+          &__it
+            @extend .quickview-item_buy__social-icon
+            background:
+              position: 0 -72px
+            &:hover
+              background:
+                position: -24px -72px
+          &__tg
+            @extend .quickview-item_buy__social-icon
+            background:
+              position: 0 -96px
+            &:hover
+              background:
+                position: -24px -96px
+      &__delivery
+        &-select
+          display: flex
+          flex-direction: row
+        &-popup
+          margin: 15px 0
+          display: flex
+          flex-direction: column
+          .delivery-self
+            display: flex
+            flex-direction: row
+            &_text
+              @extend .delivery-car_text
+            &_link
+              color: #7DC472
+              font:
+                size: 1.2em
+          .delivery-car
+            @extend  .delivery-self
+            &_text
+              font:
+                size: 1.2em
+                family: $fontFamilyDefault
+              color: #828282
+      &__amount
+        &-title
+          font:
+            size: 1.5em
+          margin-right: 10px
+          color: #828282
+      &__vendor
+        color: #888888
+        font:
+          size: 1.2em
+          weight: normal
+        text-align: left
+      &__newcost
+        color: #4f4f4f
+        font:
+          size: 2.2em
+          family: $fontFamilyDefault
+          weight: 500
+        &-symbol
+          font:
+            size: 20px
+            weight: normal
+            family: $fontFamilyDefault
+      &__oldcost
+        padding: 3px 0 3px 5px
+        text-decoration: line-through
+        color: #bdbdbd
+        font:
+          size: 1.4em
+          weight: normal
+        &-symbol
+          padding: 3px 0
+          @extend .quickview-item_buy__oldcost
+          text-decoration: none
     &_about
       &-text
         font:
@@ -115,9 +260,15 @@
             border: none
 
 
-
+.dilevery_header
+  margin-bottom: 10px
+  text-align: left
+  font:
+    size: 1.4em
+    family: $fontFamilyDefault
+  color: #bdbdbd
 .description-item_title
-  margin: 10px 0
+  margin: 10px 0 0 0
   text-align: left
   font:
     size: 1.6em
@@ -132,6 +283,18 @@
     family: $fontFamilyDefault
     weight: normal
   color: #828282
-
+.quickview__select
+  background: #e0e0e0
+  border: 1px solid #bdbdbd
+  border-radius: 2px
+  width: 195px
+  height: 26px
+  font:
+    size: 1.5em
+    family: $fontFamilyDefault
+    weight: normal
+  color: #4f4f4f
 .active_color_image
   border: 1px solid #C62828
+.quickview_entry
+  background: transparent
