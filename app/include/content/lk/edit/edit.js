@@ -6,4 +6,7 @@ $( function() {
         }
     });
 } );
-
+//TODO Создание темы для custom scrollbar
+$(".edit__users-body").mCustomScrollbar({
+    theme:"dark"
+});

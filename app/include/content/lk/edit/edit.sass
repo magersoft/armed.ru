@@ -115,9 +115,80 @@
   &__chuse-address
     margin-bottom: 15px
   &__users
+    &-link
+      color: $lkUserLinkColor
+      font-size: 1.4em
+      text-decoration: none
+    &-arrow
+      background-image: url("images/lk/users__arrow.svg")
+      background-repeat: no-repeat
+      width: 9px
+      height: 6px
+      position: relative
+      right: -5px
     &-head
       display: flex
       justify-content: space-between
+      margin-bottom: 10px
+      padding: 0 20px
+    &-body
+      height: 250px
+    &-link
+      display: flex
+      align-items: center
+    &-link:nth-child(1n)
+      width: calc(100%/5)
+  &__user
+    display: flex
+    justify-content: space-between
+    padding: 10px 20px
+    border-radius: 3px
+    border: 1px solid #E0E0E0
+    &:not(:last-child)
+      margin-bottom: 10px
+    &_info
+      width: calc(100%/5)
+      color: $lkUserLinkColor
+      text-decoration: none
+      font-size: 1.4em
+    &_element
+      display: flex
+      justify-content: flex-start
+    &-icon
+      background-image: url("images/lk/user__edit.svg")
+      background-repeat: no-repeat
+      width: 26px
+      height: 26px
+      margin-right: 10px
+      cursor: pointer
+      &_edit
+        background-position: 0 -52px
+        &:hover
+          background-position: -26px -52px
+      &_copy
+        background-position: 0 -78px
+        &:hover
+          background-position: -26px -78px
+      &_del
+        background-position: 0 -104px
+        &:hover
+          background-position: -26px -104px
+    &-data
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      width: 70%
+      margin: 0 auto
+      &_label
+        width: calc(100%/2 - 45px)
+        width: 404px
+        font-size: 1.4em
+        font-weight: 300
+        color: #828282
+        margin-bottom: 15px
+      &_input
+        width: 100%
+        height: 40px
 .form
   &__address
     &-city

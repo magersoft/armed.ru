@@ -1,5 +1,35 @@
 section#feedback
     .container-fluid
         .row
-            .col.contact-form
-            .col.reviews
+            .col-6.contact-form
+                .contact-form__wrapper
+                    .contact-form__title
+                        h3 Здесь будет форма обратной связи
+                    .contact-form__subtitle
+                        span Заманущный текст, чтобы люди оставили свои данные
+                    .contact-form__inner
+                        .contact-form__inner-input
+                            input(type="text" placeholder="Ваше имя")
+                        .contact-form__inner-input
+                            input(type="text" placeholder="Телефон")
+                        .contact-form__inner-input
+                            input(type="textarea" placeholder="Ваш комментарий")
+                        .contact-form__inner-submit
+                            a(href="#") Отправить
+                                i.icon-right
+            .col-6.reviews
+                .reviews__wrapper
+                    .reviews__slider
+                        - var x = 5;
+                        - for (var i=1; i<=x; i++) {
+                        .reviews__slider-item
+                            img.reviews__avatar(src="images/page/index/reviews.jpg")
+                            .reviews__title
+                                | Артемий Лебедев
+                            .reviews__subtitle
+                                | Какой-то Веб-дизайнер
+                            .reviews__text
+                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cum laboriosam odit quaerat. Aliquid atque aut consequatur consequuntur, corporis eaque esse est facilis fuga harum hic iste libero minima molestiae.
+                            .reviews__link
+                                a(href="#") Источник отзыва
+                        - }
