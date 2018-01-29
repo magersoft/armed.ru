@@ -1,13 +1,52 @@
 section.quickview
-    .quickview_wrapper-slider
-        .slider.quickview_wrapper-slider.quickview_slider
-            .quickview_wrapper-slider__item
+    .quickview-wrapper_slider
+        .slider.quickview-wrapper_slider.quickview_slider
+            .quickview-wrapper_slider-item
                 p Тут что-то
-            .quickview_wrapper-slider__item
+            .quickview-wrapper_slider-item
                 p Тут что-то2
-            .quickview_wrapper-slider__item
+            .quickview-wrapper_slider-item
                 p Тут что-то3
-    .quickview_wrapper-description
-        p Тут что-то
-    .quickview_wrapper-buy
+
+    .quickview-wrapper_description
+        h4.description_title Концентратор кислорода "Armed" 8F-1
+        h5.description-item_title Другие варианты товара
+        .quickview-inner_color
+            //тут блок для цвета //
+            p.description-item_text Цвет
+            .quickview-inner_color-box
+                a.quickview-item_color-link
+                    img.quickview-item_color-image(src='../images/quickview/quickview_color_1.png')
+                a.quickview-item_color-link
+                    img.quickview-item_color-image(src='../images/quickview/quickview_color_2.png')
+                a.quickview-item_color-link
+                    img.quickview-item_color-image(src='../images/quickview/quickview_color_3.png')
+                a.quickview-item_color-link
+                    img.quickview-item_color-image(src='../images/quickview/quickview_color_4.png')
+        .quickview-inner_size
+            //тут блок для размера//
+            p.description-item_text Размер
+            .quickview-inner_size-box
+                a.quickview-item_size-link 20x20
+                a.quickview-item_size-link 40x40
+                a.quickview-item_size-link 70x70
+                a.quickview-item_size-link 120x30
+        .quickview-inner_feature
+            h5.description-item_title Характеристики
+            //тут блок характеристик//
+            - var x = 20;
+            - for (var i=1; i<=x; i++) {
+            .quickview-item_feature-text
+                .quickview-item_feature-text_name
+                    p Наши предложения
+                .quickview-item_feature-text_value
+                    p Хит продаж / Новинка
+            - }
+        .quickview-inner_about
+            h5.description-item_title Описание
+            p.quickview-item_about-text
+                | Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. А стильный дизайн будет радовать глаз и прекрасно украсит любой интерьер. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны.
+            a.quickview-item_about-link
+                | Подробнее...
+    .quickview-wrapper_buy
         p Тут что-то
