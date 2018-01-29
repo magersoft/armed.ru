@@ -102,8 +102,27 @@
                                     span.edit__user-icon.edit__user-icon_del
 
                 .edit__user-data
-                    label.edit__user-data_name(for="company") Название компании
-                        input.edit__form-input(type="text" id="company" placeholder="Название компании")
+                    label.edit__user-data_label(for="UserName") Фамилия
+                        input.edit__user-data_input(type="text" id="UserName" placeholder="")
+
+                    label.edit__user-data_label(for="UserSurname") Имя
+                        input.edit__user-data_input(type="text" id="UserSurname" placeholder="")
+
+                    label.edit__user-data_label(for="UserMiddlename") Отчество
+                        input.edit__user-data_input(type="text" id="UserMiddlename" placeholder="")
+
+                    label.edit__user-data_label(for="UserWorkphone") Рабочий телефон
+                        input.edit__user-data_input(type="text" id="UserWorkphone" placeholder="")
+
+                    label.edit__user-data_label(for="UserEmail") Электронная почта
+                        input.edit__user-data_input(type="text" id="UserEmail" placeholder="")
+
+                    label.edit__user-data_label(for="UserPosition") Должность
+                        input.edit__user-data_input(type="text" id="UserPosition" placeholder="")
+                    button.edit__user-button.button.button_white.button_icon
+                        span.button__text.button__text_white
+                            span.button__icon.button__icon_adduser
+                            | Добавить пользователя
 
 
 
@@ -300,9 +319,10 @@
                         p.opening-hours__add Добавить перерыв
 
 
+        button.edit__user-button.button.button_white.button_icon.button_md
+            span.button__text.button__text_white
+                span.button__icon.button__icon_cancel
+                | Отмена
         button.product__button.button.button_icon.button_product
             span.button__text
-                | Загрузить файл
-        button.product__button.button.button_icon.button_product
-            span.button__text
-                | Загрузить файл
+                | Сохранить
