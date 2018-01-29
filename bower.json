@@ -21,6 +21,7 @@
     "malihu-custom-scrollbar-plugin": "^3.1.5",
     "roboto-fontface": "^0.8.0",
     "isotope-layout": "isotope#^3.0.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "jquery.countdown": "^2.2.0"
   }
 }
