@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/head/head
+    body
+        main.home
+            include ../include/Global/preloader/preload
+            include ../include/header/header
+
+            include ../include/Global/breadcrums/breadcrums
+            .container
+                .title-h2.cart__title
+                    h2 Ваша корзина
+                .row.col-center.cart
+                    .cart__info.col
+                        | Ваша корзина сейчас пуста. Воспользуйтесь нашим <span>каталогом</span>, чтобы ее заполнить.
+                    .cart__btn-catalog.col.col-center
+                        a.button(href="#") Перейти к каталогу
+            a(href="cart.html") Полная корзина
+            include ../include/footer/footer
+        include ../include/popup/popup
+
+        //- Весь вонтент до данного коментария
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src='main.js')
