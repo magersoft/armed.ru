@@ -1,5 +1,5 @@
 .quickview
-  height: 571px
+  height: 591px
   display: flex
   flex-direction: row
   &_head
@@ -8,13 +8,13 @@
     padding-bottom: 20px
   &-wrapper
     &_slider
+      border-right: 1px solid #e0e0e0
       flex: 2
-      flex-basis: 100px
-      border: 5px solid deeppink
-      &-item
-        width: 300px
+      display: flex
+      flex-direction: column
+      padding: 40px 15px
     &_description
-      padding: 0 15px
+      padding: 15px 15px
       flex: 3
       .description_title
         text-align: left
@@ -24,18 +24,29 @@
           weight: normal
         color: #4f4f4f
     &_buy
+      padding: 15px 15px
+      background: #FBFBFB
       flex: 2
       justify-content: flex-start
       align-items: flex-start
   &-inner
+    &_slider
+      &--group
+        margin: 10px 0
+        display: flex
+        flex-direction: row
+        justify-content: space-between
     &_about
       display: flex
       flex-direction: column
     &_color
+      margin: 15px 0
       &-box
+
         display: flex
         flex-direction: row
     &_size
+      margin-bottom: 20px
       &-box
         @extend .quickview-inner_color-box
     &_buy
@@ -82,6 +93,15 @@
         flex-direction: row
 
   &-item
+    &_slider
+      &--main
+        width: 310px
+        height: 360px
+        &__img
+          width: 310px
+      &--bottom
+        width: 53px
+
     &_buy
       &__social
         display: flex
@@ -142,8 +162,27 @@
               color: #7DC472
               font:
                 size: 1.2em
+            &_icon
+              margin:
+                right: 6px
+              width: 15px
+              height: 15px
+              background:
+                image: url("../images/icon/samovivoz__quickview.svg")
+                position: 0 -15px
+                repeat: no-repeat
           .delivery-car
+            margin: 6px 0
             @extend  .delivery-self
+            &_icon
+              margin:
+                right: 6px
+              width: 15px
+              height: 15px
+              background:
+                image: url("../images/icon/samovivoz__quickview.svg")
+                position: 0 0
+                repeat: no-repeat
             &_text
               font:
                 size: 1.2em
@@ -185,6 +224,7 @@
           text-decoration: none
     &_about
       &-text
+        margin-top: 10px
         font:
           size: 1.3em
         color: #828282
@@ -268,7 +308,6 @@
     family: $fontFamilyDefault
   color: #bdbdbd
 .description-item_title
-  margin: 10px 0 0 0
   text-align: left
   font:
     size: 1.6em
@@ -284,7 +323,12 @@
     weight: normal
   color: #828282
 .quickview__select
-  background: #e0e0e0
+  padding-left: 6px
+  background:
+    color: #fff
+    image: url("/images/quickview/quickview__select.svg")
+    repeat: no-repeat
+    position: 168px -1px
   border: 1px solid #bdbdbd
   border-radius: 2px
   width: 195px
@@ -294,7 +338,19 @@
     family: $fontFamilyDefault
     weight: normal
   color: #4f4f4f
+  -moz-appearance: none
+  text-indent: 0.01px
+  -ms-appearance: none
+  appearance: none!important
+  &::-ms-expand
+    display: none
+
 .active_color_image
   border: 1px solid #C62828
 .quickview_entry
   background: transparent
+.select__active
+  background-position: 168px -49px
+.select__hover
+  background:
+    position: 168px -25px

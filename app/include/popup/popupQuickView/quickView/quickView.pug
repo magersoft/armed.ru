@@ -1,18 +1,24 @@
 section.quickview
     .quickview-wrapper_slider
-        .slider.quickview-wrapper_slider.quickview_slider
-            .quickview-wrapper_slider-item
-                p Тут что-то
-            .quickview-wrapper_slider-item
-                p Тут что-то2
-            .quickview-wrapper_slider-item
-                p Тут что-то3
+            .quickview-item_slider--main
+                img(src='../images/quickview/quickview_slider_main.png').quickview-item_slider--main__img
+            .quickview-inner_slider--group
+                .quickview-item_slider--bottom
+                    img(src='../images/quickview/quickview_slider_1.png')
+                .quickview-item_slider--bottom
+                    img(src='../images/quickview/quickview_slider_2.png')
+                .quickview-item_slider--bottom
+                    img(src='../images/quickview/quickview_slider_3.png')
+                .quickview-item_slider--bottom
+                    img(src='../images/quickview/quickview_slider_4.png')
+                .quickview-item_slider--bottom
+                    img(src='../images/quickview/quickview_slider_3.png')
 
     .quickview-wrapper_description
         h4.description_title Концентратор кислорода "Armed" 8F-1
-        h5.description-item_title Другие варианты товара
         .quickview-inner_color
             //тут блок для цвета //
+            h5.description-item_title Другие варианты товара
             p.description-item_text Цвет
             .quickview-inner_color-box
                 a.quickview-item_color-link
@@ -79,13 +85,11 @@ section.quickview
         .quickview-inner_buy__delivery
             .quickview-item_buy__delivery-select
                 select.quickview__select
-                    option Москва
-                    option Санкт-Петербург
-                    option Караганда
-                    option Сыктывкар
-                    option Балашиха
-
-
+                    option.quickview__select-option Москва
+                    option.quickview__select-option Санкт-Петербург
+                    option.quickview__select-option Караганда
+                    option.quickview__select-option Сыктывкар
+                    option.quickview__select-option Балашиха
             .quickview-item_buy__delivery-popup
                 .delivery-car
                     span.delivery-car_icon
