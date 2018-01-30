@@ -15,9 +15,9 @@
                     a.topbar__nav_menu-link(href="#") Оптовикам
     .primary-menu
         a(href="/").primary-menu__fix-logo
-        .primary-menu__catalog#primary-menu__catalog
-            .primary-menu__catalog_wrapper
-                .primary-menu__catalog-link#dropdownCatalog
+        .primary-menu__catalog
+            .primary-menu__catalog_wrapper.js-dropdown-toggler
+                .primary-menu__catalog-link
                     span.burger-button
                     | Каталог
                     i.primary-menu__catalog-icon
@@ -60,15 +60,15 @@
                             a.personal__auth-login.modalLink(href="#" data-id="Auth") Войти на сайт
                         li.personal__auth-item
                             a.personal__auth-reg.modalLink(href="#" data-id="Check") Регистрация
-                .primary-menu__icon-wrapper#compare
-                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_compare#dropdownCompare
+                .primary-menu__icon-wrapper
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_compare.js-dropdown-toggler
                         span.primary-menu__icon-notification 8
                     include widget/compare/compare
-                .primary-menu__icon-wrapper#favorite
-                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_favorite#dropdownFavorite
+                .primary-menu__icon-wrapper
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_favorite.js-dropdown-toggler
                     include widget/favorite/favorite
-                .primary-menu__icon-wrapper#cart
-                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_cart#dropdownCart
+                .primary-menu__icon-wrapper
+                    a(href="#").primary-menu__icon-item.primary-menu__icon-item_cart.js-dropdown-toggler
                         span.primary-menu__icon-notification 12
                     include widget/cart/cart
     include infolk/infolk

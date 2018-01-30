@@ -27,45 +27,22 @@ $(function(){
 /* ===================== END FIXED HEADER =================== */
 
 /* ===================== START DROPDOWN ===================== */
-// Выпадающее меню КАТАЛОГ в Header
-$("#dropdownCatalog")
-    .click(function() {
-        $(".dropdown-catalog").slideDown(200);
-    });
-$("#primary-menu__catalog")
-    .mouseleave(function() {
-        $(".dropdown-catalog").slideUp(400);
-    });
+$('.js-dropdown-toggler').click(function(e){
+    var current = $(this).next('.js-dropdown');
+    current.toggleClass('is-open');
+    $('.js-dropdown').not(current).removeClass('is-open');
+    e.stopPropagation();
+});
 
-// Выпадающее окно при наведении на иконку Compare
-$("#dropdownCompare")
-    .click(function() {
-        $(".primary-menu__compare").show();
-    });
-$("#compare")
-    .mouseleave(function() {
-        $(".primary-menu__compare").slideUp(400);
-    });
+$('html').click(function(){
+    if ($('.js-dropdown').hasClass('is-open')) {
+        $('.js-dropdown').removeClass('is-open');
+    }
+});
 
-// Выпадающее окно при наведении на иконку Favorite
-$("#dropdownFavorite")
-    .click(function() {
-        $(".primary-menu__favorite").show();
-    });
-$("#favorite")
-    .mouseleave(function() {
-        $(".primary-menu__favorite").slideUp(400);
-    });
-
-// Выпадающее окно при наведении на иконку Cart
-$("#dropdownCart")
-    .click(function() {
-        $(".primary-menu__cart").show();
-    });
-$("#cart")
-    .mouseleave(function() {
-        $(".primary-menu__cart").slideUp(200);
-    });
+$('.js-dropdown').click(function(e){
+    e.stopPropagation();
+});
 
 // Scrollbar in dropdown item
 $(".primary-menu__widget-inner").mCustomScrollbar({
@@ -133,14 +110,15 @@ $(function(){
 $("#cat-2")
     .mouseover(function() {
         $(".dropdown-catalog__inner").show(400);
-    })/*
+    });/*
     .mouseleave(function () {
         $(".dropdown-catalog__inner").hide(100);
-    })*/;
+    });*/
 $(".dropdown-catalog__category")
     .mouseleave(function() {
         $(".dropdown-catalog__inner").hide(400);
     });
+
 
 /* TODO при "value=0" менять background-position иконки минус
 $('.primary-menu__cart_product_minus').click(function() {
