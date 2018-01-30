@@ -13,13 +13,13 @@
         .orders__tabs#orderTabs1
             .orders__table.table
                 .orders__head.table__head
-                    a.order__head-link.table__head-link(href="#")
+                    a.order__head-link.table__head-link.table__head-active(href="#")
                         | Cтатус
                         span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link(href="#")
                         | Номер заказа
                         span.order__head-arrow.table__head-arrow
-                    a.order__head-link.table__head-link(href="#")
+                    a.order__head-link.table__head-link.table__element_customer(href="#")
                         | Заказчик
                         span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link(href="#")
@@ -32,6 +32,25 @@
                         | Действие
                         span.order__head-arrow.table__head-arrow
                 .orders__body.table__body
+                    - for (var i = 0; i < 6; i++)
+                        .orders__row.table__row
+                            p.orders__status.table__element
+                                span.orders__status-color.orders__status-color_blue
+                                | В обработке
+                            p.orders__orderNumber.table__element
+                                | ДМ000158951
+                            p.orders__customer.table__element.table__element_customer
+                                | Лимиров Евгений Владимирович
+                            p.orders__data.table__element
+                                | 23 Января 2018
+                            p.orders__sum.table__element
+                                | 210 000 000 000,00
+                            .orders__actions.table__element.table__element_actions
+                                i.orders__icon.orders__icon_save
+                                i.orders__icon.orders__icon_print
+                                i.orders__icon.orders__icon_edit
+                                i.orders__icon.orders__icon_copy
+
         .orders__tabs#orderTabs2
             h1 Не заршенные
         .orders__tabs#orderTabs3
