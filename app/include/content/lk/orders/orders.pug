@@ -1,0 +1,38 @@
+.orders
+    h2.orders__head.head-lk
+        span.head-lk__icon.head-lk__icon_orders
+        | Заказы
+    .orders__tabs
+        ul.orders__tabs-list.tabs
+            li.order__tabs-element.tabs__element
+                a.orders__tabs-link.tabs__link(href="#orderTabs1") В процессе
+            li.order__tabs-element.tabs__element
+                a.orders__tabs-link.tabs__link(href="#orderTabs2") Не завершенные
+            li.order__tabs-element.tabs__element
+                a.orders__tabs-link.tabs__link(href="#orderTabs3") Последние
+        .orders__tabs#orderTabs1
+            .orders__table.table
+                .orders__head.table__head
+                    a.order__head-link.table__head-link(href="#")
+                        | Cтатус
+                        span.order__head-arrow.table__head-arrow
+                    a.order__head-link.table__head-link(href="#")
+                        | Номер заказа
+                        span.order__head-arrow.table__head-arrow
+                    a.order__head-link.table__head-link(href="#")
+                        | Заказчик
+                        span.order__head-arrow.table__head-arrow
+                    a.order__head-link.table__head-link(href="#")
+                        | Дата
+                        span.order__head-arrow.table__head-arrow
+                    a.order__head-link.table__head-link(href="#")
+                        | Сумма
+                        span.order__head-arrow.table__head-arrow
+                    a.order__head-link.table__head-link(href="#")
+                        | Действие
+                        span.order__head-arrow.table__head-arrow
+                .orders__body.table__body
+        .orders__tabs#orderTabs2
+            h1 Не заршенные
+        .orders__tabs#orderTabs3
+            h1 Последние

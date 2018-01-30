@@ -1,8 +1,8 @@
 $( function() {
     $( ".edit__tabs" ).tabs({
-        active: 1,
+        active: 0,
         classes: {
-            "ui-tabs-active": "edit__tabs-link_active"
+            "ui-tabs-active": "tabs__active"
         }
     });
 } );

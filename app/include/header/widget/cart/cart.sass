@@ -1,6 +1,7 @@
 .primary-menu__cart
   position: absolute
-  display: none
+  visibility: hidden
+  opacity: 0
   width: 335px
   height: 470px
   background: #fff
@@ -9,6 +10,10 @@
   right: 0px
   padding: 15px
   z-index: 100
+  transition: all .3s ease
+  &.is-open
+    visibility: visible
+    opacity: 1
   &_title
     color: $headerCartTitle
     font-family: $fontFamilyAdditionally
