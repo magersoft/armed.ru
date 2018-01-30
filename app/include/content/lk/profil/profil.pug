@@ -1,1 +1,41 @@
-.profil
+.profile
+    h2.profile__head.head-lk
+        span.head-lk__icon.head-lk__icon_profile
+        | Редактирование профиля
+    .profile__wrapp
+        .profile__user-edit
+            label.profile__label(for="ProfileName") Имя
+                input.profile__input(type="text" name="ProfileName" id="ProfileName")
+            label.profile__label(for="ProfileSurname") Фамилия
+                input.profile__input(type="text" name="ProfileSurname" id="ProfileSurname")
+            label.profile__label(for="ProfileMiddleName") Отчество
+                input.profile__input(type="text" name="ProfileMiddleName" id="ProfileMiddleName")
+            label.profile__label(for="ProfilePhone") Номер телефона
+                input.profile__input(type="text" name="ProfilePhone" id="ProfilePhone")
+            label.profile__label(for="ProfileMail") Электронная почта
+                input.profile__input(type="text" name="ProfileMail" id="ProfileMail")
+
+        .profile__pass-edit
+            .profile__input-goup
+                label.profile__label(for="ProfileOldPass") Старый пароль
+                    input.profile__input(type="text" name="ProfileOldPass" id="ProfileOldPass")
+                label.profile__label(for="ProfileNewPass") Новый пароль
+                    input.profile__input(type="text" name="ProfileNewPass" id="ProfileNewPass")
+                label.profile__label(for="ProfileConfirmPass") Подтверждение пароля
+                    input.profile__input(type="text" name="ProfileConfirmPass" id="ProfileConfirmPass")
+            .profile__social-group
+                p.profile__text Привязка социальных сетей
+                .profile__social.social
+                    a.social__element.social__element_vk-lg.social__element_lg.social__link(href="#")
+                    a.social__element.social__element_fb-lg.social__element_lg.social__link(href="#")
+                    a.social__element.social__element_od-lg.social__element_lg.social__link(href="#")
+                    a.social__element.social__element_in-lg.social__element_lg.social__link(href="#")
+                    a.social__element.social__element_you-lg.social__element_lg.social__link(href="#")
+    .profile__button-wrapp.button__wrapp
+        button.profile__cancel-button.button.button_white.button_icon.button_md
+            span.button__text.button__text_white
+                span.button__icon.button__icon_cancel
+                | Отмена
+        button.product__button.button.button_icon.button_md
+            span.button__text
+                | Сохранить
