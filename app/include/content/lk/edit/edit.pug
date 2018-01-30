@@ -90,7 +90,7 @@
                         a.edit__users-link(href="#")
                             | Действия
                     .edit__users-body
-                        - for (var i=0; i<2; i++)
+                        - for (var i=0; i<8; i++)
                             .edit__user
                                 p.edit__user_info.edit__user_fio Фамилия Имя Отчество
                                 a.edit__user_info.edit__user_phone(href="tel:+78888888888") +7 (888) 888-88-88
@@ -319,10 +319,11 @@
                         p.opening-hours__add Добавить перерыв
 
 
-        button.edit__user-button.button.button_white.button_icon.button_md
-            span.button__text.button__text_white
-                span.button__icon.button__icon_cancel
-                | Отмена
-        button.product__button.button.button_icon.button_product
-            span.button__text
-                | Сохранить
+        .edit__button-wrapp
+            button.edit__user-button.button.button_white.button_icon.button_md
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_cancel
+                    | Отмена
+            button.product__button.button.button_icon.button_md
+                span.button__text
+                    | Сохранить
