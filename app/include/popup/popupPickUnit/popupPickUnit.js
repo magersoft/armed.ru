@@ -1,4 +1,4 @@
-//TODO создать тему для скроллбара
 $(".pickUnit").mCustomScrollbar({
-    theme:"dark"
+    theme:"pick-unit",
+    scrollbarPosition: "outside"
 });

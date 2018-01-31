@@ -4,6 +4,72 @@
   background-color: #fff
   padding: 30px
   border: 1px solid #e0e0e0
+  &__header
+    display: flex
+    justify-content: space-between
+    position: relative
+  &__filter
+    display: flex
+    &-dash
+      position: relative
+      top: 6px
+    &-link
+      display: flex
+      align-items: center
+      font-family: 'Rubik'
+      font-size: 1.8em
+      letter-spacing: 0.9px
+      color: rgb(130, 130, 130)
+      text-transform: uppercase
+      text-decoration: none
+      &:not(:last-child)
+        margin-right: 15px
+    &-icon
+      background-image: url("images/lk/filter.png")
+      background-repeat: no-repeat
+      width: 32px
+      height: 32px
+      display: block
+      cursor: pointer
+      margin-right: 10px
+      &_create
+        background-position: 0 0
+      &_filter
+        background-position: -32px 0
+    &-popup
+      position: absolute
+      top: 0px
+      right: -257px
+      width: 218px
+      height: 500px
+      flex-direction: column
+      &_active
+        display: flex
+      &_hide
+        display: none
+    &-label
+      display: flex
+      flex-direction: column
+      font-size: 1.4em
+      font-weight: 300
+      color: rgb(130, 130, 130)
+    &-input, &-select
+      width: 218px
+      height: 30px
+      border: solid 1px rgb(224, 224, 224)
+    &-search
+      height: 20px
+      border-bottom: 1px solid rgb(224, 224, 224)
+      background-color: rgba(0, 0, 0, 0)
+      padding-left: 20px
+      background-image: url("images/lk/search__icon.png")
+      background-repeat: no-repeat
+      background-position: 0 0
+    &-sum
+      &-start, &-end
+        width: 89px
+        height: 30px
+        border: solid 1px rgb(224, 224, 224)
   &__body
     height: 505px
   &__tabs
@@ -59,3 +125,6 @@
       background-position: 0 -78px
       &:hover
         background-position: -26px -78px
+.sum__wrapp
+  display: flex
+  justify-content: space-between

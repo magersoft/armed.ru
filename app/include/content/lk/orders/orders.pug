@@ -1,7 +1,46 @@
 .orders
-    h2.orders__head.head-lk
-        span.head-lk__icon.head-lk__icon_orders
-        | Заказы
+    header.orders__header
+        h2.orders__head.head-lk
+            span.head-lk__icon.head-lk__icon_orders
+            | Заказы
+        .orders__filter
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_create
+                | Новый заказ
+            a.orders__filter-link#filterOpen(href="#")
+                span.orders__filter-icon.orders__filter-icon_filter
+                | Фильтр
+        form.orders__filter-popup.orders__filter-popup_hide#filterPopup
+            input.orders__filter-search(type="text" name="filterSearch" id="filterSearch" placeholder="Поиск по заказам")
+            label.orders__filter-label(for="filterData") Дата заказа
+                input.orders__filter-input(type="text" name="filterData" id="filterData")
+            label.orders__filter-label(for="filterNumber") Номер заказа
+                input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
+            label.orders__filter-label(for="filterStatus") Статус заказа
+                select.orders__filter-select(name="filterStatus" id="filterStatus")
+                    option.orders__filter-option(value="") В ожидании
+                    option.orders__filter-option(value="") Доставлено
+                    option.orders__filter-option(value="") В доставке
+                    option.orders__filter-option(value="") Оплачено
+                    option.orders__filter-option(value="") Не подтвержден
+                    option.orders__filter-option(value="") Отменен
+                    option.orders__filter-option(value="") В обработке
+            label.orders__filter-label(for="filterName") Заказ на имя
+                select.orders__filter-select(name="filterName" id="filterName")
+                    option.orders__filter-option(value="") Фамилия Имя Отчество
+                    option.orders__filter-option(value="") Фамилия Имя Отчество
+                    option.orders__filter-option(value="") Фамилия Имя Отчество
+                    option.orders__filter-option(value="") Фамилия Имя Отчество
+            label.orders__filter-label(for="sumStart") Сумма от:
+                .sum__wrapp
+                    input.orders__filter-sum-start(type="text" name="sumStart" id="sumStart")
+                    span.orders__filter-dash &mdash;
+                    input.orders__filter-sum-end(type="text" name="sumEnd" id="sumEnd")
+            button.orders__filter-button.button.button_white.button_icon.button_md(type="reset")
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_cancel
+                    | Сбросить фильтр
+
     .orders__tabs
         ul.orders__tabs-list.tabs
             li.order__tabs-element.tabs__element

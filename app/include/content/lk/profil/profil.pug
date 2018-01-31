@@ -31,6 +31,22 @@
                     a.social__element.social__element_od-lg.social__element_lg.social__link(href="#")
                     a.social__element.social__element_in-lg.social__element_lg.social__link(href="#")
                     a.social__element.social__element_you-lg.social__element_lg.social__link(href="#")
+    .profile__checkbox
+        label.control.control-checkbox(for="profileRass")
+            input.check__form-input--checkbox(type="checkbox" name="profileRass" id="profileRass")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Получать рассылку о акции и новостях на электронную почту
+        label.control.control-checkbox(for="profileUved")
+            input.check__form-input--checkbox(type="checkbox" name="profileUved" id="profileUved")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Получать уведомления об изменениях в заказе на электроную почту
+        label.control.control-checkbox(for="profilePhoneRss")
+            input.check__form-input--checkbox(type="checkbox" name="profilePhone" id="profilePhoneRss")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Получать уведомления об изменениях в заказе на телефон
     .profile__button-wrapp.button__wrapp
         button.profile__cancel-button.button.button_white.button_icon.button_md
             span.button__text.button__text_white
