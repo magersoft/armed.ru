@@ -1,4 +1,4 @@
-/* TODO тут короче надо написать скрип для фиксации анкора, иначе я забуду завтра для чего это вообще
+/* TODO тут короче надо написать скрип для фиксации анкора, иначе я забуду завтра для чего это вообще :(((
     $(function(){
         var fixHeader = 200;
         $(window).scroll(function() {
@@ -24,5 +24,3 @@
             return window.pageYOffset || document.documentElement.scrollTop;
         }
     });
-
-*/
