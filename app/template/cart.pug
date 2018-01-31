@@ -12,12 +12,12 @@ html(lang="ru")
                     h2 Ваша корзина
                 .cart__table-wrapper
                     .cart__table-header
-                        span.cart__table-header_item Изображение
+                        span.cart__table-header_item
                         span.cart__table-header_item Наименование
                         span.cart__table-header_item Количество
                         span.cart__table-header_item Стоимость
                         span.cart__table-header_item Сумма
-                        span.cart__table-header_item &nbsp;
+                        span.cart__table-header_item
                     .cart__table-inner
                         - var x = 10;
                         - for (var i=1; i<=x; i++) {
@@ -34,12 +34,47 @@ html(lang="ru")
                                     input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
                                     span.primary-menu__cart_product_plus
                             .cart__table-product_item.cart__table-price
-                                .cart__table-cost
-                                .cart__table-oldcost
-                            .cart__table-product_item.cart__table-total Итоговая сумма
-                            .cart__table-product_item.cart__table-delete del
+                                .cart__table-price_cost
+                                    | 43 685&nbsp;
+                                    span &#8381;
+                                .cart__table-price_oldcost
+                                    strike 43 685 &#8381;
+                            .cart__table-product_item.cart__table-total
+                                .cart__table-total_cost
+                                    | 873 700&nbsp;
+                                    span &#8381;
+                            .cart__table-product_item.cart__table-delete
+                                i.cart__table-delete_icon
                         - }
-            a(href="cart_empty.html") Пустая корзина
+                    .cart__table-footer
+                        .row
+                            .cart__table-footer_left.col
+                                a(href="cart_empty.html").button-cart.cart__table-footer_clear
+                                    i.cart__table-footer_clear-icon
+                                    | Очистить корзину
+                                a(href="#" data-id="PickList").modalLink.button-cart.cart__table-footer_dostavka
+                                    i.cart__table-footer_dostavka-icon
+                                    | Адреса самовывозов
+                                a(href="#").button-cart.cart__table-footer_next
+                                    | Продолжить покупки
+                                    i.cart__table-footer_next-icon
+                            .cart__table-footer_right.col
+                                a(href="#" data-id="Present").modalLink.button-cart.cart__table-footer_gift
+                                    i.cart__table-footer_gift-icon
+                                    | Подарок
+                .cart__total
+                    .cart__total-coupone.col-6
+                        .cart__total-title
+                            h3 Промо-код:
+                        .cart__total-coupone_body
+                            label Введите ваш промо-код на скидку:
+                            input(type="text")
+                        .cart__total-coupone_button
+                            a(href="#")
+                                | Применить купон
+                    .cart__total-check.col-6
+                        .cart__total-title
+                            h3 Ваш счет:
             include ../include/footer/footer
         include ../include/popup/popup
 

@@ -45,7 +45,7 @@
         letter-spacing: 0.05em
         text-align: center
         color: $headerItemColor
-        padding: 25px 5px
+        padding: 25px 0
         display: flex
         justify-content: center
         align-items: center
@@ -55,6 +55,7 @@
           flex: .1
         &:nth-child(2)
           flex: .4
+          justify-content: flex-start
         &:nth-child(3)
           flex: .15
         &:nth-child(4)
@@ -103,3 +104,128 @@
       &_articles
         color: $headerItemColor
         font-size: 1.4em
+    &-price
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &_cost
+        font-size: 1.4em
+        font-weight: 500
+        span
+          font-size: 12px
+          font-weight: 400
+      &_oldcost
+        font-size: 1.2em
+        color: $headerCartOldcost
+    &-total
+      @extend .cart__table-price
+      &_cost
+        @extend .cart__table-price_cost
+    &-delete
+      @extend .cart__table-price
+      &_icon
+        position: absolute
+        width: 22px
+        height: 22px
+        background: url(images/Icon/cart_product-delete__icon.svg) center no-repeat;
+        background-position: 0 0
+        background-size: cover
+        cursor: pointer
+        &:hover
+          background-position: 0 -22px
+    &-footer
+      height: auto
+      box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.02)
+      &_left
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        height: 82px
+      &_right
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        flex: .4
+        height: 82px
+      &_clear
+        &-icon
+          background: url(images/Icon/cart_product-delete__icon.svg) center no-repeat
+          display: flex
+          margin-right: 10px
+          margin-top: 2px
+          width: 13px
+          height: 13px
+          background-position: -1px -15px
+      &_dostavka
+        &-icon
+          @extend .cart__table-footer_clear-icon
+          background: url(images/page/cart/dostavka.png) center no-repeat
+      &_next
+        &-icon
+          @extend .cart__table-footer_clear-icon
+          margin-right: 0
+          margin-left: 5px
+          background: url(images/Icon/arrow-right.png) center no-repeat
+      &_gift
+        background: $GlobalColor
+        color: #fff !important
+        padding: 15px 45px !important
+        border-radius: 2px
+        &-icon
+          @extend .cart__table-footer_clear-icon
+          background: url(images/page/cart/gift.png) center no-repeat
+          margin-top: 0
+        &:hover
+          background-color: rgb(212, 44, 44)
+      .button-cart
+        position: relative
+        margin: 15px
+        border: 1px solid #F2F2F2
+        padding: 15px
+        font-size: 1.4em
+        text-decoration: none
+        font-family: $fontFamilyAdditionally
+        letter-spacing: 0.05em
+        color: $headerCartTitle
+        display: flex
+  &__total
+    height: auto
+    margin: 30px 0
+    display: flex
+    width: auto
+    &-coupone
+      background: #fff
+      margin-right: 15px
+      display: flex
+      flex-direction: column
+      border: 1px solid #F2F2F2
+      padding: 15px 25px
+      &_body
+        display: flex
+        flex-direction: column
+        margin: 17px 0
+        label
+          font-size: 1.4em
+          color: $headerItemColor
+          font-family: $fontFamilyDefault
+          margin-bottom: 5px
+        input
+          border: 1px solid #E0E0E0
+          outline: none
+          height: 40px
+          padding-left: 15px
+    &-check
+      margin-left: 15px
+      background: #fff
+      border: 1px solid #F2F2F2
+      padding: 15px 25px
+    &-title
+      border-bottom: 1px solid #F2F2F2
+      padding-bottom: 6px
+      h3
+        font-size: 1.6em
+        letter-spacing: 0.05em
+        font-family: $fontFamilyAdditionally
+        color: #333
+        font-weight: 400
