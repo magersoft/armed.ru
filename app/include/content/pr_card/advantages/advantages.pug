@@ -1,0 +1,24 @@
+.advantages
+    .prcard-title
+        h2 Преимущества
+    .advantages__wrapper
+        .advantages__slider
+            - var x = 9;
+            - for (var i=1; i<=x; i++) {
+                .advantages__slider-item
+                    .advantages__slider-img
+                        img(src="../images/prcard/slider_card.png")
+                    .advantages__slider-text
+                        p.advantages__slider-text__title
+                            | Простое управление
+                        p.advantages__slider-text__bottom
+                            | Беспроводной пульт дистанционного управления позволяет осуществлять основные настройки на расстоянии до 5 метров.
+                .advantages__slider-item
+                    .advantages__slider-img
+                        img(src="../images/prcard/slider_card_2.png")
+                    .advantages__slider-text
+                        p.advantages__slider-text__title
+                            | Простое управление
+                        p.advantages__slider-text__bottom
+                            | Беспроводной пульт дистанционного управления позволяет осуществлять основные настройки на расстоянии до 5 метров.
+                - }
