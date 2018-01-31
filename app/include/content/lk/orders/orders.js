@@ -7,10 +7,9 @@ $( function() {
     });
 } );
 
-
-//TODO Создание темы для custom scrollbar
 $(".orders__body").mCustomScrollbar({
-    theme:"dark"
+    theme:"order",
+    scrollbarPosition: "outside"
 });
 
 $("#filterOpen").click(function () {
