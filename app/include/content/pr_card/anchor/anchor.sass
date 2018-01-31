@@ -1,10 +1,38 @@
-.testdiv
-  width: 100vw
+.anchor
   z-index: 1000
   margin:
     bottom: 5px
   height: 60px
   background-color: #f2f2f2
-  border: solid 1px #ffffff
+  border-top: solid 1px #ffffff
+  border-bottom: solid 1px #ffffff
   display: flex
   position: relative
+  &__wrapper
+    width: 1366px
+  &__inner
+    width: 1366px
+    list-style: none
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__item
+    display: flex
+    text-align: center
+    border-right: 1px solid #ffffff
+    &:last-child
+      border-right: none
+    &-link
+      width: 194px
+      padding: 21px 15px
+      letter-spacing: 0.7px
+      font:
+        size: 1.4em
+        family: $fontFamilyAdditionally
+      color: #828282
+      text:
+        decoration: none
+      transition: 0.4s
+      &:hover
+        background: #ffffff
+        color: #4f4f4f
