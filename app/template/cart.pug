@@ -7,6 +7,38 @@ html(lang="ru")
             include ../include/header/header
 
             include ../include/Global/breadcrums/breadcrums
+            .container
+                .title-h2.cart__title
+                    h2 Ваша корзина
+                .cart__table-wrapper
+                    .cart__table-header
+                        span.cart__table-header_item Изображение
+                        span.cart__table-header_item Наименование
+                        span.cart__table-header_item Количество
+                        span.cart__table-header_item Стоимость
+                        span.cart__table-header_item Сумма
+                        span.cart__table-header_item &nbsp;
+                    .cart__table-inner
+                        - var x = 10;
+                        - for (var i=1; i<=x; i++) {
+                        .cart__table-product
+                            .cart__table-product_item.cart__table-image
+                                a(href="#")
+                                    img(src="images/page/cart/product_cart.jpg" alt="Товар в корзине")
+                            a(href="#").cart__table-product_item.cart__table-name
+                                span.cart__table-name_title Концентратор кислорода "Armed" 8F-1
+                                span.cart__table-name_articles Артикул: 1238198539987375
+                            .cart__table-product_item.cart__table-value
+                                .primary-menu__cart_product_volume
+                                    span.primary-menu__cart_product_minus
+                                    input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                                    span.primary-menu__cart_product_plus
+                            .cart__table-product_item.cart__table-price
+                                .cart__table-cost
+                                .cart__table-oldcost
+                            .cart__table-product_item.cart__table-total Итоговая сумма
+                            .cart__table-product_item.cart__table-delete del
+                        - }
             a(href="cart_empty.html") Пустая корзина
             include ../include/footer/footer
         include ../include/popup/popup
