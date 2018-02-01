@@ -1,11 +1,22 @@
-.asside
+.asside_left
+  width: 50px
   display: flex
   flex-direction: column
+  align-items: flex-start
   list-style: none
-  padding-right: 51px
+  overflow: hidden
+  padding-top: 30px
+  height: 100%
   background-color: #fff
+  border: solid 1px rgb(242, 242, 242)
+  position: fixed
+  top: 113px
+  &:hover
+    width: 225px
   &__item
+    margin-left: 11px
     margin-bottom: 15px
+    width: 210px
   &__link
     font-size: 1.4em
     letter-spacing: 0.05em
@@ -14,6 +25,7 @@
     display: flex
     align-items: center
     color: $lkAssideLinkColor
+
   &__icon
     width: 24px
     height: 24px
@@ -36,3 +48,28 @@
       background-position: 0 -216px
     &_settings
       background-position: 0 -240px
+
+//TODO Выпилить то что ниже в отдельный файл анимации
+@keyframes up
+  from
+    top: 113px
+  to
+    top: 53px
+
+@keyframes down
+  from
+    top: 53px
+  to
+    top: 113px
+
+
+.asside_down
+  animation-name: down
+  animation-duration: 0.2s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+.asside_up
+  animation-name: up
+  animation-duration: 0.4s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
