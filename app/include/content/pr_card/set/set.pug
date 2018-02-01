@@ -1,0 +1,27 @@
+.set
+    .prcard-title
+        h2 Состав комплекта
+    .set__slider
+        - var x = 5;
+        - for (var i=1; i<=x; i++) {
+        .set__slider-wrapper
+            .set__slider-inner
+                span.set__slider-check
+                .set__slider-content
+                    img(src='../images/prcard/set__image.png')
+                    p.set__slider-item__description
+                        p.set-text
+                            | Деталь входящая в комплект к данному товару
+                    .set__slider-item__cost
+                        p.set-cost__new
+                            | 2 642&nbsp;
+                            span.set-cost__new-value
+                                | &#8381; / ШТ.
+                        .set-cost__old-inner
+                            p.set-cost__old
+                                | 3 642&nbsp;
+                            span.set-cost__old-value
+                                | &#8381;
+                .set__slider-plus
+                    span.set-plus
+        - }

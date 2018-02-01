@@ -1,0 +1,78 @@
+.set
+  padding: 15px
+  border-bottom: 1px solid #e0e0e0
+  &-image_check
+    img
+      width: 200px
+  &__slider
+    &-inner
+      display: flex
+      flex-direction: row
+    &-check
+      background:
+        image: url("images/prcard/set__check.svg")
+        position: -8px -8px
+      border-radius: 50%
+      width: 25px
+      height: 25px
+      display: block
+      position: absolute
+      margin: 0 0 -22px -90px
+      &-ok
+        width: 35px
+        height: 35px
+        background:
+          position: -45px -3px
+    &-wrapper
+      max-width: 243px
+    &-content
+      padding: 10px
+      max-width: 180px
+      img
+        width: 180px
+    &-item
+      &__cost
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+  &-text
+    margin: 10px 0
+    font:
+      family: $fontFamilyDefault
+      size: 1.2em
+    color: #828282
+  &-cost
+    &__new
+      color: #4f4f4f
+      font:
+        family: $fontFamilyDefault
+        weight: 500
+        size: 12px
+    &__old
+      margin-left: 10px
+      text-decoration: line-through
+      font:
+        family: $fontFamilyDefault
+        weight: normal
+        size: 9px
+      color: #828282
+      &-value
+        font:
+          family: $fontFamilyDefault
+          weight: normal
+          size: 9px
+        color: #828282
+      &-inner
+        display: flex
+        flex-direction: row
+  &-plus
+    &:after
+      display: block
+      margin:
+        top: 65px
+      content: '+'
+      font:
+        family: $fontFamilyDefault
+        weight: 100
+        size: 38px
+      color: #dbdbdb
