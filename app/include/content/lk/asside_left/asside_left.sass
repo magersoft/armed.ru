@@ -25,13 +25,32 @@
     text-decoration:  none
     display: flex
     align-items: center
-    color: $lkAssideLinkColor
+    font-weight: 400
+    color: #bdbdbd
+    &:hover
+      color: #4f4f4f
+      & .asside_left__icon_index
+        background-position: -24px -72px
+      & .asside_left__icon_orders
+        background-position: -24px -96px
+      & .asside_left__icon_document
+        background-position: -24px -120px
+      & .asside_left__icon_service
+        background-position: -24px -144px
+      & .asside_left__icon_profile
+        background-position: -24px -168px
+      & .asside_left__icon_company
+        background-position: -24px -192px
+      & .asside_left__icon_address
+        background-position: -24px -216px
+      & .asside_left__icon_settings
+        background-position: -24px -240px
 
   &__icon
     width: 24px
     height: 24px
     margin-right: 20px
-    background-image: url("images/Header/infolk__sprite.png")
+    background-image: url("images/Header/infolk__sprite.svg")
     background-repeat: no-repeat
     &_index
       background-position: 0 -72px
