@@ -1,60 +1,87 @@
-<svg width="48" height="96" viewBox="0 0 48 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="73" height="96" viewBox="0 0 73 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>Group 2</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(24934 18144)">
+<g id="Canvas" transform="translate(25024 18144)">
 <g id="Group 2">
 <g id="ic_shopping_cart">
 <g id="Icon 24px">
 <g id="Shape">
-<use xlink:href="#path0_fill" transform="translate(-24933 -18094)" fill="#BDBDBD"/>
+<use xlink:href="#path0_fill" transform="translate(-25023 -18094)" fill="#BDBDBD"/>
 </g>
 </g>
 </g>
 <g id="Group 23">
 <g id="Polygon">
-<use xlink:href="#path1_stroke" transform="matrix(-1 1.24409e-16 -1.20551e-16 -1 -24915 -18059.5)" fill="#BDBDBD"/>
+<use xlink:href="#path1_stroke" transform="matrix(-1 1.24409e-16 -1.20551e-16 -1 -25005 -18059.5)" fill="#BDBDBD"/>
 </g>
 <g id="Rectangle">
-<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 1 -24920.5 -18059.5)" fill="#BDBDBD"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 1 -25010.5 -18059.5)" fill="#BDBDBD"/>
 </g>
 </g>
 <g id="Group 23.1">
 <g id="Polygon">
-<use xlink:href="#path1_stroke" transform="matrix(-1 1.24409e-16 -1.20551e-16 -1 -24891 -18059.5)" fill="#4F4F4F"/>
+<use xlink:href="#path1_stroke" transform="matrix(-1 1.24409e-16 -1.20551e-16 -1 -24981 -18059.5)" fill="#4F4F4F"/>
 </g>
 <g id="Rectangle">
-<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 1 -24896.5 -18059.5)" fill="#4F4F4F"/>
+<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 1 -24986.5 -18059.5)" fill="#4F4F4F"/>
 </g>
 </g>
 <g id="ic_compare_arrows2">
 <g id="Icon 24px">
 <g id="Shape">
-<use xlink:href="#path3_fill" transform="translate(-24934 -18117)" fill="#BDBDBD"/>
+<use xlink:href="#path3_fill" transform="translate(-25024 -18117)" fill="#BDBDBD"/>
 </g>
 </g>
 </g>
 <g id="Group">
 <g id="Shape">
-<use xlink:href="#path4_fill" transform="translate(-24932 -18141)" fill="#BDBDBD"/>
+<use xlink:href="#path4_fill" transform="translate(-25022 -18141)" fill="#BDBDBD"/>
 </g>
 </g>
 <g id="ic_shopping_cart">
 <g id="Icon 24px">
 <g id="Shape">
-<use xlink:href="#path0_fill" transform="translate(-24909 -18094)" fill="#4F4F4F"/>
+<use xlink:href="#path0_fill" transform="translate(-24999 -18094)" fill="#4F4F4F"/>
 </g>
 </g>
 </g>
 <g id="ic_compare_arrows2">
 <g id="Icon 24px">
 <g id="Shape">
-<use xlink:href="#path3_fill" transform="translate(-24910 -18117)" fill="#4F4F4F"/>
+<use xlink:href="#path3_fill" transform="translate(-25000 -18117)" fill="#4F4F4F"/>
 </g>
 </g>
 </g>
 <g id="Group">
 <g id="Shape">
-<use xlink:href="#path4_fill" transform="translate(-24908 -18141)" fill="#4F4F4F"/>
+<use xlink:href="#path4_fill" transform="translate(-24998 -18141)" fill="#4F4F4F"/>
+</g>
+</g>
+<g id="Group 23.2">
+<g id="Polygon">
+<use xlink:href="#path1_stroke" transform="matrix(-1 1.24409e-16 -1.20551e-16 -1 -24957 -18059.5)" fill="#C62828"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_stroke" transform="matrix(-1 0 0 1 -24962.5 -18059.5)" fill="#C62828"/>
+</g>
+</g>
+<g id="ic_shopping_cart">
+<g id="Icon 24px">
+<g id="Shape">
+<use xlink:href="#path0_fill" transform="translate(-24975 -18094)" fill="#C62828"/>
+</g>
+</g>
+</g>
+<g id="ic_compare_arrows2">
+<g id="Icon 24px">
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(-24976 -18117)" fill="#C62828"/>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="Shape">
+<use xlink:href="#path4_fill" transform="translate(-24974 -18141)" fill="#C62828"/>
 </g>
 </g>
 </g>
