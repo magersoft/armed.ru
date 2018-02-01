@@ -1,0 +1,95 @@
+.asside_left
+  width: 50px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  list-style: none
+  overflow: hidden
+  padding-top: 30px
+  height: 100%
+  background-color: #fff
+  border: solid 1px rgb(242, 242, 242)
+  position: fixed
+  top: 112px
+  z-index: 1000
+  &:hover
+    width: 225px
+  &__item
+    margin-left: 11px
+    margin-bottom: 15px
+    width: 210px
+  &__link
+    font-size: 1.4em
+    letter-spacing: 0.05em
+    font-family: 'Rubik'
+    text-decoration:  none
+    display: flex
+    align-items: center
+    font-weight: 400
+    color: #bdbdbd
+    &:hover
+      color: #4f4f4f
+      & .asside_left__icon_index
+        background-position: -24px -72px
+      & .asside_left__icon_orders
+        background-position: -24px -96px
+      & .asside_left__icon_document
+        background-position: -24px -120px
+      & .asside_left__icon_service
+        background-position: -24px -144px
+      & .asside_left__icon_profile
+        background-position: -24px -168px
+      & .asside_left__icon_company
+        background-position: -24px -192px
+      & .asside_left__icon_address
+        background-position: -24px -216px
+      & .asside_left__icon_settings
+        background-position: -24px -240px
+
+  &__icon
+    width: 24px
+    height: 24px
+    margin-right: 20px
+    background-image: url("images/Header/infolk__sprite.svg")
+    background-repeat: no-repeat
+    &_index
+      background-position: 0 -72px
+    &_orders
+      background-position: 0 -96px
+    &_document
+      background-position: 0 -120px
+    &_service
+      background-position: 0 -144px
+    &_profile
+      background-position: 0 -168px
+    &_company
+      background-position: 0 -192px
+    &_address
+      background-position: 0 -216px
+    &_settings
+      background-position: 0 -240px
+
+//TODO Выпилить то что ниже в отдельный файл анимации
+@keyframes up
+  from
+    top: 112px
+  to
+    top: 59px
+
+@keyframes down
+  from
+    top: 52px
+  to
+    top: 112px
+
+
+.asside_down
+  animation-name: down
+  animation-duration: 0.2s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+.asside_up
+  animation-name: up
+  animation-duration: 0.4s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
