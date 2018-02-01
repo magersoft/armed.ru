@@ -1,0 +1,3 @@
+$(function() {
+    $('#filterStatus').selectric();
+});
