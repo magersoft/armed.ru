@@ -19,7 +19,54 @@ html(lang="ru")
                         span.cart__table-header_item Сумма
                         span.cart__table-header_item
                     .cart__table-inner
-                        - var x = 10;
+                        .cart__table-product
+                            .cart__table-product_item.cart__table-image
+                                a(href="#")
+                                    img(src="images/page/cart/product_cart-2.jpg" alt="Товар в корзине")
+                            a(href="#").cart__table-product_item.cart__table-name
+                                span.cart__table-name_title.gift-title Концентратор кислорода "Armed" 7F-3A
+                                span.cart__table-name_articles Артикул: 1238198539987375
+                            .cart__table-product_item.cart__table-value
+                                .primary-menu__cart_product_volume
+                                    span.primary-menu__cart_product_minus
+                                    input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                                    span.primary-menu__cart_product_plus
+                            .cart__table-product_item.cart__table-price
+                                .cart__table-price_cost
+                                    | 43 685&nbsp;
+                                    span &#8381;
+                                .cart__table-price_oldcost
+                                    strike 43 685 &#8381;
+                            .cart__table-product_item.cart__table-total
+                                .cart__table-total_cost
+                                    | 873 700&nbsp;
+                                    span &#8381;
+                            .cart__table-product_item.cart__table-delete
+                                i.cart__table-delete_icon
+                        .cart__table-product.gift
+                            .cart__table-product_gift
+                                .cart__table-product_gift-icon
+                            .cart__table-product_gift
+                                .cart__table-product_gift-item.cart__table-image
+                                    a(href="#")
+                                        img(src="images/page/cart/gift_product_cart.jpg" alt="Подарок в корзине")
+                                    a(href="#").cart__table-product_gift-item.cart__table-name
+                                        span.cart__table-name_title Подарок
+                                        span.cart__table-name_articles Артикул: 1238198539987375
+                            .cart__table-product_gift.cart__table-value
+                                .primary-menu__cart_product_volume
+                                    input.primary-menu__cart_product_entry.gift-entry(type="text" value="1" disabled="disabled")
+                            .cart__table-product_gift.cart__table-price
+                                .cart__table-price_cost
+                                    strike
+                                        | 43 685&nbsp;
+                                        span &#8381;
+                            .cart__table-product_gift.cart__table-total
+                                .cart__table-total_cost.gift-cost
+                                    | Подарок
+                            .cart__table-product_gift.cart__table-delete
+                                i.cart__table-delete_icon
+                        - var x = 12;
                         - for (var i=1; i<=x; i++) {
                         .cart__table-product
                             .cart__table-product_item.cart__table-image
@@ -70,11 +117,45 @@ html(lang="ru")
                             label Введите ваш промо-код на скидку:
                             input(type="text")
                         .cart__total-coupone_button
-                            a(href="#")
+                            .button-cart.promokod
                                 | Применить купон
+                                i.cart__table-footer_next-icon
                     .cart__total-check.col-6
                         .cart__total-title
                             h3 Ваш счет:
+                        .cart__total-check_body
+                            .row
+                                .col-6
+                                .col-6.cart__total-check_body
+                                    .cart__total-check_body-item
+                                        span.check-title Всего товаров
+                                        span.check-value 23
+                                    .cart__total-check_body-item.urik
+                                        span.check-title Объем
+                                        span.check-value 23 м<sup><small>3</small></sup>
+                                    .cart__total-check_body-item.urik
+                                        span.check-title Масса
+                                        span.check-value 23 кг
+                                    .cart__total-check_body-item
+                                        span.check-title На сумму:
+                                        span.check-value 955 740 &#8381;
+                                    .cart__total-check_body-item.urik
+                                        span.check-title В т.ч. НДС:
+                                        span.check-value 5 740 &#8381;
+                                    .cart__total-check_body-item.bonus
+                                        span.check-title Скидка Промо-кода:
+                                        span.check-value.green 15%
+                                    .cart__total-check_body-item.bonus
+                                        span.check-title Выгода
+                                        span.check-value.green 5 740 &#8381;
+                .button-checkout
+                    a(href="#").button.go-checkout
+                        | Оформить заказ
+
+                // TODO ВРЕМЕННЫЙ БЛОК ДЛЯ ДЕМОНСТРАЦИИ КОРЗИНЫ ФИЗИКОВ И ЮРИКОВ
+                .vremeniy-class
+                    .click-f Физ
+                    .click-u Юр
             include ../include/footer/footer
         include ../include/popup/popup
 

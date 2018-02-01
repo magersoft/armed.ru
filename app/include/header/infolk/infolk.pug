@@ -1,18 +1,13 @@
 .infolk
     .infolk__notifaction
-        a.infolk__mail(href="#")
-            span.infolk__icon.infolk__icon_mail
-            span.infolk__alarm.infolk__alarm_mail
-        a.infolk__ring(href="#")
-            span.infolk__icon.infolk__icon_ring
-            span.infolk__alarm.infolk__alarm_ring
+
     .infolk__info
         .infolk__info-manager-wrapp
-            p.infolk__info-text Ваш менеджер:
             .infolk__info-manager
                 img.infolk__info-foto(src="images/Header/foto__manager.png" alt="Путин Владимир Владимирович")
                 .infolk__info-text-manager
-                    p.infolk__info-name Фамилия Имя Отчество
+                    p.infolk__info-text Фамилия Имя
+                        span.infolk__info-name (Ваш менеджер)
                     a.infolk__link(href="#")
                         span.infolk__icon.infolk__icon_tel
                         | +7 (465) 000 00 00
@@ -25,6 +20,11 @@
                 p.infolk__user-name Фамилия Имя Отчество
             img.infolk__user-foto(src="images/Header/user__face.png" alt="фото пользователя или логотип компании")
     .infolk__exit
+        a.infolk__mail(href="#")
+            span.infolk__icon.infolk__icon_mail
+            span.infolk__alarm.infolk__alarm_mail
+        a.infolk__ring(href="#")
+            span.infolk__icon.infolk__icon_ring
+            span.infolk__alarm.infolk__alarm_ring
         a.infolk__exit-link(href="/")
             span.infolk__icon.infolk__icon_exit
-            |Выйти
