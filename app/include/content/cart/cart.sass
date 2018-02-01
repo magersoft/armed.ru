@@ -30,6 +30,7 @@
       width: 100%
       height: auto
       background-color: #fff
+      border: 1px solid #F2F2F2
     &-header
       display: flex
       flex-wrap: wrap
@@ -94,6 +95,35 @@
           flex: .15
         &:nth-child(6)
           flex: .1
+      &_gift
+        display: flex
+        justify-content: flex-start
+        &-item
+          display: flex
+          justify-content: center
+        &-icon
+          background: url(images/page/cart/icon-cart-gift.png) center no-repeat
+          display: flex
+          width: 34px
+          height: 34px
+        .gift-entry
+          color: $GlobalColor
+        &:nth-child(1n)
+          width: calc(100%/6)
+        &:nth-child(1)
+          flex: .1
+          justify-content: center
+        &:nth-child(2)
+          flex: .4
+        &:nth-child(3)
+          flex: .15
+          justify-content: center
+        &:nth-child(4)
+          flex: .15
+        &:nth-child(5)
+          flex: .15
+        &:nth-child(6)
+          flex: .1
     &-name
       display: flex
       flex-direction: column
@@ -101,6 +131,8 @@
       &_title
         font-size: 1.6em
         color: $headerCartTitle
+      .gift-title
+        color: $ConfirmColor
       &_articles
         color: $headerItemColor
         font-size: 1.4em
@@ -115,6 +147,8 @@
         span
           font-size: 12px
           font-weight: 400
+        strike
+          color: $headerCartOldcost
       &_oldcost
         font-size: 1.2em
         color: $headerCartOldcost
@@ -122,6 +156,11 @@
       @extend .cart__table-price
       &_cost
         @extend .cart__table-price_cost
+      .gift-cost
+        color: $GlobalColor
+        font-family: $fontFamilyAdditionally
+        letter-spacing: 0.05em
+        font-weight: 400
     &-delete
       @extend .cart__table-price
       &_icon
@@ -167,6 +206,10 @@
           margin-right: 0
           margin-left: 5px
           background: url(images/Icon/arrow-right.png) center no-repeat
+      &_done
+        &-icon
+          @extend .cart__table-footer_clear-icon
+          background: url(images/Icon/icon-done.png) center no-repeat
       &_gift
         background: $GlobalColor
         color: #fff !important
@@ -178,29 +221,20 @@
           margin-top: 0
         &:hover
           background-color: rgb(212, 44, 44)
-      .button-cart
-        position: relative
-        margin: 15px
-        border: 1px solid #F2F2F2
-        padding: 15px
-        font-size: 1.4em
-        text-decoration: none
-        font-family: $fontFamilyAdditionally
-        letter-spacing: 0.05em
-        color: $headerCartTitle
-        display: flex
   &__total
     height: auto
     margin: 30px 0
     display: flex
+    flex-wrap: wrap
     width: auto
+    justify-content: space-between
     &-coupone
       background: #fff
-      margin-right: 15px
       display: flex
       flex-direction: column
       border: 1px solid #F2F2F2
       padding: 15px 25px
+      flex-basis: 48%
       &_body
         display: flex
         flex-direction: column
@@ -215,11 +249,39 @@
           outline: none
           height: 40px
           padding-left: 15px
+      &_button
+        display: flex
+        justify-content: center
+        .promokod
+          margin: 0
     &-check
-      margin-left: 15px
       background: #fff
       border: 1px solid #F2F2F2
       padding: 15px 25px
+      display: flex
+      flex-basis: 48%
+      flex-direction: column
+      &_body
+        display: flex
+        flex-direction: column
+        margin: 8px 0
+        width: auto
+        &-item
+          display: flex
+          justify-content: space-between
+          margin: 10px 0
+          .check-title
+            font-family: $fontFamilyAdditionally
+            font-size: 1.6em
+            color: $headerItemColor
+            letter-spacing: 0.05em
+          .check-value
+            @extend .check-title
+            color: #333333
+          .green
+            color: $ConfirmColor
+        .bonus
+          display: none
     &-title
       border-bottom: 1px solid #F2F2F2
       padding-bottom: 6px
@@ -229,3 +291,50 @@
         font-family: $fontFamilyAdditionally
         color: #333
         font-weight: 400
+
+.check__total-product
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.button-cart
+  position: relative
+  margin: 15px
+  border: 1px solid #F2F2F2
+  padding: 15px
+  font-size: 1.4em
+  text-decoration: none
+  font-family: $fontFamilyAdditionally
+  letter-spacing: 0.05em
+  color: $headerCartTitle
+  display: flex
+  cursor: pointer
+
+.button-checkout
+  display: flex
+  justify-content: center
+  .go-checkout
+    text-decoration: none
+    color: #fff
+    font-family: $fontFamilyAdditionally
+    font-size: 1.6em
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 400
+
+// TODO ВРЕМЕННЫЙ БЛОК ДЛЯ ДЕМОНСТРАЦИИ КОРЗИНЫ ФИЗИКОВ И ЮРИКОВ
+.vremeniy-class
+  display: flex
+  justify-content: center
+  align-items: center
+  div
+    font-size: 1.4em
+    margin: 15px
+    cursor: pointer
+    &:hover
+      color: $ConfirmColor
+.urik
+  display: none
