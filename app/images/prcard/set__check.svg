@@ -1,0 +1,30 @@
+<svg width="82" height="41" viewBox="0 0 82 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 21</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(25336 18275)">
+<g id="Group 21">
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-25288 -18264)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(-25291.6 -18271.6)" fill="#7DC472"/>
+</g>
+</g>
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-25325.4 -18261.5)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(-25328 -18267)" fill="#BDBDBD"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 26 0L 26 20L 0 20L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 17.0833 0C 7.65333 0 0 7.65333 0 17.0833C 0 26.5133 7.65333 34.1667 17.0833 34.1667C 26.5133 34.1667 34.1667 26.5133 34.1667 17.0833C 34.1667 7.65333 26.5133 0 17.0833 0ZM 13.6667 25.6251L 5.125 17.0834L 7.53375 14.6746L 13.6667 20.7905L 26.6329 7.82422L 29.0417 10.2501L 13.6667 25.6251Z"/>
+<path id="path2_fill" d="M 0 0L 19.0244 0L 19.0244 14.6341L 0 14.6341L 0 0Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 12.5 0C 5.6 0 0 5.6 0 12.5C 0 19.4 5.6 25 12.5 25C 19.4 25 25 19.4 25 12.5C 25 5.6 19.4 0 12.5 0ZM 10 18.7496L 3.75 12.4996L 5.5125 10.7371L 10 15.2121L 19.4875 5.72461L 21.25 7.49961L 10 18.7496Z"/>
+</defs>
+</svg>
