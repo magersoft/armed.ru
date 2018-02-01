@@ -23,7 +23,10 @@ menu.asside_right
                 input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
             label.orders__filter-label(for="filterStatus") Статус заказа
                 select.orders__filter-select(name="filterStatus" id="filterStatus")
-                    option.orders__filter-option(value="") В ожидании
+                    option.orders__filter-option(value="" disabled selected) Не выбрано
+                    option.orders__filter-option(value="")
+                        span.orders__status-color.orders__status-color_blue
+                        |В ожидании
                     option.orders__filter-option(value="") Доставлено
                     option.orders__filter-option(value="") В доставке
                     option.orders__filter-option(value="") Оплачено
