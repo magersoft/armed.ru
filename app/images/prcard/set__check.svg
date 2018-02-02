@@ -1,30 +1,64 @@
-<svg width="82" height="41" viewBox="0 0 82 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<title>Group 21</title>
+<svg width="144" height="24" viewBox="0 0 144 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component 6</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(25336 18275)">
-<g id="Group 21">
+<g id="Canvas" transform="translate(25308 18163)">
+<g id="Component 6">
 <g id="Check button">
 <g id="Rectangle">
-<use xlink:href="#path0_fill" transform="translate(-25288 -18264)" fill="#FFFFFF"/>
+<use xlink:href="#path0_fill" transform="translate(-25305.5 -18157.7)" fill="#FFFFFF"/>
 </g>
 <g id="Shape">
-<use xlink:href="#path1_fill" transform="translate(-25291.6 -18271.6)" fill="#7DC472"/>
+<use xlink:href="#path1_fill" transform="translate(-25308 -18163)" fill="#7DC472"/>
 </g>
 </g>
 <g id="Check button">
 <g id="Rectangle">
-<use xlink:href="#path2_fill" transform="translate(-25325.4 -18261.5)" fill="#FFFFFF"/>
+<use xlink:href="#path0_fill" transform="translate(-25281.5 -18157.7)" fill="#FFFFFF"/>
 </g>
 <g id="Shape">
-<use xlink:href="#path3_fill" transform="translate(-25328 -18267)" fill="#BDBDBD"/>
+<use xlink:href="#path1_fill" transform="translate(-25284 -18163)" fill="#6FB564"/>
+</g>
+</g>
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-25255 -18157)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path3_fill" transform="translate(-25258 -18161)" fill="#6FB564"/>
+</g>
+</g>
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(-25231.9 -18156.6)" fill="#E0E0E0"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path5_fill" transform="translate(-25234 -18161)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="translate(-25207.9 -18156.6)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path5_fill" transform="translate(-25210 -18161)" fill="#BDBDBD"/>
+</g>
+</g>
+<g id="Check button">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-25185.5 -18157.7)" fill="#FFFFFF"/>
+</g>
+<g id="Shape">
+<use xlink:href="#path1_fill" transform="translate(-25188 -18163)" fill="#BDBDBD"/>
 </g>
 </g>
 </g>
 </g>
 <defs>
-<path id="path0_fill" d="M 0 0L 26 0L 26 20L 0 20L 0 0Z"/>
-<path id="path1_fill" fill-rule="evenodd" d="M 17.0833 0C 7.65333 0 0 7.65333 0 17.0833C 0 26.5133 7.65333 34.1667 17.0833 34.1667C 26.5133 34.1667 34.1667 26.5133 34.1667 17.0833C 34.1667 7.65333 26.5133 0 17.0833 0ZM 13.6667 25.6251L 5.125 17.0834L 7.53375 14.6746L 13.6667 20.7905L 26.6329 7.82422L 29.0417 10.2501L 13.6667 25.6251Z"/>
-<path id="path2_fill" d="M 0 0L 19.0244 0L 19.0244 14.6341L 0 14.6341L 0 0Z"/>
-<path id="path3_fill" fill-rule="evenodd" d="M 12.5 0C 5.6 0 0 5.6 0 12.5C 0 19.4 5.6 25 12.5 25C 19.4 25 25 19.4 25 12.5C 25 5.6 19.4 0 12.5 0ZM 10 18.7496L 3.75 12.4996L 5.5125 10.7371L 10 15.2121L 19.4875 5.72461L 21.25 7.49961L 10 18.7496Z"/>
+<path id="path0_fill" d="M 0 0L 18.2634 0L 18.2634 14.0488L 0 14.0488L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 12 0C 5.376 0 0 5.376 0 12C 0 18.624 5.376 24 12 24C 18.624 24 24 18.624 24 12C 24 5.376 18.624 0 12 0ZM 9.59961 18.0001L 3.59961 12.0001L 5.29161 10.3081L 9.59961 14.6041L 18.7076 5.49609L 20.3996 7.20009L 9.59961 18.0001Z"/>
+<path id="path2_fill" d="M 0 0L 14 0L 14 11L 0 11L 0 0Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 10 0C 4.48 0 0 4.48 0 10C 0 15.52 4.48 20 10 20C 15.52 20 20 15.52 20 10C 20 4.48 15.52 0 10 0ZM 7.99805 15.0001L 2.99805 10.0001L 4.40805 8.59008L 7.99805 12.1701L 15.588 4.58008L 16.998 6.00008L 7.99805 15.0001Z"/>
+<path id="path4_fill" d="M 0 0L 15.2195 0L 15.2195 11.7073L 0 11.7073L 0 0Z"/>
+<path id="path5_fill" fill-rule="evenodd" d="M 10 0C 4.48 0 0 4.48 0 10C 0 15.52 4.48 20 10 20C 15.52 20 20 15.52 20 10C 20 4.48 15.52 0 10 0ZM 8 15.0001L 3 10.0001L 4.41 8.59008L 8 12.1701L 15.59 4.58008L 17 6.00008L 8 15.0001Z"/>
 </defs>
 </svg>

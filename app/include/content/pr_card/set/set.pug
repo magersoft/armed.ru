@@ -2,26 +2,46 @@
     .prcard-title
         h2 Состав комплекта
     .set__slider
-        - var x = 5;
+        - var x = 9;
         - for (var i=1; i<=x; i++) {
-        .set__slider-wrapper
-            .set__slider-inner
-                span.set__slider-check
-                .set__slider-content
-                    img(src='../images/prcard/set__image.png')
-                    p.set__slider-item__description
-                        p.set-text
-                            | Деталь входящая в комплект к данному товару
-                    .set__slider-item__cost
-                        p.set-cost__new
-                            | 2 642&nbsp;
-                            span.set-cost__new-value
-                                | &#8381; / ШТ.
-                        .set-cost__old-inner
-                            p.set-cost__old
-                                | 3 642&nbsp;
-                            span.set-cost__old-value
-                                | &#8381;
-                .set__slider-plus
-                    span.set-plus
+            .set__slider-wrapper
+                .set__slider-item
+                    .set__slider-item__plus
+                .set__slider-item__check
+                .set__slider-inner
+                    .set__slider-container
+                        .set__slider-item.set__slider-item__img
+                            img(src='../images/prcard/slider_card_2.png')
+                        .set__slider-item.set__slider-item__text
+                            .set__slider-item__text-description
+                                p
+                                    |Деталь входящая в комплект к данному товару
+                            .set__slider-item__text-cost
+                                .set__cost-new
+                                    p
+                                        | 2 642
+                                        span
+                                            |&nbsp;&#8381;/шт.
+                                .set__cost-old
+                                    p
+                                        | 2 642
+                                        span
+                                            | &nbsp;&#8381;/шт.
         - }
+    .set__price
+        .set__price-wrapper
+            .set__price-inner
+                .set__price-item
+                    p.set__price-item__text
+                        | Стоимость комплекта:
+                        span.set__price-item__text__number
+                            | 13 385
+                            | &#8381;
+                    p.set__price-item__oldprice
+                        | 26 770
+                        | &#8381;
+            .set__price-inner__button
+                button.product__button.button.button_icon.button_set
+                    span.button__text
+                        span.button__icon.button__icon_basket
+                        | В корзину
