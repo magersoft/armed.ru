@@ -1,0 +1,59 @@
+.reviews-form
+  padding: 15px
+  border-bottom: 1px solid #e0e0e0
+  &__rating
+    display: flex
+    flex-direction: row
+    align-items: center
+    p
+      margin-right: 10px
+      font: 
+        size: 1.4em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #4f4f4f
+  &__opinion
+    label
+      font:
+        size: 1.4em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #4f4f4f
+    textarea
+      margin: 10px 0 20px 0
+      height: 90px
+      width: 100%
+      resize: none
+  &__radio
+    margin: 15px 0
+    p
+      margin-bottom: 10px
+      font:
+        size: 1.4em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #4f4f4f
+    &-group
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      input
+        display: none
+        &:checked + label
+          border: 1px solid #828282
+      label
+        border-radius: 2px
+        border: 1px solid #f2f2f2
+        font:
+          family: $fontFamilyDefault
+          size: 1.4em
+          weight: normal
+        color: #4f4f4f
+        cursor: pointer
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        width: 170px
+        height: 50px
+
