@@ -1,7 +1,6 @@
 $('.product').hover(
     function() {
         if ($(this).hasClass('product_entity')) {
-            console.log("тыц");
             $(this).removeClass('product_entity_nothover').addClass('product_entity_hover');
         }
         else if ($(this).hasClass('product_entitySm')) {
@@ -51,14 +50,42 @@ $(function () {
     $('#productChange').click(
         function () {
             var card = $('.product_entity').children();
-            console.log(card);
-            return false;
-        },
-        function () {
-            var card = $('.product_entity').children();
-            console.log(card);
+            $('.product_entity').removeClass('product_entity').addClass('product_entitySm');
+            for (var i = 0; i < card.length; i++) {
+                var product = card[i];
+                product.classList.remove('product__main_entity');
+                product.classList.add('product__main_entitySm');
+                var childrens = product.children;
+                for (var j = 0; j < childrens.length; j++){
+                    var child = childrens[j];
+                    child.classList += 'Sm';
+
+
+                }
+            }
             return false;
         }
     );
+});
 
+$(function () {
+    $('#productChangeFull').click(function () {
+        var card = $('.product_entitySm').children();
+        $('.product_entitySm').removeClass('product_entitySm').addClass('product_entity');
+        for (var i = 0; i < card.length; i++) {
+            var product = card[i];
+            product.classList.remove('product__main_entitySm');
+            product.classList.add('product__main_entity');
+            var childrens = product.children;
+            for (var j = 0; j < childrens.length; j++) {
+                var child = childrens[j];
+                var classes = child.classList.value;
+                var reg = /sm/gi;
+                var newClassList = classes.replace(reg, '');
+                child.classList.value = newClassList;
+            }
+        }
+        return false;
+
+    });
 });

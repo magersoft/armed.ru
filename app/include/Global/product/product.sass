@@ -14,6 +14,12 @@
     height: 85px
     flex-direction: row
     justify-content: center
+    &Sm
+      width: 100%
+      height: auto
+      flex-direction: row
+      justify-content: center
+      padding: 5px 15px
     &_hover
       border: 1px solid #bdbdbd
     &_nothover
@@ -46,6 +52,8 @@
     position: relative
     &_entity
       height: 83px
+    &_entitySm
+      display: none
   &__image
     height: 210px
     &_entity
@@ -67,6 +75,8 @@
       flex-direction: column
       align-items: flex-start
       justify-content: center
+      &Sm
+        display: none
   &__rib
     height: 20px
     width: 100%
@@ -143,6 +153,8 @@
         box-shadow: 0 6px 10px $productShadowColor
       &_hide
         display: none
+    &_entitySm
+      display: none
   &__asside
     width: 60px
     height: 380px
@@ -173,6 +185,8 @@
       margin-bottom: 0
       &:not(:last-child)
         margin-right: 15px
+    &_entitySm
+      display: none
     &_favorite
       background-position: 0 0
       &:hover
@@ -298,13 +312,27 @@
         color: $GlobalColor
   &__availability
     font-size: 1.2em
+    &_entity
+      display: none
+    &_entitySm
+      display: block
     &_true
       color: $ConfirmColor
     &_none
       color: $GlobalColor
-  &__bascet-link
-    font-size: 1.4em
-    color: $GlobalColor
+  &__bascet
+    &-link
+      font-size: 1.4em
+      color: $GlobalColor
+    &_entity
+      display: none
+    &_entitySm
+      display: inline
+  &__count
+    &_entity
+      display: none !important
+    &_entitySm
+      display: flex
 .you-price_color
   color: $productQuestionYouColor
 .retail-price_color
