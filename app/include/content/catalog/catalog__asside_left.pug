@@ -13,7 +13,10 @@
             span.catalog__asside-count &nbsp19
         a.catalog__asside-link(href="#") Аппараты для дыхательно терапии
             span.catalog__asside-count &nbsp99
+
     p.catalog__asside-head Фильтры по параметрам
+
+
     a.catalog__asside-text(href="#") Розничная цена
         sapn.catalog__asside-arrow
     .catalog__asside-amountWrap
@@ -21,5 +24,41 @@
             input.catalog__asside-input#amountMin
         label.catalog__asside-label(for="amountMax") До:
             input.catalog__asside-input#amountMax
-
     .catalog__asside-range#assideRange
+
+    a.catalog__asside-text(href="#") Производитель
+        sapn.catalog__asside-arrow
+    select.catalog__asside-select
+        option.catalog__asside-option(value="") Производитель 1
+        option.catalog__asside-option(value="") Производитель 2
+        option.catalog__asside-option(value="") Производитель 3
+        option.catalog__asside-option(value="") Производитель 4
+        option.catalog__asside-option(value="") Производитель 5
+
+    a.catalog__asside-text(href="#") Производитель
+        sapn.catalog__asside-arrow
+    .catalog__asside-check
+        label.control.control-checkbox(for="filter1")
+            input.check__form-input--checkbox(type="checkbox" name="company" id="filter1")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Производитель 1
+                span.catalog__asside-count &nbsp(15)
+        label.control.control-checkbox(for="filter2")
+            input.check__form-input--checkbox(type="checkbox" name="company" id="filter2")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Производитель 2
+                span.catalog__asside-count &nbsp(65)
+        label.control.control-checkbox(for="filter3")
+            input.check__form-input--checkbox(type="checkbox" name="company" id="filter3")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Производитель 3
+                span.catalog__asside-count &nbsp(99)
+        label.control.control-checkbox(for="filter4")
+            input.check__form-input--checkbox(type="checkbox" name="company" id="filter4")
+            .control_indicator
+            span.check__form-checkbox--information
+                | Производитель 4
+                span.catalog__asside-count &nbsp(1)
