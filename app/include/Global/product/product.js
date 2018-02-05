@@ -45,7 +45,7 @@ $(document).click(function(e){
 });
 
 // Скрипт для изменения карточки товара
-
+//TODO Оптимизировать скрипт для быстроты загрузки
 $(function () {
     $('#productChange').click(
         function () {

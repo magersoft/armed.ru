@@ -1,0 +1,93 @@
+.catalog
+  &__asside
+    width: 100%
+    background-color: #fff
+    height: 100vh
+    padding: 15px
+    &-head
+      font-family: 'Rubik'
+      font-size: 1.5em
+      font-weight: 500
+      text-transform: uppercase
+      letter-spacing: 0.8px
+      color: rgb(79, 79, 79)
+      border-left: 2px solid $GlobalColor
+      padding-left: 5px
+      margin-bottom: 15px
+    &-menu
+      display: flex
+      flex-direction: column
+      border-bottom: 1px solid #f2f2f2
+      margin-bottom: 15px
+    &-link
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 1.4em
+      color: rgb(130, 130, 130)
+      margin-bottom: 10px
+      text-decoration: none
+      &:hover
+        padding-left: 10px
+    &-text
+      display: flex
+      align-items: center
+      font-size: 1.6em
+      color: rgb(130, 130, 130)
+      text-decoration: none
+    &-arrow
+      background-image: url("images/Catalog/catalog__arrow.svg")
+      background-repeat: no-repeat
+      width: 9px
+      height: 6px
+      margin-left: 5px
+      margin-top: 3px
+    &-amountWrap
+      display: flex
+      justify-content: space-between
+      margin-bottom: 6px
+      margin-top: 6px
+    &-label
+      display: flex
+      justify-content: center
+      font-size: 1.6em
+      color: rgb(130, 130, 130)
+      align-items: center
+    &-input
+      margin-left: 5px
+      margin-right: 10px
+      font-size: 11px
+      font-weight: 300
+      color: rgb(130, 130, 130)
+    &-range
+      position: relative
+      &_line
+        background-color: red
+        top: 0
+        height: 100%
+        position: absolute
+        z-index: 1
+        font-size: .7em
+        display: block
+        border: 0
+        overflow: hidden
+      &_lineHorizont
+        height: 3px
+        border: 1px solid #D4D4D4
+        background: #fff
+        border-radius: 4px
+      &_handle
+        position: absolute
+        z-index: 2
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        background: #000 no-repeat
+        cursor: pointer
+        top: -5px
+        margin-left: -6px
+
+
+
+
+
