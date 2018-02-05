@@ -45,6 +45,8 @@ gulp.task('js', function() {
             'app/libs/jquery-ui/jquery-ui.js',
             'app/libs/isotope-layout/dist/isotope.pkgd.js',
             'app/libs/slick-carousel/slick/slick.js',
+            'app/libs/jquery.easy-pie-chart/dist/jquery.easypiechart.js',
+            'app/libs/jquery.sticky-kit/jquery.sticky-kit.js',
             'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/include/**/*.js',
             'app/libs/jquery-selectric/public/jquery.selectric.js']) // файлы, которые обрабатываем
