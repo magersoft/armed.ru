@@ -68,7 +68,7 @@
     [dir="rtl"] & {
         float: right;
     }
-    img {
+    & > img {
         display: block;
     }
     &.slick-loading img {

@@ -1,4 +1,4 @@
-$('.chart').easyPieChart({
+$('.percentage').easyPieChart({
     animate: 3000,
     lineWidth: 10,
     onStep: function(value) {
