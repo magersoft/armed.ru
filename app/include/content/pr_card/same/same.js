@@ -1,7 +1,10 @@
 $('.same__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    variableWidth: true,
     arrows: true,
-    nextArrow: '<i class="slide-right slide-right-video"></i>',
-    prevArrow: '<i class="slide-left slide-left-video"></i>'
+    infinite: false,
+    adaptiveHeight: true,
+    nextArrow: '<i class="slide-right slide-right-same"></i>',
+    prevArrow: '<i class="slide-left slide-left-same"></i>'
 });

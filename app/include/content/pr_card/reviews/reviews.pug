@@ -5,7 +5,7 @@
             span
                 |&nbsp; (2)
     .reviews-card__wrapper
-        //рейтинг и батон
+        //рейтинг и баттон
         .reviews-card__inner.row
             .reviews-card__item-pie.col-6
                 p
@@ -13,6 +13,10 @@
                 //список отзЫвов
                 .chart
                     .percentage(data-percent="50")
+                        span 50
+                        sup %
+                    .lable
+                        | лол крч
             .reviews-card__item-click.col-6
                 .reviews-card__item-click__header
                     p Оставьте свой отзыв о
@@ -63,3 +67,7 @@
                                 |&nbsp;Нет&nbsp;
                                 span (0)
                 - }
+        button.button_white.button_icon.button_reviews
+            span.button__text
+                | Смотреть все
+                span.button__icon.button__icon_arrow

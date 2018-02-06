@@ -86,7 +86,7 @@
 {
     float: right;
 }
-.slick-slide img
+.slick-slide > img
 {
     display: block;
 }
