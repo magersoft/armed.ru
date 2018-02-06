@@ -1,5 +1,6 @@
-@import "catalog__asside"
-@import "catalog__content"
+@import "catalog_asside/catalog__asside"
+@import "catalog_content/catalog__content"
+@import "catalog_filter/catalog__filter"
 
 
 .catalog
@@ -13,3 +14,8 @@
     text-decoration: none
     &:hover
       text-decoration: underline
+  &__filter
+    width: 100%
+    padding: 15px 0
+    display: flex
+    justify-content: space-between
