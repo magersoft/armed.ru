@@ -1,0 +1,54 @@
+.toggle
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  &__item
+    width: 100%
+    display: flex
+    flex-direction: row-reverse
+    justify-content: center
+  &__input
+    display: none
+    &:checked + .toggle__label
+      color: rgb(130, 130, 130)
+      //box-shadow: inset 0 0 0 18px rgba(19, 191, 17, 1), 0 0 0 2px rgba(19, 191, 17, 1)
+      background-color: $ConfirmColor
+    &:checked + .toggle__label:before
+      left: calc(100% - 16px)
+      //box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3)
+    & + .toggle__label
+      //box-shadow: inset 0 0 0 0px rgba(19,191,17,1),0 0 0 2px #dddddd
+
+  &__label
+    font-size: 1.6em
+    color: rgb(224, 224, 224)
+    display: block
+    position: relative
+    padding: 10px
+    margin-bottom: 20px
+    line-height: 16px
+    width: 33px
+    height: 16px
+    border-radius: 18px
+    background: #f2f2f2
+    cursor: pointer
+    border: 1px solid #e8e8e8
+    &:after
+      content: attr(data-id)
+      display: block
+      position: absolute
+      top: 3px
+      left: -147px
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      z-index: 1
+      height: 16px
+      width: 16px
+      border-radius: 100%
+      top: 2px
+      left: 0
+      right: auto
+      background: white
+      box-shadow: 0 0px 0px rgba(0,0,0,.2),0 0 0 1px #dddddd

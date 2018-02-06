@@ -18,7 +18,7 @@
 
 
     a.catalog__asside-text(href="#") Розничная цена
-        sapn.catalog__asside-arrow
+        span.catalog__asside-arrow
     .catalog__asside-amountWrap
         label.catalog__asside-label(for="amountMin") От:
             input.catalog__asside-input#amountMin
@@ -27,7 +27,7 @@
     .catalog__asside-range#assideRange
 
     a.catalog__asside-text(href="#") Производитель
-        sapn.catalog__asside-arrow
+        span.catalog__asside-arrow
     select.catalog__asside-select
         option.catalog__asside-option(value="") Производитель 1
         option.catalog__asside-option(value="") Производитель 2
@@ -36,7 +36,7 @@
         option.catalog__asside-option(value="") Производитель 5
 
     a.catalog__asside-text(href="#") Производитель
-        sapn.catalog__asside-arrow
+        span.catalog__asside-arrow
     .catalog__asside-check
         label.control.control-checkbox(for="filter1")
             input.check__form-input--checkbox(type="checkbox" name="company" id="filter1")
@@ -62,3 +62,19 @@
             span.check__form-checkbox--information
                 | Производитель 4
                 span.catalog__asside-count &nbsp(1)
+
+    a.catalog__asside-text(href="#") Производитель
+        span.catalog__asside-arrow
+    .catalog__asside-toggleWrap.toggle
+        .catalog__asside-toggle.toggle__item
+            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle1")
+            label.catalog__asside-toggleLabel.toggle__label(for="toggle1" data-id="Производитель 1")
+        .catalog__asside-toggle.toggle__item
+            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle2")
+            label.catalog__asside-toggleLabel.toggle__label(for="toggle2" data-id="Производитель 2")
+        .catalog__asside-toggle.toggle__item
+            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle3")
+            label.catalog__asside-toggleLabel.toggle__label(for="toggle3" data-id="Производитель 3")
+        .catalog__asside-toggle.toggle__item
+            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle4")
+            label.catalog__asside-toggleLabel.toggle__label(for="toggle4" data-id="Производитель 4")
