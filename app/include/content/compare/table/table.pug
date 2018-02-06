@@ -1,0 +1,54 @@
+.table
+    .title-h2
+        h2 Сравнение продукции
+    .table__wrapper
+        .table__inner
+            .table__button-group
+            .table__button-clear
+        .table__inner.row
+            .table__item-head
+                table.table-head
+                    tr
+                        th.table-head__th-first
+                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
+                            label.catalog__asside-toggleLabel.toggle__label.toggle__label-compare(for="compare" data-id="Только различающиеся")
+                    tr
+                        th.table-head__th-another
+                            p
+                                | Ширина
+                    tr
+                        th.table-head__th-another
+                            p
+                                | Ширина
+                    tr
+                        th.table-head__th-another
+                            p
+                                | Ширина
+            .table__item-body
+                table.table-prod
+                    tr
+                        td.td-first
+                            span.button__icon.button__icon_cancel.td-del
+                            .td-first__header
+                                p Концентратор кислорода 8F-1
+                            img(src="../images/compare/product.png")
+                            .td-first__cost-group
+                                .td-first__cost-group--new
+                                    p
+                                        | 23 490
+                                        span
+                                            | &nbsp;&#8381;
+                                .td-first__cost-group--old
+                                    p
+                                        | 63 370
+                                        span
+                                            | &nbsp;&#8381;
+
+
+                            a(src="#").table-buy
+                    tr
+                        td.table-prod__td-another 4
+                    tr
+                        td.table-prod__td-another 4
+                    tr
+                        td.table-prod__td-another 4

@@ -35,7 +35,7 @@ $('.product__question').click(function(){
     return false
 });
 
-//TODO: Доработать закрытие всплывашки
+//TODO: Доработать закрытие всплывашки , поменять позиционирование открытия всплывашки
 $(document).click(function(e){
     var obj = $('.product__question-window');
     if (!obj.is(e.target) // если клик был не по нашему блоку
