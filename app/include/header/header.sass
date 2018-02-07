@@ -133,27 +133,28 @@
     height: 60px
     &-item
       position: relative
-      background: url(images/Icon/primary-menu__icon.svg) center no-repeat
+      //background: url(images/Icon/primary-menu__icon.svg) center no-repeat
+      background-image: url("images/sprite.png")
       width: 24px
       height: 24px
       margin: 0 15px
       padding: 12px
       &_personal
-        background-position: 0 -48px
-        &:hover
-          background-position: -24px -48px
-      &_compare
-        background-position: 0px -24px
-        &:hover
-          background-position: -24px -24px
-      &_favorite
-        background-position: 0 0
-        &:hover
-          background-position: -24px 0
-      &_cart
         background-position: 0 -72px
         &:hover
           background-position: -24px -72px
+      &_compare
+        background-position: 0px -48px
+        &:hover
+          background-position: -24px -48px
+      &_favorite
+        background-position: 0 -24px
+        &:hover
+          background-position: -24px -24px
+      &_cart
+        background-position: 0 -96px
+        &:hover
+          background-position: -24px -96px
     &-wrapper
       display: flex
       height: 100%
@@ -168,12 +169,13 @@
       min-height: 22px
       top: -10px
       right: -10px
-      color: $headerBurgerButton
+      //color: $headerBurgerButton
+      color: #fff
       text-decoration: none
       font-size: 1.2em
       font-weight: 500
-      border: 2px solid $headerBurgerButton
-      background-color: #fff
+      //border: 2px solid $headerBurgerButton
+      background-color: $headerBurgerButton
       border-radius: 50%
   &__search
     &-input
