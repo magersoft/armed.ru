@@ -49,6 +49,7 @@ gulp.task('js', function() {
             'app/libs/jquery.sticky-kit/jquery.sticky-kit.js',
             'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/include/**/*.js',
+            'app/libs/notify/notify.js',
             'app/libs/jquery-selectric/public/jquery.selectric.js']) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
         //.pipe(uglify()) // получившуюся "портянку" минифицируем
