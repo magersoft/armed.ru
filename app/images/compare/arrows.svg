@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="105" viewBox="0 0 105 105">
+    <desc>
+        Created using Figma
+    </desc>
+    <g transform="translate(5503 20924)">
+        <mask id="b">
+            <use fill="#FFF" transform="translate(-5503 -20924)" xlink:href="#a"/>
+        </mask>
+        <g mask="url(#b)">
+            <use fill="#E0E0E0" transform="translate(-5503 -20910.9)" xlink:href="#c"/>
+        </g>
+    </g>
+    <defs>
+        <path id="a" fill-rule="evenodd" d="M0 0h105v105H0V0z"/>
+        <path id="c" fill-rule="evenodd" d="M36.802 50.623H0v11.25h36.802V78.75l20.947-22.5-20.947-22.501v16.875zm31.395-5.622V28.126H105v-11.25H68.197V0L47.25 22.5 68.197 45z"/>
+    </defs>
+</svg>

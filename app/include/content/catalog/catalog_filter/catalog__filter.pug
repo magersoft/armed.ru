@@ -1,0 +1,9 @@
+.catalog__filter
+    label.catalog__filterLabel(for="catalogFilter") Сортировать по:
+        select.catalog__filterInput(name="catalogFilter" id="catalogFilter")
+            option.catalog__filterOption(value="") По алфовиту
+            option.catalog__filterOption(value="") Уменьшению цены
+            option.catalog__filterOption(value="") Увеличению цены
+    .catalog__change
+        a.catalog__changeLink.catalog__icon.catalog__icon_full#productChangeFull(href="#")
+        a.catalog__changeLink.catalog__icon.catalog__icon_small#productChange(href="#")

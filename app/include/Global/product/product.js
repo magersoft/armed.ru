@@ -35,7 +35,7 @@ $('.product__question').click(function(){
     return false
 });
 
-//TODO: Доработать закрытие всплывашки
+//TODO: Доработать закрытие всплывашки , поменять позиционирование открытия всплывашки
 $(document).click(function(e){
     var obj = $('.product__question-window');
     if (!obj.is(e.target) // если клик был не по нашему блоку
@@ -45,7 +45,7 @@ $(document).click(function(e){
 });
 
 // Скрипт для изменения карточки товара
-//TODO Оптимизировать скрипт для быстроты загрузки
+
 $(function () {
     $('#productChange').click(
         function () {
@@ -57,10 +57,7 @@ $(function () {
                 product.classList.add('product__main_entitySm');
                 var childrens = product.children;
                 for (var j = 0; j < childrens.length; j++){
-                    var child = childrens[j];
-                    child.classList += 'Sm';
-
-
+                    childrens[j].classList += 'Sm';
                 }
             }
             return false;
@@ -78,11 +75,7 @@ $(function () {
             product.classList.add('product__main_entity');
             var childrens = product.children;
             for (var j = 0; j < childrens.length; j++) {
-                var child = childrens[j];
-                var classes = child.classList.value;
-                var reg = /sm/gi;
-                var newClassList = classes.replace(reg, '');
-                child.classList.value = newClassList;
+                childrens[j].classList.value = childrens[j].classList.value.replace(/sm/gi, '');
             }
         }
         return false;

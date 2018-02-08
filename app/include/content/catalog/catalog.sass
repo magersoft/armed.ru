@@ -1,11 +1,21 @@
-@import "catalog__asside"
-@import "catalog__content"
+@import "catalog_asside/catalog__asside"
+@import "catalog_content/catalog__content"
+@import "catalog_filter/catalog__filter"
 
 
 .catalog
   display: flex
-  justify-content: flex-start
+  justify-content: space-between
   &__asside
-    flex-basis: 15%
+    width: 22%
   &__content
-    flex-basis: 85%
+    width: 77%
+  &__link
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  &__filter
+    width: 100%
+    padding: 15px 0
+    display: flex
+    justify-content: space-between

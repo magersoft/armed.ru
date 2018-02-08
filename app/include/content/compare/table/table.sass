@@ -1,0 +1,172 @@
+.table
+  padding: 30px 15px 15px 15px
+  &__button
+    &-group
+      padding: 0 0 15px 0
+      display: flex
+      flex-direction: row
+    &-clear
+      padding: 0 0 15px 17px
+      a
+        font:
+          size: 1.4em
+          family: $fontFamilyAdditionally
+          weight: normal
+        color: #4f4f4f
+  &__item-body
+    display: flex
+    flex-direction: row
+  &-icon
+    display: none
+    flex-direction: column
+    &__buy
+      margin-bottom: 10px
+      position: relative
+      display: block
+      bottom: 170px
+      left: 160px
+      z-index: 1
+      width: 33px
+      height: 33px
+      background:
+        color: #E5E5E5
+        image: url("images/compare/buy.svg")
+        position: 0 0
+      cursor: pointer
+      border-radius: 50%
+      &:hover
+        background:
+          position: 33px 0
+  &-prod
+    border-collapse: collapse
+    border:
+      top: 1px solid #e0e0e0
+      right: 1px solid #e0e0e0
+      bottom: 1px solid #e0e0e0
+    background: #ffffff
+    width: 207px
+    th,
+    td
+      border-bottom: 1px solid #e0e0e0
+    &__td-another
+      display: flex
+      flex-direction: row
+      justify-content: center
+      text-align: center
+      padding: 7px
+      font:
+        size: 1.4em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #4f4f4f
+      img
+        margin-right: 7px
+  &-head
+    border: 1px solid #e0e0e0
+    background: #ffffff
+    border-collapse: collapse
+    tr
+      border: 1px solid #e0e0e0
+    &__th
+      &-first
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        justify-content: center
+        background:
+          image: url("images/compare/arrows.svg")
+          repeat: no-repeat
+          position: 50% 40%
+        width: 255px
+        height: 234px
+        padding:
+          bottom: 78px
+      &-another
+        font:
+          family: $fontFamilyDefault
+          size: 1.4em
+          weight: normal
+        letter-spacing: 0.7px
+        color: #828282
+        padding: 7px
+        display: flex
+        justify-content: flex-start
+        align-items: flex-end
+.td
+  &-clear
+    display: block
+    position: relative
+
+  &-del
+    display: block
+    position: relative
+    top: 2px
+    right: -92px
+    &:hover
+      cursor: pointer
+      background:
+        position: -20px -200px
+  &-first
+    height: 311px
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    &:hover
+      .table-icon
+        display: block
+        width: 200px
+        height: 0
+    img
+      width: 179px
+      height: 179px
+      margin: 20px
+    &__header
+      text-align: center
+      p
+        text-transform: uppercase
+        font:
+          family: $fontFamilyAdditionally
+          size: 1.4em
+          weight: normal
+        letter-spacing: 0.7px
+        color: #828282
+    &__cost-group
+      width: 100%
+      display: flex
+      flex-direction: row
+      align-items: flex-end
+      justify-content: center
+      &--new
+        p
+          font:
+            size: 1.8em
+            family: $fontFamilyDefault
+            weight: 500
+          color: #4f4f4f
+      &--old
+        text:
+          decoration: line-through
+        margin-left: 10px
+        font:
+          size: 1.3em
+          family: $fontFamilyDefault
+          weight: normal
+        color: #bdbdbd
+.toggle
+  &__label
+    top: 40px
+    left: 75px
+    &:after
+      left: -160px
+    &-compare
+      font:
+        size: 1.3em
+        family: $fontFamilyDefault
+        weight: 500
+      color: #4F4F4F
+.scroll-row
+  max-width: 1035px
+  overflow: auto
+.dinamic-numb
+  color: #c62828
