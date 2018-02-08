@@ -1,0 +1,75 @@
+.StepTwo_fiz
+  &__Wrap
+    width: 1000px
+    margin: 0 auto
+  &__Content
+    padding-bottom: 60px
+  &__StatusBar
+    width: 100%
+    height: 100px
+    background-image: url("images/Ordering/StatusBar__StepTwo_fiz.png")
+    background-position: center center
+    background-repeat: no-repeat
+    margin-bottom: 40px
+  &__Head
+    font-family: 'Rubik'
+    font-weight: 500
+    font-size: 1.8em
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    margin-bottom: 30px
+  &__Text
+    font-size: 1.4em
+    color: #4F4F4F
+  &__Form
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+    &-Label
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      font-weight: 300
+      font-size: 1.4em
+      color: #828282
+    &-Input
+      background: #FFFFFF
+      border: 1px solid #E0E0E0
+      width: 375px
+      height: 40px
+      &_active
+        border: 1px solid orange
+      &:disabled
+        background-color: #ccc
+      &_sm
+        width: 155px
+    &-TextArea
+      height: 117px
+      max-height: 117px
+      min-height: 117px
+      width: 100%
+      max-width: 100%
+      min-width: 100%
+    &_Comment
+      width: 532px
+    &_Apartment, &_Reserved
+      display: flex
+      justify-content: space-between
+    &_Location
+      margin-right: 10px
+  &__FormText
+    font-size: 16px
+    text-align: center
+    color: #828282
+
+  &__ButtonAction
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__Button
+    &:not(:last-child)
+      margin-right: 10px
+    &_Cancel
+      flex-grow: 2
+
