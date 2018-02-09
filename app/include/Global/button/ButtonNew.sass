@@ -1,0 +1,91 @@
+.Button
+  font-family: 'Rubik'
+  border: 0
+  border-radius: 2px
+  display: flex
+  justify-content: center
+  align-items: center
+  // модификаторы размера
+  &_Size_XL
+    width: 255px
+    height: 65px
+  &_Size_L
+    width: 180px
+    height: 64px
+  &_Size_M
+    width: 165px
+    height: 65px
+  &_Size_S
+    width: 150px
+    height: 45px
+  &_Size_XS
+    width: 140px
+    height: 40px
+  // Модификаторы цвета
+  &_Color_Red
+    background-color: $GlobalColor
+  &_Color_White
+    background-color: rgba(255, 255, 255, 1)
+    border: 1px solid rgba(224, 224, 224, 1)
+
+  // Элемент текст
+  &-Text
+    display: flex
+    justify-content: center
+    align-items: center
+    letter-spacing: 0.05em
+    // Модификатор цвета
+    &_Color_White
+      color: rgba(255, 255 ,255 ,1)
+    // Модификатор UPPERCASE
+    &_Uppercase
+      text-transform: uppercase
+    // Модификатор размера шрифта
+    &_Size_L
+      font-size: 16px
+    &_Size_M
+      font-size: 14px
+    &_Size_S
+      font-size: 12px
+
+  // Элемент иконка
+  &-Icon
+    width: 20px
+    height: 20px
+    background-image: url("images/sprite.png")
+    background-repeat: no-repeat
+    // Модификатор отдельной иконки из спрайта
+    &_Tel
+      background-position: -122px -24px
+    &_Entity
+      background-position: -122px -44px
+    &_Phone
+    &_Mail
+    &_Arrow
+    &_ArrowWhite
+    &_Basket
+      background-position: -122px -44px
+    &_BasketRed
+      background-position: -40px -270px
+    &_Lock
+      background-position: -122px -84px
+    &_Cancel
+      background-position: 0 -270px
+    &_CancelRed
+      background-position: -20px -270px
+    &_AddUser
+      background-position: -80px -290px
+    &_AddUserRed
+      background-position: -100px -290px
+    &_Pencil
+      background-position: -122px -64px
+    &_User
+      background-position: -60px -310px
+    &_UserBlack
+      background-position: -80px -310px
+    &_UserRed
+      background-position: -100px -310px
+
+    &_UserRed
+    
+  
