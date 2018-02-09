@@ -1,0 +1,54 @@
+.StepFour_Ur
+  &__Wrap
+    width: 500px
+    margin: 0 auto
+  &__Content
+    padding-bottom: 60px
+  &__Text
+    font-size: 1.4em
+    color: #4F4F4F
+    text-align: center
+  &__StatusBar
+    width: 100%
+    height: 100px
+    background-image: url("images/Ordering/StatusBar__StepFourUr.png")
+    background-position: center center
+    background-repeat: no-repeat
+    margin-bottom: 40px
+  &__Head
+    font-family: 'Rubik'
+    font-weight: 500
+    font-size: 1.8em
+    text-align: center
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    margin-bottom: 30px
+  &__PaymentMethod
+    display: flex
+    justify-content: space-around
+    &-Method
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      height: 150px
+      width: 164px
+      text-align: center
+
+    &-Input
+      display: none
+      &:checked ~ label
+        background-position-x: -164px
+
+    &-Label
+      width: 164px
+      height: 100px
+      background-image: url("images/Ordering/PaymentMethod.png")
+      background-repeat: no-repeat
+      &_Purse
+        background-position: 0 0
+      &_Document
+        background-position: 0 -300px
+    &-Text
+      font-size: 1.4em
+      color: #828282

@@ -1,0 +1,32 @@
+.StepFour_Ur__Content
+    include ../orderingHead
+    .StepFour_Ur__StatusBar
+    .StepFour_Ur__Wrap
+        .StepFour_Ur__PaymentMethod
+            .StepFour_Ur__PaymentMethod-Method
+                input.StepFour_Ur__PaymentMethod-Input(type="radio" name="Method" id="MethodPurse")
+                label.StepFour_Ur__PaymentMethod-Label.StepFour_Ur__PaymentMethod-Label_Purse(for="MethodPurse")
+                p.StepFour_Ur__PaymentMethod-Text Наличный расчет
+            .StepFour_Ur__PaymentMethod-Method
+                input.StepFour_Ur__PaymentMethod-Input(type="radio" name="Method" id="MethodDocument")
+                label.StepFour_Ur__PaymentMethod-Label.StepFour_Ur__PaymentMethod-Label_Document(for="MethodDocument")
+                p.StepFour_Ur__PaymentMethod-Text Оплата по счету
+        p.StepFour_Ur__Text
+            | Мы свяжимся с вами в течении 10 минут и сообщим стоимость и сроки доставки* с 9:00 - 22:00 по МСК
+            | Доставка в вашем регионе оплачивается при получении.
+    .StepTwo_fiz__ButtonAction
+        .StepTwo_fiz__Button.StepTwo_fiz__Button_Cancel
+            button.button.button_sm.button_white
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_user
+                    | Отменить заказ
+        .StepTwo_fiz__Button
+            button.button.button_white.button_sm#ReturnStepFour_Ur
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_userRed
+                    | Вернуться назад
+        .StepTwo_fiz__Button
+            button.button.button_sm#ButtonStepFinish
+                span.button__text
+                    | Продолжить
+                    span.button__icon.button__icon_userRed

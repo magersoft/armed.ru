@@ -27,8 +27,11 @@ $('#orderNumberUser').keyup(function () {
                 }
             );
         } else {
-            console.log("Молодец");
-            document.location.href = "orderingStepTwo.html"
+            if (window.location.pathname.slice(1).indexOf('Ur') + 1){
+                document.location.href = "orderingStepTwoUr.html"
+            } else {
+                document.location.href = "orderingStepTwo.html"
+            }
         }
 
     } else {
