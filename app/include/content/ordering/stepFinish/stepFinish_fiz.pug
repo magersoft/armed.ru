@@ -1,0 +1,22 @@
+.StepFinish_fiz__Content
+    include ../orderingHead
+    .StepFinish_fiz__StatusBar
+    .StepFinish_fiz__Wrap
+        img.StepFinish_fiz__ChekIcon(src="images/Ordering/Check.png" alt="Успешная покупка")
+        p.StepFinish_fiz__Text
+            | Информация о заказе отправлена на Вашу электронную почту.
+            | Заказ будет обработан в течении 15 минут,
+            | о готовности Вас проинформирует наш оператор.
+        p.StepFinish_fiz__Text
+            | Для уточнения любой, интересующей вас информации вы можете
+            | позвонить по телефону горячей линии или связаться с нами по электронной почте
+        .StepFinish_fiz__ContactWrap
+            a.StepFinish_fiz__Link.StepFinish_fiz__Link_Phone(href="tel:+78888888888") +7 (888) 888 88-88
+            a.StepFinish_fiz__Link.StepFinish_fiz__Link_Mail(href="mailto:info@armed.ru") info@armed.ru
+        p.StepFinish_fiz__Text
+            |  Введите Ваш email, если желаете получать уведомления по заказу не на телефон
+        input.StepFinish_fiz__Input(type="mail" name="email" placeholder="Ваш e-mail:")
+        br
+        button.button.button_sm#Return
+            span.button__text
+                | На главную
