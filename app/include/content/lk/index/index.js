@@ -15,26 +15,20 @@ $('.LkIndex-ProgressBar').progressbar({
     value: parseInt(val)
 });
 
-
-importScripts('https://www.gstatic.com/charts/loader.js');
 google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawMagazine);
+google.charts.setOnLoadCallback(drawAssortiment);
 
-function drawChart() {
+function drawMagazine() {
 
     var data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per Day'],
-        ['Work',     11],
-        ['Eat',      2],
-        ['Commute',  2],
-        ['Watch TV', 2],
-        ['Sleep',    7]
+        ['ООО "Дезиген"', 7],
+        ['ИП "SEOGROUP"', 11],
+        ['ООО "Верстальщик"', 5]
     ]);
 
     var options = {
-        title: 'My Daily Activities',
-        width: 611,
-        height: 245,
         legend :{
             "position":"labeled",
             "textStyle": {
@@ -43,10 +37,62 @@ function drawChart() {
                 "format": "##%"
             }
         },
+        pieHole: 0.5,
+        colors: [
+            'rgb(151, 204, 100)',
+            'rgb(255, 217, 99)',
+            'rgb(253, 90, 62)',
+            'rgb(119, 182, 231)',
+            'rgb(169, 85, 184)',
+            'rgb(220, 157, 107)',
+            'rgb(234, 82, 127)',
+            'rgb(69, 105, 188)',
+            'rgb(75, 160, 98)'
+        ],
         pieSliceText: 'none'
     };
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    var chart = new google.visualization.PieChart(document.getElementById('piechartMagazine'));
+
+    chart.draw(data, options);
+}
+function drawAssortiment() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Рециркуляторы', 11],
+        ['Кислородные концентраторы', 6],
+        ['Тонометры', 2],
+        ['Увлажнители воздуха', 5],
+        ['Другое', 20]
+
+    ]);
+
+    var options = {
+        legend :{
+            "position":"labeled",
+            "textStyle": {
+                "color": "black",
+                "fontSize": "14",
+                "format": "##%"
+            }
+        },
+        pieHole: 1,
+        colors: [
+            'rgb(151, 204, 100)',
+            'rgb(255, 217, 99)',
+            'rgb(253, 90, 62)',
+            'rgb(119, 182, 231)',
+            'rgb(169, 85, 184)',
+            'rgb(220, 157, 107)',
+            'rgb(234, 82, 127)',
+            'rgb(69, 105, 188)',
+            'rgb(75, 160, 98)'
+        ],
+        pieSliceText: 'none'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechartAssortiment'));
 
     chart.draw(data, options);
 }

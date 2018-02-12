@@ -50,6 +50,8 @@ gulp.task('js', function() {
             'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/libs/notify/notify.js',
             'app/libs/jquery-selectric/public/jquery.selectric.js',
+            'app/libs/webcomponentsjs/webcomponents-lite.js',
+            'app/libs/webcomponentsjs/webcomponents-loader.js',
 
             'app/include/**/*.js'
     ]) // файлы, которые обрабатываем
