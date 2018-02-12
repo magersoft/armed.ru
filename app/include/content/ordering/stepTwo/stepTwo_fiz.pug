@@ -1,0 +1,81 @@
+.StepTwo_fiz__Content
+    include ../orderingHead
+    .StepTwo_fiz__StatusBar
+    .StepTwo_fiz__Wrap
+        p.StepTwo_fiz__Head Доставка
+        p.StepTwo_fiz__Text Выберите способ получения товара:
+        .StepTwo_fiz__ButtonWrap
+            button.button.button_sm.StepTwo_fiz__Button
+                span.button__text
+                    span.button__icon.button__icon_user
+                    | Доставка курьером
+            button.button.button_white.button_sm.StepTwo_fiz__Button
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_userRed
+                    | Самовывоз
+
+        p.StepTwo_fiz__Text Выберите адрес доставки из уже имеющихся или добавьте новый:
+        .StepTwo_fiz__Address
+            label.control.control-checkbox(for="OrderAddress1")
+                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress1")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | Город, Улица, д. 1
+            label.control.control-checkbox(for="OrderAddress2")
+                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress2")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | Город, Улица, д. 2
+            label.control.control-checkbox(for="OrderAddress3")
+                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress3")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | Город, Улица, д. 3
+            label.control.control-checkbox(for="OrderAddressNew")
+                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddressNew")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | Новая компания
+
+
+        form.StepTwo_fiz__Form
+            .StepTwo_fiz__Form_Location
+                label.StepTwo_fiz__Form-Label(for="orderCity") Ваш город:
+                    input.StepTwo_fiz__Form-Input(type="text" name="orderCity" id="orderCity")
+                label.StepTwo_fiz__Form-Label(for="orderStreets") Улица:
+                    input.StepTwo_fiz__Form-Input(type="text" name="orderStreets" id="orderStreets")
+                .StepTwo_fiz__Form_Apartment
+                    label.StepTwo_fiz__Form-Label(for="orderHouse") Дом:
+                        input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="text" name="orderHouse"
+                        id="orderHouse")
+                    label.StepTwo_fiz__Form-Label(for="orderFlat") Квартира:
+                        input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="text" name="orderFlat"
+                        id="orderFlat")
+                .StepTwo_fiz__Form_Reserved
+                    label.StepTwo_fiz__Form-Label(for="orderDate") Удобное время получения заказа:
+                        input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="date" name="orderDate"
+                        id="orderDate")
+                    label.StepTwo_fiz__Form-Label(for="orderTime") &nbsp
+                        input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="time" name="orderTime"
+                        id="orderTime")
+            .StepTwo_fiz__Form_Comment
+                p.StepTwo_fiz__FormText Ваш заказ привезет проверенная нами недорогая курьерская служба в течении 24 ч.
+                label.StepTwo_fiz__Form-Label(for="orderComment") Комментарий:
+                    textarea.StepTwo_fiz__Form-TextArea(name="orderComment" id="orderComment")
+
+        .StepTwo_fiz__ButtonAction
+            .StepTwo_fiz__Button.StepTwo_fiz__Button_Cancel
+                button.button.button_sm.button_white
+                    span.button__text.button__text_white
+                        span.button__icon.button__icon_user
+                        | Отменить заказ
+            .StepTwo_fiz__Button
+                button.button.button_white.button_sm#ButtonStepOne
+                    span.button__text.button__text_white
+                        span.button__icon.button__icon_userRed
+                        | Вернуться назад
+            .StepTwo_fiz__Button
+                button.button.button_sm#ButtonStepThree
+                    span.button__text
+                        | Продолжить
+                        span.button__icon.button__icon_userRed

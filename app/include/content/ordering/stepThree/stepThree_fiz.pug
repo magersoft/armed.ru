@@ -1,0 +1,38 @@
+.StepThree_fiz__Content
+    include ../orderingHead
+    .StepThree_fiz__StatusBar
+    .StepThree_fiz__Wrap
+        p.StepThree_fiz__Head Способ оплаты
+        p.StepThree_fiz__Text Выберите удобный для вас способ оплаты:
+        .StepThree_fiz__PaymentMethod
+            .StepThree_fiz__PaymentMethod-Method
+                input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodPurse")
+                label.StepThree_fiz__PaymentMethod-Label.StepThree_fiz__PaymentMethod-Label_Purse(for="MethodPurse")
+                p.StepThree_fiz__PaymentMethod-Text Наличный расчет
+            .StepThree_fiz__PaymentMethod-Method
+                input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodCard")
+                label.StepThree_fiz__PaymentMethod-Label.StepThree_fiz__PaymentMethod-Label_Card(for="MethodCard")
+                p.StepThree_fiz__PaymentMethod-Text Банковской картой
+            .StepThree_fiz__PaymentMethod-Method
+                input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodCardSame")
+                label.StepThree_fiz__PaymentMethod-Label.StepThree_fiz__PaymentMethod-Label_CardSame(for="MethodCardSame")
+                p.StepThree_fiz__PaymentMethod-Text Банковкской катрой при получении
+        p.StepThree_fiz__Text
+            | Мы свяжимся с вами в течении 10 минут и сообщим стоимость и сроки доставки* с 9:00 - 22:00 по МСК
+            | Доставка в вашем регионе оплачивается при получении.
+    .StepTwo_fiz__ButtonAction
+        .StepTwo_fiz__Button.StepTwo_fiz__Button_Cancel
+            button.button.button_sm.button_white
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_user
+                    | Отменить заказ
+        .StepTwo_fiz__Button
+            button.button.button_white.button_sm#ReturnStepTwo
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_userRed
+                    | Вернуться назад
+        .StepTwo_fiz__Button
+            button.button.button_sm#ButtonStepFinish
+                span.button__text
+                    | Продолжить
+                    span.button__icon.button__icon_userRed
