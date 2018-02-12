@@ -1,5 +1,80 @@
-.index
-  width: 100vw
+.LkIndex
+  width: 100%
   margin-left: 50px
   margin-right: 50px
   font-size: 16px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  padding-top: 38px
+  &-SmallContainer
+    position: relative
+    background-position: top left
+    background-repeat: no-repeat
+    width: 411px
+    height: 215px
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05)
+    margin-right: 38px
+    margin-bottom: 38px
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+    justify-content: flex-end
+    &_ProgressBar
+      position: absolute
+      bottom: 15px
+      left: 20px
+    &_Last
+      margin-right: 0
+    &_Discount
+      background-image: url("images/lk/discount.svg")
+    &_NewOrders
+      background-image: url("images/lk/NewOrders.svg")
+    &_InWorkOrders
+      background-image: url("images/lk/InWorkOrders.svg")
+    &_FinishedOrders
+      background-image: url("images/lk/FinishedOrders.svg")
+  &-Count, &-Head
+    text-align: right
+    padding-right: 10px
+  &-Count
+    width: 100%
+    font-family: Rubik
+    font-size: 26px
+    font-weight: 500
+    letter-spacing: 1.3px
+    color: rgb(198, 40, 40)
+  &-Head
+    text-transform: uppercase
+    font-family: Rubik
+    font-size: 21px
+    font-weight: 500
+    letter-spacing: 1.1px
+    color: rgb(130, 130, 130)
+
+  &-BigContainer
+    width: 860px
+    height: 470px
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05)
+    margin-right: 38px
+    margin-bottom: 38px
+    &_Last
+      margin-right: 0
+  &-ProgressBar
+    width: 371px
+    height: 10px
+    border-radius: 30px
+    background-color: rgb(246, 246, 246)
+    &Count
+      display: flex
+      width: 371px
+      justify-content: space-between
+    &_Min, &_Max
+      font-family: Roboto
+      font-size: 14px
+      font-weight: 300
+      color: rgb(130, 130, 130)
+    &_Value
+      height: 10px
+      border-radius: 30px
+      background-color: rgb(198, 40, 40)
