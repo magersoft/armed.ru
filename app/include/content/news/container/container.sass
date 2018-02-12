@@ -1,6 +1,27 @@
 .ContainerNews
   padding:
     top: 30px
+  &-Data
+    margin-bottom: 15px
+    &_Text
+      display: flex
+      flex-direction: row
+      font:
+        size: 1.6em
+        family: $fontFamilyDefault
+      color: #BDBDBD
+    &_Icon
+      width: 20px
+      height: 20px
+      display: block
+      background:
+        image: url('images/sprite.png')
+        position: -40px -310px
+  &-ButtonGroup
+    padding: 20px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
   &-Wrapper
     padding:
       top: 200px
