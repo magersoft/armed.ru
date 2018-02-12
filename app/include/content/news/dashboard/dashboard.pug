@@ -1,0 +1,31 @@
+.DashboardNews
+    .title-h2
+        h2
+            | Новости
+- var x = 9;
+- for (var i=1; i<=x; i++) {
+    .DashboardNews-Card
+        .DashboardNews-title
+            h3
+                | Популярное лекарство повышает риск рака в 7 раз
+        .DashboardNews-Inner(style="background-image: url(\"images/news/dashboard.jpg\")")
+            .DashboardNews-Information
+                .DashboardNews-Information_Preview
+                    p
+                        | Известно, что потребность в донорских органах в России очень высока — примерно в 10 раз выше, чем пока возможно обеспечить. Поэтому, конечно, многие ученые работают сегодня над поисками новых технологий регенерации (восстановления) органов и тканей. Пока большинство разработок и исследований выглядят довольно фантастическими и находятся на стадии экспериментов, но все же эти работы очень перспективны...
+                .DashboardNews-Information_Data
+                    p
+                        | Дата:&nbsp;
+                        span
+                            | 22.22.2012
+                .DashboardNews-Information_Button
+                    button.Button.Button_Color_White.Button_Size_L
+                        span.Button-Text.Button-Text_Uppercase.Button-Text_Size_M
+                            | Читать далее
+                        span.Button-Icon.Button-Icon_ArrowRedRight
+- }
+    .DashboardNews-Button
+        button.Button.Button_Color_White.Button_Size_XL
+            span.Button-Text.Button-Text_Uppercase.Button-Text_Size_L
+                | Загрузить еще
+            span.Button-Icon.Button-Icon_ArrowRedRight
