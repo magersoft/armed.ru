@@ -1,0 +1,66 @@
+.StepTwo_Ur__Content
+    include ../orderingHead
+    .StepTwo_Ur__StatusBar
+    .StepTwo_Ur__Wrap
+        p.StepTwo_Ur__text Выберите вашу компанию из уже имеющихся или добавьте новую:
+        .StepTwo_Ur-company
+            label.control.control-checkbox(for="checkbox0")
+                input.check__form-input--checkbox(type="radio" name="company" id="checkbox0")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | ООО “ДИЗИГЕН”
+            label.control.control-checkbox(for="checkbox1")
+                input.check__form-input--checkbox(type="radio" name="company" id="checkbox1")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | ООО “ВЕРСТАЛЬЩИК”
+            label.control.control-checkbox(for="checkbox2")
+                input.check__form-input--checkbox(type="radio" name="company" id="checkbox2")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | ИП “SEOGURU”
+            label.control.control-checkbox(for="checkbox3")
+                input.check__form-input--checkbox(type="radio" name="company" id="checkbox3")
+                .control_indicator
+                span.check__form-checkbox--information
+                    | Новая компания
+        p.StepTwo_Ur__Text
+            | Перенесите файл карточки предприятия в формате .pdf, .xls, .doc
+        .edit__tabs-drope
+        p.StepTwo_Ur__Text Или заполните формы ниже:
+        form.StepTwo_Ur__Form
+            label.StepTwo_Ur__Label(for="company") Название компании
+                input.StepTwo_Ur__Input(type="text" id="company" placeholder="Название компании")
+            label.StepTwo_Ur__Label(for="inn") ИНН:
+                input.StepTwo_Ur__Input(type="text" id="inn" placeholder="Введите ИНН")
+            label.StepTwo_Ur__Label(for="legal") Юридический адрес:
+                input.StepTwo_Ur__Input(type="text" id="legal" placeholder="Юридический адрес")
+            label.StepTwo_Ur__Label(for="bik") БИК:
+                input.StepTwo_Ur__Input(type="text" id="bik" placeholder="Введите БИК")
+            label.StepTwo_Ur__Label(for="kpp") КПП:
+                input.StepTwo_Ur__Input(type="text" id="kpp" placeholder="Введите КПП")
+            label.StepTwo_Ur__Label(for="ks") КС:
+                input.StepTwo_Ur__Input(type="text" id="ks" placeholder="0000 0000 0000 0000")
+            label.StepTwo_Ur__Label(for="rs") Расчетный счет:
+                input.StepTwo_Ur__Input(type="text" id="rs" placeholder="0000 0000 0000 0000")
+            label.StepTwo_Ur__Label(for="ogrn") ОГРН:
+                input.StepTwo_Ur__Input(type="text" id="ogrn" placeholder="000000000000000")
+            label.StepTwo_Ur__Label(for="bank") Банк:
+                input.StepTwo_Ur__Input(type="text" id="bank" placeholder="Введите название вашего банка")
+
+    .StepTwo_fiz__ButtonAction
+        .StepTwo_fiz__Button.StepTwo_fiz__Button_Cancel
+            button.button.button_sm.button_white
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_user
+                    | Отменить заказ
+        .StepTwo_fiz__Button
+            button.button.button_white.button_sm#ReturnStepOne_Ur
+                span.button__text.button__text_white
+                    span.button__icon.button__icon_userRed
+                    | Вернуться назад
+        .StepTwo_fiz__Button
+            button.button.button_sm#StepThree_Ur
+                span.button__text
+                    | Продолжить
+                    span.button__icon.button__icon_userRed
