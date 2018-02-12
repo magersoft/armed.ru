@@ -19,7 +19,7 @@ html(lang="ru")
                         pre
                             |button.Button.Button_Color_Red.Button_Size_XL
                             |    span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase.Button-Text_Size_L
-                            |        span.Button-Icon.Button-Icon_Tel
+                            |        span.Button-Icon.Button-Icon_Cancel
                             |        | Надпись
                 tr.UIKit-Row
                     td.UIKit-Line
@@ -29,10 +29,31 @@ html(lang="ru")
                                 | Надпись
                     td.UIKit-Line
                         pre
-                            |button.Button.Button_Color_Red.Button_Size_XL
-                            |    span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase.Button-Text_Size_L
-                            |        span.Button-Icon.Button-Icon_Tel
+                            |button.Button.Button_Color_White.Button_Size_XL
+                            |    span.Button-Text.Button-Text_Uppercase.Button-Text_Size_L
+                            |        span.Button-Icon.Button-Icon_AddUser
                             |        | Надпись
+                tr.UIKit-Row
+                    td.UIKit-Line
+                        button.Button.Button_Color_NotColor.Button_Size_M
+                            span.Button-Text.Button-Text_Size_M
+                                span.Button-Icon.Button-Icon_AddUser
+                                | Надпись
+                    td.UIKit-Line
+                        pre
+                            |button.Button.Button_Color_NotColor.Button_Size_M
+                            |    span.Button-Text.Button-Text_Size_M
+                            |        span.Button-Icon.Button-Icon_AddUser
+                            |        | Надпись
+                tr.UIKit-Roe
+                    td.UIKit-Line(colspan=2)
+                        p Модификаторы размера кнопки:
+                        p Button_Size_XL (255 x 65)
+                        p Button_Size_L (180 x 64)
+                        p Button_Size_M (165 x 65)
+                        p Button_Size_S (150 x 45)
+                        p Button_Size_XS (140 x 40)
+
 
         link(rel="stylesheet" type="text/css" href="style.css")
         script(src='main.js')
