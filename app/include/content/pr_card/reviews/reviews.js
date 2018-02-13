@@ -6,6 +6,7 @@ $('.percentage').easyPieChart({
 });
 
 
+
 var prec = $('.percentage').attr('data-percent');
 console.log(prec);
 $('.percentage').find('span').html(prec + ' %');
