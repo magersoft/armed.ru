@@ -15,7 +15,7 @@ $('.LkIndex-ProgressBar').progressbar({
     value: parseInt(val)
 });
 
-google.charts.load('current', {'packages':['corechart']});
+/*google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawMagazine);
 google.charts.setOnLoadCallback(drawAssortiment);
 
@@ -96,7 +96,7 @@ function drawAssortiment() {
 
     chart.draw(data, options);
 }
-
+*/
 var slider = $('.LkIndex-Slider');
 slider.slick({
     dots: true,
