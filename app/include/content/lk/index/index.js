@@ -89,7 +89,7 @@ if (path == 'lk_index.html') {
             pieSliceText: 'none'
         };
         var chart = new google.visualization.PieChart(document.getElementById('piechartAssortiment'));
-        chart.draw(data, options)};
+        chart.draw(data, options)}
 
     }
 
@@ -97,18 +97,10 @@ if (path == 'lk_index.html') {
 var slider = $('.LkIndex-Slider');
 
 slider.on('init', function (event, slick) {
-    $('.LkIndex-SliderPromoCount').html('1/' + (slick.slideCount));
+    $('.LkIndex-SliderPromoCount').html('1 / ' + (slick.slideCount));
 });
 
-    var count = slider.slick("getSlick").slideCount;
-    slider.on('init', function (event, slick) {
-        console.log(event);
-        console.log(slick);
-    });
-
-
 slider.slick({
-    dots: true,
     infinite: true,
     slidesToShow: 1,
     variableWidth: false,
@@ -118,8 +110,7 @@ slider.slick({
 
 var count = slider.slick("getSlick").slideCount;
 slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    console.log(nextSlide + 1);
-    $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + '/' + count);
-})
+    $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + ' / ' + count);
+});
 
-
+//TODO Добавить внутренний скрол, для действующих акций
