@@ -15,7 +15,7 @@ $('.LkIndex-ProgressBar').progressbar({
     value: parseInt(val)
 });
 
-/*google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawMagazine);
 google.charts.setOnLoadCallback(drawAssortiment);
 
@@ -95,9 +95,98 @@ function drawAssortiment() {
     var chart = new google.visualization.PieChart(document.getElementById('piechartAssortiment'));
 
     chart.draw(data, options);
-}
-*/
+
+//TODO Поставить условие!!! Срочно
+var path = window.location.pathname.slice(1);
+if (path == 'lk_index.html') {
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawMagazine);
+    google.charts.setOnLoadCallback(drawAssortiment);
+
+    function drawMagazine() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['ООО "Дезиген"', 7],
+            ['ИП "SEOGROUP"', 11],
+            ['ООО "Верстальщик"', 5]
+        ]);
+
+        var options = {
+            legend :{
+                "position":"labeled",
+                "textStyle": {
+                    "color": "black",
+                    "fontSize": "14",
+                    "format": "##%"
+                }
+            },
+            pieHole: 0.5,
+            colors: [
+                'rgb(151, 204, 100)',
+                'rgb(255, 217, 99)',
+                'rgb(253, 90, 62)',
+                'rgb(119, 182, 231)',
+                'rgb(169, 85, 184)',
+                'rgb(220, 157, 107)',
+                'rgb(234, 82, 127)',
+                'rgb(69, 105, 188)',
+                'rgb(75, 160, 98)'
+            ],
+            pieSliceText: 'none'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechartMagazine'));
+
+        chart.draw(data, options);
+    }
+    function drawAssortiment() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Рециркуляторы', 11],
+            ['Кислородные концентраторы', 6],
+            ['Тонометры', 2],
+            ['Увлажнители воздуха', 5],
+            ['Другое', 20]
+
+        ]);
+
+        var options = {
+            legend :{
+                "position":"labeled",
+                "textStyle": {
+                    "color": "black",
+                    "fontSize": "14",
+                    "format": "##%"
+                }
+            },
+            pieHole: 1,
+            colors: [
+                'rgb(151, 204, 100)',
+                'rgb(255, 217, 99)',
+                'rgb(253, 90, 62)',
+                'rgb(119, 182, 231)',
+                'rgb(169, 85, 184)',
+                'rgb(220, 157, 107)',
+                'rgb(234, 82, 127)',
+                'rgb(69, 105, 188)',
+                'rgb(75, 160, 98)'
+            ],
+            pieSliceText: 'none'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechartAssortiment'));
+
+        chart.draw(data, options);
+    }
+
 var slider = $('.LkIndex-Slider');
+
+slider.on('init', function (event, slick) {
+    $('.LkIndex-SliderPromoCount').html('1/' + (slick.slideCount));
+});
+
 slider.slick({
     dots: true,
     infinite: true,
@@ -111,11 +200,15 @@ slider.slick({
     }
 });
 
+var count = slider.slick("getSlick").slideCount;
 slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
     console.log(nextSlide + 1);
     $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + '/' + count);
 });
+/*
 var count = slider.slick("getSlick").slideCount;
 slider.on('init', function (event, slick) {
-    $('.LkIndex-SliderPromoCount').html('1/' + count);
+    console.log(event);
+    console.log(slick);
 });
+*/

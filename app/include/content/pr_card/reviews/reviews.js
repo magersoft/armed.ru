@@ -1,10 +1,11 @@
 $('.percentage').easyPieChart({
     animate: 3000,
     lineWidth: 10,
-    onStep: function(value) {
-        this.$el.find('span').text(Math.round(value));
-    },
-    onStop: function(value, to) {
-        this.$el.find('span').text(Math.round(to));
-    }
+    onStart: $.noop,
+    onStop: $.noop
 });
+
+
+var prec = $('.percentage').attr('data-percent');
+console.log(prec);
+$('.percentage').find('span').html(prec + ' %');
