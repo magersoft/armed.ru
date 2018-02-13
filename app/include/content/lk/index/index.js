@@ -113,4 +113,42 @@ slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + ' / ' + count);
 });
 
+
+var ProductSlider = $('.LkIndex-ProductWrap');
+ProductSlider.on('init', function (event, slick) {
+    console.log(slick);
+    $('.LkIndex-ProductCount').html('1 / ' + (slick.slideCount));
+});
+
+$('.LkIndex-ProductWrap').slick({
+    infinite: true,
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    nextArrow: '<i class="slide-right"></i>',
+    prevArrow: '<i class="slide-left"></i>'
+});
+
+var ProductCount = ProductSlider.slick("getSlick").slideCount;
+ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.LkIndex-ProductCount').html(nextSlide + 1  + ' / ' + ProductCount);
+});
+
+var VideoSlider = $('.LkIndex-VideoWrap');
+VideoSlider.on('init', function (event, slick) {
+    console.log(slick);
+    $('.LkIndex-VideoCount').html('1 / ' + (slick.slideCount));
+});
+
+$('.LkIndex-VideoWrap').slick({
+    nextArrow: '<i class="slide-right"></i>',
+    prevArrow: '<i class="slide-left"></i>'
+});
+
+var VideoCount = VideoSlider.slick("getSlick").slideCount;
+VideoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    $('.LkIndex-videoCount').html(nextSlide + 1  + ' / ' + VideoCount);
+});
+
+
 //TODO Добавить внутренний скрол, для действующих акций
