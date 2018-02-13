@@ -69,6 +69,12 @@
     margin-bottom: 38px
     &_Last
       margin-right: 0
+    &_Promo
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
   &-ProgressBar
     width: 371px
     height: 10px
@@ -87,3 +93,21 @@
       height: 10px
       border-radius: 30px
       background-color: rgb(198, 40, 40)
+  &-Slider
+    width: 800px
+    &Promo
+      width: 100%
+      display: flex !important
+      flex-direction: column
+      align-items: center
+      font-size: 2.1em
+      font-weight: 500
+      letter-spacing: 1.1px
+      color: rgb(79, 79, 79)
+      &Code, &Date
+        text-transform: uppercase
+        margin-left: 10px
+        color: $GlobalColor
+      &Discount
+        margin-left: 10px
+

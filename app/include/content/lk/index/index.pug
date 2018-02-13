@@ -26,7 +26,25 @@
     .LkIndex-BigContainer.LkIndex-BigContainer_Last
         p.LkIndex-Head_Big Активность Ваших магазинов
         #piechartAssortiment(style="width: 831px; height: 400px;")
-    .LkIndex-BigContainer
+    .LkIndex-BigContainer.LkIndex-BigContainer_Promo
+        p.LkIndex-Head_Big Доступные промо коды
+        .LkIndex-Slider
+            - for (var i=0; i<9; i++)
+                .LkIndex-SliderPromo
+                    p.LkIndex-SliderPromoText
+                        |Промо-код:
+                        span.LkIndex-SliderPromoCode 93ops12r-ksdv
+                    p.LkIndex-SliderPromoTextDiscount
+                        | Скидка:
+                        span.LkIndex-SliderPromoDiscount 5%
+                    p.LkIndex-SliderPromoText
+                        | Действителен до:
+                        span.LkIndex-SliderPromoDate 27.06.18
+        p.LkIndex-SliderPromoCount 1/18
+
     .LkIndex-BigContainer.LkIndex-BigContainer_Last
+        p.LkIndex-Head_Big Действующие акции
     .LkIndex-BigContainer
+        p.LkIndex-Head_Big Новинки товаров
     .LkIndex-BigContainer.LkIndex-BigContainer_Last
+        p.LkIndex-Head_Big Рекомендуемые видео

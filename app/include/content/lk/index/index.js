@@ -96,3 +96,26 @@ function drawAssortiment() {
 
     chart.draw(data, options);
 }
+
+var slider = $('.LkIndex-Slider');
+slider.slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    variableWidth: false,
+    nextArrow: '<i class="slide-right"></i>',
+    prevArrow: '<i class="slide-left"></i>',
+    onInit: function(e){
+        console.log('init');
+        $slider.append('<div class="slick-counter">'+ parseInt(e.currentSlide + 1, 10) +' / '+ e.slideCount +'</div>');
+    }
+});
+
+slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    console.log(nextSlide + 1);
+    $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + '/' + count);
+});
+var count = slider.slick("getSlick").slideCount;
+slider.on('init', function (event, slick) {
+    $('.LkIndex-SliderPromoCount').html('1/' + count);
+});
