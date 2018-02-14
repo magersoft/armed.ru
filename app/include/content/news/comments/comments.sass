@@ -1,0 +1,87 @@
+.CommentsNews
+  padding: 30px
+  &-AddComment
+    padding: 20px 0
+    border-top: 1px solid #E0E0E0
+    label
+      font:
+        size: 1.6em
+        family: $fontFamilyDefault
+        weight: 400
+      color: #828282
+    textarea
+      width: 100%
+      resize: none
+      height: 90px
+      margin: 10px 0
+  &-Wrapper
+    padding: 20px 0
+  &-Inner
+    margin-top: 25px
+    border-bottom: 1px solid #E0E0E0
+    padding-bottom: 80px
+    &_Answer
+      padding:
+        top: 40px
+        left: 100px
+  &-Body
+    &_Text
+      p
+        font:
+          family: $fontFamilyDefault
+          size: 1.4em
+        color: #828282
+        margin: 10px 0
+  &-Header
+    margin-bottom: 15px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    &_NameGroup
+      display: flex
+      flex-direction: row
+    &_Button
+      display: flex
+      flex-direction: row
+
+    &_Name
+      font:
+        family: $fontFamilyAdditionally
+        size: 1.7em
+      color: #4f4f4f
+      text-transform: uppercase
+    &_Data
+      p
+        margin: 0 10px
+        display: flex
+        flex-direction: row
+        font:
+          family: $fontFamilyAdditionally
+          size: 1.7em
+        color: #bdbdbd
+        &:before
+          content: ' '
+          margin: 0 25px
+          width: 5px
+          height: 5px
+          background: #bdbdbd
+          border-radius: 50%
+          margin-top: 6px
+    &_Answer
+      &-Icon
+        margin-top: 7px
+        margin-right: 5px
+        display: block
+        width: 14px
+        height: 9px
+        background:
+          image: url("../images/Icon/Shape.svg")
+          repeat: no-repeat
+      a
+        display: flex
+        flex-direction: row
+        font:
+          family: $fontFamilyAdditionally
+          size: 1.7em
+        color: #bdbdbd
+        text-decoration: none

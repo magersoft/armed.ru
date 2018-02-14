@@ -1,0 +1,217 @@
+.ContainerNews
+  padding:
+    top: 30px
+  &-Data
+    margin-bottom: 15px
+    &_Text
+      display: flex
+      flex-direction: row
+      font:
+        size: 1.6em
+        family: $fontFamilyDefault
+      color: #BDBDBD
+    &_Icon
+      width: 20px
+      height: 20px
+      display: block
+      background:
+        image: url('images/sprite.png')
+        position: -40px -310px
+  &-ButtonGroup
+    padding: 20px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &-Wrapper
+    padding:
+      top: 200px
+      left: 30px
+      right: 30px
+    background:
+      size: 100%
+      repeat: no-repeat
+  &-Body
+    padding: 30px
+    background: #ffffff
+  &-Footer
+    width: 100%
+    margin: 15px 0
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 7px 0
+    border:
+      top: 1px solid #e0e0e0
+      bottom: 1px solid #e0e0e0
+    &_Tags
+      flex-basis: 50%
+      display: flex
+      flex-direction: row
+      align-items: center
+      p,
+      a,
+      span
+        font:
+          size: 1.6em
+        color: #4f4f4f
+      a
+        &:hover
+          color: #c62828
+    &_Social
+      flex-basis: 50%
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-end
+      &-vk, &-fb, &-ok, &-tw, &-tg
+        margin: 0 5px
+        display: block
+        width:  24px
+        height: 24px
+        background:
+          image: url("../images/Icon/social.svg")
+          repeat: no-repeat
+      &-vk
+        background:
+          position: -255px 0
+        &:hover
+          background:
+            position: -279px 0
+      &-fb
+        background:
+          position: -255px -24px
+        &:hover
+          background:
+            position: -279px -24px
+      &-ok
+        background:
+          position: -255px -48px
+        &:hover
+          background:
+            position: -279px -48px
+      &-tw
+        background:
+          position: -255px -96px
+        &:hover
+          background:
+            position: -279px -96px
+      &-tg
+        background:
+          position: -255px -144px
+        &:hover
+          background:
+            position: -279px -144px
+      p
+        font:
+          size: 1.6em
+        color: #4f4f4f
+
+  &-Information
+    table
+      width: 100%
+      border-collapse: collapse
+      tr
+        th
+          text-align: left
+          font:
+            size: 1.4em
+            family: $fontFamilyDefault
+            weight: normal
+          color: #828282
+          padding: 7px
+          border: 1px solid #e0e0e0
+        td
+          text-align: center
+          font:
+            size: 1.4em
+            family: $fontFamilyDefault
+            weight: normal
+          color: #828282
+          padding: 7px
+          border: 1px solid #e0e0e0
+    img
+      margin-bottom: 15px
+    p
+      margin-bottom: 15px
+      font: 
+        size: 1.6em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #828282
+    ul
+      margin-bottom: 15px
+      li
+        margin-left: 30px
+        color: #c62828
+        span
+          font:
+            size: 1.6em
+            family: $fontFamilyDefault
+            weight: normal
+          color: #828282
+  h6
+    margin: 0 0 15px 0
+    font:
+      size: 1.6em
+      family: $fontFamilyDefault
+      weight: 500
+    color: #4f4f4f
+.clearfix
+  clear: both
+
+#NewsGallery
+  max-width: 100%
+  margin: 0 auto 
+  display: flex 
+  flex-direction: row 
+  flex-wrap: wrap 
+ 
+
+.NewsGallery-wrapper  
+  background-color: #333 
+  min-width: 12rem 
+  min-height: 8rem 
+  position: relative 
+  flex: 1 
+  flex-basis: 8rem 
+  margin-right: 10px
+  margin-bottom: 10px
+ 
+
+.NewsGallery-wrapper:nth-child(5n)
+  flex-basis: 14rem
+ 
+
+.NewsGallery-wrapper:nth-child(2n+1)  
+  flex-basis: 10rem
+ 
+
+.NewsGallery-wrapper:nth-child(7n+4)  
+  flex-basis: 20rem 
+  min-height: 12rem 
+ 
+
+.NewsGallery  
+  width: 100% 
+  height: 100% 
+  position: absolute 
+  background-size: cover 
+  background-position: center 
+  background-repeat: no-repeat 
+ 
+
+.NewsGallery:hover  
+  opacity: 0.9 
+  transition: .2s ease-in 
+
+
+/* --- Стили для редактирования статей */
+/* --- если картинка прилипилась к левому краю */
+.news-image-left
+  margin-left: 30px
+/* --- если картинка прилипилась к правому краю */
+.news-image-right
+  margin-right: 30px
+/* --- картинка на всю статью */
+.news-image-full
+  width: 100%

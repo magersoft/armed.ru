@@ -1,0 +1,16 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/head/head
+    body
+        main
+            include ../include/Global/preloader/preload
+            include ../include/header/header
+            include ../include/Global/breadcrums/breadcrums
+            section.container.container-news
+                include ../include/content/news/container/container
+            section.container.container-comment
+                include ../include/content/news/comments/comments
+            include ../include/footer/footer
+        //- Весь контент до данного комментария
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src='main.js')

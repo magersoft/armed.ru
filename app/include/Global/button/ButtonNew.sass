@@ -1,20 +1,22 @@
 .Button
+  cursor: pointer
   font-family: 'Rubik'
   border: 0
   border-radius: 2px
   display: flex
   justify-content: center
   align-items: center
+  text-decoration: none
   // модификаторы размера
   &_Size_XL
     width: 255px
     height: 65px
   &_Size_L
     width: 180px
-    height: 64px
+    height: 45px
   &_Size_M
     width: 165px
-    height: 65px
+    height: 45px
   &_Size_S
     width: 150px
     height: 45px
@@ -27,6 +29,8 @@
   &_Color_White
     background-color: rgba(255, 255, 255, 1)
     border: 1px solid rgba(224, 224, 224, 1)
+  &_Color_NotColor
+    background-color: rgba(255, 255, 255, 0)
 
   // Элемент текст
   &-Text
@@ -61,8 +65,16 @@
       background-position: -122px -44px
     &_Phone
     &_Mail
-    &_Arrow
-    &_ArrowWhite
+    &_ArrowRedLeft
+      margin-top: 3px
+      background-position: -48px -90px
+    &_ArrowRedRight
+      margin-top: 4px
+      background-position: -48px -72px
+    &_ArrowWhiteLeft
+      background-position: -66px -90px
+    &_ArrowWhiteRight
+      background-position: -66px -72px
     &_Basket
       background-position: -122px -44px
     &_BasketRed
@@ -85,7 +97,3 @@
       background-position: -80px -310px
     &_UserRed
       background-position: -100px -310px
-
-    &_UserRed
-    
-  

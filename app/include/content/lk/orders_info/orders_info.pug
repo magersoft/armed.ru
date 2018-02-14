@@ -1,0 +1,66 @@
+.orders
+    header.orders__header
+        h2.orders__head.head-lk
+            span.head-lk__icon.head-lk__icon_orders
+            | Заказ&nbsp;
+            span
+            | №2104 от 16.10.2017
+        .orders__filter
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_create
+                | Подтвердить оплату
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_create
+                | Дублировать заказ
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_create
+                | Новый заказ
+    .orders__tabs
+        ul.orders__tabs-list.tabs
+            li.order__tabs-element.tabs__element
+                a.orders__tabs-link.tabs__link(href="#orderInfo") Информация о заказе
+            li.order__tabs-element.tabs__element
+                a.orders__tabs-link.tabs__link(href="#orderStatus") Состав заказа
+        .orders__tabs#orderInfo
+            .orders-info__wrapper
+                .orders-info__form
+                    .orders-info__label
+                        | Ф.И.О.:
+                    .orders-info__select.orders-info__select-disabled
+                        | Иванов Иван Иванович
+                    label.orders-info__label(for="ordercompany")
+                        | Компания:
+                    select.orders-info__select(id="ordercompany")
+                        option
+                            | Ромашка
+                        option
+                            | Гладиолус
+                        option
+                            | Розочка
+                    label.orders-info__label(for="orderadress")
+                        | Адрес доставки:
+                    select.orders-info__select(id="orderadress")
+                        option
+                            | Москва, ул. Ленина
+                        option
+                            | Волгоград, ул. Пушкина
+                        option
+                            | Сыктывкар, ул. Поэта
+                    label.orders-info__label(for="orderdelivery")
+                        | Тип доставки:
+                    select.orders-info__select(id="orderdelivery")
+                        option
+                            | Доставка курьером
+                        option
+                            | Самовывоз
+                    label.orders-info__label(for="ordercomment")
+                        | Комментарий:
+                    textarea.orders-info__textarea(id="ordercomment")
+                        | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
+                .orders-info__score
+                    .orders-info__title
+                        h4
+                        | Счета
+                .orders-info__log
+        .orders__tabs#orderStatus
+

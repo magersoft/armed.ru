@@ -17,64 +17,92 @@
     p.catalog__asside-head Фильтры по параметрам
 
 
-    a.catalog__asside-text(href="#") Розничная цена
-        span.catalog__asside-arrow
-    .catalog__asside-amountWrap
-        label.catalog__asside-label(for="amountMin") От:
-            input.catalog__asside-input#amountMin
-        label.catalog__asside-label(for="amountMax") До:
-            input.catalog__asside-input#amountMax
-    .catalog__asside-range#assideRange
+    .FilterTabs
+        ul.FilterTabs-List
+            li.FilterTabs-Item
+                a.FilterTabs-Link.catalog__asside-text(href="#FilterTab1") Розничная цена
+                    span.catalog__asside-arrow
+                .FilterTabs-Tab#FilterTab1
+                    .catalog__asside-amountWrap
+                        label.catalog__asside-label(for="amountMin") От:
+                            input.catalog__asside-input#amountMin
+                        label.catalog__asside-label(for="amountMax") До:
+                            input.catalog__asside-input#amountMax
+                    .catalog__asside-range#assideRange
+            li.FilterTabs-Item
+                a.FilterTabs-Link.catalog__asside-text(href="#FilterTab2") Производитель
+                    span.catalog__asside-arrow
+                .FilterTabs-Tab#FilterTab2
+                    select.catalog__asside-select
+                        option.catalog__asside-option(value="") Производитель 1
+                        option.catalog__asside-option(value="") Производитель 2
+                        option.catalog__asside-option(value="") Производитель 3
+                        option.catalog__asside-option(value="") Производитель 4
+                        option.catalog__asside-option(value="") Производитель 5
+            li.FilterTabs-Item
+                a.FilterTabs-Link.catalog__asside-text(href="#FilterTab3") Производитель
+                    span.catalog__asside-arrow
+                .FilterTabs-Tab#FilterTab3
+                    .catalog__asside-check
+                        label.control.control-checkbox(for="filter1")
+                            input.check__form-input--checkbox(type="checkbox" name="company" id="filter1")
+                            .control_indicator
+                            span.check__form-checkbox--information
+                                | Производитель 1
+                                span.catalog__asside-count &nbsp(15)
+                        label.control.control-checkbox(for="filter2")
+                            input.check__form-input--checkbox(type="checkbox" name="company" id="filter2")
+                            .control_indicator
+                            span.check__form-checkbox--information
+                                | Производитель 2
+                                span.catalog__asside-count &nbsp(65)
+                        label.control.control-checkbox(for="filter3")
+                            input.check__form-input--checkbox(type="checkbox" name="company" id="filter3")
+                            .control_indicator
+                            span.check__form-checkbox--information
+                                | Производитель 3
+                                span.catalog__asside-count &nbsp(99)
+                        label.control.control-checkbox(for="filter4")
+                            input.check__form-input--checkbox(type="checkbox" name="company" id="filter4")
+                            .control_indicator
+                            span.check__form-checkbox--information
+                                | Производитель 4
+                                span.catalog__asside-count &nbsp(1)
+            li.FilterTabs-Item
+                a.FilterTabs-Link.catalog__asside-text(href="#FilterTab4") Производитель
+                    span.catalog__asside-arrow
+                .FilterTabs-Tab#FilterTab4
+                    .catalog__asside-toggleWrap.toggle
+                        .catalog__asside-toggle.toggle__item
+                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle1")
+                            label.catalog__asside-toggleLabel.toggle__label(for="toggle1" data-id="Производитель 1")
+                        .catalog__asside-toggle.toggle__item
+                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle2")
+                            label.catalog__asside-toggleLabel.toggle__label(for="toggle2" data-id="Производитель Производитель")
+                        .catalog__asside-toggle.toggle__item
+                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle3")
+                            label.catalog__asside-toggleLabel.toggle__label(for="toggle3" data-id="Производитель 3")
+                        .catalog__asside-toggle.toggle__item
+                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle4")
+                            label.catalog__asside-toggleLabel.toggle__label(for="toggle4" data-id="Производитель 4")
 
-    a.catalog__asside-text(href="#") Производитель
-        span.catalog__asside-arrow
-    select.catalog__asside-select
-        option.catalog__asside-option(value="") Производитель 1
-        option.catalog__asside-option(value="") Производитель 2
-        option.catalog__asside-option(value="") Производитель 3
-        option.catalog__asside-option(value="") Производитель 4
-        option.catalog__asside-option(value="") Производитель 5
 
-    a.catalog__asside-text(href="#") Производитель
-        span.catalog__asside-arrow
-    .catalog__asside-check
-        label.control.control-checkbox(for="filter1")
-            input.check__form-input--checkbox(type="checkbox" name="company" id="filter1")
-            .control_indicator
-            span.check__form-checkbox--information
-                | Производитель 1
-                span.catalog__asside-count &nbsp(15)
-        label.control.control-checkbox(for="filter2")
-            input.check__form-input--checkbox(type="checkbox" name="company" id="filter2")
-            .control_indicator
-            span.check__form-checkbox--information
-                | Производитель 2
-                span.catalog__asside-count &nbsp(65)
-        label.control.control-checkbox(for="filter3")
-            input.check__form-input--checkbox(type="checkbox" name="company" id="filter3")
-            .control_indicator
-            span.check__form-checkbox--information
-                | Производитель 3
-                span.catalog__asside-count &nbsp(99)
-        label.control.control-checkbox(for="filter4")
-            input.check__form-input--checkbox(type="checkbox" name="company" id="filter4")
-            .control_indicator
-            span.check__form-checkbox--information
-                | Производитель 4
-                span.catalog__asside-count &nbsp(1)
 
-    a.catalog__asside-text(href="#") Производитель
-        span.catalog__asside-arrow
-    .catalog__asside-toggleWrap.toggle
-        .catalog__asside-toggle.toggle__item
-            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle1")
-            label.catalog__asside-toggleLabel.toggle__label(for="toggle1" data-id="Производитель 1")
-        .catalog__asside-toggle.toggle__item
-            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle2")
-            label.catalog__asside-toggleLabel.toggle__label(for="toggle2" data-id="Производитель 2")
-        .catalog__asside-toggle.toggle__item
-            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle3")
-            label.catalog__asside-toggleLabel.toggle__label(for="toggle3" data-id="Производитель 3")
-        .catalog__asside-toggle.toggle__item
-            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="toggle4")
-            label.catalog__asside-toggleLabel.toggle__label(for="toggle4" data-id="Производитель 4")
+
+//
+
+    a(href="#")
+
+
+
+    a(href="#")
+
+
+
+    a(href="#")
+
+
+
+    a(href="#")
+
+

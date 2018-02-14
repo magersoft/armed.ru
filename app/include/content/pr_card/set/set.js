@@ -12,4 +12,8 @@ $('.set__slider-item__check').click(function () {
     $(test).toggleClass('set__check')
 });
 $('.set__slider-item__img').click(function () {
+    var img  = $(this).parent();
+    $(img).toggleClass('set__check')
+    var exmp = img.parent().prev();
+    $(exmp).toggleClass('set__slider-item__check-ok')
 });
