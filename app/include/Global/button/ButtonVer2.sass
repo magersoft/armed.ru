@@ -1,3 +1,5 @@
+body
+  background-color: #fff
 .Button
   cursor: pointer
   border: 0
@@ -15,6 +17,14 @@
     background-color: $GlobalColor
   &_Color_Not
     background-color: rgba(255, 255, 255, 0)
+    transition: 0.4s
+    &:hover
+      background-color: #f8f8f8
+      transition: 0.4s
+    &:active
+      background-color: #f1f1f1
+      transition: 0.4s
+
 
   &-Text
     display: flex
@@ -75,9 +85,9 @@
     &_UserRed
       background-position: -100px -310px
 
-//.Button:hover
-  .Button-Icon_Cancel
-    background-position: -20px -270px
-    transform: rotate(360deg)
+
+.Button:hover
+  .Button-Icon_AddUser
+    background-position: -100px -290px
   .Button-Icon_BasketRed
     background-position: -60px -270px
