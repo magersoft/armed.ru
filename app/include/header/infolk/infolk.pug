@@ -14,15 +14,17 @@
                     a.infolk__link(href="#")
                         span.infolk__icon.infolk__icon_mailsm
                         | armed@armed.ru
-        .infolk__info-user
+        .infolk__info-user#ClientClik
             .infolk__user-data
                 p.infolk__user-company ООО "Рога и копыта"
                 p.infolk__user-name Фамилия Имя Отчество
             img.infolk__user-foto(src="images/Header/user__face.png" alt="фото пользователя или логотип компании")
+            include ../widget/client/client
     .infolk__exit
-        a.infolk__mail(href="#")
+        a.infolk__mail(href="#")#MailClick
             span.infolk__icon.infolk__icon_mail
             span.infolk__alarm.infolk__alarm_mail
+        include ../widget/mail/mail
         a.infolk__ring(href="#")
             span.infolk__icon.infolk__icon_ring
             span.infolk__alarm.infolk__alarm_ring
