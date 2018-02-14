@@ -69,12 +69,33 @@
     margin-bottom: 38px
     &_Last
       margin-right: 0
+
+  &-MediumContainer
+    width: 860px
+    height: 375px
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05)
+    margin-bottom: 38px
+    margin-right: 38px
     &_Promo
       display: flex
       flex-wrap: wrap
       flex-direction: column
       align-items: center
       justify-content: space-between
+    &_Last
+      margin-right: 0
+  &-XlContainer
+    width: 860px
+    height: 570px
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05)
+    margin-bottom: 38px
+    margin-right: 38px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    &_Last
+      margin-right: 0
   &-ProgressBar
     width: 371px
     height: 10px
@@ -100,14 +121,65 @@
       display: flex !important
       flex-direction: column
       align-items: center
-      font-size: 2.1em
+      font-size: 1.3em
       font-weight: 500
       letter-spacing: 1.1px
       color: rgb(79, 79, 79)
+      &TextDiscount
+        margin-bottom: 21px
+        margin-top: 21px
+        text-transform: uppercase
       &Code, &Date
         text-transform: uppercase
         margin-left: 10px
         color: $GlobalColor
       &Discount
         margin-left: 10px
+        color: $GlobalColor
+      &Count
+        margin-bottom: 20px
+        font-size: 1.6em
+        font-weight: 500
+        letter-spacing: 1.3px
+        color: rgb(189, 189, 189)
+  &-Action
+    &Item:not(:last-child)
+      margin-bottom: 22px
+    &List
+      list-style: none
+      margin-top: 30px
+      margin-left: 52px
+      font-size: 1em
+      letter-spacing: 0.8px
+      color: rgb(79, 79, 79)
+    &Dash
+      color: $GlobalColor
+    &Link
+      color: rgb(79, 79, 79)
+      text-decoration: none
+      &:hover
+        color: $GlobalColor
+  &-ProductWrap
+    display: flex
+    width: 560px
+    height: 380px
+    margin: 0 auto
+  &-ProductCount
+    margin-bottom: 20px
+    font-size: 1.6em
+    font-weight: 500
+    letter-spacing: 1.3px
+    color: rgb(189, 189, 189)
+  &-VideoWrap
+    width: 650px
+    height: 380px
+  &-VideoItem
+    width: 650px
+    height: 365px
+  &-VideoCount
+    margin-bottom: 20px
+    font-size: 1.6em
+    font-weight: 500
+    letter-spacing: 1.3px
+    color: rgb(189, 189, 189)
 

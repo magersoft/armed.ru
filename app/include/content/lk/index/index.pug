@@ -20,16 +20,20 @@
     .LkIndex-SmallContainer.LkIndex-SmallContainer_FinishedOrders.LkIndex-SmallContainer_Last
         p.LkIndex-Count 678
         p.LkIndex-Head Завершенных заказов
+
+
     .LkIndex-BigContainer
         p.LkIndex-Head_Big Активность Ваших магазинов
         #piechartMagazine(style="width: 831px; height: 400px;")
     .LkIndex-BigContainer.LkIndex-BigContainer_Last
         p.LkIndex-Head_Big Активность Ваших магазинов
         #piechartAssortiment(style="width: 831px; height: 400px;")
-    .LkIndex-BigContainer.LkIndex-BigContainer_Promo
+
+
+    .LkIndex-MediumContainer.LkIndex-MediumContainer_Promo
         p.LkIndex-Head_Big Доступные промо коды
         .LkIndex-Slider
-            - for (var i=0; i<15; i++)
+            - for (var i=0; i<7; i++)
                 .LkIndex-SliderPromo
                     p.LkIndex-SliderPromoText
                         |Промо-код:
@@ -42,9 +46,56 @@
                         span.LkIndex-SliderPromoDate 27.06.18
         p.LkIndex-SliderPromoCount 1/18
 
-    .LkIndex-BigContainer.LkIndex-BigContainer_Last
+    .LkIndex-MediumContainer.LkIndex-MediumContainer_Last
         p.LkIndex-Head_Big Действующие акции
-    .LkIndex-BigContainer
-        p.LkIndex-Head_Big Новинки товаров
-    .LkIndex-BigContainer.LkIndex-BigContainer_Last
+        //TODO Добавить див для внутреннего скрола
+        ul.LkIndex-ActionList
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+            li.LkIndex-ActionItem
+                a.LkIndex-ActionLink(href="#")
+                    span.LkIndex-ActionDash &mdash;&nbsp
+                    span.LkIndex-ActionName Lorem Ipsum - это текст-"рыба", часто используемый в печать
+
+
+
+    .LkIndex-XlContainer
+        p.LkIndex-Head_Big Новинки товаров ➧
+        .LkIndex-ProductWrap
+            include ../../../Global/product/product_new
+            include ../../../Global/product/product_new
+            include ../../../Global/product/product_new
+            include ../../../Global/product/product_new
+            include ../../../Global/product/product_new
+            include ../../../Global/product/product_new
+        p.LkIndex-ProductCount 1/18
+    .LkIndex-XlContainer.LkIndex-XlContainer_Last
         p.LkIndex-Head_Big Рекомендуемые видео
+        .LkIndex-VideoWrap
+            iframe(width="650" height="365" src="https://www.youtube.com/embed/G4sS2Uzwwqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+            iframe(width="650" height="365" src="https://www.youtube.com/embed/TyF6SKxaANo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+            iframe(width="650" height="365" src="https://www.youtube.com/embed/KD_hdv2oI80" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+            iframe(width="650" height="365" src="https://www.youtube.com/embed/0dRQJRtEODc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+        p.LkIndex-VideoCount 1/18
