@@ -1,0 +1,20 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/head/head
+    body
+        main.home
+            include ../include/Global/preloader/preload
+            include ../include/header/header
+
+            section.start-section.container-fullhd
+                .lk
+                    include ../include/content/lk/asside_left/asside_left
+                    include ../include/content/lk/orders_info/orders_info
+                    include ../include/content/lk/asside_right/asside_right
+
+
+            include ../include/footer/footer
+        include ../include/popup/popup
+        //- Весь вонтент до данного коментария
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src='main.js')
