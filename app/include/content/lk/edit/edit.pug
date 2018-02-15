@@ -62,7 +62,12 @@
                         input.edit__form-input.edit__form-input_logo(type="text" id="logo" placeholder="Выберите файл" +
                         " формата " +
                         "jpg или png")
-                        button.product__button.button.button_icon.button_product.edit__form-button
+                        //TODO Выровнять
+                        button.Button.Button_Color_Red.Button_Size_Sm
+                            span.Button-Text.Button-Text_Color_White
+                                span.Button-Icon.Button-Icon_Basket
+                                |Загрузить файл
+                        //button.product__button.button.button_icon.button_product.edit__form-button
                             span.button__text
                                 | Загрузить файл
 
@@ -119,7 +124,11 @@
 
                     label.edit__user-data_label(for="UserPosition") Должность
                         input.edit__user-data_input(type="text" id="UserPosition" placeholder="")
-                    button.edit__user-button.button.button_white.button_icon
+                    button.Button.Button_Color_Not.Button_Size_Lg
+                        span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+                            span.Button-Icon.Button-Icon_AddUser
+                            |Добавить пользователя
+                    //button.edit__user-button.button.button_white.button_icon
                         span.button__text.button__text_white
                             span.button__icon.button__icon_adduser
                             | Добавить пользователя
@@ -320,10 +329,17 @@
 
 
         .edit__button-wrapp
-            button.edit__user-button.button.button_white.button_icon.button_md
+            button.Button.Button_Color_Not.Button_Size_Lg
+                span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+                    span.Button-Icon.Button-Icon_Cancel
+                    |Отмена
+            button.Button.Button_Color_Red.Button_Size_Lg
+                span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                    |Сохранить
+            //button.edit__user-button.button.button_white.button_icon.button_md
                 span.button__text.button__text_white
                     span.button__icon.button__icon_cancel
                     | Отмена
-            button.product__button.button.button_icon.button_md
+            //button.product__button.button.button_icon.button_md
                 span.button__text
                     | Сохранить
