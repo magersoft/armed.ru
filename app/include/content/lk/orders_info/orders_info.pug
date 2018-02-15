@@ -25,7 +25,7 @@
             .orders-info__wrapper
                 .orders-info__form
                     .orders-info__label
-                        | Ф.И.О.:
+                        | Ф.И.О.:<!-- Если нельзя редактировать - текст внутри этого класса, импут не появляется (во всех случаях ниже), если есть возможность редактирвать - выводим импуты (селекты и лейблы) -->
                     .orders-info__select.orders-info__select-disabled
                         | Иванов Иван Иванович
                     label.orders-info__label(for="ordercompany")
@@ -60,7 +60,146 @@
                 .orders-info__score
                     .orders-info__title
                         h4
-                        | Счета
+                            | Счета
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-pdf
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-xls
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-doc
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-zip
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-ppt
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+
                 .orders-info__log
+                    .orders-info__title
+                        h4
+                            | История заказа
+                    .orders-info__log-wrapper
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Заказ оформлен
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Вы внесли изменения в состав заказа
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Менеджер подтвердил наличие товаров и согласовал условия доставки
         .orders__tabs#orderStatus
+            .orders-status
+                .orders-status__table
+                    table
+                        tr
+                            th
+                                | Артикул
+                            th
+                                | Наименования
+                            th
+                                | Кол-во
+                            th
+                                | Цена
+                            th
+                                | Сумма
+                        tr
+                            td
+                                | 15682564822
+                            td
+                                | Кресло-кровать медицинская многофункциональная трансформирующаяся для родовспоможения "Armed": SC-A
+                            td 
+                                | 1
+                            td
+                                | 1 200 330 000 000 ₽
+                            td
+                                | 1 200 330 000 000 ₽
+                .orders-status__footer
+                    .orders-status__footer-buttons
+                        a(href="lk_ordersChange.html").Button.Button_Color_Red.Button_Size_M
+                           span.Button-Text.Button-Text_Color_White.Button-Text_Size_L
+                               span.Button-Icon.Button-Icon_Pencil
+                               | Редактировать
+                        button.Button.Button_Color_NotColor.Button_Size_M
+                           span.Button-Text.Button-Text_Size_L
+                               span.Button-Icon.Button-Icon_CancelRed
+                               | Удалить заказ
+                    .orders-status__footer-price
+                        table
+                            tr
+                                th(colspan="2")
+                                    | Итого
+                                th(colspan="2")
+                                    | 1 200 330 000 000 
+                                    span
+                                        | &#8381;
+                            tr
+                                td
+                                    | Всего товаров
+                                td
+                                    | 17
+                                td
+                                    | В т.ч. НДС:
+                                td
+                                    | 1 200
+                                    span
+                                        | &#8381;
+                            tr
+                                td
+                                    | Объем:
+                                td
+                                    | 23м
+                                td
+                                    | Cкидка промо-кода: 
+                                td
+                                    p.detail__table-item__success 
+                                        | 25%
+                            tr
+                                td
+                                    | Масса:
+                                td
+                                    | 23
+                                td
+                                    | Выгода
+                                td
+                                    p.detail__table-item__success
+                                        | 30 000 000 
+                                        span
+                                            | &#8381;
 
