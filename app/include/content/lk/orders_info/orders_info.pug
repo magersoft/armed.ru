@@ -22,6 +22,58 @@
             li.order__tabs-element.tabs__element
                 a.orders__tabs-link.tabs__link(href="#orderStatus") Состав заказа
         .orders__tabs#orderInfo
+            .orders-info__timeline
+                    ul
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_green.svg")
+                            p.orders-info__timeline-status 
+                                | Новый заказ
+                                span
+                                    | Заказ оформлен
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_green.svg")
+                            p.orders-info__timeline-status 
+                                | Оплата
+                                span
+                                    | Оплачено
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_yellow.svg")
+                            p.orders-info__timeline-status 
+                                | Комплектация
+                                span
+                                    | Комплектуется
+                        li 
+                            p.orders-info__timeline-data
+                                | 
+                                span
+                                    | 
+                            img(src="images/lk/timeline_grey.svg")
+                            p.orders-info__timeline-status.orders-info__timeline-status-unavailable 
+                                | Доставка
+                                span
+                                    | 
+                        li 
+                            p.orders-info__timeline-data
+                                | 
+                                span
+                                    | 
+                            img(src="images/lk/timeline_boll-grey.svg")
+                            p.orders-info__timeline-status.orders-info__timeline-status-unavailable
+                                | Выполнен
+                                span
+                                    |
             .orders-info__wrapper
                 .orders-info__form
                     .orders-info__label
@@ -161,45 +213,83 @@
                                span.Button-Icon.Button-Icon_CancelRed
                                | Удалить заказ
                     .orders-status__footer-price
-                        table
-                            tr
-                                th(colspan="2")
-                                    | Итого
-                                th(colspan="2")
-                                    | 1 200 330 000 000 
+                        .orders-status__footer-table.orders-ur
+                            .orders-status__footer-table-header
+                                p
+                                    | Итого:
+                                p
+                                    | 123123123
                                     span
-                                        | &#8381;
-                            tr
-                                td
-                                    | Всего товаров
-                                td
-                                    | 17
-                                td
-                                    | В т.ч. НДС:
-                                td
-                                    | 1 200
+                                        |&nbsp;&#8381;
+                            .orders-status__footer-table-body
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Всего товаров:
+                                        p
+                                            | 12
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Вес:
+                                        p
+                                            | 23
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Объем: 
+                                        p
+                                            | 12
+                                    .orders-status__footer-table-td
+                                        p
+                                            | В т.ч. НДС:
+                                        p
+                                            | 1 200
+                                            span
+                                                |&nbsp;&#8381;
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Скидка Промо-кода:
+                                        p.detail__table-item__success
+                                            | 25%
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Выгода:
+                                        p.detail__table-item__success
+                                            | 30 000 000
+                                            span
+                                                |&nbsp;&#8381;
+                        .orders-status__footer-table.orders-fiz
+                            .orders-status__footer-table-header
+                                p
+                                    | Итого:
+                                p
+                                    | 123123123
                                     span
-                                        | &#8381;
-                            tr
-                                td
-                                    | Объем:
-                                td
-                                    | 23м
-                                td
-                                    | Cкидка промо-кода: 
-                                td
-                                    p.detail__table-item__success 
-                                        | 25%
-                            tr
-                                td
-                                    | Масса:
-                                td
-                                    | 23
-                                td
-                                    | Выгода
-                                td
-                                    p.detail__table-item__success
-                                        | 30 000 000 
-                                        span
-                                            | &#8381;
-
+                                        |&nbsp;&#8381;
+                            .orders-status__footer-table-body
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Всего товаров:
+                                        p
+                                            | 12
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Объем: 
+                                        p
+                                            | 12
+                                   
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Скидка Промо-кода:
+                                        p.detail__table-item__success
+                                            | 25%
+                                    
+                .orders-click
+                    button.orders-click-ur
+                        | Юридическое лицо
+                    button.orders-click-fiz
+                        | Физическое лицо

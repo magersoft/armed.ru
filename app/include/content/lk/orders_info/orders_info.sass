@@ -1,4 +1,12 @@
 .orders
+	&-click
+		padding: 40px
+		button
+			cursor: pointer
+			padding: 10px 
+			margin: 10px
+	&-fiz
+		display: none
 	&-info
 		&__title
 			margin-bottom: 10px
@@ -113,6 +121,47 @@
 			font:
 				size: 1.2em
 			line-height: 1.4em
+		&__timeline
+			margin: 40px 0
+			&-data
+				text-align: center
+				display: flex
+				flex-direction: column
+				padding: 5px 
+				font:
+					size: 1.4em
+					family: $fontFamilyAdditionally
+				color: #bdbdbd
+			&-status
+				display: flex
+				flex-direction: column
+				text-align: center
+				color: #4f4f4f
+				font:
+					weight: 500 
+					size: 1.4em 
+					family: $fontFamilyAdditionally
+				letter-spacing: 0.7px
+				&-unavailable
+					color:#bdbdbd
+				span 
+					font:
+						size: 0.9em
+						weight: normal
+					color: #828282
+			ul 
+				margin: 0 auto
+				width: 800px
+				display: flex
+				flex-direction: row
+				list-style: none
+				li
+					p
+						height: 44px
+						width: 372px
+						margin-left: -175px
+					img 
+						margin: 20px 0
 	&-status
 		&__table
 			table 
@@ -139,8 +188,44 @@
 						&:nth-child(3)
 							text-align: center 
 		&__footer
+			margin: 20px 0
 			display: flex
 			flex-direction: row
+			justify-content: space-between
+			&-table
+				min-width: 700px
+				background: #fbfbfb
+				padding: 10px
+				&-tr
+					display: flex 
+					flex-direction: row
+				&-td
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					padding: 7px
+					p
+						font:
+							size: 1.4em
+						color: #4f4f4f
+						&:nth-child(2)
+							color: #828282
+
+				&-header
+					border-bottom: 1px solid #e0e0e0
+					padding: 7px
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					font:
+						size: 1.6em
+						family: $fontFamilyAdditionally
+						weight: 500
+					letter-spacing: 0.8px 
+					color: #4f4f4f
+					text-transform: uppercase
+
 			&-buttons
 				padding: 20px 0
 				display: flex
@@ -148,33 +233,4 @@
 				max-width: 50%
 			&-price
 				display: flex
-				flex: 0 0 50%
-				max-width: 50%
-				table
-					width: 100%
-					border-collapse: collapse
-					background: #fbfbfb
-					tr
-
-						&:nth-child(1)
-							border-bottom: 2px solid #e0e0e0
-						th
-							width: 50% 
-							padding: 7px
-							font:
-								size: 1.6em
-							letter-spacing: 0.8px
-							color: #4f4f4f
-							text-transform: uppercase
-							&:nth-child(1)
-								text-align: left
-							&:nth-child(2)
-								text-align: right
-						td
-							padding: 5px
-							font:
-									size: 1.4em
-							color: #4f4f4f
-							&:nth-child(even)
-								text-align: right
-								color: #828282 
+				width: auto
