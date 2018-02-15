@@ -29,6 +29,35 @@ $(".catalog__content-main").on('DOMSubtreeModified', function() {
         }
     );
 });
+$('.product').hover(
+    function () {
+        if ($(this).hasClass('product_entity')) {
+            $(this).removeClass('product_entity_nothover').addClass('product_entity_hover');
+        }
+        else if ($(this).hasClass('product_entitySm')) {
+            $(this).removeClass('product_entitySm_nothover').addClass('product_entitySm_hover');
+        }
+        else {
+            $(this).removeClass('product_nothover').addClass('product_hover');
+            $(this).children('.product__asside').removeClass('product__asside_hide').addClass('product__asside_active');
+            $(this).children('.product__buttonWrapp').removeClass('product__buttonWrapp_hide').addClass('product__buttonWrapp_active');
+        }
+    },
+    function () {
+        if ($(this).hasClass('product_entity')) {
+            $(this).removeClass('product_entity_hover').addClass('product_entity_nothover');
+        }
+        else if ($(this).hasClass('product_entitySm')) {
+            $(this).removeClass('product_entitySm_hover').addClass('product_entitySm_nothover');
+        }
+        else {
+            $(this).removeClass('product_hover').addClass('product_nothover');
+            $(this).children('.product__asside').removeClass('product__asside_active').addClass('product__asside_hide');
+            $(this).children('.product__buttonWrapp').removeClass('product__buttonWrapp_active').addClass('product__buttonWrapp_hide');
+        }
+
+    }
+);
 $('.product__question').click(function(){
     $(this).next().slideDown(400);
     return false

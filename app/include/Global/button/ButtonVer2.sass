@@ -1,64 +1,51 @@
+body
+  background-color: #fff
 .Button
   cursor: pointer
-  font-family: 'Rubik'
   border: 0
-  border-radius: 2px
   display: flex
-  justify-content: center
   align-items: center
+  justify-content: center
   text-decoration: none
-  // модификаторы размера
-  &_Size_XL
+  &_Size_Lg
     width: 255px
-    height: 65px
-  &_Size_L
-    width: 180px
-    height: 45px
-  &_Size_M
+    height: 55px
+  &_Size_Sm
     width: 165px
     height: 45px
-  &_Size_S
-    width: 150px
-    height: 45px
-  &_Size_XS
-    width: 140px
-    height: 40px
-  // Модификаторы цвета
   &_Color_Red
     background-color: $GlobalColor
-  &_Color_White
-    background-color: rgba(255, 255, 255, 1)
-    border: 1px solid rgba(224, 224, 224, 1)
-  &_Color_NotColor
+  &_Color_Not
     background-color: rgba(255, 255, 255, 0)
+    transition: 0.4s
+    &:hover
+      background-color: #f8f8f8
+      transition: 0.4s
+    &:active
+      background-color: #f1f1f1
+      transition: 0.4s
 
-  // Элемент текст
+
   &-Text
     display: flex
-    justify-content: center
     align-items: center
-    letter-spacing: 0.05em
-    // Модификатор цвета
+    justify-content: center
+    letter-spacing: 0.07em
+    font-size: 16px
+    &_Color_Black
+      color: rgba(79, 79, 79, 1)
     &_Color_White
-      color: rgba(255, 255 ,255 ,1)
-    // Модификатор UPPERCASE
+      color: rgba(255, 255, 255, 1)
     &_Uppercase
       text-transform: uppercase
-    // Модификатор размера шрифта
-    &_Size_L
-      font-size: 16px
-    &_Size_M
-      font-size: 14px
-    &_Size_S
-      font-size: 12px
-  // Элемент иконка
+
   &-Icon
     width: 20px
     height: 20px
     background-image: url("images/sprite.png")
     background-repeat: no-repeat
     // Модификатор отдельной иконки из спрайта
-    //TODO проверить соответствие иконок
+    //TODO проверить соответсвие названию
     &_Tel
       background-position: -122px -24px
     &_Entity
@@ -97,17 +84,10 @@
       background-position: -80px -310px
     &_UserRed
       background-position: -100px -310px
-<<<<<<< HEAD
-    &_PlusBasketWhite
-      background-position: -96px -37px
-    &_Present
-      background-position: -88px -88px
-=======
+
 
 .Button:hover
-  .Button-Icon_Cancel
-    background-position: -20px -270px
-    transform: rotate(360deg)
+  .Button-Icon_AddUser
+    background-position: -100px -290px
   .Button-Icon_BasketRed
     background-position: -60px -270px
->>>>>>> 38f6a8c6e16e0e873e304078d827a6ada47a8844

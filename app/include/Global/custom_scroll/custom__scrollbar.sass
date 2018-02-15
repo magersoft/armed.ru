@@ -136,7 +136,28 @@
 
 /* compare */
 .mCS-compare.mCSB_scrollTools
-  top: -15px
+  right: 0
+  .mCSB_draggerRail
+  .mCSB_dragger
+    .mCSB_dragger_bar
+      background-color: #000
+      background-color: rgba(224, 224, 224, 1)
+    &:hover .mCSB_dragger_bar, &:active .mCSB_dragger_bar, &.mCSB_dragger_onDrag .mCSB_dragger_bar
+      background-color: rgba(189, 189, 189, 1)
+  .mCSB_buttonUp
+    background-position: -80px 0
+  .mCSB_buttonDown
+    background-position: -80px -20px
+  .mCSB_buttonLeft
+    background-position: -80px -40px
+  .mCSB_buttonRight
+    background-position: -80px -56px
+
+/* client */
+.mCS-client.mCSB_scrollTools
+  top: 10px
+  bottom: 10px
+  right: 0
   .mCSB_draggerRail
   .mCSB_dragger
     .mCSB_dragger_bar
