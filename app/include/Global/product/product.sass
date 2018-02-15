@@ -14,7 +14,7 @@
     height: 85px
     flex-direction: row
     justify-content: center
-    &Sm
+    &Smal
       width: 100%
       height: auto
       flex-direction: row
@@ -24,7 +24,7 @@
       border: 1px solid #bdbdbd
     &_nothover
       border: 1px solid #e0e0e0
-  &_entitySm
+  &_entitySmal
     width: 100%
     height: auto
     flex-direction: row
@@ -40,7 +40,7 @@
       justify-content: space-between
       align-items: center
       width: 100%
-    &_entitySm
+    &_entitySmal
       display: flex
       justify-content: space-between
       align-items: center
@@ -52,7 +52,7 @@
     position: relative
     &_entity
       height: 83px
-    &_entitySm
+    &_entitySmal
       display: none
   &__image
     height: 210px
@@ -75,7 +75,7 @@
       flex-direction: column
       align-items: flex-start
       justify-content: center
-      &Sm
+      &Smal
         display: none
   &__rib
     height: 20px
@@ -126,7 +126,7 @@
       font-size: 1.4em
       color: #4f4f4f
       padding: 0
-    &_entitySm
+    &_entitySmal
       font-family: 'Roboto'
       font-size: 1.4em
       text-transform: none
@@ -143,10 +143,9 @@
       align-items: center
       justify-content: center
       z-index: 200
-      padding-bottom: 35px
       &_active
         display: flex
-        bottom: -75px
+        bottom: -85px
         transition: 0.4s
         border-bottom: 1px solid $productBorderHoverColor
         border-left: 1px solid $productBorderHoverColor
@@ -154,8 +153,8 @@
         box-shadow: 0 6px 10px $productShadowColor
       &_hide
         display: none
-    &_entitySm
-      display: none
+    &_entitySmal
+      display: none!important
   &__asside
     width: 60px
     height: 380px
@@ -186,7 +185,7 @@
       margin-bottom: 0
       &:not(:last-child)
         margin-right: 15px
-    &_entitySm
+    &_entitySmal
       display: none
     &_favorite
       background-position: 0 0
@@ -219,7 +218,7 @@
     &_entity
       font-size: 1.6em
       margin-right: 0
-    &_entitySm
+    &_entitySmal
       font-size: 1.4em
   &__oldcost
     color: $productOldCostColor
@@ -315,7 +314,7 @@
     font-size: 1.2em
     &_entity
       display: none
-    &_entitySm
+    &_entitySmal
       display: block
     &_true
       color: $ConfirmColor
@@ -327,12 +326,12 @@
       color: $GlobalColor
     &_entity
       display: none
-    &_entitySm
+    &_entitySmal
       display: inline
   &__count
     &_entity
       display: none !important
-    &_entitySm
+    &_entitySmal
       display: flex
 .you-price_color
   color: $productQuestionYouColor
