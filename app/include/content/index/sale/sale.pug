@@ -10,8 +10,12 @@ section#sale
                             h2  Новогодние акции и скидки
                             p Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э.
                             .sale__countdown_date.row#date_2802
-                            a.sale__countdown_button(href="#") Узнать больше
+                            //a.sale__countdown_button(href="#") Узнать больше
                                 i.icon-right
+                            a.Button.Button_Color_Not.Button_Size_Lg.home__content_button-info
+                                span.Button-Text.Button-Text_Uppercase.Button-Text_Color_White
+                                    | Узнать больше
+                                    span.Button-Icon.Button-Icon_ArrowBlackRight.sale__countdown_button_icon
                 .col
                     .sale__product-sale
                         h3.sale__product-sale_title
@@ -24,5 +28,9 @@ section#sale
                                 img(src="images/page/index/sale-product-1.jpg")
                                 span.sale__product-sale_text SC-II
                             - }
-                        a.sale__product-sale_button(href="#") Подробнее
+                        //a.sale__product-sale_button(href="#") Подробнее
                             i.icon-right
+                        a.Button.Button_Color_Not.Button_Size_Lg.sale__product-sale_button
+                            span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase.Button-Text_Margin25
+                                | Подробней
+                                span.Button-Icon.Button-Icon_ArrowBlackRight.product-more__button_icon

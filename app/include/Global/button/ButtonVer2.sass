@@ -1,6 +1,7 @@
 body
   background-color: #fff
 .Button
+  font-family: 'Exo'
   cursor: pointer
   border: 0
   display: flex
@@ -30,6 +31,8 @@ body
     display: flex
     align-items: center
     justify-content: center
+    position: relative
+    top: -2px
     letter-spacing: 0.07em
     font-size: 16px
     &_Color_Black
@@ -37,11 +40,15 @@ body
     &_Color_White
       color: rgba(255, 255, 255, 1)
     &_Uppercase
+      font-family: 'Exo 2 Semi'
       text-transform: uppercase
+    &_Margin25
+      margin-left: 25px
 
   &-Icon
     width: 20px
     height: 20px
+    position: relative
     background-image: url("images/sprite.png")
     background-repeat: no-repeat
     // Модификатор отдельной иконки из спрайта
@@ -53,14 +60,14 @@ body
     &_Phone
     &_Mail
     &_ArrowRedLeft
-      margin-top: 3px
       background-position: -48px -90px
     &_ArrowRedRight
-      margin-top: 4px
       background-position: -48px -72px
-    &_ArrowWhiteLeft
+    &_ArrowBlackLeft
       background-position: -66px -90px
-    &_ArrowWhiteRight
+    &_ArrowBlackRight
+      top: 2px
+      left: -2px
       background-position: -66px -72px
     &_Basket
       background-position: -122px -104px
@@ -84,10 +91,15 @@ body
       background-position: -80px -310px
     &_UserRed
       background-position: -100px -310px
+    &_Present
+      top: 0.7px
+      background-position: -40px -290px
 
 
 .Button:hover
-  .Button-Icon_AddUser
-    background-position: -100px -290px
-  .Button-Icon_BasketRed
-    background-position: -60px -270px
+  .Button-Icon_ArrowBlackRight
+    //top: 3px
+    left: 0px
+    background-position: -48px -72px
+  .Button-Icon_Present
+    background-position: -60px -290px
