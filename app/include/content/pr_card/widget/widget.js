@@ -1,7 +1,8 @@
-var widget = $('.widget');
-console.log(widget);
-
-$(widget).stick_in_parent({offset_top: 140});
+$(function() {
+	var widget = $('.widget');
+	console.log(widget);
+	$(widget).stick_in_parent({offset_top: 140});
+});
 
 /*$(window).scroll(function () {
     var h = $('.widget');
