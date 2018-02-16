@@ -7,10 +7,10 @@ $( ".FilterTabs" ).tabs({
 $('.FilterTabs-Label').change(function () {
         var color = $(this).find("span").css('color');
 
-        if (color == 'rgb(130, 130, 130)') {
-            $(this).find("span").css('color', 'blue');
-        } else if (color == 'rgb(0, 0, 255)') {
+        if (color == 'rgb(189, 189, 189)') {
             $(this).find("span").css('color', 'rgb(130, 130, 130)');
+        } else if (color == 'rgb(130, 130, 130)') {
+            $(this).find("span").css('color', 'rgb(189, 189, 189)');
         }
 
 
