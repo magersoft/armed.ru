@@ -24,7 +24,22 @@ $("#filterOpen").click(function () {
     } else {
         $('#filterPopup').removeClass('orders__filter-popup_active').addClass('orders__filter-popup_hide');
     }
-
-
     return false
 });
+
+
+function Position(br) {
+    console.log(typeof(br.left));
+    var top = Math.round(br.top);
+    var left = Math.round(br.left);
+
+}
+/*
+$('.ClickSave').on('click', function () {
+    var icon = $(this);
+    console.log(icon);
+    var position = icon.width();
+    console.log(position);
+
+    return false;
+});*/
