@@ -110,20 +110,6 @@ $(function(){
     }
 });
 
-// TODO доработать скрипт hover в выпадающем каталоге
-$("#cat-2")
-    .mouseover(function() {
-        $(".dropdown-catalog__inner").show(400);
-    });/*
-    .mouseleave(function () {
-        $(".dropdown-catalog__inner").hide(100);
-    });*/
-$(".dropdown-catalog__category")
-    .mouseleave(function() {
-        $(".dropdown-catalog__inner").hide(400);
-    });
-
-
 /* TODO при "value=0" менять background-position иконки минус
 $('.primary-menu__cart_product_minus').click(function() {
     var test = [];
