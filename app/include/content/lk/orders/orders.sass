@@ -137,17 +137,50 @@
     right: 0
     z-index: 10000
     background-color: rgba(0, 0, 0, 0.8)
+    &-close
+      position: relative
+      margin-left: -20px
+      width: 26px
+      height: 26px
+      border: 2px solid #fff
+      border-radius: 50%
+      &:after, &:before
+        position: absolute
+        top: 5px
+        left: 10px
+        width: 2px
+        height: 13px
+        content: ' '
+        background-color: #fff
+      &:before
+        transform: rotate(45deg)
+      &:after
+        transform: rotate(-45deg)
+
+
     &-item
+      padding-left: 20px
       height: 170px
-      width: 150px
+      width: auto
       flex-direction: column
       justify-content: flex-start
       position: absolute
       display: flex
       z-index: 10
     &-link
+      position: relative
       color: #fff
       text-decoration: none
+      &:before
+        position: absolute
+        content: ''
+        width: 8px
+        height: 8px
+        background-color: #fff
+        border-radius: 50%
+        left: -5px
+      &:not(:last-child)
+        margin-bottom: 7px
 
 .sum__wrapp
   display: flex

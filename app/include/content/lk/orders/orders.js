@@ -37,7 +37,7 @@ function Position(br, obj) {
     $(div[0].children[0]).css({top: top, left: left})
 }
 
-$('.orders__menu-clouse').click(function () {
+$('.orders__menu-close').click(function () {
     $(this).parent().parent().css('display', 'none');
 });
 
