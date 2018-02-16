@@ -70,7 +70,19 @@
                                         a.orders__menu-link(href="#") Документываувыв 4
                                         a.orders__menu-link(href="#") Документ 5
                                         a.orders__menu-link(href="#") До 6
-                                a(href="#" onclick='var pos=this.getBoundingClientRect();Position(pos)').orders__icon.orders__icon_print
+                                a(href="#" onclick='var elem = this; var pos=this.getBoundingClientRect();Position' +
+                                '(pos,' +
+                                ' elem' +
+                                ')').orders__icon.orders__icon_print
+                                .orders__menu
+                                    .orders__menu-item
+                                        a.orders__menu-close(href="#")
+                                        a.orders__menu-link(href="#") Документ 1
+                                        a.orders__menu-link(href="#") Документ 2
+                                        a.orders__menu-link(href="#") Докум 3
+                                        a.orders__menu-link(href="#") Документываувыв 4
+                                        a.orders__menu-link(href="#") Документ 5
+                                        a.orders__menu-link(href="#") До 6
                                 a(href="lk_ordersInfo.html").orders__icon.orders__icon_edit
                                 a(href="#").orders__icon.orders__icon_copy
                 p.orders__quantity-text

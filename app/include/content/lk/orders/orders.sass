@@ -139,7 +139,8 @@
     background-color: rgba(0, 0, 0, 0.8)
     &-close
       position: relative
-      margin-left: -20px
+      margin-left: -30px
+      margin-bottom: 10px
       width: 26px
       height: 26px
       border: 2px solid #fff
@@ -152,15 +153,25 @@
         height: 13px
         content: ' '
         background-color: #fff
+        transition: 0.4s
       &:before
         transform: rotate(45deg)
       &:after
         transform: rotate(-45deg)
+      &:hover
+        border-color: $GlobalColor
+        transition: 0.4
+        &:before
+          background-color: $GlobalColor
+          transition: 0.2s
+        &:after
+          background-color: $GlobalColor
+          transition: 0.6s
 
 
     &-item
-      padding-left: 20px
-      height: 170px
+      padding-left: 30px
+      height: auto
       width: auto
       flex-direction: column
       justify-content: flex-start
@@ -169,18 +180,37 @@
       z-index: 10
     &-link
       position: relative
-      color: #fff
+      color: #bdbdbd
       text-decoration: none
+      transition: 0.4s
       &:before
         position: absolute
         content: ''
-        width: 8px
-        height: 8px
-        background-color: #fff
+        width: 9px
+        height: 9px
+        background-color: #bdbdbd
         border-radius: 50%
-        left: -5px
+        left: -21px
+        top: 5px
+      &:not(:last-child):after
+        content: ''
+        height: 18px
+        width: 3px
+        position: absolute
+        left: -18px
+        top: 14px
+        background-color: #bdbdbd
       &:not(:last-child)
-        margin-bottom: 7px
+        margin-bottom: 10px
+      &:hover
+        color: #fff
+        transition: 0.4s
+        &:before
+          background-color: #fff
+          transition: 0.4s
+      &_up
+        top: -195px
+        left: -1px
 
 .sum__wrapp
   display: flex
