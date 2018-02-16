@@ -7,39 +7,7 @@
             a.orders__filter-link(href="#")
                 span.orders__filter-icon.orders__filter-icon_create
                 | Новый заказ
-            //a.orders__filter-link#filterOpen(href="#")
-                span.orders__filter-icon.orders__filter-icon_filter
-                | Фильтр
-        //form.orders__filter-popup.orders__filter-popup_hide#filterPopup
-            input.orders__filter-search(type="text" name="filterSearch" id="filterSearch" placeholder="Поиск по заказам")
-            label.orders__filter-label(for="filterData") Дата заказа
-                input.orders__filter-input(type="text" name="filterData" id="filterData")
-            label.orders__filter-label(for="filterNumber") Номер заказа
-                input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
-            label.orders__filter-label(for="filterStatus") Статус заказа
-                select.orders__filter-select(name="filterStatus" id="filterStatus")
-                    option.orders__filter-option(value="") В ожидании
-                    option.orders__filter-option(value="") Доставлено
-                    option.orders__filter-option(value="") В доставке
-                    option.orders__filter-option(value="") Оплачено
-                    option.orders__filter-option(value="") Не подтвержден
-                    option.orders__filter-option(value="") Отменен
-                    option.orders__filter-option(value="") В обработке
-            label.orders__filter-label(for="filterName") Заказ на имя
-                select.orders__filter-select(name="filterName" id="filterName")
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-            label.orders__filter-label(for="sumStart") Сумма от:
-                .sum__wrapp
-                    input.orders__filter-sum-start(type="text" name="sumStart" id="sumStart")
-                    span.orders__filter-dash &mdash;
-                    input.orders__filter-sum-end(type="text" name="sumEnd" id="sumEnd")
-            button.orders__filter-button.button.button_white.button_icon.button_md(type="reset")
-                span.button__text.button__text_white
-                    span.button__icon.button__icon_cancel
-                    | Сбросить фильтр
+
 
     .orders__tabs
         ul.orders__tabs-list.tabs
@@ -89,8 +57,24 @@
                             p.orders__sum.table__element
                                 | 210 000 000 000
                             .orders__actions.table__element.table__element_actions
-                                a(href="#").orders__icon.orders__icon_save
-                                a(href="#").orders__icon.orders__icon_print
+                                a(href="#" onclick='var pos=this.getBoundingClientRect();Position(pos)').orders__icon.orders__icon_save
+                                .orders__menu-save
+                                    a.orders__menu-clouse(href="#") Закрыть
+                                    ul.orders__menu-list
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") Документ 1
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") Документ 2
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") Докум 3
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") Документываувыв 4
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") Документ 5
+                                        li.orders__menu-item
+                                            a.orders__menu-link(href="#") До 6
+
+                                a(href="#" onclick='var pos=this.getBoundingClientRect();Position(pos)').orders__icon.orders__icon_print
                                 a(href="lk_ordersInfo.html").orders__icon.orders__icon_edit
                                 a(href="#").orders__icon.orders__icon_copy
                 p.orders__quantity-text
@@ -116,6 +100,9 @@
                         span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link.table__element_customer(href="#")
                         | Состав заказа
+                    a.order__head-link.table__head-link.table__element_customer(href="#")
+                        | Заказчик
+                        span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link(href="#")
                         | Дата
                         span.order__head-arrow.table__head-arrow
@@ -134,6 +121,8 @@
                                 | ДМ000158951
                             p.orders__customer.table__element.table__element_customer
                                 | В заказе 10 наименований
+                            p.orders__customer.table__element.table__element_customer
+                                | Фамилия Имя Отчество
                                 //| Кресло-кровать медицинская многофункциональная трансформирующаяся для
                                 //родовспоможения "Armed" SC-I
                                 //br
@@ -143,8 +132,8 @@
                             p.orders__sum.table__element
                                 | 210 000 000 000
                             .orders__actions.table__element.table__element_actions
-                                a(href="#").orders__icon.orders__icon_save
-                                a(href="#").orders__icon.orders__icon_print
+                                a(href="#").orders__icon.orders__icon_save.ClickSave
+                                a(href="#").orders__icon.orders__icon_print.ClickPrint
                                 a(href="lk_ordersInfo.html").orders__icon.orders__icon_edit
                                 a(href="#").orders__icon.orders__icon_copy
                 p.orders__quantity-text
@@ -170,6 +159,9 @@
                         span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link.table__element_customer(href="#")
                         | Состав заказа
+                    a.order__head-link.table__head-link.table__element_customer(href="#")
+                        | Заказчик
+                        span.order__head-arrow.table__head-arrow
                     a.order__head-link.table__head-link(href="#")
                         | Дата
                         span.order__head-arrow.table__head-arrow
@@ -188,6 +180,8 @@
                                 | ДМ000158951
                             p.orders__customer.table__element.table__element_customer
                                 | В заказе 10 наименований
+                            p.orders__customer.table__element.table__element_customer
+                                | Фамилия Имя Отчество
                                 //| Кресло-кровать медицинская многофункциональная трансформирующаяся для
                                 //родовспоможения "Armed" SC-I
                                 //br
