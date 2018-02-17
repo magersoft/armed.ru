@@ -28,12 +28,19 @@ $("#filterOpen").click(function () {
 });
 
 
-function Position(br) {
-    console.log(typeof(br.left));
+function Position(br, obj) {
+    var div = $(obj).next();
+    $(div).css('display', 'block');
+    var menu = (div[0].children[0]);
     var top = Math.round(br.top);
     var left = Math.round(br.left);
-
+    $(div[0].children[0]).css({top: top, left: left})
 }
+
+$('.orders__menu-close').click(function () {
+    $(this).parent().parent().css('display', 'none');
+});
+
 /*
 $('.ClickSave').on('click', function () {
     var icon = $(this);
