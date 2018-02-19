@@ -99,7 +99,8 @@
     font-size: 1.6em
 
 .slide-right
-  background: url(images/page/index/slide-right.png) center no-repeat
+  background: url(images/sprite.png)
+    position: -235px -282px
   position: absolute
   width: 27px
   height: 27px
@@ -107,9 +108,13 @@
   top: 50%
   z-index: 50
   cursor: pointer
+  &:hover
+    background:
+      position: -235px -309px
 
 .slide-left
-  background: url(images/page/index/slide-left.png) center no-repeat
+  background: url(images/sprite.png)
+    position: -235px -228px
   position: absolute
   width: 27px
   height: 27px
@@ -117,6 +122,9 @@
   top: 50%
   z-index: 50
   cursor: pointer
+  &:hover
+    background:
+      position: -235px -255px
 
 .slick-dots
   bottom: -50px

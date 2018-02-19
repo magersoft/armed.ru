@@ -26,17 +26,25 @@
       &:not(:last-child)
         margin-right: 15px
     &-icon
-      background-image: url("images/lk/filter.png")
+      background-image: url("images/sprite.png")
       background-repeat: no-repeat
       width: 32px
       height: 32px
       display: block
       cursor: pointer
       margin-right: 10px
+      border-radius: 50%
+      background:
+          color: #c62828
       &_create
-        background-position: 0 0
-      &_filter
-        background-position: -32px 0
+        background:
+          position: -144px 0
+      &_double
+        background:
+          position: -144px -64px
+      &_pay
+        background:
+          position: -144px -32px
     &-popup
       position: absolute
       top: 25px
@@ -103,7 +111,7 @@
       color: rgb(130, 130, 130)
 
   &__icon
-    background-image: url("images/lk/user__edit.svg")
+    background-image: url("images/sprite.png")
     background-repeat: no-repeat
     width: 26px
     height: 26px
@@ -112,21 +120,21 @@
     &:not(:last-child)
       margin-right: 5px
     &_save
-      background-position: 0 0
+      background-position: 0 -355px
       &:hover
-        background-position: -26px 0
+        background-position: -104px -355px
     &_print
-      background-position: 0 -26px
+      background-position: -26px -355px
       &:hover
-        background-position: -26px -26px
+        background-position: -130px -355px
     &_edit
-      background-position: 0 -52px
+      background-position: -52px -355px
       &:hover
-        background-position: -26px -52px
+        background-position: -156px -355px
     &_copy
-      background-position: 0 -78px
+      background-position: -78px -355px
       &:hover
-        background-position: -26px -78px
+        background-position: -182px -355px
   &__widget
   &__menu
     display: none
