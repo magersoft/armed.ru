@@ -1,18 +1,273 @@
 .dropdown-catalog.js-dropdown
     .dropdown-catalog__main
         ul.dropdown-catalog__wrapper
-            include data/categories
-            each item in categories
-                li.dropdown-catalog__item(id= item.id)
-                    a.dropdown-catalog__item_link(href= item.link) #{item.name}
-                    .dropdown-catalog__inner
-                        .dropdown-catalog__category(id="#")
-                            .dropdown-catalog__category_title
-                                | #{item.name}
-                            .dropdown-catalog__category_wrapper
-                                include data/cat-1
-                                each item in cat1
-                                    a.dropdown-catalog__category_link(href= item.link)
-                                        img.dropdown-catalog__category_image(src= item.image)
-                                        span.dropdown-catalog__category_text
-                                            | #{item.name}
+            li.dropdown-catalog__item(id="cat1")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Медицинское оборудование и сопутствующие
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Медицинское оборудование и сопутствующие
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/098/098010713aa69bd01918d396a355b02e.png")
+                                span.dropdown-catalog__category_text
+                                    | Кислородное оборудование и сопутствующие товары
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/ad4/ad4a888c6f8f5f997eacf1e2d3627e38.png")
+                                span.dropdown-catalog__category_text
+                                    | Отсасыватели хирургические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/9c5/9c5a02210eccc3a9213751fa1c22b112.png")
+                                span.dropdown-catalog__category_text
+                                    | Стерилизационное и дезинфекционное оборудование
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/870/870f2b10fb11625901be6feeae1ffa66.png")
+                                span.dropdown-catalog__category_text
+                                    | Дозаторы шприцевые и насосы инфузионные
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/230/23091f15de015222574580c15552d65a.png")
+                                span.dropdown-catalog__category_text
+                                    | Светильники хирургические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/233/233cde2ea0171cba1a685665c22612ec.png")
+                                span.dropdown-catalog__category_text
+                                    | Негатоскопы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/394/3942538d69007d61afda0feb336e4999.png")
+                                span.dropdown-catalog__category_text
+                                    | Операционные столы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/47c/47cdea033694bff2c7f7899b67e36078.png")
+                                span.dropdown-catalog__category_text
+                                    | Мониторы прикроватные
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/c71/c7149647db8146105a80ab5853344b56.png")
+                                span.dropdown-catalog__category_text
+                                    | Офтальмологическое оборудование
+            li.dropdown-catalog__item(id="cat2")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Лабораторное оборудование
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Лабораторное оборудование
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item1.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Микроскопы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item2.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Центрифуги и лабораторные
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item3.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Аквадистилляторы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item4.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Водные бани
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item5.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Нагревательные плиты
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="images/Header/catalog/drop-item6.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Встряхиватели и магнитные мешалки
+            li.dropdown-catalog__item(id="cat3")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Медицинская мебель
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Медицинская мебель
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/d49/d49a4f80112be5dd1124f09837d61696.png")
+                                span.dropdown-catalog__category_text
+                                    | Кровати медицинские механические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/5a3/5a3d6fc0511ffa153339d753a6ed9a0b.png")
+                                span.dropdown-catalog__category_text
+                                    | Электрические двух- и трехфункциональные кровати
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/05c/05cc2c18d1a102482abae20241404e9d.png")
+                                span.dropdown-catalog__category_text
+                                    | Электрические пятифункциональные кровати
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/c14/c14f028627e6e99f6220cdd20a2eea8d.png")
+                                span.dropdown-catalog__category_text
+                                    | Матрасы для функциональных кроватей
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/799/799bac3bd2490e1b54151895952f2393.png")
+                                span.dropdown-catalog__category_text
+                                    | Сопутствующие товары
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/5f1/5f179bce861a3a38ac33075eca80cfaf.png")
+                                span.dropdown-catalog__category_text
+                                    | Мебель для акушерских и гинекологических отделений
+            li.dropdown-catalog__item(id="cat4")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Технические средства реабилитации
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Технические средства реабилитации
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/60d/60d5df2a2d07a8dbb3c01b7b4dc97513.png")
+                                span.dropdown-catalog__category_text
+                                    | Кресла-коляски механические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/2dc/2dc50277d2896bcae2574c995fdf297d.png")
+                                span.dropdown-catalog__category_text
+                                    | Кресла инвалидные детские
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/ac8/ac8c1a15bbb5a246f6e911cd0d77f038.png")
+                                span.dropdown-catalog__category_text
+                                    | Кресла инвалидные электрические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/973/973111e8a6c3c996c6c58673996659cc.png")
+                                span.dropdown-catalog__category_text
+                                    | Кресла-каталки
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/d37/d37dcf3fa7d41e66b9acc9b687b42e78.png")
+                                span.dropdown-catalog__category_text
+                                    | Кресла-коляски с санитарным оснащением
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/9c3/9c3b7a6b9b084ac3fd8c133a529972d7.png")
+                                span.dropdown-catalog__category_text
+                                    | Матрацы и подушки противопролежневые
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/73a/73a9afecc856723e284333e954657d0c.png")
+                                span.dropdown-catalog__category_text
+                                    | Костыли
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/2a6/2a6869243b5877daf2c8d5659a6b88e0.png")
+                                span.dropdown-catalog__category_text
+                                    | Трости опорные
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/86a/86adfe85f8d275d4528fa71e862c0cd2.png")
+                                span.dropdown-catalog__category_text
+                                    | Ходунки
+            li.dropdown-catalog__item(id="cat5")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Приспособления для ухода и помощи в быту
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Приспособления для ухода и помощи в быту
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/49f/49f82ab09333495ac4054d1eeddb089e.png")
+                                span.dropdown-catalog__category_text
+                                    | Санитарные приспособления для ванной комнаты
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/cbc/cbc0850125918e0ab9b033f2407b498d.png")
+                                span.dropdown-catalog__category_text
+                                    | Санитарные приспособления для туалета
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/eb7/eb74658d6ad64b31c4ff872e0f1f1667.png")
+                                span.dropdown-catalog__category_text
+                                    | Дополнительные приспособления для ухода за лежачими больными
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/b87/b874b006d17d07c85cbaab8bfdb07178.png")
+                                span.dropdown-catalog__category_text
+                                    | Дополнительные приспособления для пожилых людей и людей с ограниченными возможностями
+            li.dropdown-catalog__item(id="cat6")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Домашняя медтехника
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Домашняя медтехника
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/ba4/ba49e810de99e3f528684bc1b8f4cf6f.png")
+                                span.dropdown-catalog__category_text
+                                    | Ингаляторы-небулайзеры
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/e71/e71c52f00b0fea7f27e92f50dcb5ab03.png")
+                                span.dropdown-catalog__category_text
+                                    | Тонометры электронные
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/8c2/8c2075a8fbe0a130883bdeb34efd3a57.png")
+                                span.dropdown-catalog__category_text
+                                    | Тонометры механические
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/5a2/5a2932ee206bb256c55dfde40987c3e2.png")
+                                span.dropdown-catalog__category_text
+                                    | Оборудование для светотерапии
+            li.dropdown-catalog__item(id="cat7")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Товары для спорта и отдыха
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Товары для спорта и отдыха
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/ed0/ed0a5212ddc635248dd6d5d6db358f2c.png")
+                                span.dropdown-catalog__category_text
+                                    | Увлажнители
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/30d/30d731a6b3eee255f71369cbf9f8cb0c.png")
+                                span.dropdown-catalog__category_text
+                                    | Палки для скандинавской ходьбы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/4f9/4f9f105bbffea9862472456a15adb3a6.png")
+                                span.dropdown-catalog__category_text
+                                    | Тренажеры
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/03e/03e84adc2e0585ed678a366218e1f6df.png")
+                                span.dropdown-catalog__category_text
+                                    | Массажные приспособления
+            li.dropdown-catalog__item(id="cat8")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Ортопедические изделия и антиварикозное белье
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Ортопедические изделия и антиварикозное белье
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/2e6/2e67645480511d5e1d0a5b17a3d67b18.png")
+                                span.dropdown-catalog__category_text
+                                    | Ортезы
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/694/694e7f2a2b9e13197a1c29cac1a7c70f.png")
+                                span.dropdown-catalog__category_text
+                                    | Трикотаж Антиварикозный, Антиэмболический, Компрессионный
+            li.dropdown-catalog__item(id="cat9")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Запчасти
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Запчасти
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/6c7/6c742165a490dc37a71a94db253e0e46.png")
+                                span.dropdown-catalog__category_text
+                                    | Запчасти для гинекологического оборудования
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/c3a/c3a8aa41b3cc88b594f1d0cd347eabbb.png")
+                                span.dropdown-catalog__category_text
+                                    | Запчасти для медицинской мебели
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/70b/70b5824fdf28a6a3bf5381df8ac9dc6f.png")
+                                span.dropdown-catalog__category_text
+                                    | Запчасти для технических средств реабилитации
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/48f/48fc3024fe3312392a84066440363712.png")
+                                span.dropdown-catalog__category_text
+                                    | Запчасти для медицинского оборудования
+            li.dropdown-catalog__item(id="cat10")
+                a.dropdown-catalog__item_link(href="catalog_fiz.html") Рекламные материалы
+                .dropdown-catalog__inner
+                    .dropdown-catalog__category(id="#")
+                        .dropdown-catalog__category_title
+                            | Рекламные материалы
+                        .dropdown-catalog__category_wrapper
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/736/7369d58a1f4a903b9b14b1efcc0e80a3.png")
+                                span.dropdown-catalog__category_text
+                                    | Рекламное оборудование
+                            a.dropdown-catalog__category_link(href="catalog_fiz.html")
+                                img.dropdown-catalog__category_image(src="https://www.armed.ru/upload/iblock/1a5/1a5b5538c864fa12c804ecde542b9c27.jpg")
+                                span.dropdown-catalog__category_text
+                                    | Полиграфия
