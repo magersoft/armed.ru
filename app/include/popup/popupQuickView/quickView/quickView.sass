@@ -14,7 +14,7 @@
       flex-direction: column
       padding: 40px 15px
     &_description
-      padding: 15px 15px
+      padding: 15px 15px 15px 15px
       flex: 3
       .description_title
         text-align: left
@@ -24,7 +24,7 @@
           weight: normal
         color: #4f4f4f
     &_buy
-      padding: 15px 15px
+      padding: 15px 4px 15px 15px
       background: #FBFBFB
       flex: 2
       justify-content: flex-start
@@ -51,6 +51,7 @@
         @extend .quickview-inner_color-box
     &_buy
       &__buybutton
+        margin: 25px 0 10px 0
         display: flex
         flex-direction: row
       &__delivery
@@ -61,27 +62,27 @@
         display: flex
         flex-direction: row
         &-like
-          margin-right: 10px
+          margin-right: 18px
           width: 44px
           height: 44px
           background:
-            image: url("images/icon/quickview__icon.svg")
-            position: 0 0
+            image: url("images/sprite.png")
+            position: 0 -138px
             color: #F2F2F2
             repeat: no-repeat
           border-radius: 50%
           &:hover
-            background-position: -44px 0
+            background-position: -44px -138px
         &-arrow
           @extend .quickview-inner_buy__icons-like
-          background-position: 0 -44px
+          background-position: 0 -182px
           &:hover
-            background-position: -44px -44px
+            background-position: -44px -182px
         &-click
           @extend .quickview-inner_buy__icons-like
-          background-position: 0 -90px
+          background-position: 0 -226px
           &:hover
-            background-position: -44px -90px
+            background-position: -44px -226px
       &__cost
         display: flex
         flex-direction: row
@@ -89,6 +90,7 @@
         justify-content: flex-start
         align-items: flex-end
       &__amount
+        margin-top: 12px
         display: flex
         flex-direction: row
 
@@ -107,7 +109,7 @@
         display: flex
         flex-direction: row
         &-icon
-          background: url("images/icon/social__quickview.svg")
+          background: url("images/icon/social.svg")
             repeat: no-repeat
           width: 24px
           height: 24px
@@ -115,42 +117,42 @@
           &__vk
             @extend .quickview-item_buy__social-icon
             background:
-              position: 0 0
+              position: -255px 0
             &:hover
-              background-position: -24px 0
+              background-position: -279px 0
           &__fb
             @extend .quickview-item_buy__social-icon
             background:
-              position: 0 -24px
+              position: -255px -24px
             &:hover
-              background-position: -24px -24px
+              background-position: -279px -24px
           &__yt
             @extend .quickview-item_buy__social-icon
             background:
-              position: 0 -48px
+              position: -255px -48px
             &:hover
               background:
-                position: -24px -48px
+                position: -279px -48px
           &__it
             @extend .quickview-item_buy__social-icon
             background:
-              position: 0 -72px
+              position: -255px -72px
             &:hover
               background:
-                position: -24px -72px
+                position: -279px -72px
           &__tg
             @extend .quickview-item_buy__social-icon
             background:
-              position: 0 -96px
+              position: -255px -96px
             &:hover
               background:
-                position: -24px -96px
+                position: -279px -96px
       &__delivery
         &-select
           display: flex
           flex-direction: row
         &-popup
-          margin: 15px 0
+          margin: 10px 0 15px 0
           display: flex
           flex-direction: column
           .delivery-self
@@ -159,6 +161,7 @@
             &_text
               @extend .delivery-car_text
             &_link
+              text-decoration: none
               color: #7DC472
               font:
                 size: 1.2em
@@ -224,6 +227,7 @@
           text-decoration: none
     &_about
       &-text
+        padding-right: 10px
         margin-top: 10px
         font:
           size: 1.3em
@@ -237,6 +241,8 @@
         font:
           size: 1.3em
         color:  #4f4f4f
+        &:hover 
+          color: #c62929
     &_size
       &-link
         display: flex
@@ -256,7 +262,7 @@
         margin: 0 5px
         &:hover
           transition: 0.7s
-          border: 1px solid #4F4F4F
+          border: 1px solid #828282
         &:first-child
           margin:
             left: 0
@@ -323,23 +329,24 @@
     weight: normal
   color: #828282
 .quickview__select
+  cursor: pointer
   padding-left: 6px
   background:
     color: #fff
     image: url("/images/quickview/quickview__select.svg")
     repeat: no-repeat
     position: 168px -1px
-  border: 1px solid #bdbdbd
+  border: 1px solid #f2f2f2
   border-radius: 2px
   width: 195px
   height: 26px
   font:
-    size: 1.5em
+    size: 1.4em
     family: $fontFamilyDefault
     weight: normal
   color: #4f4f4f
   -moz-appearance: none
-  text-indent: 0.01px
+  text-indent: 1px
   -ms-appearance: none
   appearance: none!important
   &::-ms-expand
