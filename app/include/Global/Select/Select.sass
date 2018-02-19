@@ -1,0 +1,40 @@
+.Select
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 218px
+  height: 30px
+  border: 1px solid #e0e0e0
+  position: relative
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    width: 10px
+    height: 10px
+    box-sizing: border-box
+    border: 10px solid transparent
+    border-top: 10px solid #bdbdbd
+    top: 9px
+    right: 5px
+  &-Catalog
+    flex-direction: column
+    display: none
+    position: absolute
+    top: 30px
+    left: 0
+    width: 218px
+    background-color: #fff
+    z-index: 100
+  &-Head, &-Item
+    text-decoration: none
+    color: #000
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &:hover
+      background-color: #eee
+  &-Item
+    padding: 5px 0
