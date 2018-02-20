@@ -5,7 +5,7 @@ function CustomSelect (element, select_elements) {
         $(element).attr('data-value', $(this).attr('data-value'));
         $(element).html($(this).html());
         $(element).next().css('display', 'none');
-        return false;
+        return;
     });
 
 }
@@ -16,6 +16,13 @@ $(function () {
         var ob = $(this);
         var select = $(this).next();
         CustomSelect(ob, select);
+        $(document).click(function (event) {
+            if($(event.target).closest('.Select').length){
+                return;
+            }
+            $('.Select-Catalog').css('display', 'none');
+            event.stopPropagation();
+        });
         return false;
     });
 
