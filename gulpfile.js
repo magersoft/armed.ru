@@ -50,6 +50,9 @@ gulp.task('js', function() {
             'app/libs/jquery.sticky-kit/jquery.sticky-kit.js',
             'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/libs/notify/notify.js',
+            'app/libs/moment/moment.js',
+            'app/libs/datepicker/jquery.daterangepicker.js',
+
             'app/include/**/*.js'
     ]) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
