@@ -1,7 +1,7 @@
 .view
   display: flex
   flex-direction: column
-  padding: 0 15px
+  padding: 30px 15px 15px 15px
   width: 100%
   border-bottom: 1px solid #e0e0e0
   &__wrapper
@@ -38,6 +38,8 @@
                 color: #4f4f4f
       &--link
         color: #4F4F4F
+        &:hover
+          color: #c62929
     &-feature
       &__text
         table-layout: fixed
@@ -81,7 +83,9 @@
       family: $fontFamilyAdditionally
     letter-spacing: 0.8px
     color: #4f4f4f
-
+  a 
+    &:hover
+      color: #c62929
   &:after
     height: 20px
 .view-slider

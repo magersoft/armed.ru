@@ -1,13 +1,13 @@
 .orders
     header.orders__header
         h2.orders__head.head-lk
-            span.head-lk__icon.head-lk__icon_orders
+            span.head-lk__icon.head-lk__icon_change
             | РЕДАКТИРОВАНИЕ состава Заказа &nbsp;
             span
             | №2104 от 16.10.2017
         .orders__filter
             a.orders__filter-link(href="#")
-                span.orders__filter-icon.orders__filter-icon_create
+                span.orders__filter-icon.orders__filter-icon_double
                 | Дублировать заказ
             a.orders__filter-link(href="#")
                 span.orders__filter-icon.orders__filter-icon_create
@@ -98,9 +98,9 @@
                     - }
                 .cart__table-footer
                     .row.orders-change__button-group
-                        a.Button.Button_Color_Red.Button_Size_M
-                           span.Button-Text.Button-Text_Color_White.Button-Text_Size_L
-                               span.Button-Icon.Button-Icon_PlusBasketWhite
+                        a.Button.Button_Color_Red.Button_Size_Sm
+                           span.Button-Text.Button-Text_Color_White
+                               span.Button-Icon.Button-Icon_BasketAddWhite
                                | Добавить
                         .orders-change__search
                             .primary-menu__search
@@ -127,9 +127,9 @@
                                         section.search__address
                                             h4.search__head
                                             a.search__text.search__link.search__link_header(href="#") Запчасти (17)
-                        a.Button.Button_Color_Red.Button_Size_M
-                           span.Button-Text.Button-Text_Color_White.Button-Text_Size_L
-                               span.Button-Icon.Button-Icon_Present.Button-Icon_Mini
+                        a.Button.Button_Color_Red.Button_Size_Sm
+                           span.Button-Text.Button-Text_Color_White
+                               span.Button-Icon.Button-Icon_Present
                                | Подарок
                     .row
                         .cart__total-coupone.col-6

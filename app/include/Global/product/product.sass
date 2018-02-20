@@ -30,10 +30,16 @@
     flex-direction: row
     justify-content: center
     padding: 5px 15px
+    margin-bottom: 0
+    box-shadow: none
+    &:nth-child(even)
+      background: #F6F6F6
+      &:hover
+        background: #efefef
     &_hover
-      border: 1px solid #bdbdbd
+      background: #efefef
     &_nothover
-      border: 1px solid #e0e0e0
+      background: white
   &__main
     &_entity
       display: flex
@@ -188,6 +194,7 @@
       margin-bottom: 0
       &:not(:last-child)
         margin-right: 15px
+        margin-left: 20px
     &_entitySmal
       display: none
     &_favorite
@@ -214,11 +221,17 @@
     &_entity
       flex-direction: column
       width: 120px
+      font-weight: 500
+      &Smal
+        flex-basis: 20%
+        p
+          font-weight: 400
   &__cost
     color: $productCostColor
     font-size: 1.8em
     font-weight: 500
     margin-right: 11px
+
     &_entity
       font-size: 1.6em
       margin-right: 0
@@ -228,7 +241,7 @@
     color: $productOldCostColor
     font-size: 1.2em
     text-decoration: line-through
-    margin-right: 8px
+    margin: 0 8px
     font-weight: 500
     &_entity
       font-size: 1.2em
@@ -262,7 +275,7 @@
     &-window
       display: none
       padding: 15px
-      top: 13px
+      bottom: 13px
       left: 170px
       z-index: 250
       position: absolute
@@ -319,7 +332,9 @@
     &_entity
       display: none
     &_entitySmal
+      text-align: right
       display: block
+      flex-basis: 10%
     &_true
       color: $ConfirmColor
     &_none
@@ -331,6 +346,7 @@
     &_entity
       display: none
     &_entitySmal
+      flex-basis: 10%
       display: inline
   &__count
     &_entity

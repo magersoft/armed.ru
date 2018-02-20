@@ -59,11 +59,16 @@ $('.product').hover(
     }
 );
 $('.product__question').click(function(){
+    var mod = $('.product__main').find('.product__question').next();
+    console.log(mod);
+    for (var i = 0; i < mod.length; i++) {
+        var win = $(mod[i]);
+        win.slideUp(400);
+    }
     $(this).next().slideDown(400);
     return false
 });
 
-//TODO: Доработать закрытие всплывашки , поменять позиционирование открытия всплывашки
 $(document).click(function(e){
     var obj = $('.product__question-window');
     if (!obj.is(e.target) // если клик был не по нашему блоку

@@ -93,16 +93,63 @@
 		&__select
 			color: #4f4f4f
 			font:
-				family: $fontFamilyDefault
-				size: 1.4em
-			line-height: 16px
-			padding: 7px
-			border-bottom: 1px solid #F2F2F2
-			cursor: pointer
-			&-disabled
-				border-bottom: none
-				cursor: default
-		&__textarea
+				size: 1.8em
+				family: $fontFamilyAdditionally
+	&__wrapper
+		display: flex
+		flex-direction: row
+	&__form
+		flex: 1.4
+		display: flex
+		flex-direction: column
+		padding: 15px
+		border: 1px solid pink
+	&__score
+		flex: 1
+		border: 1px solid lightblue
+	&__log
+		flex: 1.4
+		border: 1px solid lightsalmon
+	&__select
+		color: #4f4f4f
+		font:
+			family: $fontFamilyDefault
+			size: 1.4em
+		line-height: 16px
+		padding: 7px
+		border-bottom: 1px solid #F2F2F2
+		cursor: pointer
+		&-disabled
+			border-bottom: none
+			cursor: default
+	&__textarea
+	  height: 50px
+	  color: #4f4f4f
+	  font:
+	  	family: $fontFamilyDefault
+	  	size: 1.4em
+	  line-height: 16px
+	  padding: 7px
+	  resize: none
+	  border:
+	  	bottom: 1px solid #F2F2F2
+	  	top: none
+	  	left: none
+	  	right: none
+	&__label
+		color: #828282
+		line-height: 1.4em
+		font:
+		size: 1.2em
+			family: $fontFamilyDefault
+			size: 1.4em
+		padding: 7px
+		border-bottom: 1px solid #F2F2F2
+		cursor: pointer
+		&-disabled
+			border-bottom: none
+			cursor: default
+	&__textarea
 			height: 50px
 			color: #4f4f4f
 			font:
@@ -116,52 +163,52 @@
 				top: none
 				left: none
 				right: none
-		&__label
-			color: #828282
+	&__label
+		color: #828282
+		font:
+			size: 1.2em
+		line-height: 1.4em
+	&__timeline
+		margin: 40px 0
+		&-data
+			text-align: center
+			display: flex
+			flex-direction: column
+			padding: 5px
 			font:
-				size: 1.2em
-			line-height: 1.4em
-		&__timeline
-			margin: 40px 0
-			&-data
-				text-align: center
-				display: flex
-				flex-direction: column
-				padding: 5px 
+				size: 1.4em
+				family: $fontFamilyAdditionally
+			color: #bdbdbd
+		&-status
+			display: flex
+			flex-direction: column
+			text-align: center
+			color: #4f4f4f
+			font:
+				weight: 500
+				size: 1.4em
+				family: $fontFamilyAdditionally
+			letter-spacing: 0.7px
+			&-unavailable
+				color:#bdbdbd
+			span
 				font:
-					size: 1.4em
-					family: $fontFamilyAdditionally
-				color: #bdbdbd
-			&-status
-				display: flex
-				flex-direction: column
-				text-align: center
-				color: #4f4f4f
-				font:
-					weight: 500 
-					size: 1.4em 
-					family: $fontFamilyAdditionally
-				letter-spacing: 0.7px
-				&-unavailable
-					color:#bdbdbd
-				span 
-					font:
-						size: 0.9em
-						weight: normal
-					color: #828282
-			ul 
-				margin: 0 auto
-				width: 800px
-				display: flex
-				flex-direction: row
-				list-style: none
-				li
-					p
-						height: 44px
-						width: 372px
-						margin-left: -175px
-					img 
-						margin: 20px 0
+					size: 0.9em
+					weight: normal
+				color: #828282
+		ul
+			margin: 0 auto
+			width: 800px
+			display: flex
+			flex-direction: row
+			list-style: none
+			li
+				p
+					height: 44px
+					width: 372px
+					margin-left: -175px
+				img
+					margin: 20px 0
 	&-status
 		&__table
 			table 
@@ -234,3 +281,4 @@
 			&-price
 				display: flex
 				width: auto
+

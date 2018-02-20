@@ -1,7 +1,7 @@
 .orders
     header.orders__header
         h2.orders__head.head-lk
-            span.head-lk__icon.head-lk__icon_orders
+            span.head-lk__icon.head-lk__icon_change             
             | Заказ&nbsp;
             span
             | №2104 от 16.10.2017
@@ -10,7 +10,7 @@
                 span.orders__filter-icon.orders__filter-icon_create
                 | Подтвердить оплату
             a.orders__filter-link(href="#")
-                span.orders__filter-icon.orders__filter-icon_create
+                span.orders__filter-icon.orders__filter-icon_double
                 | Дублировать заказ
             a.orders__filter-link(href="#")
                 span.orders__filter-icon.orders__filter-icon_create
@@ -112,6 +112,13 @@
                 .orders-info__score
                     .orders-info__title
                         h4
+                        | Счета
+                        .orders-info__score-group
+                            p
+                                i
+                                | Счет&nbsp;
+                                span
+                                    | № 2104/1 от 16.10.2017
                             | Счета
                     .orders-info__score-group
                         i.orders-info__score-group__icon.orders-info__score-group__icon-pdf
@@ -143,7 +150,6 @@
                             | Счет&nbsp;
                             span 
                                 | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
-
                 .orders-info__log
                     .orders-info__title
                         h4
@@ -204,12 +210,12 @@
                                 | 1 200 330 000 000 ₽
                 .orders-status__footer
                     .orders-status__footer-buttons
-                        a(href="lk_ordersChange.html").Button.Button_Color_Red.Button_Size_M
-                           span.Button-Text.Button-Text_Color_White.Button-Text_Size_L
+                        a(href="lk_ordersChange.html").Button.Button_Color_Red.Button_Size_Lg
+                           span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
                                span.Button-Icon.Button-Icon_Pencil
                                | Редактировать
-                        button.Button.Button_Color_NotColor.Button_Size_M
-                           span.Button-Text.Button-Text_Size_L
+                        button.Button.Button_Color_Not.Button_Size_Lg
+                           span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
                                span.Button-Icon.Button-Icon_CancelRed
                                | Удалить заказ
                     .orders-status__footer-price
