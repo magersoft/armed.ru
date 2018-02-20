@@ -1,12 +1,9 @@
 //TODO Доработать скрипт см. в ежедневнике
 
 function CustomSelect (element, select_elements) {
-    console.log('Заходим в функцию');
-    console.log(element);
-    console.log(select_elements);
     $(select_elements.children()).click(function () {
-        console.log('клик по ребенку');
-        console.log($(this));
+        console.log($(this).attr('data-value'));
+        $(element).attr('data-value', $(this).attr('data-value'));
         $(element).html($(this).html());
         $(element).next().css('display', 'none');
         return false;
