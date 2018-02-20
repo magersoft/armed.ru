@@ -1,77 +1,78 @@
-.reviews-card
-    .prcard-title
-        h2
-            | Отзывы
-            span
-                |&nbsp; (2)
-    .reviews-card__wrapper
-        //рейтинг и баттон
-        .reviews-card__inner.row
-            .reviews-card__item-pie.col-6
-                p
-                    | Общий рейтинг товара:
-                //список отзЫвов
-                .chart
-                    .percentage(data-percent="100")
-                        span
-            .reviews-card__item-click.col-6
-                .reviews-card__item-click__header
-                    p Оставьте свой отзыв о
-                    span Концентраторе кислорода "Armed" 8F-1
-                button.Button.Button_Color_Red.Button_Size_Lg
-                    span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
-                        |Оставить отзыв
-                //button.button.button_icon.button_reviews
-                    span.button__text
-                        span.button__icon.button__icon_pencil
-                        | Оставить отзыв
-        .reviews-card__inner
-            .reviews-card__inner-column__wrapper
-                - var x = 2;
-                - for (var i=1; i<=x; i++) {
-                .reviews-card__inner-column.row
-                    .reviews-card__item-name
-                        .reviews-card__item-name__data
-                            p Дата:&nbsp;
-                                span 10 августа 2016 года
-                        .reviews-card__item-name__name
-                            p Автор&nbsp;
-                                span Алевтина
-                        .reviews-card__item-name__test
-                            p Опыт использования:
-                            span несколько месяцев
-                        .reviews-card__item-name__rating
-                            span.rating-plus
-                            span.rating-half
-                            span.rating-minus
-                    .reviews-card__item-text
-                        .reviews-card__item-text__plus
-                            p Достоинства:
+#reviews
+    .reviews-card
+        .prcard-title
+            h2
+                | Отзывы
+                span
+                    |&nbsp; (2)
+        .reviews-card__wrapper
+            //рейтинг и баттон
+            .reviews-card__inner.row.reviews-card__inner-header
+                .reviews-card__item-pie.col-4
+                    p
+                        | Общий рейтинг товара:
+                    //список отзЫвов
+                    .chart
+                        .percentage(data-percent="100")
                             span
-                                | Очень прочная кровать. Сборка за счет магазина порадовала, в интерьер вписалась идеально. Спать в ней комфортно.
-                        .reviews-card__item-text__minus
-                            p Недостатки:
-                            span
-                                | Доставку пришлось перенести, так как водитель не успевал. Оповестили поздно.
-                        .reviews-card__item-text__effect
-                            p Общие впечатления:
-                            span
-                                | Немецкое качество и лаконичность - основные преимущества модели. Покупка более чем удачная)
-                        .reviews-card__item-text__useful
-                            p.reviews-card__item-text__useful-question
-                                | Отзыв полезен?
-                            a(href="#").reviews-card__item-text__useful-success
-                                |&nbsp;Да&nbsp;
-                                span (2)
-                            a(href="#").reviews-card__item-text__useful-fail
-                                |&nbsp;Нет&nbsp;
-                                span (0)
-                - }
-        button.Button.Button_Color_Not.Button_Size_Lg
-            span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
-                |Смотреть все
-                span.Button-Icon.Button-Icon_ArrowBlackRight
-        //button.button_white.button_icon.button_reviews
-            span.button__text
-                | Смотреть все
-                span.button__icon.button__icon_arrow
+                .reviews-card__item-click.col-6
+                    .reviews-card__item-click__header
+                        p Оставьте свой отзыв о
+                        span Концентраторе кислорода "Armed" 8F-1 Концентраторе кислорода "Armed" 8F-1 
+                    button.Button.Button_Color_Red.Button_Size_Lg
+                        span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                            |Оставить отзыв
+                    //button.button.button_icon.button_reviews
+                        span.button__text
+                            span.button__icon.button__icon_pencil
+                            | Оставить отзыв
+            .reviews-card__inner
+                .reviews-card__inner-column__wrapper
+                    - var x = 2;
+                    - for (var i=1; i<=x; i++) {
+                    .reviews-card__inner-column.row
+                        .reviews-card__item-name
+                            .reviews-card__item-name__data
+                                p Дата:&nbsp;
+                                    span 10 августа 2016 года
+                            .reviews-card__item-name__name
+                                p Автор&nbsp;
+                                    span Алевтина
+                            .reviews-card__item-name__test
+                                p Опыт использования:
+                                span несколько месяцев
+                            .reviews-card__item-name__rating
+                                span.rating-plus
+                                span.rating-half
+                                span.rating-minus
+                        .reviews-card__item-text
+                            .reviews-card__item-text__plus
+                                p Достоинства:
+                                span
+                                    | Очень прочная кровать. Сборка за счет магазина порадовала, в интерьер вписалась идеально. Спать в ней комфортно.
+                            .reviews-card__item-text__minus
+                                p Недостатки:
+                                span
+                                    | Доставку пришлось перенести, так как водитель не успевал. Оповестили поздно.
+                            .reviews-card__item-text__effect
+                                p Общие впечатления:
+                                span
+                                    | Немецкое качество и лаконичность - основные преимущества модели. Покупка более чем удачная)
+                            .reviews-card__item-text__useful
+                                p.reviews-card__item-text__useful-question
+                                    | Отзыв полезен?
+                                a(href="#").reviews-card__item-text__useful-success
+                                    |&nbsp;Да&nbsp;
+                                    span (2)
+                                a(href="#").reviews-card__item-text__useful-fail
+                                    |&nbsp;Нет&nbsp;
+                                    span (0)
+                    - }
+            button.Button.Button_Color_Not.Button_Size_Lg
+                span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+                    |Смотреть все
+                    span.Button-Icon.Button-Icon_ArrowBlackRight
+            //button.button_white.button_icon.button_reviews
+                span.button__text
+                    | Смотреть все
+                    span.button__icon.button__icon_arrow
