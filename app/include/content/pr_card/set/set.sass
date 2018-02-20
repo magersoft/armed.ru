@@ -1,5 +1,5 @@
 .set
-  padding: 15px
+  padding: 30px 15px 20px 15px
   border-bottom: 1px solid #e0e0e0
   &__price
     margin: 15px 0
@@ -41,8 +41,9 @@
     transition: 0.5s
     opacity: 1 !important
   &__slider
+    width: 965px
     &-wrapper
-      max-width: 200px
+      max-width: 224px
       max-height: 300px
     &-inner
       display: flex
@@ -61,7 +62,7 @@
         cursor: pointer
         z-index: 1
         position: relative
-        left: 160px
+        left: 181px
         display: block
         background:
           image: url("images/prcard/set__check.svg")
@@ -110,3 +111,8 @@
       family: $fontFamilyDefault
       weight: 500
     color: #828282
+
+.slide-left-set
+  left: -8px
+.slide-right-set
+  right: 0px
