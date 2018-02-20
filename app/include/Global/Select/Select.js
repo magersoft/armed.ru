@@ -1,5 +1,3 @@
-//TODO Доработать скрипт см. в ежедневнике
-
 function CustomSelect (element, select_elements) {
     $(select_elements.children()).click(function () {
         $(element).attr('data-value', $(this).attr('data-value'));

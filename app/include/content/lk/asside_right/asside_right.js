@@ -1,9 +1,11 @@
+var DateRangeInput = document.getElementById('filterData');
 
-$('#filterData').on('focus', function () {
+if (DateRangeInput) {
     $('#filterData').dateRangePicker({
-        language:'ru'
+        language: 'ru'
     });
-});
+}
+
 
 $('#FilterReset').on('click', function () {
     var selects = $(document).find('.Select');
@@ -13,3 +15,12 @@ $('#FilterReset').on('click', function () {
         $('.Select-Head').attr('data-value', 'None');
     }
 });
+
+$('.date-picker-wrapper').hover(
+    function () {
+        console.log('hover');
+    },
+    function () {
+        console.log('not hover');
+    }
+);
