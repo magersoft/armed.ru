@@ -1,0 +1,183 @@
+.orders
+    header.orders__header
+        h2.orders__head.head-lk
+            span.head-lk__icon.head-lk__icon_change
+            | РЕДАКТИРОВАНИЕ состава Заказа &nbsp;
+            span
+            | №2104 от 16.10.2017
+        .orders__filter
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_double
+                | Дублировать заказ
+            a.orders__filter-link(href="#")
+                span.orders__filter-icon.orders__filter-icon_create
+                | Новый заказ
+    .orders-change
+        .cart__table-wrapper
+                .cart__table-header
+                    span.cart__table-header_item
+                    span.cart__table-header_item Наименование
+                    span.cart__table-header_item Количество
+                    span.cart__table-header_item Стоимость
+                    span.cart__table-header_item Сумма
+                    span.cart__table-header_item
+                .cart__table-inner
+                    .cart__table-product
+                        .cart__table-product_item.cart__table-image
+                            a(href="#")
+                                img(src="images/page/cart/product_cart-2.jpg" alt="Товар в корзине")
+                        a(href="#").cart__table-product_item.cart__table-name
+                            span.cart__table-name_title.gift-title Концентратор кислорода "Armed" 7F-3A
+                            span.cart__table-name_articles Артикул: 1238198539987375
+                        .cart__table-product_item.cart__table-value
+                            .primary-menu__cart_product_volume
+                                span.primary-menu__cart_product_minus
+                                input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                                span.primary-menu__cart_product_plus
+                        .cart__table-product_item.cart__table-price
+                            .cart__table-price_cost
+                                | 43 685&nbsp;
+                                span &#8381;
+                            .cart__table-price_oldcost
+                                strike 43 685 &#8381;
+                        .cart__table-product_item.cart__table-total
+                            .cart__table-total_cost
+                                | 873 700&nbsp;
+                                span &#8381;
+                        .cart__table-product_item.cart__table-delete
+                            i.cart__table-delete_icon
+                    .cart__table-product.gift
+                        .cart__table-product_gift
+                            .cart__table-product_gift-icon
+                        .cart__table-product_gift
+                            .cart__table-product_gift-item.cart__table-image
+                                a(href="#")
+                                    img(src="images/page/cart/gift_product_cart.jpg" alt="Подарок в корзине")
+                                a(href="#").cart__table-product_gift-item.cart__table-name
+                                    span.cart__table-name_title Подарок
+                                    span.cart__table-name_articles Артикул: 1238198539987375
+                        .cart__table-product_gift.cart__table-value
+                            .primary-menu__cart_product_volume
+                                input.primary-menu__cart_product_entry.gift-entry(type="text" value="1" disabled="disabled")
+                        .cart__table-product_gift.cart__table-price
+                            .cart__table-price_cost
+                                strike
+                                    | 43 685&nbsp;
+                                    span &#8381;
+                        .cart__table-product_gift.cart__table-total
+                            .cart__table-total_cost.gift-cost
+                                | Подарок
+                        .cart__table-product_gift.cart__table-delete
+                            i.cart__table-delete_icon
+                    - var x = 12;
+                    - for (var i=1; i<=x; i++) {
+                    .cart__table-product
+                        .cart__table-product_item.cart__table-image
+                            a(href="#")
+                                img(src="images/page/cart/product_cart.jpg" alt="Товар в корзине")
+                        a(href="#").cart__table-product_item.cart__table-name
+                            span.cart__table-name_title Концентратор кислорода "Armed" 8F-1
+                            span.cart__table-name_articles Артикул: 1238198539987375
+                        .cart__table-product_item.cart__table-value
+                            .primary-menu__cart_product_volume
+                                span.primary-menu__cart_product_minus
+                                input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                                span.primary-menu__cart_product_plus
+                        .cart__table-product_item.cart__table-price
+                            .cart__table-price_cost
+                                | 43 685&nbsp;
+                                span &#8381;
+                            .cart__table-price_oldcost
+                                strike 43 685 &#8381;
+                        .cart__table-product_item.cart__table-total
+                            .cart__table-total_cost
+                                | 873 700&nbsp;
+                                span &#8381;
+                        .cart__table-product_item.cart__table-delete
+                            i.cart__table-delete_icon
+                    - }
+                .cart__table-footer
+                    .row.orders-change__button-group
+                        a.Button.Button_Color_Red.Button_Size_Sm
+                           span.Button-Text.Button-Text_Color_White
+                               span.Button-Icon.Button-Icon_BasketAddWhite
+                               | Добавить
+                        .orders-change__search
+                            .primary-menu__search
+                                label.primary-menu__search-label
+                                    input.primary-menu__search-input(type="search" id="search" name="search" placeholder="Поиск по сайту")
+                                    img.primary-menu__search-icon(src="images/Global/loop.svg")
+                                .search.search_hide.search__orders-change
+                                    .search__content.search__content_header
+                                        section.search__address
+                                            h4.search__head Продукция
+                                            a.search__text.search__link.search__link_header(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                                            a.search__text.search__link.search__link_header(href="#") Концентратор кислорода Armed (Армед) 8F-1 (бук)
+                                            a.search__text.search__link.search__link_header(href="#") Концентратор кислорода Armed (Армед) LF-H-10A
+                                            a.search__text.search__link.search__link_header(href="#") Концентратор кислорода Armed (Армед) 7F-5
+                                            a.search__text.search__link.search__link_header(href="#") Концентратор кислорода Armed (Армед) 8F-5
+                                            a.search__text.search__link.search__link_header(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                                            a.search__text.search__link.search__link_header(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                                            a.search__text.search__link.search__link_header(href="#") Кислородный концентратор Armed (Армед) 8F-1
+                                        section.search__address
+                                            h4.search__head Категории
+                                            a.search__text.search__link.search__link_header(href="#") Кислородные концентраторы (17)
+                                            a.search__text.search__link.search__link_header(href="#") Расходные материалы для кислородных концентрат...
+                                            a.search__text.search__link.search__link_header(href="#") Кислородные концентраторы (17)
+                                        section.search__address
+                                            h4.search__head
+                                            a.search__text.search__link.search__link_header(href="#") Запчасти (17)
+                        a.Button.Button_Color_Red.Button_Size_Sm
+                           span.Button-Text.Button-Text_Color_White
+                               span.Button-Icon.Button-Icon_Present
+                               | Подарок
+                    .row
+                        .cart__total-coupone.col-6
+                            .cart__total-title
+                                h3 Промо-код:
+                            .cart__total-coupone_body
+                                label Введите ваш промо-код на скидку:
+                                input(type="text")
+                            .cart__total-coupone_button
+                                .coupone-block
+                                    a(href="#") skidka_kjrovat50%
+                                        i.coupone-icon
+                                .button-cart.promokod#addcoupone
+                                    | Применить купон
+                                    i.cart__table-footer_next-icon
+                        .cart__total-check.col-6
+                            .cart__total-title
+                                h3 Ваш счет:
+                            .cart__total-check_body
+                                .row
+                                    .col-6
+                                    .col-6.cart__total-check_body
+                                        .cart__total-check_body-item
+                                            span.check-title Всего товаров
+                                            span.check-value 23
+                                        .cart__total-check_body-item.urik
+                                            span.check-title Объем
+                                            span.check-value 23 м<sup><small>3</small></sup>
+                                        .cart__total-check_body-item.urik
+                                            span.check-title Масса
+                                            span.check-value 23 кг
+                                        .cart__total-check_body-item
+                                            span.check-title На сумму:
+                                            span.check-value 955 740 &#8381;
+                                        .cart__total-check_body-item.urik
+                                            span.check-title В т.ч. НДС:
+                                            span.check-value 5 740 &#8381;
+                                        .cart__total-check_body-item.bonus
+                                            span.check-title Скидка Промо-кода:
+                                            span.check-value.green 15%
+                                        .cart__total-check_body-item.bonus
+                                            span.check-title Выгода
+                                            span.check-value.green 5 740 &#8381;
+                .button-checkout
+                    a(href="#").button.go-checkout
+                        | Оформить заказ
+
+                // TODO ВРЕМЕННЫЙ БЛОК ДЛЯ ДЕМОНСТРАЦИИ КОРЗИНЫ ФИЗИКОВ И ЮРИКОВ
+                .vremeniy-class
+                    .click-f Физ
+                    .click-u Юр

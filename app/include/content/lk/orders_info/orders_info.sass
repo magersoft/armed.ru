@@ -1,7 +1,99 @@
-.orders-info
-	&__title
-		h2
+.orders
+	&-click
+		padding: 40px
+		button
+			cursor: pointer
+			padding: 10px 
+			margin: 10px
+	&-fiz
+		display: none
+	&-info
+		&__title
+			margin-bottom: 10px
+			h4
+				font:
+					size: 1.8em
+					family: $fontFamilyAdditionally
+					weight: normal
+				letter-spacing: 0.9px
+				color: #4f4f4f
+		&__wrapper
+			display: flex
+			flex-direction: row
+		&__form
+			flex: 1.4
+			display: flex
+			flex-direction: column
+			padding: 15px
+		&__score
+			padding: 0 15px
+			flex: 1
+			&-group
+				margin-top: 10px
+				display: flex
+				flex-direction: row
+				align-content: flex-end
+				a
+					margin-top: 10px
+					text-decoration: none
+
+					font:
+						size: 1.4em
+						family: $fontFamilyDefault
+					color: #4f4f4f
+					&:hover
+						text-decoration: underline
+				&__icon 
+					margin-right: 6px
+					background:
+						repeat: no-repeat
+						position: 0 0 
+						image: url("../images/sprite.svg")
+					width:  34px
+					height: 34px
+					display: block
+					&-pdf
+						background:
+							position: -154px -138px
+					&-xls
+						background:
+							position: -154px -171px
+					&-doc 
+						background:
+							position: -154px -204px
+					&-ppt
+						background:
+							position: -154px -237px
+					&-zip
+						background:
+							position: -154px -270px
+		&__log
+			flex: 1.4
+			&-item
+				display: flex
+				flex-direction: row
+				&-data
+					display: flex
+					align-content: center
+					min-width: 140px
+					font: 
+						size: 1.4em 
+						family: $fontFamilyDefault
+					letter-spacing: 0.7px
+					color: #bdbdbd
+				&-inner
+					width: 100%
+					display: flex
+					align-content: center
+					font:
+						family: $fontFamilyDefault
+						size: 1.4em 
+					letter-spacing: 0.2px
+					color: #4f4f4f
+		&__select
+			color: #4f4f4f
 			font:
+<<<<<<< HEAD
 				size: 1.8em
 				family: $fontFamilyAdditionally
 	&__wrapper
@@ -50,3 +142,146 @@
 	  font:
 	  	size: 1.2em
 	  line-height: 1.4em
+=======
+				family: $fontFamilyDefault
+				size: 1.4em
+			line-height: 16px
+			padding: 7px
+			border-bottom: 1px solid #F2F2F2
+			cursor: pointer
+			&-disabled
+				border-bottom: none
+				cursor: default
+		&__textarea
+			height: 50px
+			color: #4f4f4f
+			font:
+				family: $fontFamilyDefault
+				size: 1.4em
+			line-height: 16px
+			padding: 7px
+			resize: none
+			border:
+				bottom: 1px solid #F2F2F2
+				top: none
+				left: none
+				right: none
+		&__label
+			color: #828282
+			font:
+				size: 1.2em
+			line-height: 1.4em
+		&__timeline
+			margin: 40px 0
+			&-data
+				text-align: center
+				display: flex
+				flex-direction: column
+				padding: 5px 
+				font:
+					size: 1.4em
+					family: $fontFamilyAdditionally
+				color: #bdbdbd
+			&-status
+				display: flex
+				flex-direction: column
+				text-align: center
+				color: #4f4f4f
+				font:
+					weight: 500 
+					size: 1.4em 
+					family: $fontFamilyAdditionally
+				letter-spacing: 0.7px
+				&-unavailable
+					color:#bdbdbd
+				span 
+					font:
+						size: 0.9em
+						weight: normal
+					color: #828282
+			ul 
+				margin: 0 auto
+				width: 800px
+				display: flex
+				flex-direction: row
+				list-style: none
+				li
+					p
+						height: 44px
+						width: 372px
+						margin-left: -175px
+					img 
+						margin: 20px 0
+	&-status
+		&__table
+			table 
+				width: 100%
+				border-collapse: collapse
+				tr 
+					&:nth-child(even)
+						background: #f6f6f6
+					th	
+						text-align: left
+						padding: 10px
+						font:
+							size: 1.2em
+						color: #828282
+						text-transform: uppercase
+						&:nth-child(3)
+							text-align: center 
+					td 
+						padding: 7px
+						font:
+							size: 1.4em 
+							family: $fontFamilyDefault
+						color: #4f4f4f
+						&:nth-child(3)
+							text-align: center 
+		&__footer
+			margin: 20px 0
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			&-table
+				min-width: 700px
+				background: #fbfbfb
+				padding: 10px
+				&-tr
+					display: flex 
+					flex-direction: row
+				&-td
+					width: 100%
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					padding: 7px
+					p
+						font:
+							size: 1.4em
+						color: #4f4f4f
+						&:nth-child(2)
+							color: #828282
+
+				&-header
+					border-bottom: 1px solid #e0e0e0
+					padding: 7px
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					font:
+						size: 1.6em
+						family: $fontFamilyAdditionally
+						weight: 500
+					letter-spacing: 0.8px 
+					color: #4f4f4f
+					text-transform: uppercase
+
+			&-buttons
+				padding: 20px 0
+				display: flex
+				flex: 0 0 50%
+				max-width: 50%
+			&-price
+				display: flex
+				width: auto
+>>>>>>> d60ca6964d4248cf1a56fad1cc276967673bad7a

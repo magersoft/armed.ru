@@ -21,31 +21,78 @@ menu.asside_right
                 input.orders__filter-input(type="text" name="filterData" id="filterData")
             label.orders__filter-label(for="filterNumber") Номер заказа
                 input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
-            label.orders__filter-label(for="filterStatus") Статус заказа
-                //TODO Стилизация custom Select, доработка выбора даты
-                select.orders__filter-select(name="filterStatus" id="filterStatus")
-                    option.orders__filter-option(value="" disabled selected) Не выбрано
-                    option.orders__filter-option(value="")
-                        span.orders__status-color.orders__status-color_blue
-                        |В ожидании
-                    option.orders__filter-option(value="") Доставлено
-                    option.orders__filter-option(value="") В доставке
-                    option.orders__filter-option(value="") Оплачено
-                    option.orders__filter-option(value="") Не подтвержден
-                    option.orders__filter-option(value="") Отменен
-                    option.orders__filter-option(value="") В обработке
-            label.orders__filter-label(for="filterName") Заказ на имя
-                select.orders__filter-select(name="filterName" id="filterName")
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
-                    option.orders__filter-option(value="") Фамилия Имя Отчество
+            p.orders__filter-label Статус заказа
+                .Select#filterStatsu
+                    a.Select-Head#SelectFilter(href="#" data-value="")
+                        span.StatusOrder
+                            span.StatusOrder-Color
+                            sapn.StatusOrder-Text Выберите статус
+                    .Select-Catalog
+                        a.Select-Item(href="#" data-value="None")
+                            span.StatusOrder
+                                span.StatusOrder-Color
+                                sapn.StatusOrder-Text Не выбрано
+                        a.Select-Item(href="#" data-value="Delivered")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_Delivered
+                                sapn.StatusOrder-Text Доставлено
+                        a.Select-Item(href="#" data-value="InDelivered")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_InDelivered
+                                sapn.StatusOrder-Text В доставке
+                        a.Select-Item(href="#" data-value="PendingPayment")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_PendingPayment
+                                sapn.StatusOrder-Text Ожидает оплаты
+                        a.Select-Item(href="#" data-value="Paid")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_Paid
+                                sapn.StatusOrder-Text Оплачен
+                        a.Select-Item(href="#" data-value="NotVerifed")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_NotVerifed
+                                sapn.StatusOrder-Text Не подтвержден
+                        a.Select-Item(href="#" data-value="Canseled")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_Canseled
+                                sapn.StatusOrder-Text Отменен
+                        a.Select-Item(href="#" data-value="InProcessing")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_InProcessing
+                                sapn.StatusOrder-Text В обработке
+                        a.Select-Item(href="#" data-value="ShipmentProhibited")
+                            span.StatusOrder
+                                span.StatusOrder-Color.StatusOrder-Color_ShipmentProhibited
+                                sapn.StatusOrder-Text Отгрузка запрещена
+
+
+            p.orders__filter-label Заказ на имя
+                .Select#filterName
+                    a.Select-Head#SelectName(href="#" data-value="None")
+                        sapn.StatusOrder-Text Выберите ФИО
+                    .Select-Catalog
+                        a.Select-Item(href="#" data-value="None")
+                            sapn.StatusOrder-Text Не выбрано
+                        a.Select-Item(href="#" data-value="User1")
+                            sapn.StatusOrder-Text Июрагим Оглы Муса
+                        a.Select-Item(href="#" data-value="User2")
+                            sapn.StatusOrder-Text Авдеев Игорь Викторович
+                        a.Select-Item(href="#" data-value="User3")
+                            sapn.StatusOrder-Text Хан Султан Хазлед Лери
+                        a.Select-Item(href="#" data-value="User4")
+                            sapn.StatusOrder-Text Фамилия Имя Отчество
+
+
             label.orders__filter-label(for="sumStart") Сумма от:
                 .sum__wrapp
                     input.orders__filter-sum-start(type="text" name="sumStart" id="sumStart")
                     span.orders__filter-dash &mdash;
                     input.orders__filter-sum-end(type="text" name="sumEnd" id="sumEnd")
-            button.orders__filter-button.button.button_white.button_icon.button_md(type="reset")
+            button.Button.Button_Color_Not.Button_Size_Sm
+                span.Button-Text.Button-Text_Color_Black
+                    span.Button-Icon.Button-Icon_Cancel
+                    |Сбросить фильтр
+            //button.orders__filter-button.button.button_white.button_icon.button_md(type="reset")
                 span.button__text.button__text_white
                     span.button__icon.button__icon_cancel
                     | Сбросить фильтр

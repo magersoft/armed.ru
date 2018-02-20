@@ -2,7 +2,7 @@
   position: absolute
   visibility: hidden
   opacity: 0
-  width: 335px
+  width: 380px
   height: 470px
   background: #fff
   border: 1px solid #f6f6f6
@@ -25,6 +25,7 @@
     height: 307px
     overflow: auto
     margin: 10px 0
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.05)
   &_product
     display: flex
     border-top: 1px solid $searchAddressBorderColor
@@ -47,6 +48,7 @@
       padding: 5px 0 10px 0
     &-price
       display: flex
+      margin-top: 18px
       &_cost
         font-size: 1.2em
         font-weight: 500
@@ -75,9 +77,9 @@
       width: 15px
       border: none
       background-color: #fff
-      margin: 0 5px
+      margin: -3px 5px
       color: $headerCartVolume
-      font-size: 1.4em
+      font-size: 1.3em
       text-align: center
   &_price
     display: flex
@@ -108,13 +110,13 @@
   &_delete
     position: relative
     top: 0px
-    right: 10px
-    width: 14px
-    height: 14px
-    background: url(images/Icon/cart_product-delete__icon.svg) center no-repeat
-    background-position: 0 0
+    right: -26px
+    width: 12px
+    height: 12px
+    background: url(images/sprite.png) center no-repeat
+    background-position: -88px -72px
     display: none
     cursor: pointer
     &:hover
-      background-position: 0 -14px
+      background-position: -100px -72px
 

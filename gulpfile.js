@@ -41,6 +41,7 @@ gulp.task('clean', function() {
 
 gulp.task('js', function() {
     return gulp.src(['app/libs/jquery/dist/jquery.js',
+            'app/libs/lightbox2/dist/js/lightbox.js',
             'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
             'app/libs/jquery-ui/jquery-ui.js',
             'app/libs/isotope-layout/dist/isotope.pkgd.js',
@@ -49,12 +50,6 @@ gulp.task('js', function() {
             'app/libs/jquery.sticky-kit/jquery.sticky-kit.js',
             'app/libs/jquery.countdown/dist/jquery.countdown.js',
             'app/libs/notify/notify.js',
-            'app/libs/jquery-selectric/public/jquery.selectric.js',
-            'app/libs/webcomponentsjs/webcomponents-hi.js',
-            'app/libs/webcomponentsjs/webcomponents-hi-ce.js',
-            'app/libs/webcomponentsjs/webcomponents-hi-sd.js',
-            'app/libs/webcomponentsjs/webcomponents-loader.js',
-
             'app/include/**/*.js'
     ]) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
@@ -64,7 +59,8 @@ gulp.task('js', function() {
 });
 
 gulp.task('image', function() {
-    return gulp.src(['app/images/**/**/*']) // берем любые файлы в папке и ее подпапках
+    return gulp.src(['app/images/**/**/*',
+                    'app/libs/lightbox2/dist/images/*']) // берем любые файлы в папке и ее подпапках
         //.pipe(imagemin()) // оптимизируем изображения для веба
         .pipe(gulp.dest('pre-relise/images/')) // результат пишем по указанному адресу
         .pipe(browserSync.reload({stream: true})) // Обновляем браузер

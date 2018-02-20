@@ -51,7 +51,6 @@
       font-size: 14px
     &_Size_S
       font-size: 12px
-
   // Элемент иконка
   &-Icon
     width: 20px
@@ -59,6 +58,7 @@
     background-image: url("images/sprite.png")
     background-repeat: no-repeat
     // Модификатор отдельной иконки из спрайта
+    //TODO проверить соответствие иконок
     &_Tel
       background-position: -122px -24px
     &_Entity
@@ -76,7 +76,7 @@
     &_ArrowWhiteRight
       background-position: -66px -72px
     &_Basket
-      background-position: -122px -44px
+      background-position: -122px -104px
     &_BasketRed
       background-position: -40px -270px
     &_Lock
@@ -97,3 +97,13 @@
       background-position: -80px -310px
     &_UserRed
       background-position: -100px -310px
+    &_PlusBasketWhite
+      background-position: -96px -37px
+    &_Present
+      background-position: -88px -88px
+.Button:hover
+  .Button-Icon_Cancel
+    background-position: -20px -270px
+    transform: rotate(360deg)
+  .Button-Icon_BasketRed
+    background-position: -60px -270px

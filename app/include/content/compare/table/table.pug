@@ -4,100 +4,227 @@
     .table__wrapper
         .table__inner
             .table__button-group
-                button.button.button_compare
-                    span.button__text
-                        | Концентраторы
-                        span.static-text
-                            |&nbsp;(
-                        span.dinamic-text
-                            | 3
-                        span.static-text
-                            | )
-                button.button.button_white.button_compare
-                    span.button__text.button__text_white
-                        | Рециркуляторы
-                        span.static-text
-                            | &nbsp;(
-                        span.dinamic-numb
-                            | 3
-                        span.static-text
-                            | )
-                button.button.button_white.button_compare
-                    span.button__text.button__text_white
-                        | Операционные столы
-                        span.static-text
-                            | &nbsp;(
-                        span.dinamic-numb
-                            | 3
-                        span.static-text
-                            | )
-            .table__button-clear
-                a(href="#")
-                    | Очистить сравнение
-        .table__inner.row
-            .table__item-head
-                table.table-head
-                    tr
-                        th.table-head__th-first
-                            input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
-                            label.catalog__asside-toggleLabel.toggle__label.toggle__label_table.toggle__label_table-compare(for="compare" data-id="Только различающиеся")
-                    tr
-                        th.table-head__th-another
-                            p
-                                | Ширина
-                    tr
-                        th.table-head__th-another
-                            p
-                                | Высота профиля
-                    tr
-                        th.table-head__th-another
-                            p
-                                | Производитель
-                    tr
-                        th.table-head__th-another
-                            p
-                                | Гарантия
-            .scroll-row.scroll-row-lol
-                .table__item-body
-                    - var x = 12;
-                    - for (var i=1; i<=x; i++) {
-                        .table__wrapper-body
-                            table.table-prod
+                .TabsWrap
+                    ul.tabs.table__tabs
+                        li.tabs__element.tabs__active
+                            a.tabs__link(href="#CompareTab1")
+                                span.compare__name Концентраторы
+                                span.compare__bkt &nbsp(&nbsp
+                                span.compare__count 3
+                                span.compare__bkt &nbsp)&nbsp
+                        li.tabs__element
+                            a.tabs__link(href="#CompareTab2")
+                                span.compare__name Рециркуляторы
+                                span.compare__bkt &nbsp(&nbsp
+                                span.compare__count 4
+                                span.compare__bkt &nbsp)&nbsp
+                        li.tabs__element
+                            a.tabs__link(href="#CompareTab3")
+                                span.compare__name Операционные столы
+                                span.compare__bkt &nbsp(&nbsp
+                                span.compare__count 10
+                                span.compare__bkt &nbsp)&nbsp
+                    .table__button-clear
+                        a(href="#")
+                            | Очистить сравнение
+                    .table__inner.row#CompareTab1
+                        .table__item-head
+                            table.table-head
                                 tr
-                                    td.td-first
-                                        span.button__icon.button__icon_cancel.td-del
-                                        .td-first__header
-                                            p Концентратор кислорода 8F-1
-                                        img(src="../images/compare/product.png")
-                                        .td-first__cost-group
-                                            .td-first__cost-group--new
-                                                p
-                                                    | 23 490
-                                                    span
-                                                        | &nbsp;&#8381;
-                                            .td-first__cost-group--old
-                                                p
-                                                    | 63 370
-                                                    span
-                                                        | &nbsp;&#8381;
-                                        .table-icon
-                                            a(src="#").table-icon__buy
-                                            a(src="#").table-icon__buy
+                                    th.table-head__th-first
+                                        input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
+                                        label.catalog__asside-toggleLabel.toggle__label.toggle__label_table.toggle__label_table-compare(for="compare" data-id="Только различающиеся")
                                 tr
-                                    td.table-prod__td-another
-                                        p.detail__table-item__success
-                                            | 560х280х480 мм
-                                tr
-                                    td.table-prod__td-another
-                                        img(src="../images/compare/stars.png")
+                                    th.table-head__th-another
                                         p
-                                            | (3 оценки)
+                                            | Ширина
                                 tr
-                                    td.table-prod__td-another
-                                        p.detail__table-item__fail
-                                            | 0-3л/мин
-                                tr
-                                    td.table-prod__td-another
+                                    th.table-head__th-another
                                         p
-                                            | 10 лет
-                    - }
+                                            | Высота профиля
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Производитель
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Гарантия
+                        .scroll-row.scroll-row-lol
+                            .table__item-body
+                                - var x = 12;
+                                - for (var i=1; i<=x; i++) {
+                                    .table__wrapper-body
+                                        table.table-prod
+                                            tr
+                                                td.td-first
+                                                    span.button__icon.button__icon_cancel.td-del
+                                                    .td-first__header
+                                                        p Концентратор кислорода 8F-1
+                                                    img(src="../images/compare/product.png")
+                                                    .td-first__cost-group
+                                                        .td-first__cost-group--new
+                                                            p
+                                                                | 23 490
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                        .td-first__cost-group--old
+                                                            p
+                                                                | 63 370
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                    .table-icon
+                                                        a(src="#").table-icon__buy
+                                                        a(src="#").table-icon__buy
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__success
+                                                        | 560х280х480 мм
+                                            tr
+                                                td.table-prod__td-another
+                                                    img(src="../images/compare/stars.png")
+                                                    p
+                                                        | (3 оценки)
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__fail
+                                                        | 0-3л/мин
+                                            tr
+                                                td.table-prod__td-another
+                                                    p
+                                                        | 10 лет
+                                - }
+                    .table__inner.row#CompareTab2
+                        .table__item-head
+                            table.table-head
+                                tr
+                                    th.table-head__th-first
+                                        input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
+                                        label.catalog__asside-toggleLabel.toggle__label.toggle__label_table.toggle__label_table-compare(for="compare" data-id="Только различающиеся")
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Ширина
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Высота профиля
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Производитель
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Гарантия
+                        .scroll-row.scroll-row-lol
+                            .table__item-body
+                                - var x = 12;
+                                - for (var i=1; i<=x; i++) {
+                                    .table__wrapper-body
+                                        table.table-prod
+                                            tr
+                                                td.td-first
+                                                    span.button__icon.button__icon_cancel.td-del
+                                                    .td-first__header
+                                                        p Концентратор кислорода 8F-1
+                                                    img(src="../images/compare/product_1.png")
+                                                    .td-first__cost-group
+                                                        .td-first__cost-group--new
+                                                            p
+                                                                | 23 490
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                        .td-first__cost-group--old
+                                                            p
+                                                                | 63 370
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                    .table-icon
+                                                        a(src="#").table-icon__buy
+                                                        a(src="#").table-icon__buy
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__success
+                                                        | 560х280х480 мм
+                                            tr
+                                                td.table-prod__td-another
+                                                    img(src="../images/compare/stars.png")
+                                                    p
+                                                        | (3 оценки)
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__fail
+                                                        | 0-3л/мин
+                                            tr
+                                                td.table-prod__td-another
+                                                    p
+                                                        | 10 лет
+                                - }
+                    .table__inner.row#CompareTab3
+                        .table__item-head
+                            table.table-head
+                                tr
+                                    th.table-head__th-first
+                                        input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
+                                        label.catalog__asside-toggleLabel.toggle__label.toggle__label_table.toggle__label_table-compare(for="compare" data-id="Только различающиеся")
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Ширина
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Высота профиля
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Производитель
+                                tr
+                                    th.table-head__th-another
+                                        p
+                                            | Гарантия
+                        .scroll-row.scroll-row-lol
+                            .table__item-body
+                                - var x = 12;
+                                - for (var i=1; i<=x; i++) {
+                                    .table__wrapper-body
+                                        table.table-prod
+                                            tr
+                                                td.td-first
+                                                    span.button__icon.button__icon_cancel.td-del
+                                                    .td-first__header
+                                                        p Концентратор кислорода 7F-10L
+                                                    img(src="../images/compare/product_2.png")
+                                                    .td-first__cost-group
+                                                        .td-first__cost-group--new
+                                                            p
+                                                                | 23 490
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                        .td-first__cost-group--old
+                                                            p
+                                                                | 63 370
+                                                                span
+                                                                    | &nbsp;&#8381;
+                                                    .table-icon
+                                                        a(src="#").table-icon__buy
+                                                        a(src="#").table-icon__buy
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__success
+                                                        | 560х280х480 мм
+                                            tr
+                                                td.table-prod__td-another
+                                                    img(src="../images/compare/stars.png")
+                                                    p
+                                                        | (3 оценки)
+                                            tr
+                                                td.table-prod__td-another
+                                                    p.detail__table-item__fail
+                                                        | 0-3л/мин
+                                            tr
+                                                td.table-prod__td-another
+                                                    p
+                                                        | 10 лет
+                                - }

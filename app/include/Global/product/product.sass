@@ -14,33 +14,39 @@
     height: 85px
     flex-direction: row
     justify-content: center
-    &Sm
+    &Smal
       width: 100%
       height: auto
       flex-direction: row
       justify-content: center
       padding: 5px 15px
     &_hover
-      border: 1px solid #bdbdbd
+      box-shadow: 0 0 10px rgba(130, 130, 130, 0.25)
     &_nothover
-      border: 1px solid #e0e0e0
-  &_entitySm
+      box-shadow: 0 0 10px rgba(130, 130, 130, 0.15)
+  &_entitySmal
     width: 100%
     height: auto
     flex-direction: row
     justify-content: center
     padding: 5px 15px
+    margin-bottom: 0
+    box-shadow: none
+    &:nth-child(even)
+      background: #F6F6F6
+      &:hover
+        background: #efefef
     &_hover
-      border: 1px solid #bdbdbd
+      background: #efefef
     &_nothover
-      border: 1px solid #e0e0e0
+      background: white
   &__main
     &_entity
       display: flex
       justify-content: space-between
       align-items: center
       width: 100%
-    &_entitySm
+    &_entitySmal
       display: flex
       justify-content: space-between
       align-items: center
@@ -52,7 +58,7 @@
     position: relative
     &_entity
       height: 83px
-    &_entitySm
+    &_entitySmal
       display: none
   &__image
     height: 210px
@@ -75,7 +81,7 @@
       flex-direction: column
       align-items: flex-start
       justify-content: center
-      &Sm
+      &Smal
         display: none
   &__rib
     height: 20px
@@ -111,10 +117,11 @@
     border-right: 1px solid $productBorderHoverColor
     border-left: 1px solid $productBorderHoverColor
     border-bottom: none
-    box-shadow: 0 -6px 10px $productShadowColor
+    box-shadow: 0 0px 5px $productShadowColor
   &_nothover
     border: 1px solid #f2f2f2
   &__head
+    flex-basis: 60%
     font-family: 'Rubik'
     font-size: 1.6em
     text-transform: uppercase
@@ -123,10 +130,11 @@
     display: block
     text-decoration: none
     &_entity
+      text-align: left
       font-size: 1.4em
       color: #4f4f4f
-      padding: 0
-    &_entitySm
+      padding: 0 0 0 20px
+    &_entitySmal
       font-family: 'Roboto'
       font-size: 1.4em
       text-transform: none
@@ -145,16 +153,17 @@
       z-index: 200
       &_active
         display: flex
-        bottom: -85px
+        bottom: -49px
         transition: 0.4s
         border-bottom: 1px solid $productBorderHoverColor
         border-left: 1px solid $productBorderHoverColor
         border-right: 1px solid $productBorderHoverColor
         box-shadow: 0 6px 10px $productShadowColor
+        padding-bottom: 15px
       &_hide
         display: none
-    &_entitySm
-      display: none
+    &_entitySmal
+      display: none!important
   &__asside
     width: 60px
     height: 380px
@@ -175,7 +184,7 @@
     height: 33px
     border-radius: 50%
     background-color: $productIconBgColor
-    background-image: url("images/product/product__sprite.png")
+    background-image: url("images/sprite.svg")
     background-repeat: no-repeat
     margin-bottom: 15px
     &-wrapp
@@ -185,24 +194,25 @@
       margin-bottom: 0
       &:not(:last-child)
         margin-right: 15px
-    &_entitySm
+        margin-left: 20px
+    &_entitySmal
       display: none
     &_favorite
-      background-position: 0 0
+      background-position: -88px -138px
       &:hover
-        background-position: -33px 0
+        background-position: -121px -138px
     &_comparis
-      background-position: 0 -33px
+      background-position: -88px -171px
       &:hover
-        background-position: -33px -33px
+        background-position: -121px -171px
     &_info
-      background-position: 0 -66px
+      background-position: -88px -204px
       &:hover
-        background-position: -33px -66px
+        background-position: -121px -204px
     &_buy
-      background-position: 0 -99px
+      background-position: -88px -237px
       &:hover
-        background-position: -33px -99px
+        background-position: -121px -237px
   &__price
     display: flex
     justify-content: center
@@ -210,21 +220,28 @@
     position: relative
     &_entity
       flex-direction: column
+      width: 120px
+      font-weight: 500
+      &Smal
+        flex-basis: 20%
+        p
+          font-weight: 400
   &__cost
     color: $productCostColor
     font-size: 1.8em
     font-weight: 500
     margin-right: 11px
+
     &_entity
       font-size: 1.6em
       margin-right: 0
-    &_entitySm
+    &_entitySmal
       font-size: 1.4em
   &__oldcost
     color: $productOldCostColor
     font-size: 1.2em
     text-decoration: line-through
-    margin-right: 8px
+    margin: 0 8px
     font-weight: 500
     &_entity
       font-size: 1.2em
@@ -258,7 +275,7 @@
     &-window
       display: none
       padding: 15px
-      top: 13px
+      bottom: 13px
       left: 170px
       z-index: 250
       position: absolute
@@ -314,8 +331,10 @@
     font-size: 1.2em
     &_entity
       display: none
-    &_entitySm
+    &_entitySmal
+      text-align: right
       display: block
+      flex-basis: 10%
     &_true
       color: $ConfirmColor
     &_none
@@ -326,12 +345,13 @@
       color: $GlobalColor
     &_entity
       display: none
-    &_entitySm
+    &_entitySmal
+      flex-basis: 10%
       display: inline
   &__count
     &_entity
       display: none !important
-    &_entitySm
+    &_entitySmal
       display: flex
 .you-price_color
   color: $productQuestionYouColor

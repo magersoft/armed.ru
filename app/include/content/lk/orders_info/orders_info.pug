@@ -1,7 +1,7 @@
 .orders
     header.orders__header
         h2.orders__head.head-lk
-            span.head-lk__icon.head-lk__icon_orders
+            span.head-lk__icon.head-lk__icon_change             
             | Заказ&nbsp;
             span
             | №2104 от 16.10.2017
@@ -10,7 +10,7 @@
                 span.orders__filter-icon.orders__filter-icon_create
                 | Подтвердить оплату
             a.orders__filter-link(href="#")
-                span.orders__filter-icon.orders__filter-icon_create
+                span.orders__filter-icon.orders__filter-icon_double
                 | Дублировать заказ
             a.orders__filter-link(href="#")
                 span.orders__filter-icon.orders__filter-icon_create
@@ -22,10 +22,62 @@
             li.order__tabs-element.tabs__element
                 a.orders__tabs-link.tabs__link(href="#orderStatus") Состав заказа
         .orders__tabs#orderInfo
+            .orders-info__timeline
+                    ul
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_green.svg")
+                            p.orders-info__timeline-status 
+                                | Новый заказ
+                                span
+                                    | Заказ оформлен
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_green.svg")
+                            p.orders-info__timeline-status 
+                                | Оплата
+                                span
+                                    | Оплачено
+                        li 
+                            p.orders-info__timeline-data
+                                | 26.02.2018
+                                span
+                                    | 10:20
+                            img(src="images/lk/timeline_yellow.svg")
+                            p.orders-info__timeline-status 
+                                | Комплектация
+                                span
+                                    | Комплектуется
+                        li 
+                            p.orders-info__timeline-data
+                                | 
+                                span
+                                    | 
+                            img(src="images/lk/timeline_grey.svg")
+                            p.orders-info__timeline-status.orders-info__timeline-status-unavailable 
+                                | Доставка
+                                span
+                                    | 
+                        li 
+                            p.orders-info__timeline-data
+                                | 
+                                span
+                                    | 
+                            img(src="images/lk/timeline_boll-grey.svg")
+                            p.orders-info__timeline-status.orders-info__timeline-status-unavailable
+                                | Выполнен
+                                span
+                                    |
             .orders-info__wrapper
                 .orders-info__form
                     .orders-info__label
-                        | Ф.И.О.:
+                        | Ф.И.О.:<!-- Если нельзя редактировать - текст внутри этого класса, импут не появляется (во всех случаях ниже), если есть возможность редактирвать - выводим импуты (селекты и лейблы) -->
                     .orders-info__select.orders-info__select-disabled
                         | Иванов Иван Иванович
                     label.orders-info__label(for="ordercompany")
@@ -60,6 +112,7 @@
                 .orders-info__score
                     .orders-info__title
                         h4
+<<<<<<< HEAD
                         | Счета
                         .orders-info__score-group
                             p
@@ -67,6 +120,186 @@
                                 | Счет&nbsp;
                                 span
                                     | № 2104/1 от 16.10.2017
-                .orders-info__log
-        .orders__tabs#orderStatus
+=======
+                            | Счета
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-pdf
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-xls
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-doc
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-zip
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
+                    .orders-info__score-group
+                        i.orders-info__score-group__icon.orders-info__score-group__icon-ppt
+                        a(href="#")
+                            | Счет&nbsp;
+                            span 
+                                | №2104/1 от 16.10.2017№2104/1 от 16.10.2017
 
+>>>>>>> d60ca6964d4248cf1a56fad1cc276967673bad7a
+                .orders-info__log
+                    .orders-info__title
+                        h4
+                            | История заказа
+                    .orders-info__log-wrapper
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Заказ оформлен
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Вы внесли изменения в состав заказа
+                        .orders-info__log-item
+                            .orders-info__log-item-data
+                                p    
+                                    | [
+                                    span 22.22.2012 10:30
+                                    | ]:
+                            .orders-info__log-item-inner
+                                p
+                                    | Менеджер подтвердил наличие товаров и согласовал условия доставки
+        .orders__tabs#orderStatus
+            .orders-status
+                .orders-status__table
+                    table
+                        tr
+                            th
+                                | Артикул
+                            th
+                                | Наименования
+                            th
+                                | Кол-во
+                            th
+                                | Цена
+                            th
+                                | Сумма
+                        tr
+                            td
+                                | 15682564822
+                            td
+                                | Кресло-кровать медицинская многофункциональная трансформирующаяся для родовспоможения "Armed": SC-A
+                            td 
+                                | 1
+                            td
+                                | 1 200 330 000 000 ₽
+                            td
+                                | 1 200 330 000 000 ₽
+                .orders-status__footer
+                    .orders-status__footer-buttons
+                        a(href="lk_ordersChange.html").Button.Button_Color_Red.Button_Size_Lg
+                           span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                               span.Button-Icon.Button-Icon_Pencil
+                               | Редактировать
+                        button.Button.Button_Color_Not.Button_Size_Lg
+                           span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+                               span.Button-Icon.Button-Icon_CancelRed
+                               | Удалить заказ
+                    .orders-status__footer-price
+                        .orders-status__footer-table.orders-ur
+                            .orders-status__footer-table-header
+                                p
+                                    | Итого:
+                                p
+                                    | 123123123
+                                    span
+                                        |&nbsp;&#8381;
+                            .orders-status__footer-table-body
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Всего товаров:
+                                        p
+                                            | 12
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Вес:
+                                        p
+                                            | 23
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Объем: 
+                                        p
+                                            | 12
+                                    .orders-status__footer-table-td
+                                        p
+                                            | В т.ч. НДС:
+                                        p
+                                            | 1 200
+                                            span
+                                                |&nbsp;&#8381;
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Скидка Промо-кода:
+                                        p.detail__table-item__success
+                                            | 25%
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Выгода:
+                                        p.detail__table-item__success
+                                            | 30 000 000
+                                            span
+                                                |&nbsp;&#8381;
+                        .orders-status__footer-table.orders-fiz
+                            .orders-status__footer-table-header
+                                p
+                                    | Итого:
+                                p
+                                    | 123123123
+                                    span
+                                        |&nbsp;&#8381;
+                            .orders-status__footer-table-body
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Всего товаров:
+                                        p
+                                            | 12
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Объем: 
+                                        p
+                                            | 12
+                                   
+                                .orders-status__footer-table-tr
+                                    .orders-status__footer-table-td
+                                        p
+                                            | Скидка Промо-кода:
+                                        p.detail__table-item__success
+                                            | 25%
+                                    
+                .orders-click
+                    button.orders-click-ur
+                        | Юридическое лицо
+                    button.orders-click-fiz
+                        | Физическое лицо

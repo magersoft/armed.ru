@@ -33,6 +33,9 @@
   &__logo
     &-link
       margin-bottom: 15px
+    &-image
+      position: relative
+      bottom: 20px
   &__contacts, &__menu, &__info
     list-style: none
     display: flex
@@ -52,8 +55,22 @@
       &-wrap
         width: 90%
     &-image
+      display: block
+      width: 16px
+      height: 16px
+      background:
+        image: url('../images/sprite.png')
       margin-right: 10px
-      margin-top: 3px
+      margin-top: 1px
+      &-map 
+        background:
+          position: -86px -120px
+      &-email
+        background:
+          position: -54px -120px
+      &-phone
+        background:
+          position: -70px -120px
     &-link
       color: $linkFooterColor
       text-decoration: none
@@ -68,8 +85,10 @@
       font-size: 1.4em
       color: $linkFooterColor
       text-decoration: none
+      transition: all .3s ease
       &:hover
         color: $linkHoverFooterColor
+        padding-left: 5px
   &__info
     width: 220px
 

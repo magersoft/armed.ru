@@ -12,31 +12,60 @@
       letter-spacing: 0.8px
       color: rgb(79, 79, 79)
       border-left: 2px solid $GlobalColor
-      padding-left: 5px
-      margin-bottom: 15px
+      padding-left: 9px
+      margin-bottom: 20px
     &-menu
       display: flex
       flex-direction: column
       border-bottom: 1px solid #f2f2f2
-      margin-bottom: 15px
+      margin-bottom: 20px
     &-link
       display: flex
       justify-content: space-between
       align-items: center
-      font-size: 1.4em
+      font:
+        size: 1.6em
+        family: $fontFamilyDefault
       color: rgb(130, 130, 130)
-      margin-bottom: 10px
+      margin-bottom: 22px
       text-decoration: none
       &:hover
         padding-left: 10px
+      &:last-child
+        margin-bottom: 20px
+    &-count 
+      font:
+        weight: 300
+        size: 0.8em
     &-text
       display: flex
       align-items: center
       font-size: 1.6em
       color: rgb(130, 130, 130)
       text-decoration: none
-      margin-bottom: 10px
+      margin-bottom: 14px
       margin-top: 10px
+    &-select
+      border: 1px solid #f2f2f2
+      width: 180px
+      padding: 7px
+      font:
+        family: $fontFamilyDefault
+        size: 1.6em
+      color: #828282
+      -webkit-appearance: none
+      -moz-appearance: none
+      text-indent: 0.01px
+      text-overflow: ''
+      -ms-appearance: none
+      appearance: none!important
+      background:
+        image: url('images/catalog/select.png')
+        repeat: no-repeat
+        position: 93% center
+      &:hover
+        background:
+          image: url('images/catalog/select-red.png')
     &-arrow
       background-image: url("images/Catalog/catalog__arrow.svg")
       background-repeat: no-repeat
@@ -56,17 +85,22 @@
       font-size: 1.6em
       color: rgb(130, 130, 130)
       align-items: center
+      margin-bottom: 8px
     &-input
+      border: 1px solid #f2f2f2
+      padding: 7px
+      cursor: text
       width: 90px
       margin-left: 5px
       margin-right: 10px
+      font-family: $fontFamilyDefault
       font-size: 11px
       font-weight: 300
       color: rgb(130, 130, 130)
     &-range
       position: relative
       &_line
-        background-color: red
+        background-color: #C62828
         top: 0
         height: 100%
         position: absolute
@@ -75,22 +109,43 @@
         display: block
         border: 0
         overflow: hidden
+
       &_lineHorizont
         height: 3px
-        border: 1px solid #D4D4D4
-        background: #fff
+        background: #bdbdbd
         border-radius: 4px
+        width: 90%
+        margin: 0 auto
       &_handle
         position: absolute
         z-index: 2
         width: 13px
         height: 13px
         border-radius: 50%
-        background: #000 no-repeat
+        background: #828282 no-repeat
         cursor: pointer
         top: -5px
         margin-left: -6px
+        &:active
+          background: #C62828
 .FilterTabs
   &-Item
     margin-bottom: 25px
-
+  &-List
+    list-style: none
+  &-Tab
+    border-bottom: 1px solid #f2f2f2
+    padding-bottom: 25px
+  &-Checkbox
+    margin-top: -3px
+    margin-left: 10px
+    font:
+      family: $fontFamilyDefault
+      size: 1em
+    color: rgb(189, 189, 189)
+    position: relative
+    bottom: 2px
+  &-Label
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0

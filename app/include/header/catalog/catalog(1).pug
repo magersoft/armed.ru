@@ -1,0 +1,18 @@
+.dropdown-catalog.js-dropdown
+    .dropdown-catalog__main
+        ul.dropdown-catalog__wrapper
+            include data/categories
+            each item in categories
+                li.dropdown-catalog__item(id= item.id)
+                    a.dropdown-catalog__item_link(href= item.link) #{item.name}
+                    .dropdown-catalog__inner
+                        .dropdown-catalog__category(id="#")
+                            .dropdown-catalog__category_title
+                                | #{item.name}
+                            .dropdown-catalog__category_wrapper
+                                include data/cat-1
+                                each cat in cat1
+                                    a.dropdown-catalog__category_link(href= cat.link)
+                                        img.dropdown-catalog__category_image(src= cat.image)
+                                        span.dropdown-catalog__category_text
+                                            | #{cat.name}

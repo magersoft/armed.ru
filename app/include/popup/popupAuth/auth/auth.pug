@@ -12,23 +12,28 @@
         .auth__tabs#tabs1
               form.auth__form
                   label.auth__form-label(for="phone") Номер телефона:
-                    span.alert Вы не зарегистрированы
                   input.auth__form-input(type="text" name="phone" id="phone")
-                  button.auth__form-button.button.button_icon#button__phone
+                  button.Button.Button_Color_Red.Button_Size_Lg.auth__form-button#button__phone
+                      span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                          | Получить СМС
+                  //button.auth__form-button.button.button_icon#button__phone
                     span.button__text
                         span.button__icon.button__icon_tel
                         |Получить смс
+
         .auth__tabs#tabs2
             form.auth__form
                 label.auth__form-label(for="mail") E-mail:
-                    span.alert Вы не зарегистрированы
                 input.auth__form-input(type="mail" name="mail" id="mail")
                 label.auth__form-label(for="pass") Пароль:
                     span.alert Пароль не верен
                 input.auth__form-input(type="mail" name="pass" id="pass")
                 a.auth__recovery.modalLink(href="#" data-id="passRecovery") Забыли пароль?
-                button.auth__button.button.button_icon
-                    span.button__text
+                button.Button.Button_Color_Red.Button_Size_Lg.auth__button
+                    span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                        | Войти на сайт
+                //button.auth__button.Button.Button_Size_XL.Button_Color_Red
+                    span.Button-Text.Button-Text_Size_l.Button-Text_Color_White.Button-Text_Uppercase
                         span.button__icon.button__icon_entry
                         |Войти на сайт
     h6.auth__ili или
@@ -41,7 +46,12 @@
     a.social__element.social__element_you-lg.social__element_lg.social__link(href="#")
 .auth__border
 p.auth__text У вас всё ещё нет аккаунта? Зарегистрируйтесь сейчас
-button.auth__button.button.button_white.button_icon.modalLink(data-id="Check")
+
+button.Button.Button_Color_Not.Button_Size_Lg.auth__button(data-id="Check")
+    span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+        |Регистрация
+        span.Button-Icon.Button-Icon_ArrowBlackRight
+//button.auth__button.button.button_white.button_icon.modalLink(data-id="Check")
     span.button__text.button__text_white
         |Регистрация
         span.button__icon.button__icon_arrow

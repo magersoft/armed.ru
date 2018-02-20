@@ -1,0 +1,35 @@
+.StatusOrder
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  position: relative
+  &-Text
+    margin-left: 15px
+    font-size: 14px
+    color: rgba(130, 130, 130, 1)
+    &_ShipmentProhibited
+      color: rgba(202, 32, 50, 1)
+      text-decoration: underline
+  &-Color
+    position: absolute
+    top: 4px
+    left: 3px
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    &_Delivered
+      background-color: rgba(33, 150, 83, 1)
+    &_InDelivered
+      background-color: rgba(242, 201, 76, 1)
+    &_PendingPayment
+      background-color: rgba(242, 153, 74, 1)
+    &_Paid
+      background-color: rgba(4, 214, 195, 1)
+    &_NotVerifed
+      background-color: rgba(179, 179, 179, 1)
+    &_Canseled
+      background-color: rgba(202, 32, 50, 1)
+    &_InProcessing
+      background-color: rgba(45, 156, 219, 1)
+    &_ShipmentProhibited
+      background-color: rgba(202, 32, 50, 1)

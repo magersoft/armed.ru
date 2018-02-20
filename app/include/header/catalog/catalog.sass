@@ -20,20 +20,31 @@
     position: relative
     width: 255px
     height: 500px
-    padding: 10px
     box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.03)
   &__inner
-    position: relative
-    display: none
+    position: absolute
+    left: 100%
+    margin-left: 1px
+    top: -1px
+    background: #fff
+    border: 1px solid #F2F2F2
+    visibility: hidden
+    opacity: 0
     width: 857px
-    height: 500px
+    height: 502px
+    //transition: all .3s ease
   &__item
     font-size: 1.6em
     list-style: none
-    padding: 10px 0
+    padding: 10px
     transition: all 0.3s ease
     &:hover
-      padding-left: 5px
+      padding-left: 15px
+    &:hover > a
+      color: $GlobalColor
+    &:hover > .dropdown-catalog__inner
+      visibility: visible
+      opacity: 1
     &_link
       color: $headerItemColor
       text-decoration: none
@@ -44,7 +55,7 @@
     padding: 25px 30px
     height: 100%
     &_title
-      font-size: 1.8em
+      font-size: 18px
       font-weight: 500
       text-transform: uppercase
       color: $headerCartTitle
@@ -56,25 +67,23 @@
       display: flex
       flex-direction: row
       flex-wrap: wrap
-      justify-content: space-between
+      justify-content: space-around
       align-items: start
     &_link
       display: flex
       align-items: center
       width: 250px
       height: 75px
-      border-bottom: 1px solid #E0E0E0
+      border-bottom: 1px solid #f2f2f2
       padding: 60px 0
       text-decoration: none
       color: $headerItemColor
-      &:nth-last-child(-n+3)
-        border: none
       &:hover
         color: $headerItemHoverColor
     &_image
       width: 78px
       height: 78px
     &_text
-      font-size: 1.4em
+      font-size: 14px
       padding: 10px
 
