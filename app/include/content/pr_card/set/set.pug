@@ -1,52 +1,53 @@
 // TODO чтоб при клике на картику выбиралось тоже, не только по клику на чек
-.set
-    .prcard-title
-        h2 Состав комплекта
-    .set__slider
-        - var x = 9;
-        - for (var i=1; i<=x; i++) {
-            .set__slider-wrapper
-                .set__slider-item
-                    .set__slider-item__plus
-                .set__slider-item__check
-                .set__slider-inner
-                    .set__slider-container
-                        .set__slider-item.set__slider-item__img
-                            img(src='../images/prcard/slider_card_2.png')
-                        .set__slider-item.set__slider-item__text
-                            .set__slider-item__text-description
-                                p
-                                    |Деталь входящая в комплект к данному товару
-                            .set__slider-item__text-cost
-                                .set__cost-new
+#set
+    .set
+        .prcard-title
+            h2 Состав комплекта
+        .set__slider
+            - var x = 9;
+            - for (var i=1; i<=x; i++) {
+                .set__slider-wrapper
+                    .set__slider-item
+                        .set__slider-item__plus
+                    .set__slider-item__check
+                    .set__slider-inner
+                        .set__slider-container
+                            .set__slider-item.set__slider-item__img
+                                img(src='../images/prcard/slider_card_2.png')
+                            .set__slider-item.set__slider-item__text
+                                .set__slider-item__text-description
                                     p
-                                        | 2 642
-                                        span
-                                            |&nbsp;&#8381;/шт.
-                                .set__cost-old
-                                    p
-                                        | 2 642
-                                        span
-                                            | &nbsp;&#8381;/шт.
-        - }
-    .set__price
-        .set__price-wrapper
-            .set__price-inner
-                .set__price-item
-                    p.set__price-item__text
-                        | Стоимость комплекта:
-                        span.set__price-item__text__number
-                            | 13 385
+                                        |Деталь входящая в комплект к данному товару
+                                .set__slider-item__text-cost
+                                    .set__cost-new
+                                        p
+                                            | 2 642
+                                            span
+                                                |&nbsp;&#8381;/шт.
+                                    .set__cost-old
+                                        p
+                                            | 2 642
+                                            span
+                                                | &nbsp;&#8381;/шт.
+            - }
+        .set__price
+            .set__price-wrapper
+                .set__price-inner
+                    .set__price-item
+                        p.set__price-item__text
+                            | Стоимость комплекта:
+                            span.set__price-item__text__number
+                                | 13 385
+                                | &#8381;
+                        p.set__price-item__oldprice
+                            | 26 770
                             | &#8381;
-                    p.set__price-item__oldprice
-                        | 26 770
-                        | &#8381;
-            .set__price-inner__button
-                button.Button.Button_Color_Red.Button_Size_Sm.product__button
-                    span.Button-Text.Button-Text_Color_White
-                        span.Button-Icon.Button-Icon_Basket
-                        | В корзину
-                //button.product__button.button.button_icon.button_set
-                    span.button__text
-                        span.button__icon.button__icon_basket
-                        | В корзину
+                .set__price-inner__button
+                    button.Button.Button_Color_Red.Button_Size_Sm.product__button
+                        span.Button-Text.Button-Text_Color_White
+                            span.Button-Icon.Button-Icon_Basket
+                            | В корзину
+                    //button.product__button.button.button_icon.button_set
+                        span.button__text
+                            span.button__icon.button__icon_basket
+                            | В корзину

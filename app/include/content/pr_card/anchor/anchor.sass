@@ -1,28 +1,32 @@
 .anchor
-  z-index: 999
+  z-index: 1000
   margin:
     bottom: 5px
   height: 60px
-  background-color: #f2f2f2
-  border-top: solid 1px #ffffff
-  border-bottom: solid 1px #ffffff
+  background-color: #F2F2F2
   display: flex
   position: relative
   &__wrapper
     width: 1366px
   &__inner
+    height: 60px
+    border: none
     width: 1366px
     list-style: none
     display: flex
     flex-direction: row
     justify-content: space-between
   &__item
+    border-right: 1px solid #ffffff
+    width: 100%
     display: flex
     text-align: center
-    border-right: 1px solid #ffffff
+    border: none
     &:last-child
       border-right: none
+
     &-link
+      border: none
       width: 194px
       padding: 21px 15px
       letter-spacing: 0.7px
@@ -36,3 +40,8 @@
       &:hover
         background: #ffffff
         color: #4f4f4f
+      &-temp
+        @extend .anchor__item-link
+
+.active__anchor
+  background: #ffffff
