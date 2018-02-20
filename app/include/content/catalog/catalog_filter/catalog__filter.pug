@@ -1,6 +1,18 @@
 .catalog__filter
-    label.catalog__filterLabel(for="catalogFilter") Сортировать по:
-        select.catalog__filterInput(name="catalogFilter" id="catalogFilter")
+    .catalog__filterLabel Сортировать по:
+        .Select#SortSelect.catalog__filterSelect
+            a.Select-Head#SelectSort(href="#" data-value="None")
+                sapn.StatusOrder-Text Способ сортировки
+            .Select-Catalog
+                a.Select-Item(href="#" data-value="None")
+                    sapn.StatusOrder-Text Не выбрано
+                a.Select-Item(href="#" data-value="ABC")
+                    sapn.StatusOrder-Text По алфовиту
+                a.Select-Item(href="#" data-value="PriceUp")
+                    sapn.StatusOrder-Text По возрастанию цены
+                a.Select-Item(href="#" data-value="PriceDown")
+                    sapn.StatusOrder-Text По убыванию цены
+        //select.catalog__filterInput(name="catalogFilter" id="catalogFilter")
             option.catalog__filterOption(value="") По алфовиту
             option.catalog__filterOption(value="") Уменьшению цены
             option.catalog__filterOption(value="") Увеличению цены

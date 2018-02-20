@@ -33,7 +33,19 @@
                 a.FilterTabs-Link.catalog__asside-text(href="#FilterTab2") Производитель
                     span.catalog__asside-arrow
                 .FilterTabs-Tab#FilterTab2
-                    select.catalog__asside-select
+                    .Select#ProizSelect
+                        a.Select-Head#SelectProzi(href="#" data-value="None")
+                            sapn.StatusOrder-Text Производитель
+                        .Select-Catalog
+                            a.Select-Item(href="#" data-value="None")
+                                sapn.StatusOrder-Text Не выбрано
+                            a.Select-Item(href="#" data-value="Proiz1")
+                                sapn.StatusOrder-Text Sony
+                            a.Select-Item(href="#" data-value="Proiz2")
+                                sapn.StatusOrder-Text Apple
+                            a.Select-Item(href="#" data-value="Proiz3")
+                                sapn.StatusOrder-Text Armed
+                    //select.catalog__asside-select
                         option.catalog__asside-option(value="") Sony
                         option.catalog__asside-option(value="") Apple
                         option.catalog__asside-option(value="") Sumsung
