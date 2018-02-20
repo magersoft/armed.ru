@@ -35,7 +35,19 @@
                     | В корзину
         .quickview-inner_buy__delivery
             .quickview-item_buy__delivery-select
-                select.quickview__select
+                .Select#CitySelect
+                    a.Select-Head#SelectCity(href="#" data-value="None")
+                        sapn.StatusOrder-Text Выберите город
+                    .Select-Catalog
+                        a.Select-Item(href="#" data-value="None")
+                            sapn.StatusOrder-Text Не выбрано
+                        a.Select-Item(href="#" data-value="Moskow")
+                            sapn.StatusOrder-Text Москва
+                        a.Select-Item(href="#" data-value="Balashiha")
+                            sapn.StatusOrder-Text Балашиха
+                        a.Select-Item(href="#" data-value="Zkorpat")
+                            sapn.StatusOrder-Text Зажорпатье
+                //select.quickview__select
                     option.quickview__select-option Москва
                     option.quickview__select-option Санкт-Петербург
                     option.quickview__select-option Караганда

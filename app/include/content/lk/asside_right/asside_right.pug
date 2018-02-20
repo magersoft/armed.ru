@@ -23,15 +23,11 @@ menu.asside_right
                 input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
             p.orders__filter-label Статус заказа
                 .Select#filterStatsu
-                    a.Select-Head#SelectFilter(href="#" data-value="")
-                        span.StatusOrder
-                            span.StatusOrder-Color
-                            sapn.StatusOrder-Text Выберите статус
+                    a.Select-Head#SelectFilter(href="#" data-value="None")
+                        sapn.StatusOrder-Text Выберите статус
                     .Select-Catalog
                         a.Select-Item(href="#" data-value="None")
-                            span.StatusOrder
-                                span.StatusOrder-Color
-                                sapn.StatusOrder-Text Не выбрано
+                            sapn.StatusOrder-Text Не выбрано
                         a.Select-Item(href="#" data-value="Delivered")
                             span.StatusOrder
                                 span.StatusOrder-Color.StatusOrder-Color_Delivered
@@ -88,7 +84,7 @@ menu.asside_right
                     input.orders__filter-sum-start(type="text" name="sumStart" id="sumStart")
                     span.orders__filter-dash &mdash;
                     input.orders__filter-sum-end(type="text" name="sumEnd" id="sumEnd")
-            button.Button.Button_Color_Not.Button_Size_Sm
+            button(type="reset").Button.Button_Color_Not.Button_Size_Sm#FilterReset
                 span.Button-Text.Button-Text_Color_Black
                     span.Button-Icon.Button-Icon_Cancel
                     |Сбросить фильтр

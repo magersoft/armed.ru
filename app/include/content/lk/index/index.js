@@ -116,7 +116,6 @@ slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
 var ProductSlider = $('.LkIndex-ProductWrap');
 ProductSlider.on('init', function (event, slick) {
-    console.log(slick);
     $('.LkIndex-ProductCount').html('1 / ' + (slick.slideCount));
 });
 
@@ -136,7 +135,6 @@ ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide)
 
 var VideoSlider = $('.LkIndex-VideoWrap');
 VideoSlider.on('init', function (event, slick) {
-    console.log(slick);
     $('.LkIndex-VideoCount').html('1 / ' + (slick.slideCount));
 });
 

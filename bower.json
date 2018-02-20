@@ -24,6 +24,10 @@
     "slick-carousel": "^1.8.1",
     "jquery.countdown": "^2.2.0",
     "amcharts3": "^3.21.12",
+<<<<<<< HEAD
+    "moment": "^2.20.1"
+=======
     "lightbox2": "lightbox#^2.10.0"
+>>>>>>> d60ca6964d4248cf1a56fad1cc276967673bad7a
   }
 }
