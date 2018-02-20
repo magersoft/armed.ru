@@ -2,7 +2,6 @@
 
 function CustomSelect (element, select_elements) {
     $(select_elements.children()).click(function () {
-        console.log($(this).attr('data-value'));
         $(element).attr('data-value', $(this).attr('data-value'));
         $(element).html($(this).html());
         $(element).next().css('display', 'none');
@@ -22,6 +21,3 @@ $(function () {
 
 });
 
-$('#filterData').dateRangePicker({
-    language:'ru'
-});
