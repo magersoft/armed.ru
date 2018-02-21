@@ -12,22 +12,6 @@ $(".orders__body").mCustomScrollbar({
     scrollbarPosition: "outside"
 });
 
-$(function () {
-   $('.asside_right').mouseleave(function () {
-       $('#filterPopup').removeClass('orders__filter-popup_active').addClass('orders__filter-popup_hide')
-   });
-});
-
-$("#filterOpen").click(function () {
-    if($('#filterPopup').css('display') == 'none') {
-        $('#filterPopup').removeClass('orders__filter-popup_hide').addClass('orders__filter-popup_active');
-    } else {
-        $('#filterPopup').removeClass('orders__filter-popup_active').addClass('orders__filter-popup_hide');
-    }
-    return false
-});
-
-
 function Position(br, obj) {
     var div = $(obj).next();
     $(div).css('display', 'block');
