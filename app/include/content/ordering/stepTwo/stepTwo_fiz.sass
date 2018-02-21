@@ -22,10 +22,12 @@
   &__Text
     font-size: 1.4em
     color: #4F4F4F
+    margin-bottom: 5px
   &__Form
     display: flex
     justify-content: flex-start
     align-items: flex-end
+    margin-bottom: 15px
     &-Label
       display: flex
       flex-direction: column
@@ -33,11 +35,13 @@
       font-weight: 300
       font-size: 1.4em
       color: #828282
+      margin-bottom: 10px
     &-Input
       background: #FFFFFF
       border: 1px solid #E0E0E0
       width: 375px
       height: 40px
+      margin-top: 5px
       &_active
         border: 1px solid orange
       &:disabled
@@ -45,12 +49,13 @@
       &_sm
         width: 155px
     &-TextArea
-      height: 117px
-      max-height: 117px
-      min-height: 117px
+      height: 205px
+      max-height: 205px
+      min-height: 205px
       width: 100%
       max-width: 100%
       min-width: 100%
+      border: 1px solid #e0e0e0
     &_Comment
       width: 532px
     &_Apartment, &_Reserved
@@ -68,8 +73,14 @@
     align-items: center
     justify-content: space-between
   &__Button
+    &Wrap
+      display: flex
+      justify-content: flex-start
+      margin-bottom: 15px
     &:not(:last-child)
       margin-right: 10px
     &_Cancel
       flex-grow: 2
+  &__Address
+    margin-bottom: 15px
 

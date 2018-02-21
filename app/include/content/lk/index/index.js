@@ -124,8 +124,8 @@ $('.LkIndex-ProductWrap').slick({
     slidesToScroll: 1,
     slidesToShow: 2,
     adaptiveHeight: true,
-    nextArrow: '<i class="slide-right"></i>',
-    prevArrow: '<i class="slide-left"></i>'
+    nextArrow: '<i class="LkIndex-ProductWrap_ArrowLeft"></i>',
+    prevArrow: '<i class="LkIndex-ProductWrap_ArrowRight"></i>'
 });
 
 var ProductCount = ProductSlider.slick("getSlick").slideCount;
@@ -139,8 +139,8 @@ VideoSlider.on('init', function (event, slick) {
 });
 
 $('.LkIndex-VideoWrap').slick({
-    nextArrow: '<i class="slide-right"></i>',
-    prevArrow: '<i class="slide-left"></i>'
+    nextArrow: '<i class="LkIndex-VideoWrap_ArrowLeft"></i>',
+    prevArrow: '<i class="LkIndex-VideoWrap_ArrowRight"></i>'
 });
 
 var VideoCount = VideoSlider.slick("getSlick").slideCount;

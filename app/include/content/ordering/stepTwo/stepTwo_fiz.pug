@@ -5,13 +5,13 @@
         p.StepTwo_fiz__Head Доставка
         p.StepTwo_fiz__Text Выберите способ получения товара:
         .StepTwo_fiz__ButtonWrap
-            button.button.button_sm.StepTwo_fiz__Button
-                span.button__text
-                    span.button__icon.button__icon_user
+
+            button.Button.Button_Color_Red.Button_Size_Lg.StepTwo_fiz__Button
+                span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
                     | Доставка курьером
-            button.button.button_white.button_sm.StepTwo_fiz__Button
-                span.button__text.button__text_white
-                    span.button__icon.button__icon_userRed
+            button.Button.Button_Color_Not.Button_Size_Lg.StepTwo_fiz__Button
+                span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
+                    span.Button-Icon.Button-Icon_UserRed
                     | Самовывоз
 
         p.StepTwo_fiz__Text Выберите адрес доставки из уже имеющихся или добавьте новый:
@@ -65,17 +65,19 @@
 
         .StepTwo_fiz__ButtonAction
             .StepTwo_fiz__Button.StepTwo_fiz__Button_Cancel
-                button.button.button_sm.button_white
-                    span.button__text.button__text_white
-                        span.button__icon.button__icon_user
+                button.Button.Button_Color_Not.Button_Size_Sm
+                    span.Button-Text.Button-Text_Color_Black
+                        span.Button-Icon.Button-Icon_Cancel
                         | Отменить заказ
             .StepTwo_fiz__Button
-                button.button.button_white.button_sm#ButtonStepOne
-                    span.button__text.button__text_white
-                        span.button__icon.button__icon_userRed
+
+                button.Button.Button_Color_Not.Button_Size_Sm#ButtonStepOne
+                    span.Button-Text.Button-Text_Color_Black
+                        span.Button-Icon.Button-Icon_ArrowBlackLeft
                         | Вернуться назад
             .StepTwo_fiz__Button
-                button.button.button_sm#ButtonStepThree
-                    span.button__text
+
+                button.Button.Button_Color_Red.Button_Size_Sm#ButtonStepThree
+                    span.Button-Text.Button-Text_Color_White
                         | Продолжить
-                        span.button__icon.button__icon_userRed
+                        span.Button-Icon.Button-Icon_ArrowWhiteRight
