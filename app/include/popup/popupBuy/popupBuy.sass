@@ -1,0 +1,89 @@
+.quickbuy
+	padding: 0 30px
+	width: 600px
+	height: 400px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-content: flex-start
+	&__info
+		width: 557px
+		margin: 0 auto
+		font:
+			family: 'Roboto'
+			size: 1.6em
+			weight: 300
+			line-height: 1.9em
+		color: #4F4F4F
+		span 
+			font:
+				weight: normal
+	&__form
+		margin: 15px auto
+		height: 300px
+		width: 255px
+		display: flex
+		flex-direction: column
+		button
+			margin: 0 auto
+	&__input
+		height: 35px
+		width: 100%
+		border: 1px solid #e0e0e0
+		border-radius: 1px
+		padding: 10px
+		margin-bottom: 10px
+	&__label
+		margin-bottom: 6px
+		text-align: left
+		font:
+			family: 'Roboto'
+			size: 1.4em
+			weight: 300
+			line-height: 1.6em
+		color: #828282
+	&__check
+		display: flex
+		flex-direction: row
+		span
+			margin:
+				left: 10px
+			font:
+				family: 'Roboto'
+				size: 1.4em
+				weight: 300
+			line-height: 1.6em
+			color: #bdbdbd
+	&__input-group
+		margin-bottom: 20px
+	&__item
+		margin-bottom: 25px
+		display: flex
+		justify-content: space-between
+	&__select
+		color: #BDBDBD
+		font:
+			family: 'Rubik'
+		cursor: pointer
+		background:
+			image: url('../images/quickview/quickview__select.svg')
+			repeat: no-repeat
+			position: right center
+		padding: 10px
+		width: 52px
+		height: 35px
+		border: 1px solid #f2f2f2
+		-moz-appearance: none
+		text-overflow: ''
+		-ms-appearance: none
+		appearance: none!important
+		&-add
+			color: rgb(130, 130, 130)
+		span
+			margin-top: 10px
+			font:
+				family: 'Rubik'
+				size: 1.2em
+				weight: 600
+			line-height: 1.4em
+			color: #4f4f4f

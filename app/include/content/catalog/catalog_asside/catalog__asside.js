@@ -12,7 +12,5 @@ $('.FilterTabs-Label').change(function () {
         } else if (color == 'rgb(130, 130, 130)') {
             $(this).find("span").css('color', 'rgb(189, 189, 189)');
         }
-
-
     });
 

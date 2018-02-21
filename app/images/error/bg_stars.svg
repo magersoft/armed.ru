@@ -1,0 +1,63 @@
+<svg width="973" height="203" viewBox="0 0 973 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(14924 26759)">
+<g id="Group 2">
+<g id="Star">
+<use xlink:href="#path0_fill" transform="translate(-14287 -26749)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path1_fill" transform="translate(-14321 -26640)" fill="#E0E0E0"/>
+</g>
+<g id="Star">
+<use xlink:href="#path1_fill" transform="translate(-14401 -26736)" fill="#B2E5ED"/>
+</g>
+<g id="Star">
+<use xlink:href="#path2_fill" transform="translate(-14532 -26759)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path3_fill" transform="translate(-14696 -26717)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-14837 -26562)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path3_fill" transform="translate(-14841 -26640)" fill="#E0E0E0"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-14906 -26618)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-14924 -26670)" fill="#F2F2F2"/>
+</g>
+<g id="Star">
+<use xlink:href="#path0_fill" transform="translate(-14758 -26726)" fill="#E0E0E0"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-14841 -26753)" fill="#F2F2F2"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-13957 -26587)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path4_fill" transform="translate(-13965 -26700)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path3_fill" transform="translate(-14139 -26665)" fill="#C4C4C4"/>
+</g>
+<g id="Star">
+<use xlink:href="#path0_fill" transform="translate(-14256 -26601)" fill="#B2E5ED"/>
+</g>
+<g id="Star">
+<use xlink:href="#path1_fill" transform="translate(-14210 -26713)" fill="#B2E5ED"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 3.5 0L 4.44045 2.55955L 7 3.5L 4.44045 4.44045L 3.5 7L 2.55955 4.44045L 0 3.5L 2.55955 2.55955L 3.5 0Z"/>
+<path id="path1_fill" d="M 2.5 0L 3.17175 1.82825L 5 2.5L 3.17175 3.17175L 2.5 5L 1.82825 3.17175L 0 2.5L 1.82825 1.82825L 2.5 0Z"/>
+<path id="path2_fill" d="M 1.5 0L 1.90305 1.09695L 3 1.5L 1.90305 1.90305L 1.5 3L 1.09695 1.90305L 0 1.5L 1.09695 1.09695L 1.5 0Z"/>
+<path id="path3_fill" d="M 2 0L 2.5374 1.4626L 4 2L 2.5374 2.5374L 2 4L 1.4626 2.5374L 0 2L 1.4626 1.4626L 2 0Z"/>
+<path id="path4_fill" d="M 3 0L 3.8061 2.1939L 6 3L 3.8061 3.8061L 3 6L 2.1939 3.8061L 0 3L 2.1939 2.1939L 3 0Z"/>
+</defs>
+</svg>
