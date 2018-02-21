@@ -3,14 +3,11 @@
     top: 112px
   to
     top: 59px
-
 @keyframes down
   from
     top: 52px
   to
     top: 112px
-
-
 .asside_down
   animation-name: down
   animation-duration: 0.2s
@@ -21,3 +18,27 @@
   animation-duration: 0.4s
   animation-fill-mode: forwards
   animation-timing-function: linear
+
+
+//Анимация для показа правого меню в личном кабинете
+@keyframes LkAsideShow
+  from
+    width: 50px
+  to
+    width: 235px
+@keyframes LkAsideHide
+  from
+    width: 235px
+  to
+    width: 50px
+.LkAside-Show
+  animation-name: LkAsideShow
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+.LkAside-Hide
+  animation-name: LkAsideHide
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+

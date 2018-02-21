@@ -30,10 +30,6 @@ $(function(){
                     return false;
                 }
             });
-            $(document).on('scroll', function () {
-               console.log('scroll');
-            });
-
             $('.home').addClass('blurBody');
         });
         $(element_close).click(function(){
