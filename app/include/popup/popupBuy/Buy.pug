@@ -1,17 +1,67 @@
-.quickbuy
+section.quickbuy
 	.quickbuy__info
-		p
-			| Чтобы оформить заказ, укажите номер телефона. 
-		p 
-			| В течении 15 минут с вами свяжется менеджер и уточнит детали заказа.
+		p Чтобы заказать&nbsp;
+			span Облучатель-рецикулятор CH211-130 (мет. корп.)
+			|&nbsp;введите Ваши контактные данные
+		p Мы свяжемся с Вами в течение 15 минут (или в указанное Вами время) для уточнения деталей.
 	.quickbuy__prod
-		p 
-			| Наименование товара
-			span 
-				| Кислородный концентратор Amred (Армед) 8F-1
+		
 	.quickbuy__form
-		input
+		label.quickbuy__label(for="name_quick_buy") 
+			| Ваше имя:
+		input.quickbuy__input(id="name_quick_buy" name="name_quick_buy")
+		label.quickbuy__label(for="number_quick_buy")
+			| Телефон:
+		input.quickbuy__input(id="number_quick_buy" name="number_quick_buy")
+		.quickbuy__input-group
+			.quickbuy__check
+				label.control.control-checkbox.quick-check(for="quick_time")
+					input.check__form-input--checkbox(type="checkbox" name="quick_time" id="quick_time")
+					.control_indicator
+				span.check__form-checkbox
+					| Узнать время звонка
+			.quickbuy__item
+				select(disabled).quickbuy__select
+					option 9
+					option 10
+					option 11
+					option 12
+					option 13
+					option 14
+					option 15
+					option 16
+					option 17
+				span
+					| :
+				select(disabled).quickbuy__select
+					option 00
+					option 10
+					option 20
+					option 30
+					option 40
+					option 50
+				span
+					| -
+				select(disabled).quickbuy__select
+					option 9
+					option 10
+					option 11
+					option 12
+					option 13
+					option 14
+					option 15
+					option 16
+					option 17
+				span
+					| :
+				select(disabled).quickbuy__select
+					option 00
+					option 10
+					option 20
+					option 30
+					option 40
+					option 50	
 		button.Button.Button_Color_Red.Button_Size_Sm
 			span.Button-Text.Button-Text_Color_White
-			span.Button-Icon.Button-Icon_Basket
+				span.Button-Icon.Button-Icon_Basket
 				| Отправить
