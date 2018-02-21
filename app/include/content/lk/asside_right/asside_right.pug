@@ -15,19 +15,19 @@ menu.asside_right
         a.asside_right__link#filterOpen(href="lk_service.html")
             | Фильтры
             span.asside_right__icon.asside_right__icon_filters
-        form.orders__filter-popup.orders__filter-popup_hide#filterPopup
+        form.orders__filter-popup.LkFilterHide#filterPopup
             input.orders__filter-search(type="text" name="filterSearch" id="filterSearch" placeholder="Поиск по заказам")
             label.orders__filter-label(for="filterData") Дата заказа
-                input.orders__filter-input(type="text" name="filterData" id="filterData")
+                input.orders__filter-input(type="text" name="filterData" id="filterData" placeholder="Выберите диапазон дат")
             label.orders__filter-label(for="filterNumber") Номер заказа
-                input.orders__filter-input(type="text" name="filterNumber" id="filterNumber")
+                input.orders__filter-input(type="text" name="filterNumber" id="filterNumber" placeholder='Введите номер заказа')
             p.orders__filter-label Статус заказа
-                .Select#filterStatsu
+                .Select.Select_BorderBottom#filterStatsu
                     a.Select-Head#SelectFilter(href="#" data-value="None")
-                        sapn.StatusOrder-Text Выберите статус
+                        sapn.StatusOrder-Text.StatusOrder-Text_Placeholder Выберите статус
                     .Select-Catalog
                         a.Select-Item(href="#" data-value="None")
-                            sapn.StatusOrder-Text Не выбрано
+                            sapn.StatusOrder-Text.StatusOrder-Text_Placeholder Не выбрано
                         a.Select-Item(href="#" data-value="Delivered")
                             span.StatusOrder
                                 span.StatusOrder-Color.StatusOrder-Color_Delivered
@@ -63,12 +63,12 @@ menu.asside_right
 
 
             p.orders__filter-label Заказ на имя
-                .Select#filterName
+                .Select.Select_BorderBottom#filterName
                     a.Select-Head#SelectName(href="#" data-value="None")
-                        sapn.StatusOrder-Text Выберите ФИО
+                        sapn.StatusOrder-Text.StatusOrder-Text_Placeholder Выберите ФИО
                     .Select-Catalog
                         a.Select-Item(href="#" data-value="None")
-                            sapn.StatusOrder-Text Не выбрано
+                            sapn.StatusOrder-Text.StatusOrder-Text_Placeholder Не выбрано
                         a.Select-Item(href="#" data-value="User1")
                             sapn.StatusOrder-Text Июрагим Оглы Муса
                         a.Select-Item(href="#" data-value="User2")

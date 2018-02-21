@@ -19,6 +19,31 @@
   animation-fill-mode: forwards
   animation-timing-function: linear
 
+//Анимация для показа фильтра в правом меню в личном кабинете
+@keyframes LkFilterShow
+  from
+    height: 0
+    opacity: 0
+  to
+    height: 500px
+    opacity: 1
+@keyframes LkFilterHide
+  from
+    height: 500px
+    opacity: 1
+  to
+    height: 0
+    opacity: 0
+.LkFilterShow
+  animation-name: LkFilterShow
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+.LkFilterHide
+  animation-name: LkFilterHide
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
 
 //Анимация для показа правого меню в личном кабинете
 @keyframes LkAsideShow

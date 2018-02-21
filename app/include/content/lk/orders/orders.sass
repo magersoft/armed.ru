@@ -46,11 +46,14 @@
         background:
           position: -144px -32px
     &-popup
+
+      display: flex
       position: absolute
       top: 25px
       right: 6px
       width: 218px
-      height: 500px
+      //height: 500px
+      height: 0
       flex-direction: column
       &_active
         display: flex
@@ -65,7 +68,12 @@
     &-input, &-select
       width: 218px
       height: 30px
-      border: solid 1px rgb(224, 224, 224)
+      border-bottom: solid 1px rgb(224, 224, 224)
+      margin-bottom: 15px
+      color: #4f4f4f
+      font-weight: 300
+      &::placeholder
+        font-weight: 300
     &-search
       height: 20px
       border-bottom: 1px solid rgb(224, 224, 224)
@@ -74,11 +82,19 @@
       background-image: url("images/lk/search__icon.png")
       background-repeat: no-repeat
       background-position: 0 0
+      margin-bottom: 15px
+      margin-top: 10px
+      color: #4f4f4f
+      font-weight: 300
+      &::placeholder
+        font-weight: 300
     &-sum
       &-start, &-end
         width: 89px
         height: 30px
-        border: solid 1px rgb(224, 224, 224)
+        border-bottom: solid 1px rgb(224, 224, 224)
+        color: #4f4f4f
+        font-weight: 300
   &__body
     height: 505px
   &__tabs

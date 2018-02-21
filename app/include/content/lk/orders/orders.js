@@ -14,6 +14,10 @@ $(".orders__body").mCustomScrollbar({
 
 function Position(br, obj) {
     var div = $(obj).next();
+    var scroll_position = $(document).scrollTop();
+    console.log(scroll_position);
+
+
     $(div).css('display', 'block');
     var menu = (div[0].children[0]);
     var top = Math.round(br.top);
@@ -24,8 +28,8 @@ function Position(br, obj) {
             $(link[i]).addClass('orders__menu-link_up');
         }
     }
-
-
+    console.log(scroll_position);
+    $(document).scrollTop(scroll_position);
     $(div[0].children[0]).css({top: top, left: left})
 }
 
@@ -37,12 +41,3 @@ $('.orders__menu-close').click(function () {
     $(this).parent().parent().css('display', 'none');
 });
 
-/*
-$('.ClickSave').on('click', function () {
-    var icon = $(this);
-    console.log(icon);
-    var position = icon.width();
-    console.log(position);
-
-    return false;
-});*/

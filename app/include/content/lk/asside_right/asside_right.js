@@ -6,10 +6,6 @@ if (DateRangeInput) {
     });
 }
 
-
-
-
-
 $('.asside_right').hover(
     function LkShow () {
         $(this).removeClass('LkAside-Hide').addClass('LkAside-Show');
@@ -18,29 +14,17 @@ $('.asside_right').hover(
         var DataRangeDisplay = $('.date-picker-wrapper').css('display');
         if (DataRangeDisplay !='block') {
             $(this).removeClass('LkAside-Show').addClass('LkAside-Hide');
-            $('#filterPopup').removeClass('orders__filter-popup_active').addClass('orders__filter-popup_hide');
+            $('#filterPopup').removeClass('LkFilterShow').addClass('LkFilterHide');
         }
     }
 );
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 $("#filterOpen").click(function () {
-    if($('#filterPopup').css('display') == 'none') {
-        $('#filterPopup').removeClass('orders__filter-popup_hide').addClass('orders__filter-popup_active');
+    if($('#filterPopup').hasClass('LkFilterHide')) {
+        $('#filterPopup').removeClass('LkFilterHide').addClass('LkFilterShow');
     } else {
-        $('#filterPopup').removeClass('orders__filter-popup_active').addClass('orders__filter-popup_hide');
+        $('#filterPopup').removeClass('LkFilterShow').addClass('LkFilterHide');
     }
     return false
 });
@@ -50,19 +34,8 @@ $("#filterOpen").click(function () {
 $('#FilterReset').on('click', function () {
     var selects = $(document).find('.Select');
     for (var i = 0; i < selects.length; i++) {
-        var text = '<span class="StatusOrder-Text">Не выбрано</span>';
+        var text = '<span class="StatusOrder-Text StatusOrder-Text_Placeholder">Не выбрано</span>';
         $('.Select-Head').html(text);
         $('.Select-Head').attr('data-value', 'None');
     }
 });
-
-
-
-$('.date-picker-wrapper').hover(
-    function () {
-        console.log('hover');
-    },
-    function () {
-        console.log('not hover');
-    }
-);
