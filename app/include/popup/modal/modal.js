@@ -21,12 +21,16 @@ $(function(){
 
         $(function(){
             $(element_id).fadeIn(400);
-            $('body').css('overflow', 'hidden');
+            //$('body').css('overflow', 'hidden');
+            $('body').on('wheel', function () {
+                return false;
+            });
             $('.home').addClass('blurBody');
         });
         $(element_close).click(function(){
             $(element_id).fadeOut(400);
-            $('body').css('overflow', 'auto');
+            //$('body').css('overflow', 'auto');
+            $('body').off('wheel');
             $('.home').removeClass('blurBody');
         });
         $(close_class).click(function(){
@@ -35,7 +39,8 @@ $(function(){
             document.cookie =  "city=" + value + "; path=/; expires=" + date.toUTCString();
             console.log("set city " + value);
             $(element_id).fadeOut(400);
-            $('body').css('overflow', 'auto');
+            //$('body').css('overflow', 'auto');
+            $('body').off('wheel');
             $('.home').removeClass('blurBody');
         });
 
