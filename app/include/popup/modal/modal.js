@@ -25,12 +25,22 @@ $(function(){
             $('body').on('wheel', function () {
                 return false;
             });
+            $(document).on('keydown', function (e) {
+                if (e.which == 40 || e.which == 38) {
+                    return false;
+                }
+            });
+            $(document).on('scroll', function () {
+               console.log('scroll');
+            });
+
             $('.home').addClass('blurBody');
         });
         $(element_close).click(function(){
             $(element_id).fadeOut(400);
             //$('body').css('overflow', 'auto');
             $('body').off('wheel');
+            $(document).off('keydown');
             $('.home').removeClass('blurBody');
         });
         $(close_class).click(function(){
@@ -41,6 +51,7 @@ $(function(){
             $(element_id).fadeOut(400);
             //$('body').css('overflow', 'auto');
             $('body').off('wheel');
+            $(document).off('keydown');
             $('.home').removeClass('blurBody');
         });
 
