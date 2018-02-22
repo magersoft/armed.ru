@@ -19,3 +19,29 @@
     letter-spacing: 0.05em
     text-transform: uppercase
     margin-bottom: 30px
+  &__Form
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+    margin-bottom: 15px
+    &-Label
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      font-weight: 300
+      font-size: 1.4em
+      color: #828282
+      margin-bottom: 10px
+    &-Input
+      background: #FFFFFF
+      border: 1px solid #E0E0E0
+      width: 375px
+      height: 40px
+      margin-top: 5px
+      padding: 0 10px
+      &_active
+        border: 1px solid orange
+      &:disabled
+        background-color: #ccc
+      &_sm
+        width: 100px
