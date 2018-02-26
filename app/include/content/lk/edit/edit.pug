@@ -58,7 +58,16 @@
                         input.edit__form-input(type="text" id="ogrn" placeholder="000000000000000")
                     label.edit__form-label(for="bank") Банк:
                         input.edit__form-input(type="text" id="bank" placeholder="Введите название вашего банка")
-                    label.edit__form-label.edit__form-label_logo(for="logo") Логотип:
+                    .edit__form-label Логотип:
+                        .UploadFile-Wrap
+                            input.UploadFile-Path(type="text" disabled placeholder="Выберите файл")
+                            label.UploadFile-Label
+                                input.UploadFile-File#UploadFileButton(type="file")
+                                span.Button.Button_Size_Sm.Button_Color_Red.UploadFile-Button
+                                    span.Button-Text.Button-Text_Color_White
+                                        |Загрузить файл
+
+                    //label.edit__form-label.edit__form-label_logo(for="logo") Логотип:
                         input.edit__form-input.edit__form-input_logo(type="text" id="logo" placeholder="Выберите файл" +
                         " формата " +
                         "jpg или png")
