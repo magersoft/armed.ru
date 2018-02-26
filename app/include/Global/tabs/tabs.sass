@@ -5,14 +5,36 @@
   justify-content: flex-start
   font-family: 'Rubik'
   margin-bottom: 3px
+  &-info
+    justify-content: space-between
+    border-bottom: 1px solid #e0e0e0
+  &-inner
+    justify-content: center
   &__element
     margin-right: 44px
     padding-bottom: 5px
+    &-info
+      text-align: center
+      padding-bottom: 5px
   &__link
     color: $lkLinkColor
     text-decoration: none
     font-size: 1.8em
     display: inline-block
+    &-info
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 2.1em
+      color: $lkLinkColor
+      display: inline-block
+      letter-spacing: 0.05em
+    &-inner
+      text-decoration: none
+      font-size: 1.8em
+      line-height: 2.1em
+      font-family: 'Roboto'
+      font-weight: 300
+      color: $lkLinkColor
   &__active
     border-bottom: 2px solid $GlobalColor
     & > a
