@@ -55,6 +55,8 @@ gulp.task('js', function() {
             'app/libs/waypoints/lib/jquery.waypoints.js',
             'app/libs/moment/moment.js',
             'app/libs/datepicker/jquery.daterangepicker.js',
+            'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js',
+
             'app/include/**/*.js'
     ]) // файлы, которые обрабатываем
         .pipe(concat('main.js')) // склеиваем все JS
