@@ -5,37 +5,43 @@
         p.StepTwo_fiz__Head Доставка
         p.StepTwo_fiz__Text Выберите способ получения товара:
         .StepTwo_fiz__ButtonWrap
-
-            button.Button.Button_Color_Red.Button_Size_Lg.StepTwo_fiz__Button
-                span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+            a.StepOne__Tab-active
                     | Доставка курьером
-            button.Button.Button_Color_Not.Button_Size_Lg.StepTwo_fiz__Button
-                span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
-                    span.Button-Icon.Button-Icon_UserRed
+            a(href="#" data-id="Pick").modalLink.StepOne__Tab
                     | Самовывоз
 
         p.StepTwo_fiz__Text Выберите адрес доставки из уже имеющихся или добавьте новый:
         .StepTwo_fiz__Address
-            label.control.control-checkbox(for="OrderAddress1")
-                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress1")
-                .control_indicator
-                span.check__form-checkbox--information
-                    | Город, Улица, д. 1
-            label.control.control-checkbox(for="OrderAddress2")
-                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress2")
-                .control_indicator
-                span.check__form-checkbox--information
-                    | Город, Улица, д. 2
-            label.control.control-checkbox(for="OrderAddress3")
-                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress3")
-                .control_indicator
-                span.check__form-checkbox--information
-                    | Город, Улица, д. 3
-            label.control.control-checkbox(for="OrderAddressNew")
-                input.check__form-input--checkbox(type="radio" name="company" id="OrderAddressNew")
-                .control_indicator
-                span.check__form-checkbox--information
-                    | Новая компания
+            .StepTwo_fiz__Address-item
+                label.control.control-checkbox(for="OrderAddress1")
+                    input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress1")
+                    .control_indicator
+                    span.check__form-checkbox--orders
+                        | Москва, ул. Пушкина, дом 5
+            .StepTwo_fiz__Address-item
+                label.control.control-checkbox(for="OrderAddress2")
+                    input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress2")
+                    .control_indicator
+                    span.check__form-checkbox--orders
+                        | Воронеж, улица Ленина, дом 7, строение 8
+            .StepTwo_fiz__Address-item
+                label.control.control-checkbox(for="OrderAddress3")
+                    input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress3")
+                    .control_indicator
+                    span.check__form-checkbox--orders
+                        | Краснодар, улица Граничная, дом 890, строение А
+            .StepTwo_fiz__Address-item
+                label.control.control-checkbox(for="OrderAddress4")
+                    input.check__form-input--checkbox(type="radio" name="company" id="OrderAddress4")
+                    .control_indicator
+                    span.check__form-checkbox--orders
+                        | Караганда, улица Хабаровская, дом 52
+            .StepTwo_fiz__Address-item
+                label.control.control-checkbox(for="OrderAddressNew")
+                    input.check__form-input--checkbox(type="radio" name="company" id="OrderAddressNew")
+                    .control_indicator
+                    span.check__form-checkbox--orders
+                        | Новый адрес 
 
 
         form.StepTwo_fiz__Form
@@ -52,15 +58,15 @@
                         input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="text" name="orderFlat"
                         id="orderFlat")
                 .StepTwo_fiz__Form_Reserved
-                    label.StepTwo_fiz__Form-Label(for="orderDate") Удобное время получения заказа:
+                    p.StepTwo_fiz__Form-Label.StepTwo_fiz__Form-Label_text Удобное время получения заказа:
+                    .StepTwo_fiz__Form_Reserved-wrapper
                         input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="date" name="orderDate"
-                        id="orderDate")
-                    label.StepTwo_fiz__Form-Label(for="orderTime") &nbsp
+                            id="orderDate")
                         input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="time" name="orderTime"
-                        id="orderTime")
+                            id="orderTime")
             .StepTwo_fiz__Form_Comment
                 p.StepTwo_fiz__FormText Ваш заказ привезет проверенная нами недорогая курьерская служба в течении 24 ч.
-                label.StepTwo_fiz__Form-Label(for="orderComment") Комментарий:
+                label.StepTwo_fiz__Form-Label.StepTwo_fiz__Form-Label_text(for="orderComment") Комментарий:
                     textarea.StepTwo_fiz__Form-TextArea(name="orderComment" id="orderComment")
 
         .StepTwo_fiz__ButtonAction

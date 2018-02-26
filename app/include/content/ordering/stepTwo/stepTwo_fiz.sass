@@ -36,12 +36,14 @@
       font-size: 1.4em
       color: #828282
       margin-bottom: 10px
+      &_text
+        margin-bottom: 0
     &-Input
       background: #FFFFFF
       border: 1px solid #E0E0E0
-      width: 375px
+      width: 350px
       height: 40px
-      margin-top: 5px
+      margin-top: 10px
       padding: 0 10px
       &_active
         border: 1px solid orange
@@ -50,18 +52,30 @@
       &_sm
         width: 155px
     &-TextArea
-      height: 205px
-      max-height: 205px
-      min-height: 205px
+      margin-top: 10px
+      height: 117px
+      max-height: 117px
+      min-height: 117px
       width: 100%
       max-width: 100%
       min-width: 100%
       border: 1px solid #e0e0e0
+      resize: none
     &_Comment
-      width: 532px
-    &_Apartment, &_Reserved
+      margin-left: 120px
+      width: 100%
+    &_Apartment
       display: flex
       justify-content: space-between
+    &_Reserved
+      display: flex
+      flex-direction: column
+      &-wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        align-content: flex-start
     &_Location
       margin-right: 10px
   &__FormText
@@ -83,5 +97,9 @@
     &_Cancel
       flex-grow: 2
   &__Address
-    margin-bottom: 15px
+    margin:
+      bottom: 15px
+      top: 9px
+    &-item
+      margin-bottom: 4px
 

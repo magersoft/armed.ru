@@ -39,3 +39,7 @@ $('#FilterReset').on('click', function () {
         $('.Select-Head').attr('data-value', 'None');
     }
 });
+
+if(window.location.toString().indexOf('lk_orders.html')>0){
+    $('.orders-filtr').removeClass('orders-filtr');
+};

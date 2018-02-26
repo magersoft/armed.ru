@@ -63,6 +63,8 @@
         background: #f2f2f2
       &:not(:last-child)
         margin-bottom: 15px
+      &--checkbox:checked ~ .check__form-checkbox--orders
+        color: #4f4f4f
     &-checkbox
       display: flex
       flex-direction: row
@@ -73,7 +75,14 @@
           weight: 300
         color: #4f4f4f
         margin-left: 10px
-
+      &--orders
+        position: relative
+        top: -2px
+        font:
+          size: 14px
+          weight: 400
+        color: rgb(130, 130, 130)
+        margin-left: 6px
   &__social
     margin-top: 15px
     margin-bottom: 15px

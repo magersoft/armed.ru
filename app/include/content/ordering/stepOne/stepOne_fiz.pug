@@ -4,15 +4,11 @@
     .StepOne__Head Контактные данные
     .StepOne__Text Вы заказываете как:
 
-    .StepOne__ButtonWrap
-        a.Button.Button_Color_Red.Button_Size_Lg.StepOne__Button(href="#")
-            span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
-                span.Button-Icon.Button-Icon_User
-                | Физическое лицо
-        a.Button.Button_Color_Not.Button_Size_Lg.StepOne__Button(href="orderingStepOneUr.html")
-            span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
-                span.Button-Icon.Button-Icon_UserRed
-                | Юридическое лицо
+    .StepOne__TabWrap
+        a.StepOne__Tab-active
+            | Физическое лицо
+        a.StepOne__Tab(href="orderingStepOneUr.html")
+            | Юридическое лицо
 
     .StepOne__FormWrap
         form.StepOne__Form

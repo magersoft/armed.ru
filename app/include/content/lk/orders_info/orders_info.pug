@@ -14,7 +14,7 @@
                 | Дублировать заказ
             a.orders__filter-link(href="#")
                 span.orders__filter-icon.orders__filter-icon_create
-                | Новый заказ
+                | Новый заказ 
     .orders__tabs
         ul.orders__tabs-list.tabs
             li.order__tabs-element.tabs__element
@@ -107,7 +107,7 @@
                             | Самовывоз
                     label.orders-info__label(for="ordercomment")
                         | Комментарий:
-                    textarea.orders-info__textarea(id="ordercomment")
+                    textarea.orders-info__textarea(id="ordercomment" maxlength="220")
                         | Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона.
                 .orders-info__score
                     .orders-info__title
@@ -196,17 +196,18 @@
                                 | Цена
                             th
                                 | Сумма
-                        tr
-                            td
-                                | 15682564822
-                            td
-                                | Кресло-кровать медицинская многофункциональная трансформирующаяся для родовспоможения "Armed": SC-A
-                            td 
-                                | 1
-                            td
-                                | 1 200 330 000 000 ₽
-                            td
-                                | 1 200 330 000 000 ₽
+                        - for (var i = 0; i < 20; i++)
+                            tr
+                                td
+                                    | 15682564822
+                                td
+                                    | Кресло-кровать медицинская многофункциональная трансформирующаяся для родовспоможения "Armed": SC-A
+                                td 
+                                    | 1
+                                td
+                                    | 1 200 330 000 000 ₽
+                                td
+                                    | 1 200 330 000 000 ₽
                 .orders-status__footer
                     .orders-status__footer-buttons
                         a(href="lk_ordersChange.html").Button.Button_Color_Red.Button_Size_Lg
