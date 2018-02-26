@@ -3,13 +3,18 @@ function CustomSelect (element, select_elements) {
         $(element).attr('data-value', $(this).attr('data-value'));
         $(element).html($(this).html());
         $(element).next().css('display', 'none');
-        return;
+        return false;
     });
 
 }
 
 $(function () {
     $('.Select-Head').on('click', function () {
+        var selectsWindow = $(document).find('.Select-Catalog');
+        console.log(selectsWindow);
+        for (var i = 0; i < selectsWindow.length; i++) {
+            $('.Select-Catalog').css('display', 'none');
+        }
         $(this).next().css('display', 'flex');
         var ob = $(this);
         var select = $(this).next();

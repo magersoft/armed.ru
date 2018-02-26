@@ -11,3 +11,29 @@ $('#ReturnStepOne_Ur').click(function () {
 $('#StepThree_Ur').click(function () {
     document.location.href = "orderingStepThreeUr.html"
 });
+
+var DateOrderInput = document.getElementById('orderDate');
+
+if (DateOrderInput) {
+    var NowDate = new Date;
+    console.log(NowDate);
+    $('#orderDate').dateRangePicker({
+        language: 'ru',
+        singleDate: true,
+        autoClose: true,
+        singleMonth: true,
+        format: 'DD/MM/YYYY',
+        startDate: NowDate
+    });
+}
+
+var DateTimeInput = document.getElementById('orderTime');
+
+if (DateTimeInput) {
+    $.mask.definitions['H']='[012]';
+    $.mask.definitions['h']='[01234]';
+    $.mask.definitions['M']='[012345]';
+    $.mask.definitions['m']='[0123456789]';
+
+    $('#orderTime').mask("Hh:Mm");
+}
