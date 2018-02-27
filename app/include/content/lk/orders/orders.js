@@ -14,8 +14,7 @@ $(".orders__body").mCustomScrollbar({
 
 function Position(br, obj) {
     var div = $(obj).next();
-    var scroll_position = $(document).scrollTop();
-    console.log(scroll_position);
+    var scroll_position = $(window).scrollTop();
 
 
     $(div).css('display', 'block');
@@ -29,8 +28,13 @@ function Position(br, obj) {
         }
     }
     console.log(scroll_position);
-    $(document).scrollTop(scroll_position);
-    $(div[0].children[0]).css({top: top, left: left})
+    $(window).scrollTop( scroll_position );
+    console.log($(window).scrollTop());
+    //console.log(top);
+    var position_top = top + scroll_position;
+    //console.log(position_top);
+    $(div[0].children[0]).css({top: position_top, left: left});
+    //console.log($(div[0].children[0]).css('top'));
 }
 
 $('.orders__menu-close').click(function () {
