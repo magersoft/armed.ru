@@ -1,0 +1,83 @@
+.services
+	padding: 30px 0
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	width: 100%
+	&__contant
+		top: 0
+		position: absolute
+		display: flex
+		flex-direction: column
+		width: 100%
+		height: 100%
+	img
+		width: 65px
+		height: 65px
+		margin: 80px auto
+	p 
+		font:
+			family: 'Rubik'
+			size: 2em
+			weight: 500
+		letter-spacing: 0.1em
+		text-align: center
+		color: #fff
+		text-transform: uppercase
+	&__inner
+		border-radius: 5px
+		cursor: pointer
+		max-width: 255px
+		max-height: 300px
+		opacity: 1
+		transition: 1s
+		overflow: hidden
+		position: relative
+		&:hover
+			.services__item
+				transform: scale(1.1)
+				transition: 1s
+			// .services__item:before
+			// 	opacity: 1
+	&__item
+		transition: 1s
+		width: 255px
+		height: 300px
+		background:
+			repeat: no-repeat
+			size: cover
+		&:before
+			opacity: 0.5
+			content: ''
+			height: 100%
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(92, 78, 72, 0.8)
+		&-us
+			background:
+				image: url('images/main/services/1-bg.png')
+		&-service
+			background:
+				image: url('images/main/services/2-bg.png')
+		&-education
+			background:
+				image: url('images/main/services/3-bg.png')
+		&-franchise
+			background:
+				image: url('images/main/services/4-bg.png')
+.callback
+	border:
+		top: 1px solid #E0E0E0
+		bottom: 1px solid #E0E0E0
+	padding: 30px 0
+	p
+		font:
+			family: 'Rubik'
+			weight: 300
+			size: 3em 
+		letter-spacing: 0.05em
+		text-align: center
+		color: #4f4f4f
+		text-transform: uppercase
