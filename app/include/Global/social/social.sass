@@ -17,7 +17,7 @@
       background-image: url('images/SocialSprite.svg')
       background-repeat: no-repeat
     &_md
-      background-image: url('images/Copyright/social__sprite.svg')
+      background-image: url('images/SocialSprite.svg')
       background-repeat: no-repeat
 
 @each $soc, $position in (vk, 0px),(fb, -44px),(od, -88px),(in, -132px),(tw, -176px),(tg, -220px),(you, -264px),(g, -308px),(y, -352px),(s, -396px),(wh, -440px),(v, -484px)
@@ -30,11 +30,17 @@
 
 @each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
   .social__element_#{$soc}-md
-    background-position: 0 $position
+    background-position: -132px $position
 @each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
   .social__element_#{$soc}-md:hover
-    background-position: -33px $position
+    background-position: -165px $position
 
+@each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
+  .social__element_color_#{$soc}-md
+    background-position: -165px $position
+@each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)
+  .social__element_color_#{$soc}-md:hover
+    background-position: -198px $position
 
 
 
