@@ -1,17 +1,17 @@
 .StepThree_fiz
   &__Wrap
-    width: 600px
+    width: 640px
     margin: 0 auto
     margin-bottom: 15px
   &__Content
     padding-bottom: 60px
   &__StatusBar
     width: 100%
-    height: 100px
+    height: 102px
     background-image: url("images/Ordering/StatusBar__StepThree_fiz.png")
     background-position: center center
     background-repeat: no-repeat
-    margin-bottom: 40px
+    margin-bottom: 30px
   &__Head
     font-family: 'Rubik'
     font-weight: 500
@@ -24,9 +24,14 @@
     font-size: 1.4em
     color: #4F4F4F
     text-align: center
+    margin-bottom: 20px
+    &-info
+      color: #828282
+      margin-bottom: 120px
   &__PaymentMethod
     display: flex
     justify-content: space-around
+    margin-bottom: 50px
     &-Method
       display: flex
       flex-direction: column
@@ -40,12 +45,17 @@
       display: none
       &:checked ~ label
         background-position-x: -164px
+      &:checked ~ .StepThree_fiz__PaymentMethod-Text
+        color: #7dc471
+
 
     &-Label
+      margin-bottom: 10px
       width: 164px
       height: 100px
       background-image: url("images/Ordering/PaymentMethod.png")
       background-repeat: no-repeat
+      cursor: pointer
       &_Purse
         background-position: 0 0
       &_Card
@@ -53,5 +63,7 @@
       &_CardSame
         background-position: 0 -200px
     &-Text
+      cursor: pointer
+      width: 146px
       font-size: 1.4em
       color: #828282

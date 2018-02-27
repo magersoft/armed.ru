@@ -6,7 +6,7 @@
         p.StepThree_fiz__Text Выберите удобный для вас способ оплаты:
         .StepThree_fiz__PaymentMethod
             .StepThree_fiz__PaymentMethod-Method
-                input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodPurse")
+                input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodPurse" checked)
                 label.StepThree_fiz__PaymentMethod-Label.StepThree_fiz__PaymentMethod-Label_Purse(for="MethodPurse")
                 p.StepThree_fiz__PaymentMethod-Text Наличный расчет
             .StepThree_fiz__PaymentMethod-Method
@@ -17,7 +17,7 @@
                 input.StepThree_fiz__PaymentMethod-Input(type="radio" name="Method" id="MethodCardSame")
                 label.StepThree_fiz__PaymentMethod-Label.StepThree_fiz__PaymentMethod-Label_CardSame(for="MethodCardSame")
                 p.StepThree_fiz__PaymentMethod-Text Банковкской катрой при получении
-        p.StepThree_fiz__Text
+        p.StepThree_fiz__Text.StepThree_fiz__Text-info
             | Мы свяжимся с вами в течении 10 минут и сообщим стоимость и сроки доставки* с 9:00 - 22:00 по МСК
             | Доставка в вашем регионе оплачивается при получении.
     .StepTwo_fiz__ButtonAction
