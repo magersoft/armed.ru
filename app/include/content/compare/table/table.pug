@@ -25,7 +25,11 @@
                                 span.compare__count 10
                                 span.compare__bkt &nbsp)&nbsp
                     .table__button-clear
-                        a(href="#")
+                        button.Button.Button_Color_Not.Button_Size_Lg.Table-Button
+                            span.Button-Text.Button-Text_Color_Black
+                                span.Button-Icon.Button-Icon_Cancel
+                                | Очистить сравнение
+                        //a(href="#")
                             span.compare-clear
                             | Очистить сравнение
                     .table__inner.row#CompareTab1
@@ -35,19 +39,19 @@
                                     th.table-head__th-first
                                         input.catalog__asside-toggleInput.toggle__input(type="checkbox" name="toggle1" id="compare")
                                         label.catalog__asside-toggleLabel.toggle__label.toggle__label_table.toggle__label_table-compare(for="compare" data-id="Только различающиеся")
-                                tr
+                                tr.TrHover(data-id="first")
                                     th.table-head__th-another
                                         p
                                             | Ширина
-                                tr
+                                tr.TrHover(data-id="second")
                                     th.table-head__th-another
                                         p
                                             | Высота профиля
-                                tr
+                                tr.TrHover(data-id="third")
                                     th.table-head__th-another
                                         p
                                             | Производитель
-                                tr
+                                tr.TrHover(data-id="four")
                                     th.table-head__th-another
                                         p
                                             | Гарантия
@@ -77,20 +81,20 @@
                                                     .table-icon
                                                         a(src="#" data-id="Buy").modalLink.table-icon__buy
                                                         a(src="#").table-icon__like
-                                            tr
+                                            tr.TrHover(data-id="first")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__success
                                                         | 560х280х480 мм
-                                            tr
+                                            tr.TrHover(data-id="second")
                                                 td.table-prod__td-another
                                                     img(src="../images/compare/stars.png")
                                                     p
                                                         | (3 оценки)
-                                            tr
+                                            tr.TrHover(data-id="third")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__fail
                                                         | 0-3л/мин
-                                            tr
+                                            tr.TrHover(data-id="four")
                                                 td.table-prod__td-another
                                                     p
                                                         | 10 лет
