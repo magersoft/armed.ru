@@ -13,7 +13,8 @@
     &_lg
       width: 44px
       height: 44px
-      background-image: url('images/Global/social__sprite_lg.svg')
+      //background-image: url('images/Global/social__sprite_lg.svg')
+      background-image: url('images/SocialSprite.svg')
       background-repeat: no-repeat
     &_md
       background-image: url('images/Copyright/social__sprite.svg')
@@ -21,10 +22,10 @@
 
 @each $soc, $position in (vk, 0px),(fb, -44px),(od, -88px),(in, -132px),(tw, -176px),(tg, -220px),(you, -264px),(g, -308px),(y, -352px),(s, -396px),(wh, -440px),(v, -484px)
   .social__element_#{$soc}-lg
-    background-position: 0 $position
+    background-position: -44px $position
 @each $soc, $position in (vk, 0px),(fb, -44px),(od, -88px),(in, -132px),(tw, -176px),(tg, -220px),(you, -264px),(g, -308px),(y, -352px),(s, -396px),(wh, -440px),(v, -484px)
   .social__element_#{$soc}-lg:hover
-    background-position: -44px $position
+    background-position: -88px $position
 
 
 @each $soc, $position in (vk, 0px),(fb, -33px),(od, -66px),(in, -99px),(tw, -132px),(tg, -165px),(you, -198px),(g, -231px),(y, -264px),(s, -297px),(wh, -330px),(v, -363px)

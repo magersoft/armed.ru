@@ -163,14 +163,17 @@
       @extend .cart__table-price
       &_icon
         position: absolute
-        width: 22px
-        height: 22px
-        background: url(images/Icon/cart_product-delete__icon.svg) center no-repeat;
-        background-position: 0 0
-        background-size: cover
+        width: 20px
+        height: 20px
+        //background: url(images/Icon/cart_product-delete__icon.svg) center no-repeat;
+        //background-position: 0 0
+        background-image: url('images/sprite.png')
+        background-position: -50px -330px
+        background-repeat: no-repeat
+        //background-size: cover
         cursor: pointer
         &:hover
-          background-position: 0 -22px
+          background-position: -70px -330px
     &-footer
       height: auto
       box-shadow: 0px -5px 6px rgba(0, 0, 0, 0.02)
