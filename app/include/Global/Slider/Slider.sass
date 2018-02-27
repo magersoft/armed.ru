@@ -1,0 +1,38 @@
+.Slider
+  position: absolute
+  &-ArrowRight, &-ArrowLeft
+    position: absolute
+    top: 50%
+    cursor: pointer
+    background-color: #000
+    &:after
+      position: absolute
+      content: ''
+      border: 15px solid transparent
+
+
+  &-ArrowRight
+    &:after
+      border-left: 15px solid #bdbdbd
+    &:hover:after
+      border-left: 15px solid $GlobalColor
+      transition: 1s
+    &_LkVideo
+      right: -60px
+    &_LkProduct
+      right: -110px
+    &_LkPromo
+      right: 0
+
+  &-ArrowLeft
+    &:after
+      border-right: 15px solid #bdbdbd;
+    &:hover:after
+      border-right: 15px solid $GlobalColor
+      transition: 1s
+    &_LkVideo
+      left: -90px
+    &_LkProduct
+      left: -130px
+    &_LkPromo
+      left: 0

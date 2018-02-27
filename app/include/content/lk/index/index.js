@@ -93,8 +93,8 @@ slider.slick({
     infinite: true,
     slidesToShow: 1,
     variableWidth: false,
-    nextArrow: '<i class="slide-right"></i>',
-    prevArrow: '<i class="slide-left"></i>'
+    nextArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_LkPromo"></i>',
+    prevArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_LkPromo"></i>'
 });
 
 var count = slider.slick("getSlick").slideCount;
@@ -113,8 +113,8 @@ $('.LkIndex-ProductWrap').slick({
     slidesToScroll: 1,
     slidesToShow: 2,
     adaptiveHeight: true,
-    nextArrow: '<i class="LkIndex-ProductWrap_ArrowLeft"></i>',
-    prevArrow: '<i class="LkIndex-ProductWrap_ArrowRight"></i>'
+    nextArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_LkProduct"></i>',
+    prevArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_LkProduct"></i>'
 });
 
 ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -129,8 +129,8 @@ VideoSlider.on('init', function (event, slick) {
 });
 
 $('.LkIndex-VideoWrap').slick({
-    nextArrow: '<i class="LkIndex-VideoWrap_ArrowLeft"></i>',
-    prevArrow: '<i class="LkIndex-VideoWrap_ArrowRight"></i>'
+    nextArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_LkVideo"></i>',
+    prevArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_LkVideo"></i>'
 });
 
 VideoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
