@@ -117,10 +117,11 @@ $('.LkIndex-ProductWrap').slick({
     prevArrow: '<i class="LkIndex-ProductWrap_ArrowRight"></i>'
 });
 
-var ProductCount = ProductSlider.slick("getSlick").slideCount;
 ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    $('.LkIndex-ProductCount').html(nextSlide + 1  + ' / ' + ProductCount);
+    $('.LkIndex-ProductCount').html(nextSlide + 1  + ' / ' + (slick.slideCount));
 });
+
+
 
 var VideoSlider = $('.LkIndex-VideoWrap');
 VideoSlider.on('init', function (event, slick) {
@@ -132,9 +133,9 @@ $('.LkIndex-VideoWrap').slick({
     prevArrow: '<i class="LkIndex-VideoWrap_ArrowRight"></i>'
 });
 
-var VideoCount = VideoSlider.slick("getSlick").slideCount;
 VideoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    $('.LkIndex-videoCount').html(nextSlide + 1  + ' / ' + VideoCount);
+    console.log('change');
+    $('.LkIndex-VideoCount').html(nextSlide + 1  + ' / ' + (slick.slideCount));
 });
 
 
