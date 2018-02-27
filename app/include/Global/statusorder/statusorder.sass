@@ -10,6 +10,26 @@
     &_ShipmentProhibited
       color: rgba(202, 32, 50, 1)
       text-decoration: underline
+      cursor: help
+      position: relative
+      &::after
+        background: rgba(0, 0, 0, 0.8)
+        border-radius: 8px 8px 8px 0
+        //box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+        color: #FFF
+        content: attr(data-tooltip) /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+        top: -30px
+        left: 0
+        opacity: 0 /* Наш элемент прозрачен... */
+        padding: 3px 7px
+        position: absolute
+        width: 150px
+        height: auto
+        visibility: hidden /* ...и скрыт. */
+        transition: all 0.4s ease-in-out /* Добавить плавности по вкусу */
+      &:hover::after
+        opacity: 1 /* Показываем его */
+        visibility: visible
     &_Placeholder
       color: #cccccc
       font-weight: 300
