@@ -2,10 +2,10 @@ $(".Client-Organization").mCustomScrollbar({
     theme: "client",
     scrollbarPosition: "outside"
 });
-$(".Mail-List").mCustomScrollbar({
+/*$(".Mail-List").mCustomScrollbar({
     theme: "client",
     scrollbarPosition: "outside"
-});
+});*/
 $(".Notification-List").mCustomScrollbar({
     theme: "client",
     scrollbarPosition: "outside"
