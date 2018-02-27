@@ -22,6 +22,12 @@
   &__active
     &-link
       border-bottom: 2px solid $GlobalColor
+      .auth__list-link
+        color: $linkAuthColor
+      .auth__icon_mail
+        background-position: -136px -270px
+      .auth__icon_phone
+        background-position: -136px -286px
   &__list
     &-tabs
       display: flex
@@ -37,7 +43,8 @@
       &:not(:last-child)
         margin-right: 30px
     &-link
-      color: $linkAuthColor
+      //color: $linkAuthColor
+      color: #cccccc
       text-decoration: none
       display: flex
       align-items: center
@@ -86,3 +93,14 @@
     padding-bottom: 10px
   &__button
     margin: 20px auto 0 auto
+  &__icon
+    background-image: url("images/sprite.png")
+    background-repeat: no-repeat
+    width: 16px
+    height: 16px
+    &_mail
+      background-position: -120px -270px
+      margin-right: 5px
+    &_phone
+      background-position: -120px -286px
+      margin-right: 2px
