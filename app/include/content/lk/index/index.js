@@ -140,3 +140,8 @@ VideoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
 
 
 //TODO Добавить внутренний скрол, для действующих акций
+
+$(".LkIndex-ActionList").mCustomScrollbar({
+    theme:"LkAction",
+    scrollbarPosition: "outside"
+});
