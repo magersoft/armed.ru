@@ -23,7 +23,7 @@ $('#button__phone').on('click', function(){
 });
 
 $('#enterySite').on('click', function () {
-    var confirmMail = validMail($('#mail').prop('value'));
+    var confirmMail = validMail($('#mail').prop('value'), $('#mail'));
     var confirmPass = validPass($('#pass').prop('value'));
     if ((confirmPass == 1) && (confirmMail == 1)) {
         $("#mail").notify(
@@ -76,11 +76,12 @@ function validPass (value) {
     return err;
 }
 
-function validMail (value) {
+function validMail (value, object) {
     var err = 0;
+    console.log(value);
     var regExp = new RegExp(/.+@.+\..+/i);
     if (!value) {
-        $("#mail").notify(
+        $(object).notify(
             "Введите E-mail адрес",
             {
                 position:"top left",
@@ -92,7 +93,7 @@ function validMail (value) {
         return err;
     } else {
         if (!value.match(regExp)) {
-            $("#mail").notify(
+            $(object).notify(
                 "Введенный адрес не может существовать",
                 {
                     position: "top left",
@@ -104,7 +105,7 @@ function validMail (value) {
             return err;
         } else {
             if (value != 'armed@armed.ru') {
-                $("#mail").notify(
+                $(object).notify(
                     "Введенный адрес не зарегистрирован",
                     {
                         position: "top left",
