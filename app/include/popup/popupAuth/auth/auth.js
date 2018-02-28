@@ -8,7 +8,7 @@ $( function() {
 } );
 
 $('#button__phone').on('click', function(){
-    var errorMessage =validPhone();
+    var errorMessage =validPhone($('#phone').prop('value'), $('#phone'));
 
     if (!errorMessage) {
         var content = $('.modal__change').next();
@@ -122,13 +122,14 @@ function validMail (value, object) {
     return err;
 }
 
-function validPhone () {
+function validPhone (value, obj) {
+    console.log(value);
     var err = 0;
-    var phoneNunber = $('#phone').val(); // Получаем введенные данные
+    //var phoneNunber = $('#phone').val(); // Получаем введенные данные
     var regExp = new RegExp(/[+)(-]|\s/g);
-    var validNumber = phoneNunber.replace(regExp,''); // Удаляем все ненужные символы из номера
-    if (!phoneNunber) { //Проверяем на не пустой или не полностью введенный номер
-        $("#phone").notify(
+    var validNumber = value.replace(regExp,''); // Удаляем все ненужные символы из номера
+    if (!value) { //Проверяем на не пустой или не полностью введенный номер
+        $(obj).notify(
             "Введите номер телефона",
             {
                 position:"top left",
@@ -142,7 +143,7 @@ function validPhone () {
     }
     //TODO Должна встать передача данных на бэк с проверкой ответа сервера методом ajax
     if (!(validNumber == 71234567890)) { // Проверка на наличие в базе
-        $("#phone").notify(
+        $(obj).notify(
             "Данный номер не зарегистрирован",
             {
                 position:"top left",
