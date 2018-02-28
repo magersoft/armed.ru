@@ -3,6 +3,8 @@ html(lang="ru")
     include ../include/Global/head/head
     body
         main.home
+            include ../include/Global/preloader/preload
+            include ../include/content/main/header/header
             section 
                 include ../include/content/main/banner/banner
             section
@@ -12,7 +14,10 @@ html(lang="ru")
             section
                 include ../include/content/main/shops/shops
             section
-                include ../include/content/main/video/video    
+                include ../include/content/main/contacts/contacts
+            section
+                include ../include/content/main/video/video
+        include ../include/footer/footer
 
 
         //- Весь вонтент до данного коментария

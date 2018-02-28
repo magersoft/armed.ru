@@ -1,5 +1,5 @@
 
-$('.banner__inner').click(function(){
-	$('.banner__inner').removeClass('banner-display');
+$('.banner__wrapper').click(function(){
+	$('.banner__wrapper').removeClass('banner-display');
 	$(this).toggleClass('banner-display');
 });

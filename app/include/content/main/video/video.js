@@ -6,10 +6,11 @@ $('.clips__top').slick({
   asNavFor: '.clips__bottom'
 });
 $('.clips__bottom').slick({
-  slidesToShow: 1,
+  slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.clips__top',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
+  dots: false,
+  focusOnSelect: true,
+  nextArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_MainVideo"></i>',
+  prevArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_MainVideo"></i>'
 });
