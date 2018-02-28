@@ -12,7 +12,6 @@ $('#button__phone').on('click', function(){
 
     if (!errorMessage) {
         var content = $('.modal__change').next();
-        console.log(content);
         $('.modal__change').removeClass('modal_view').addClass('modal_hide');
         $('.code').removeClass('code_hide').addClass('code_view');
         $('#return').on('click', function () {
