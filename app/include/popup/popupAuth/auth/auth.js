@@ -78,7 +78,6 @@ function validPass (value) {
 
 function validMail (value, object) {
     var err = 0;
-    console.log(value);
     var regExp = new RegExp(/.+@.+\..+/i);
     if (!value) {
         $(object).notify(

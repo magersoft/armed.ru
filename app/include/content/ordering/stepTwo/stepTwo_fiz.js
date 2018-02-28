@@ -61,7 +61,7 @@ function validText (value, obj) {
 
 function validNumber (value, obj) {
     var err = 0;
-    var reg = new RegExp(/^\w/);
+    var reg = new RegExp(/^[0-9]/);
     if (!value.match(reg)) {
         $(obj).notify(
             "Номер может начинаться только с цифры",
