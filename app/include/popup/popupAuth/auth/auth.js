@@ -22,8 +22,103 @@ $('#button__phone').on('click', function(){
     return false;
 });
 
+$('#enterySite').on('click', function () {
+    var confirmMail = validMail($('#mail').prop('value'));
+    var confirmPass = validPass($('#pass').prop('value'));
+    if ((confirmPass == 1) && (confirmMail == 1)) {
+        $("#mail").notify(
+            "Через секунду вы будете перенаправлены на сайт",
+            {
+                position:"top left",
+                style: 'my',
+                autoHide: true,
+                autoHideDelay: 3000
+            }
+        );
+        setTimeout(clouseCodModal, 1000);
+    }
+    return false;
+});
+
+
 if (document.getElementById('phone')) {
     $('#phone').mask("+7 (999) 999 99-99");
+}
+
+function validPass (value) {
+    var err = 0;
+    if (!value) {
+        $("#pass").notify(
+            "Пароль не может быть пустым",
+            {
+                position:"top left",
+                style: 'phoneAlertEmpty',
+                autoHide: true,
+                autoHideDelay: 3000
+            }
+        );
+        return err;
+    } else {
+        if (value != "123") {
+            $("#pass").notify(
+                "Пароль не верен",
+                {
+                    position:"top left",
+                    style: 'phoneAlertEmpty',
+                    autoHide: true,
+                    autoHideDelay: 3000
+                }
+            );
+            return err;
+        }
+    }
+    err = 1;
+    return err;
+}
+
+function validMail (value) {
+    var err = 0;
+    var regExp = new RegExp(/.+@.+\..+/i);
+    if (!value) {
+        $("#mail").notify(
+            "Введите E-mail адрес",
+            {
+                position:"top left",
+                style: 'phoneAlertEmpty',
+                autoHide: true,
+                autoHideDelay: 3000
+            }
+        );
+        return err;
+    } else {
+        if (!value.match(regExp)) {
+            $("#mail").notify(
+                "Введенный адрес не может существовать",
+                {
+                    position: "top left",
+                    style: 'phoneAlertEmpty',
+                    autoHide: true,
+                    autoHideDelay: 3000
+                }
+            );
+            return err;
+        } else {
+            if (value != 'armed@armed.ru') {
+                $("#mail").notify(
+                    "Введенный адрес не зарегистрирован",
+                    {
+                        position: "top left",
+                        style: 'phoneAlertEmpty',
+                        autoHide: true,
+                        autoHideDelay: 3000
+                    }
+                );
+                return err;
+            }
+        }
+    }
+    err = 1;
+    return err;
 }
 
 function validPhone () {
