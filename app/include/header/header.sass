@@ -57,6 +57,20 @@
   align-items: center
   height: 60px
   padding: 0 30px
+  &__center-logo
+    cursor: pointer
+    flex-grow: 5
+    width: 400px
+    background: url(images/Header/logo.png) center no-repeat
+    height: 60px
+    margin: 0 auto
+  &--main
+    justify-content: center
+    display: flex
+    background: rgba(255,255,255,0.8)
+    position: fixed
+    width: 100%
+    z-index: 7000
   &__fix-logo
     display: none
     position: absolute
@@ -84,6 +98,11 @@
       padding: 20px 30px
       cursor: pointer
       &--main
+        text-decoration: none
+        font-weight: 400
+        font-size: 1.6em
+        letter-spacing: 0.05em
+        cursor: pointer
         padding: 20px 16px
         color: #4f4f4f
       &--menu

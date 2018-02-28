@@ -1,10 +1,11 @@
-.primary-menu
-    a(href="/").primary-menu__fix-logo
+.primary-menu.primary-menu--main
     .primary-menu__catalog
         .primary-menu__catalog_wrapper.js-dropdown-toggler
-            .primary-menu__catalog-link.primary-menu__catalog-link--main
+            .primary-menu__catalog-link--main
                 span.burger-button--main
                 | Каталог
+    .primary-menu__center-logo
+        a(href="#")
     .primary-menu__widgets
         .primary-menu__phone
             span.primary-menu__phone-item.primary-menu__phone-item--main
@@ -40,6 +41,8 @@
             .primary-menu__catalog_wrapper--menu
                 .primary-menu__catalog-link.primary-menu__catalog-link--menu
                     | Меню
+
+
 .main-catalog.main-catalog--left
     .main-catalog__wrapper.main-catalog__wrapper--left
         .main-catalog__close.main-catalog__close--left
