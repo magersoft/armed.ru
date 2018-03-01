@@ -102,6 +102,9 @@ function validateKpp(kpp, ob) {
 
 function validateKs(ks, bik, bikValid, ob) {
     var result = false;
+    if (!bikValid) {
+        notification(ob, 'orderAlert', 'Для проверки К/С необходимо заполнить БИК');
+    }
     if (bikValid) {
         if (typeof ks === 'number') {
             ks = ks.toString();
@@ -109,12 +112,8 @@ function validateKs(ks, bik, bikValid, ob) {
             ks = '';
         }
         if (/[^0-9]/.test(ks)) {
-            //error.code = 2;
-            //error.message = 'К/С может состоять только из цифр';
             notification(ob, 'orderAlert', 'К/С может состоять только из цифр');
         } else if (ks.length !== 20) {
-            //error.code = 3;
-            //error.message = 'К/С может состоять только из 20 цифр';
             notification(ob, 'orderAlert', 'К/С может состоять только из 20 цифр');
         } else {
             var bikKs = '0' + bik.toString().slice(4, 6) + ks;
@@ -127,8 +126,6 @@ function validateKs(ks, bik, bikValid, ob) {
                 result = true;
                 notification(ob, 'my', 'Данные валидны');
             } else {
-                //error.code = 4;
-                //error.message = 'Неправильное контрольное число';
                 notification(ob, 'orderAlert', 'Данные не валидны (такой К/С не существует');
             }
         }
