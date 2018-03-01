@@ -131,63 +131,6 @@ function validateKs(ks, bik, bikValid, ob) {
     }
     return result;
 }
-
-function validateOgrn(ogrn, error) {
-    var result = false;
-    if (typeof ogrn === 'number') {
-        ogrn = ogrn.toString();
-    } else if (typeof ogrn !== 'string') {
-        ogrn = '';
-    }
-    if (!ogrn.length) {
-        error.code = 1;
-        error.message = 'ОГРН пуст';
-    } else if (/[^0-9]/.test(ogrn)) {
-        error.code = 2;
-        error.message = 'ОГРН может состоять только из цифр';
-    } else if (ogrn.length !== 13) {
-        error.code = 3;
-        error.message = 'ОГРН может состоять только из 13 цифр';
-    } else {
-        var n13 = parseInt((parseInt(ogrn.slice(0, -1)) % 11).toString().slice(-1));
-        if (n13 === parseInt(ogrn[12])) {
-            result = true;
-        } else {
-            error.code = 4;
-            error.message = 'Неправильное контрольное число';
-        }
-    }
-    return result;
-}
-
-function validateOgrnip(ogrnip, error) {
-    var result = false;
-    if (typeof ogrnip === 'number') {
-        ogrnip = ogrnip.toString();
-    } else if (typeof ogrnip !== 'string') {
-        ogrnip = '';
-    }
-    if (!ogrnip.length) {
-        error.code = 1;
-        error.message = 'ОГРНИП пуст';
-    } else if (/[^0-9]/.test(ogrnip)) {
-        error.code = 2;
-        error.message = 'ОГРНИП может состоять только из цифр';
-    } else if (ogrnip.length !== 15) {
-        error.code = 3;
-        error.message = 'ОГРНИП может состоять только из 15 цифр';
-    } else {
-        var n15 = parseInt((parseInt(ogrnip.slice(0, -1)) % 13).toString().slice(-1));
-        if (n15 === parseInt(ogrnip[14])) {
-            result = true;
-        } else {
-            error.code = 4;
-            error.message = 'Неправильное контрольное число';
-        }
-    }
-    return result;
-}
-
 function validateRs(rs, bik, bikValid, ob) {
     var result = false;
     if (!bikValid) {
@@ -226,6 +169,65 @@ function validateRs(rs, bik, bikValid, ob) {
     }
     return result;
 }
+
+function validateOgrn(ogrn, ob) {
+    var result = false;
+    if (typeof ogrn === 'number') {
+        ogrn = ogrn.toString();
+    } else if (typeof ogrn !== 'string') {
+        ogrn = '';
+    }
+    if (/[^0-9]/.test(ogrn)) {
+        //error.code = 2;
+        //error.message = 'ОГРН может состоять только из цифр';
+        notification(ob, 'orderAlert', 'ОГРН может состоять только из цифр')
+    } else if (ogrn.length !== 13) {
+        //error.code = 3;
+        //error.message = 'ОГРН может состоять только из 13 цифр';
+        notification(ob, 'orderAlert', 'ОГРН может состоять только из 13 цифр')
+    } else {
+        var n13 = parseInt((parseInt(ogrn.slice(0, -1)) % 11).toString().slice(-1));
+        if (n13 === parseInt(ogrn[12])) {
+            result = true;
+            notification(ob, 'my', 'Данные валидны');
+        } else {
+            //error.code = 4;
+            //error.message = 'Неправильное контрольное число';
+            notification(ob, 'orderAlert', 'Неправильное контрольное число (ОГРН не существует)')
+        }
+    }
+    return result;
+}
+
+function validateOgrnip(ogrnip, error) {
+    var result = false;
+    if (typeof ogrnip === 'number') {
+        ogrnip = ogrnip.toString();
+    } else if (typeof ogrnip !== 'string') {
+        ogrnip = '';
+    }
+    if (!ogrnip.length) {
+        error.code = 1;
+        error.message = 'ОГРНИП пуст';
+    } else if (/[^0-9]/.test(ogrnip)) {
+        error.code = 2;
+        error.message = 'ОГРНИП может состоять только из цифр';
+    } else if (ogrnip.length !== 15) {
+        error.code = 3;
+        error.message = 'ОГРНИП может состоять только из 15 цифр';
+    } else {
+        var n15 = parseInt((parseInt(ogrnip.slice(0, -1)) % 13).toString().slice(-1));
+        if (n15 === parseInt(ogrnip[14])) {
+            result = true;
+        } else {
+            error.code = 4;
+            error.message = 'Неправильное контрольное число';
+        }
+    }
+    return result;
+}
+
+
 
 function validateSnils(snils, error) {
     var result = false;
@@ -311,6 +313,9 @@ $('#StepThree_Ur').click(function () {
     }
 
     var errOgrn = validEmpty($('#ogrn').prop('value'), $('#ogrn'));
+    if (errOgrn) {
+        var validOgrn = validateOgrn($('#ogrn').prop('value'), $('#ogrn'));
+    }
 
     var errBank = validEmpty($('#bank').prop('value'), $('#bank'));
 
