@@ -2,12 +2,23 @@
 	display: flex
 	flex-direction: row
 	flex-wrap: wrap
+	&__button
+		display: flex
+		justify-content: center
+		margin-top: 30px
 	&__inner
+		text-decoration: none
 		flex-basis: 25%
 		height: 350px
 		background:
 			repeat: no-repeat
 			size: cover
+		img
+			transition: 1s
+		&:hover
+			img
+				transform: scale(1.1)
+				transition: 1s
 		h2
 			font:
 				family: 'Rubik'
@@ -96,3 +107,12 @@
 				margin-top: 41px
 				text-align: center
 				color: #5E5141
+
+.text-banner
+	margin: 150px 0 40px 0
+	text-align: center
+	font:
+		family: 'Rubik'
+		size: 3em
+		weight: 300
+	color: #4f4f4f
