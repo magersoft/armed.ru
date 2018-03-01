@@ -1,0 +1,81 @@
+.main-catalog
+  // display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  z-index: 9000
+  overflow: hidden
+  display: flex
+  justify-content: flex-start
+  right: 0
+  bottom: 0
+  left: 0
+  top: 0
+  transition: background-color .3s ease-out 0s
+  background: transparent
+  pointer-events: none
+  &--right
+    justify-content: flex-end
+  &--active
+    transition: background-color .3s ease-out 0s
+    background: rgba(27,27,27,.8)
+    pointer-events: all
+  &__wrapper
+    transform: translateX(-100%) translateZ(0)
+    pointer-events: all
+    transition: transform .9s ease-out 0s
+    background: #ffffff
+    width: 40%
+    height: 100%
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    align-items: center
+    &--right
+      transform: translateX(100%) translateZ(0)
+    &--active
+      transform: translateX(0) translateZ(0)
+      transition: transform .9s ease-out 0s
+  &__nav
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    ul
+      list-style: none
+      li
+        padding: 15px
+        margin-bottom: 20px
+        text-align: center
+        border-bottom: 1px solid #e0e0e0
+        &:last-child
+          border-bottom: none
+        a
+          text-decoration: none
+          font:
+            family: 'Rubik'
+            size: 2em
+            weight: 500
+          color: #4f4f4f
+          text-transform: uppercase
+          &:hover
+            transition: color .3s
+            color: rgba(#4f4f4f, 0.8)
+  &__close
+    width: 100%
+    padding: 10px 30px
+    span
+      margin-right: 10px
+      margin-top: 3px
+      display: block
+    a
+      text-transform: uppercase
+      display: flex
+      font:
+        size: 2em
+      color: #4f4f4f
+      text-decoration: none
+    &--right
+      a
+        justify-content: flex-end

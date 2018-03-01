@@ -57,6 +57,20 @@
   align-items: center
   height: 60px
   padding: 0 30px
+  &__center-logo
+    cursor: pointer
+    flex-grow: 5
+    width: 400px
+    background: url(images/Header/logo.png) center no-repeat
+    height: 60px
+    margin: 0 auto
+  &--main
+    justify-content: center
+    display: flex
+    background: rgba(255,255,255,0.8)
+    position: fixed
+    width: 100%
+    z-index: 7000
   &__fix-logo
     display: none
     position: absolute
@@ -67,9 +81,14 @@
   &__catalog
     position: relative
     flex-grow: 1
+    &--main
+      background: transparent
     &_wrapper
       width: 125px
       position: relative
+      &--menu
+        width: 75px
+        position: relative
     &-link
       text-decoration: none
       color: #666
@@ -78,6 +97,18 @@
       letter-spacing: 0.05em
       padding: 20px 30px
       cursor: pointer
+      &--main
+        text-decoration: none
+        font-weight: 400
+        font-size: 1.6em
+        letter-spacing: 0.05em
+        cursor: pointer
+        padding: 20px 16px
+        color: #4f4f4f
+      &--menu
+        padding: 20px 0
+        color: #4f4f4f
+        text-align: right
     &-icon
       position: absolute
       background: url(images/Icon/arrow-down.png) center no-repeat
@@ -107,6 +138,57 @@
       margin-top: 3px
     &::before
       margin-top: -5px
+    &--main
+      position: absolute
+      background: transparent
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      border: 1px solid #4F4F4F
+      top: 40%
+      left: 0
+      margin-top: -5px
+      &::after, &::before
+        content: ""
+        display: block
+        position: absolute
+        height: 3px
+        width: 3px
+        top: 12px
+        left: -1px
+        margin-top: 3px
+        border-radius: 50%
+        background: transparent
+        border: 1px solid #4F4F4F
+      &::before
+        margin-top: -5px
+    &--circle
+      right: 0
+      position: absolute
+      width: 20px
+      height: 20px
+      border: 1px solid #4f4f4f
+      border-radius: 50%
+    &--menu
+      position: absolute
+      width: 8px
+      height: 1px
+      top: 10px
+      right: 5px
+      margin-top: -5px
+      background: #4f4f4f
+      &::after, &::before
+        margin-top: -7px
+        content: ""
+        display: block
+        position: absolute
+        height: 1px
+        width: 8px
+        top: 10px
+        right: 0px
+        background: #4f4f4f
+      &::before
+        margin-top: -4px
   &__widgets
     position: relative
     display: flex
@@ -126,6 +208,8 @@
       font-size: 1.4em
       letter-spacing: 0.03em
       font-weight: 400
+    &-item--main a
+      color: #4f4f4f
   &__icon
     display: flex
     align-items: center
