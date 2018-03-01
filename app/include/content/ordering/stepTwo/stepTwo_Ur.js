@@ -169,7 +169,6 @@ function validateRs(rs, bik, bikValid, ob) {
     }
     return result;
 }
-
 function validateOgrn(ogrn, ob) {
     var result = false;
     if (typeof ogrn === 'number') {
@@ -199,6 +198,8 @@ function validateOgrn(ogrn, ob) {
     return result;
 }
 
+/*
+
 function validateOgrnip(ogrnip, error) {
     var result = false;
     if (typeof ogrnip === 'number') {
@@ -226,9 +227,6 @@ function validateOgrnip(ogrnip, error) {
     }
     return result;
 }
-
-
-
 function validateSnils(snils, error) {
     var result = false;
     if (typeof snils === 'number') {
@@ -268,6 +266,7 @@ function validateSnils(snils, error) {
     }
     return result;
 }
+*/
 
 
 
