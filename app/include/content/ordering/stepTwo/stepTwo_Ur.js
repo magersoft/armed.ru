@@ -99,7 +99,6 @@ function validateKpp(kpp, ob) {
     }
     return result;
 }
-
 function validateKs(ks, bik, bikValid, ob) {
     var result = false;
     if (!bikValid) {
@@ -189,23 +188,25 @@ function validateOgrnip(ogrnip, error) {
     return result;
 }
 
-function validateRs(rs, bik, error) {
+function validateRs(rs, bik, bikValid, ob) {
     var result = false;
-    if (validateBik(bik, error)) {
+    if (!bikValid) {
+        notification(ob, 'orderAlert', 'Для проверки Р/С необходимо заполнить БИК');
+    }
+    if (bikValid) {
         if (typeof rs === 'number') {
             rs = rs.toString();
         } else if (typeof rs !== 'string') {
             rs = '';
         }
-        if (!rs.length) {
-            error.code = 1;
-            error.message = 'Р/С пуст';
-        } else if (/[^0-9]/.test(rs)) {
-            error.code = 2;
-            error.message = 'Р/С может состоять только из цифр';
+        if (/[^0-9]/.test(rs)) {
+            //error.code = 2;
+            //error.message = 'Р/С может состоять только из цифр';
+            notification(ob, 'orderAlert', 'Р/С может состоять только из цифр');
         } else if (rs.length !== 20) {
-            error.code = 3;
-            error.message = 'Р/С может состоять только из 20 цифр';
+            //error.code = 3;
+            //error.message = 'Р/С может состоять только из 20 цифр';
+            notification(ob, 'orderAlert', 'Р/С может состоять только из 20 цифр');
         } else {
             var bikRs = bik.toString().slice(-3) + rs;
             var checksum = 0;
@@ -215,9 +216,11 @@ function validateRs(rs, bik, error) {
             }
             if (checksum % 10 === 0) {
                 result = true;
+                notification(ob, 'my', 'Данные валидны');
             } else {
-                error.code = 4;
-                error.message = 'Неправильное контрольное число';
+                //error.code = 4;
+                //error.message = 'Неправильное контрольное число';
+                notification(ob, 'orderAlert', 'Данные не валидны (такой Р/С не существует');
             }
         }
     }
@@ -303,6 +306,9 @@ $('#StepThree_Ur').click(function () {
     }
 
     var errRs = validEmpty($('#rs').prop('value'), $('#rs'));
+    if (errRs) {
+        var validRs = validateRs($('#rs').prop('value'), $('#bik').prop('value'), validBik, $('#rs'));
+    }
 
     var errOgrn = validEmpty($('#ogrn').prop('value'), $('#ogrn'));
 
