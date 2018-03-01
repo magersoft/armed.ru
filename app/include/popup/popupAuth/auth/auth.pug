@@ -12,7 +12,7 @@
         .auth__tabs#tabs1
               form.auth__form
                   label.auth__form-label(for="phone") Номер телефона:
-                  input.auth__form-input(type="text" name="phone" id="phone")
+                  input.auth__form-input(type="text" name="phone" id="phone" placeholder="+7 (000) 000 00-00")
                   button.Button.Button_Color_Red.Button_Size_Lg.auth__form-button#button__phone
                       span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
                           | Получить СМС
@@ -28,7 +28,7 @@
                 label.auth__form-label(for="pass") Пароль:
                 input.auth__form-input(type="mail" name="pass" id="pass")
                 a.auth__recovery.modalLink(href="#" data-id="passRecovery") Забыли пароль?
-                button.Button.Button_Color_Red.Button_Size_Lg.auth__button
+                button.Button.Button_Color_Red.Button_Size_Lg.auth__button#enterySite
                     span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
                         | Войти на сайт
                 //button.auth__button.Button.Button_Size_XL.Button_Color_Red
