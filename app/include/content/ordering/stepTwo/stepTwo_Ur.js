@@ -39,8 +39,6 @@ function validateBik(bik, ob) {
 
     return result;
 }
-
-
 function validateInn(inn, ob) {
     var result = false;
     if (typeof inn === 'number') {
@@ -84,46 +82,40 @@ function validateInn(inn, ob) {
 
     return result;
 }
-
-function validateKpp(kpp, error) {
+function validateKpp(kpp, ob) {
     var result = false;
     if (typeof kpp === 'number') {
         kpp = kpp.toString();
     } else if (typeof kpp !== 'string') {
         kpp = '';
     }
-    if (!kpp.length) {
-        error.code = 1;
-        error.message = 'КПП пуст';
-    } else if (kpp.length !== 9) {
-        error.code = 2;
-        error.message = 'КПП может состоять только из 9 знаков (цифр или заглавных букв латинского алфавита от A до Z)';
+    if (kpp.length !== 9) {
+        notification(ob, 'orderAlert', 'КПП может состоять только из 9 знаков (цифр или заглавных букв латинского алфавита от A до Z)')
     } else if (!/^[0-9]{4}[0-9A-Z]{2}[0-9]{3}$/.test(kpp)) {
-        error.code = 3;
-        error.message = 'Неправильный формат КПП';
+        notification(ob, 'orderAlert', 'Неправильный формат КПП')
     } else {
         result = true;
+        notification(ob, 'my', 'Данные валидны');
     }
     return result;
 }
 
-function validateKs(ks, bik, error) {
+function validateKs(ks, bik, bikValid, ob) {
     var result = false;
-    if (validateBik(bik, error)) {
+    if (bikValid) {
         if (typeof ks === 'number') {
             ks = ks.toString();
         } else if (typeof ks !== 'string') {
             ks = '';
         }
-        if (!ks.length) {
-            error.code = 1;
-            error.message = 'К/С пуст';
-        } else if (/[^0-9]/.test(ks)) {
-            error.code = 2;
-            error.message = 'К/С может состоять только из цифр';
+        if (/[^0-9]/.test(ks)) {
+            //error.code = 2;
+            //error.message = 'К/С может состоять только из цифр';
+            notification(ob, 'orderAlert', 'К/С может состоять только из цифр');
         } else if (ks.length !== 20) {
-            error.code = 3;
-            error.message = 'К/С может состоять только из 20 цифр';
+            //error.code = 3;
+            //error.message = 'К/С может состоять только из 20 цифр';
+            notification(ob, 'orderAlert', 'К/С может состоять только из 20 цифр');
         } else {
             var bikKs = '0' + bik.toString().slice(4, 6) + ks;
             var checksum = 0;
@@ -133,9 +125,11 @@ function validateKs(ks, bik, error) {
             }
             if (checksum % 10 === 0) {
                 result = true;
+                notification(ob, 'my', 'Данные валидны');
             } else {
-                error.code = 4;
-                error.message = 'Неправильное контрольное число';
+                //error.code = 4;
+                //error.message = 'Неправильное контрольное число';
+                notification(ob, 'orderAlert', 'Данные не валидны (такой К/С не существует');
             }
         }
     }
@@ -288,21 +282,28 @@ function validateSnils(snils, error) {
 $('#StepThree_Ur').click(function () {
     var errCompany = validEmpty($('#company').prop('value'), $('#company'));
 
+    var errLegal = validEmpty($('#legal').prop('value'), $('#legal'));
+
+
     var errInn = validEmpty($('#inn').prop('value'), $('#inn'));
     if (errInn) {
-        validateInn($('#inn').prop('value'), $('#inn'));
+        var validInn = validateInn($('#inn').prop('value'), $('#inn'));
     }
-
-    var errLegal = validEmpty($('#legal').prop('value'), $('#legal'));
 
     var errBik = validEmpty($('#bik').prop('value'), $('#bik'));
     if (errBik) {
-        validateBik($('#bik').prop('value'), $('#bik'))
+        var validBik = validateBik($('#bik').prop('value'), $('#bik'))
     }
 
     var errKpp = validEmpty($('#kpp').prop('value'), $('#kpp'));
+    if (errKpp) {
+        var validKpp = validateKpp($('#kpp').prop('value'), $('#kpp'));
+    }
 
     var errKs = validEmpty($('#ks').prop('value'), $('#ks'));
+    if (errKs) {
+        var validKs = validateKs($('#ks').prop('value'), $('#bik').prop('value'), validBik, $('#ks'));
+    }
 
     var errRs = validEmpty($('#rs').prop('value'), $('#rs'));
 
