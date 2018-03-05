@@ -1,0 +1,20 @@
+.Input
+  height: 40px
+  width: 0px
+  &_Button_Cancel
+    display: none
+    position: absolute
+    width: 24px
+    height: 24px
+    &:after, &:before
+      position: absolute
+      left: 13px
+      content: ' '
+      height: 24px
+      width: 2px
+      background-color: #333
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
+

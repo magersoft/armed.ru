@@ -83,6 +83,7 @@
     flex-grow: 1
     &--main
       background: transparent
+      padding-right: 25px
     &_wrapper
       width: 125px
       position: relative
@@ -139,27 +140,32 @@
     &::before
       margin-top: -5px
     &--main
+      background-image: url('images/sprite.png')
+      background-repeat: no-repeat
+      background-position: -146px -326px
+      width: 24px
+      height: 24px
       position: absolute
-      background: transparent
-      width: 5px
-      height: 5px
-      border-radius: 50%
-      border: 1px solid #4F4F4F
-      top: 40%
-      left: 0
+      left: -10px
+      top: 17px
+    &_main
+      position: absolute
+      background-color: #4f4f4f
+      width: 18px
+      height: 2px
+      top: 58%
+      left: 80px
       margin-top: -5px
       &::after, &::before
         content: ""
         display: block
         position: absolute
-        height: 3px
-        width: 3px
-        top: 12px
-        left: -1px
+        background-color: #4f4f4f
+        height: 2px
+        width: 18px
+        top: 50%
+        left: 0
         margin-top: 3px
-        border-radius: 50%
-        background: transparent
-        border: 1px solid #4F4F4F
       &::before
         margin-top: -5px
     &--circle
