@@ -13,5 +13,5 @@ function simple_tooltip(target_items, name){
     });
 }
 $(document).ready(function(){
-    simple_tooltip(".detail__table-item a","tooltip");
+    simple_tooltip(".primary-menu__icon-item_personal","tooltip");
 });

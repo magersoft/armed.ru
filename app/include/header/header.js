@@ -109,6 +109,9 @@ $(function(){
         $('.infolk').css('display', 'none');
     }
 });
+$(document).ready(function(){
+    simple_tooltip(".primary-menu__icon-item", 'tooltip');
+});
 
 /* TODO при "value=0" менять background-position иконки минус
 $('.primary-menu__cart_product_minus').click(function() {

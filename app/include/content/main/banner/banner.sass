@@ -2,20 +2,23 @@
 	display: flex
 	flex-direction: row
 	&__overlay
-		background: rgba(255,255,255,0.4)
+		//background: rgba(#423C36, 0.55)
 		width: 100%
 		height: 100%
 		transition: background 2s
+
 		&-none
 			transition: background 2s
 			background: transparent
 	&__wrapper
+		filter: blur(1px)
 		overflow-x: hidden
+		cursor: pointer
 		&-home
 			flex: 1
 			height: 1040px
 			background:
-				image: url("images/main/home-bg.png")
+				image: url("images/main/home-bg.jpg")
 				size: cover
 				repeat: no-repeat
 				position: center center
@@ -97,11 +100,11 @@
 		padding:
 			top: 30px
 			left: 20px
-		background: rgba(255,255,255,0.8)
-		transition: background 3s
+		//background: rgba(255,255,255,0.8)
+		transition: background 0.6s
 		//&-display
-		//	transition: background 3s
-		//	background: rgba(255,255,255,0.8)
+			transition: background 0.6s
+			background: rgba(255,255,255,0.8)
 		h2
 			font:
 				family: 'Rubik'
@@ -115,11 +118,11 @@
 				weight: 300
 			line-height: 19px
 			letter-spacing: 0.05em
-			color: #4f4f4f
+			color: #ffffff
 			text-transform: uppercase
 		&--home
 			h2
-				color: #96DE5E
+				color: #F2E3C9
 		&--care
 			h2
 				color: #72BFC4
@@ -128,7 +131,10 @@
 				color: #6191c2
 
 	&-display
+		filter: blur(0)
 		flex: 4
+		background-position: 80% center
+		cursor: default
 
 .test-block
 	background: rgba(0,0,0,0.5)
