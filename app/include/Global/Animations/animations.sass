@@ -67,3 +67,33 @@
   animation-fill-mode: forwards
   animation-timing-function: linear
 
+//Анимация появления поиска
+@keyframes SearchShow
+  from
+    width: 0
+    padding-right: 0
+    padding-left: 0
+  to
+    width: 500px
+    padding-right: 15px
+    padding-left: 15px
+@keyframes SearchHide
+  from
+    padding-right: 15px
+    padding-left: 15px
+    width: 500px
+  to
+    padding-right: 0
+    padding-left: 0
+    width: 0
+.SearchShow
+  animation-name: SearchShow
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+.SearchHide
+  animation-name: SearchHide
+  animation-duration: 0.3s
+  animation-fill-mode: forwards
+  animation-timing-function: linear
+
