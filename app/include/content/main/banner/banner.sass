@@ -1,6 +1,10 @@
-.banner
+.bannerMain
 	display: flex
 	flex-direction: row
+	font-size: 16px
+	font-weight: 500
+	letter-spacing: 0.8px
+	text-transform: uppercase
 	&__overlay
 		//background: rgba(#423C36, 0.55)
 		width: 100%
@@ -33,6 +37,15 @@
 				position: center center
 			transition: 2s
 		&-pro
+			flex: 1
+			height: 1040px
+			background:
+				image: url("images/main/pro-bg.png")
+				size: cover
+				repeat: no-repeat
+				position: center center
+			transition: 2s
+		&-business
 			flex: 1
 			height: 1040px
 			background:
