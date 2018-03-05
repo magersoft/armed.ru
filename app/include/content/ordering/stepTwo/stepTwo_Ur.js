@@ -11,12 +11,12 @@ function notification (ob, style, message) {
 }
 
 function validEmpty (value, obj,) {
-    var err = 0;
+    var err = false;
     if (!value) {
         notification(obj, 'orderAlert', "Поле должно быть заполнено");
         return err;
     }
-    err = 1;
+    err = true;
     return err;
 }
 
@@ -278,47 +278,85 @@ function validateSnils(snils, error) {
 
 
 
-
+var validData = [];
 
 $('#StepThree_Ur').click(function () {
     var errCompany = validEmpty($('#company').prop('value'), $('#company'));
+    if (errCompany) {
+        validData['Company'] = true;
+    } else {
+        validData['Company'] = false;
+    }
 
     var errLegal = validEmpty($('#legal').prop('value'), $('#legal'));
-
+    if (errLegal) {
+        validData['Legal'] = true;
+    } else {
+        validData['Legal'] = false;
+    }
 
     var errInn = validEmpty($('#inn').prop('value'), $('#inn'));
     if (errInn) {
-        var validInn = validateInn($('#inn').prop('value'), $('#inn'));
+        validData['Inn'] = validateInn($('#inn').prop('value'), $('#inn'));
+    } else {
+        validData['Inn'] = false;
     }
 
     var errBik = validEmpty($('#bik').prop('value'), $('#bik'));
     if (errBik) {
-        var validBik = validateBik($('#bik').prop('value'), $('#bik'))
+        validData['Bik'] = validateBik($('#bik').prop('value'), $('#bik'))
+    } else {
+        validData['Bik'] = false;
     }
 
     var errKpp = validEmpty($('#kpp').prop('value'), $('#kpp'));
     if (errKpp) {
-        var validKpp = validateKpp($('#kpp').prop('value'), $('#kpp'));
+        validData['Kpp'] = validateKpp($('#kpp').prop('value'), $('#kpp'));
+    } else {
+        validData['Kpp'] = false;
     }
 
     var errKs = validEmpty($('#ks').prop('value'), $('#ks'));
     if (errKs) {
-        var validKs = validateKs($('#ks').prop('value'), $('#bik').prop('value'), validBik, $('#ks'));
+        validData['Ks'] = validateKs($('#ks').prop('value'), $('#bik').prop('value'), validData['Bik'], $('#ks'));
+    } else {
+        validData['Ks'] = false;
     }
 
     var errRs = validEmpty($('#rs').prop('value'), $('#rs'));
     if (errRs) {
-        var validRs = validateRs($('#rs').prop('value'), $('#bik').prop('value'), validBik, $('#rs'));
+        validData['Rs'] = validateRs($('#rs').prop('value'), $('#bik').prop('value'), validData['Bik'], $('#rs'));
+    } else {
+        validData['Rs'] = false;
     }
 
     var errOgrn = validEmpty($('#ogrn').prop('value'), $('#ogrn'));
     if (errOgrn) {
-        var validOgrn = validateOgrn($('#ogrn').prop('value'), $('#ogrn'));
+        validData['Ogrn'] = validateOgrn($('#ogrn').prop('value'), $('#ogrn'));
+    } else {
+        validData['Ogrn'] = false;
     }
 
     var errBank = validEmpty($('#bank').prop('value'), $('#bank'));
+    if (errBank) {
+        validData['Bank'] = true;
+    } else {
+        validData['Bank'] = false;
+    }
+    console.log(validData);
+    var status = false;
+    for (validElement in validData) {
+        if (!validData[validElement]) {
+            status = false;
+            break;
+        } else {
+            status = true;
+        }
+    }
+    console.log(status);
+    if (status) {
+        document.location.href = "orderingStepThreeUr.html"
+    }
 
-
-    //document.location.href = "orderingStepThreeUr.html"
     return false;
 });
