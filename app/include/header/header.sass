@@ -84,6 +84,8 @@
     &--main
       background: transparent
       padding-right: 25px
+      &:hover .burger-button_main, &:hover .burger-button_main:after, &:hover .burger-button_main:before
+        background-color: $GlobalColor
     &_wrapper
       width: 125px
       position: relative
@@ -104,12 +106,16 @@
         font-size: 1.6em
         letter-spacing: 0.05em
         cursor: pointer
-        padding: 20px 16px
-        color: #4f4f4f
+        padding: 19px 16px 23px 25px
+        color: #666
+        font-family: 'Exo 2'
+        &:hover .burger-button--main
+          background-position: -232px -355px
       &--menu
-        padding: 20px 0
-        color: #4f4f4f
+        padding: 16px 5px 20px 0
+        color: #666
         text-align: right
+        font-family: 'Exo 2'
     &-icon
       position: absolute
       background: url(images/Icon/arrow-down.png) center no-repeat
@@ -117,8 +123,6 @@
       height: 13px
       right: 10px
       top: 42%
-  &__icon-item
-    cursor: pointer
   .burger-button
     position: absolute
     background-color: $headerBurgerButton
@@ -148,6 +152,8 @@
       position: absolute
       left: -10px
       top: 17px
+      &:hover
+        background-position: -232px -355px
     &_main
       position: absolute
       background-color: #4f4f4f
@@ -156,6 +162,8 @@
       top: 58%
       left: 80px
       margin-top: -5px
+      &:hover, &:hover:after, &:hover:before
+        background-color: $GlobalColor
       &::after, &::before
         content: ""
         display: block
@@ -222,12 +230,13 @@
     flex-wrap: wrap
     height: 60px
     &-item
+      cursor: pointer
       position: relative
       //background: url(images/Icon/primary-menu__icon.svg) center no-repeat
       background-image: url("images/sprite.png")
       width: 24px
       height: 24px
-      margin: 0 15px
+      margin: 0 15px 0 28px
       padding: 12px
       &_personal
         background-position: 0 -72px
