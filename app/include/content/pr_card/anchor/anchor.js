@@ -1,4 +1,4 @@
-$(".anchor").stick_in_parent({offset_top: 60});
+//$(".anchor").stick_in_parent({offset_top: 60});
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
@@ -6,7 +6,7 @@ function onScroll(){
     $(link).each(function () {
         var currLink = $(this);
         var refElement = $(currLink);
-        var href = $(currLink).attr("href")
+        var href = $(currLink).attr("href");
         var DivObj = $('div[id="' + href.replace('#', '') + '"]');
         if (DivObj.position().top <= scrollPos && DivObj.position().top + DivObj.height() > scrollPos) {
             $('.anchor__item-link[href="' + href +'"]').parent().removeClass("active__anchor");
@@ -18,7 +18,7 @@ function onScroll(){
     });
 }
 
-
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 });
+

@@ -5,7 +5,9 @@
   height: 60px
   background-color: #F2F2F2
   display: flex
-  position: relative
+  position: fixed
+  width: 100%
+  bottom: -5px
   &__wrapper
     width: 1366px
   &__inner
@@ -44,4 +46,7 @@
         @extend .anchor__item-link
 
 .active__anchor
-  background: #ffffff
+   background: $GlobalColor
+   //border-top: 2px solid $GlobalColor
+   a
+    color: #fff
