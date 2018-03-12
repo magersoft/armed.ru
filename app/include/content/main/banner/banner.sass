@@ -97,20 +97,26 @@
 			letter-spacing: 0.1em
 			text-decoration: none
 			text-transform: uppercase
+		&-business
+			h2
+				color: #DE6262
 		&-home
 			h2
 				color: #96DE5E
-		//&-pro
-		//	margin-left: -600px
-		//&-care
-		//	margin-left: -300px
+		&-pro
+			h2
+				color: #6191c2
+		&-care
+			h2
+				color: #72BFC4
 		&-display
 			visibility: visible
 			opacity: 1
 			transition: opacity 3s
 	&-title
-		position: absolute
-		top: 60px
+		overflow-y: hidden
+		position: relative
+		top: 0
 		width: 279px
 		height: 113px
 		padding:
@@ -154,6 +160,7 @@
 		flex: 4
 		background-position: 80% center
 		cursor: default
+
 
 .test-block
 	background: rgba(0,0,0,0.5)

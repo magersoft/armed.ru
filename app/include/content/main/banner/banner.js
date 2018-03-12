@@ -2,7 +2,7 @@ $('.bannerMain__wrapper').click(function(){
 	$('.bannerMain__wrapper').removeClass('bannerMain-display');
 	$(this).toggleClass('bannerMain-display');
     $('.bannerMain__item').removeClass('bannerMain__item-display');
-	$(this).children().children().children().children('.bannerMain__item').toggleClass('bannerMain__item-display');
+	$(this).children().children().children('.bannerMain__item').toggleClass('bannerMain__item-display');
     $('.bannerMain__overlay').removeClass('bannerMain__overlay-none');
     $(this).children('.bannerMain__overlay').toggleClass('bannerMain__overlay-none');
     //$('.bannerMain-title').removeClass('bannerMain-title-display');

@@ -41,10 +41,11 @@
 			bottom: 40px
 		&:hover
 			.services__item
-				transform: scale(1.1)
+				transform: scale(1.05)
 				transition: 1s
-			// .services__item:before
-			// 	opacity: 1
+				&:before
+					transition: 1s
+					opacity: 0.4
 	&__item
 		transition: 1s
 		width: 255px
@@ -53,14 +54,15 @@
 			repeat: no-repeat
 			size: cover
 		&:before
-			opacity: 0.5
+			transition: 1s
+			opacity: 0.6
 			content: ''
 			height: 100%
 			width: 100%
 			position: absolute
 			top: 0
 			left: 0
-			background: rgba(92, 78, 72, 0.8)
+			background: rgba(82, 82, 82, 1)
 		&-us
 			background:
 				image: url('images/main/services/1-bg.png')
