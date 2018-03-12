@@ -8,6 +8,8 @@
     width: 200px
   &-Link
     text-decoration: none
+    &:hover + .Documents-Print
+      display: flex
   &-Image
     width: 180px
   &-NameDocument
@@ -16,3 +18,29 @@
     font-size: 1.4em
     color: #4F4F4F
     padding-top: 30px
+  &-Print
+    display: none
+    position: absolute
+    top: 0
+    width: 180px
+    background-color: rgba(0,0,0,0.6)
+    height: 85%
+    //display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &:hover
+      display: flex
+  &-LinkPrint, &-LinkSave
+    font-size: 1.2em;
+    width: 70%;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    &:hover
+      background-color: #000
+  &-LinkPrint
+    margin-bottom: 5px

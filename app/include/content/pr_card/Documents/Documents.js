@@ -19,11 +19,6 @@ if (elemen) {
     for (var i = 0; i < obj.length; i++) {
         $(obj[i]).children('.Documents-NameDocument').html($(obj[i]).children('.Documents-Image').attr('alt'));
 
-        appendWindowImage(obj[i], $(obj[i]).children('.Documents-Image'));
+        appendWindowImage($(obj[i]), $(obj[i]).children('.Documents-Image').attr('src'));
     }
 }
-
-$('.Documents-Link').on('click', function () {
-
-    return false;
-});
