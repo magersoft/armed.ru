@@ -14,6 +14,7 @@ $('.asside_right').hover(
         var DataRangeDisplay = $('.date-picker-wrapper').css('display');
         if (DataRangeDisplay !='block') {
             $(this).removeClass('LkAside-Show').addClass('LkAside-Hide');
+
             $('#filterPopup').removeClass('LkFilterShow').addClass('LkFilterHide');
         }
     }

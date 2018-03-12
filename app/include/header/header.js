@@ -11,7 +11,7 @@ $(function(){
             $('.primary-menu').css('box-shadow', '0 10px 25px rgba(0, 0, 0, 0.05)');
             $('.primary-menu__catalog-icon').css('right', '-5px');
             $('.asside_left').removeClass('asside_down').addClass('asside_up');
-            $('.asside_right').removeClass('asside_down').addClass('asside_up');
+            $('.asside_right').removeClass('asside_down').removeClass('LkAside-Hide').addClass('asside_up');
         }
         else {
             $('.topbar').slideDown(200, 'linear');
@@ -21,7 +21,7 @@ $(function(){
             $('.primary-menu').css('box-shadow', 'none');
             $('.primary-menu__catalog-icon').css('right', '10px');
             $('.asside_left').removeClass('asside_up').addClass('asside_down');
-            $('.asside_right').removeClass('asside_up').addClass('asside_down');
+            $('.asside_right').removeClass('asside_up').removeClass('LkAside-Hide').addClass('asside_down');
         }
     });
     function getCurrentScroll() {
