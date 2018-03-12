@@ -17,7 +17,7 @@
                 | 9 999 999&nbsp;
             span.quickview-item_buy__oldcost-symbol
                 | &#8381;
-        a.quickview__link(href="#") Для юридических лиц
+        a.quickview__link.quickview__link_NotLink(href="#") Для юридических лиц
         .quickview-inner_buy__amount
             p.quickview-item_buy__amount-title
                 | Кол-во:
@@ -31,7 +31,6 @@
                     span.Button-Text.Button-Text_Color_White
                         span.Button-Icon.Button-Icon_Basket
                         | В корзину
-                //a.quickview__link(href="#") Для юридических лиц
             .Tempory-BlockButtonChange.Tempory-BlockButtonChange_Pred
                 button.Button.Button_Color_Red.Button_Size_Sm.product__button
                     span.Button-Text.Button-Text_Color_White
@@ -39,9 +38,8 @@
                         | Пердзаказ
 
                 a.quickview__link(href="#")
-                    span.quickview__link_NotLink Или&nbsp
-                    |Посмотреть аналоги
-                //a.quickview__link(href="#") Для юридических лиц
+                    | Или&nbsp
+                    span.quickview__link_NotLink Посмотреть аналоги
 
         .quickview-inner_buy__delivery
             .quickview-item_buy__delivery-select
