@@ -1,20 +1,20 @@
 .anchor
   z-index: 1000
   margin:
-    left: -266px
+    //left: -286px
     bottom: 5px
   height: 60px
-  background-color: #F2F2F2
+  background-color: #fff
   display: flex
   //position: fixed
-  width: 100vw
+  //width: 100vw
   //bottom: -5px
   &__wrapper
-    width: 1366px
+    width: 1000px
   &__inner
     height: 60px
     border: none
-    width: 1366px
+    width: 1000px
     list-style: none
     display: flex
     flex-direction: row
@@ -23,15 +23,15 @@
     border-right: 1px solid #ffffff
     width: 100%
     display: flex
+    justify-content: center
     text-align: center
-    border: none
     &:last-child
       border-right: none
 
     &-link
       border: none
-      width: 194px
-      padding: 21px 15px
+      width: 150px
+      padding: 21px 0px
       letter-spacing: 0.7px
       font:
         size: 1.4em
@@ -45,6 +45,24 @@
         color: #4f4f4f
       &-temp
         @extend .anchor__item-link
+      &-hide
+        display: none
+  &__sticky
+    background-color: #F2F2F2
+    width: 100vw !important
+    justify-content: space-around
+    margin-left: -286px
+    > .anchor__wrapper
+      width: 1366px
+      > .anchor__inner
+        width: 1366px
+        > .anchor__hide
+          @extend .anchor__item
+  &__hide
+    display: none
+
+
+
 
 .active__anchor
    background: $GlobalColor

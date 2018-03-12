@@ -1,4 +1,7 @@
-$(".anchor").stick_in_parent({offset_top: 60});
+$(".anchor").stick_in_parent({
+    offset_top: 60,
+    sticky_class: 'anchor__sticky'
+    });
 
 function onScroll(){
     var scrollPos = $(document).scrollTop();
