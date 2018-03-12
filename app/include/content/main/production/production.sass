@@ -1,118 +1,146 @@
 .production
-	display: flex
-	flex-direction: row
-	flex-wrap: wrap
-	&__button
-		display: flex
-		justify-content: center
-		margin-top: 30px
-	&__inner
-		text-decoration: none
-		flex-basis: 25%
-		height: 350px
-		background:
-			repeat: no-repeat
-			size: cover
-		img
-			transition: 1s
-		&:hover
-			img
-				transform: scale(1.1)
-				transition: 1s
-		h2
-			font:
-				family: 'Rubik'
-				size: 2.3em
-				weight: 500
-			letter-spacing: 0.1em
-			text-transform: uppercase
-		&-stroller
-			text-align: center
-			background:
-				image: url('images/main/st-bg.png')
-			h2
-				color: #4f4f4f
-				margin-top: 41px
-		&-recirculator
-			display: flex
-			flex-direction: row
-			justify-content: space-around
-			align-items: center
-			background:
-				image: url('images/main/rec-bg.png')
-			h2
-				color: #E0FBFF
-			img
-				height: 300px
-		&-operating
-			display: flex
-			flex-direction: column 
-			align-items: center
-			justify-content: space-between
-			background:
-				image: url('images/main/oper-bg.png')
-			h2
-				margin-top: 41px
-				color: #6e6e6e
-		&-oxygen
-			display: flex
-			flex-direction: column 
-			align-items: center
-			justify-content: space-between
-			background:
-				image: url('images/main/oxy-bg.png')
-			h2
-				margin-top: 41px
-				color: #755F58
-		&-aspirators
-			padding:
-				left: 10px
-			display: flex
-			flex-direction: row
-			align-items: flex-end
-			justify-content: space-between
-			background:
-				image: url('images/main/asp-bg.png')
-			h2
-				margin-bottom: 130px
-				color: #AAC0E3
-		&-negatoscopes
-			padding: 41px 0 30px 0
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: space-between
-			background:
-				image: url('images/main/nega-bg.png')
-			h2
-				color: #718599
-		&-surgical
-			padding: 20px 0 30px 0
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: space-between
-			background:
-				image: url('images/main/surg-bg.png')
-			h2 
-				color: #62939E
-		&-ophthalmologic
-			display: flex
-			flex-direction: column 
-			align-items: center
-			justify-content: space-between
-			background:
-				image: url('images/main/oph-bg.png')
-			h2 
-				margin-top: 41px
-				text-align: center
-				color: #5E5141
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  &__wrapper
+    height: 350px
+    overflow: hidden
+    flex-basis: 25%
+    text-decoration: none
+    //&:hover
+    //  transform: scale(1.1)
+    //  transition: 1s
+    &-stroller
+      h2
+        bottom: 322px
+        left: 100px
+        color: #4f4f4f
+    &-recirculator
+      h2
+        bottom: 200px
+        left: 40px
+        color: #E0FBFF
+    &-operating
+      h2
+        bottom: 322px
+        left: 74px
+        color: #6e6e6e
+    &-oxygen
+      h2
+        bottom: 322px
+        left: 20px
+        color: #755F58
+    &-aspirators
+      h2
+        bottom: 200px
+        left: 20px
+        color: #AAC0E3
+    &-negatoscopes
+      h2
+        left: 150px
+        bottom: 40px
+        color: #718599
+    &-surgical
+      h2
+        left: 20px
+        bottom: 40px
+        color: #62939E
+    &-ophthalmologic
+      h2
+        bottom: 322px
+        text-align: center
+        color: #5E5141
+  &__contant
+    h2
+      text-decoration: none
+      position: relative
+      font:
+        family: 'Rubik'
+        size: 2.3em
+        weight: 500
+      letter-spacing: 0.1em
+      text-transform: uppercase
+  &__button
+    display: flex
+    justify-content: center
+    margin-top: 30px
+  &__inner
+    transition: 0.6s
+    width: 100%
+    height: 100%
+    text-decoration: none
+    background:
+        repeat: no-repeat
+        size: cover
+    &:hover
+      transform: scale(1.09)
+      transition: 0.6s
+    &-stroller
+        text-align: center
+        background:
+          image: url('images/main/st-bg.png')
+    &-recirculator
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        background:
+            image: url('images/main/rec-bg.png')
+    &-operating
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background:
+            image: url('images/main/oper-bg.png')
 
+    &-oxygen
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background:
+            image: url('images/main/oxy-bg.png')
+
+    &-aspirators
+        padding:
+            left: 10px
+        display: flex
+        flex-direction: row
+        align-items: flex-end
+        justify-content: space-between
+        background:
+            image: url('images/main/asp-bg.png')
+
+    &-negatoscopes
+        padding: 41px 0 30px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background:
+            image: url('images/main/nega-bg.png')
+
+    &-surgical
+        padding: 20px 0 30px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background:
+            image: url('images/main/surg-bg.png')
+    &-ophthalmologic
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background:
+            image: url('images/main/oph-bg.png')
 .text-bannerMain
-	margin: 150px 0 40px 0
-	text-align: center
-	font:
-		family: 'Rubik'
-		size: 3em
-		weight: 300
-	color: #4f4f4f
+    margin: 150px 0 40px 0
+    text-align: center
+    font:
+        family: 'Rubik'
+        size: 3em
+        weight: 300
+    color: #4f4f4f
