@@ -10,14 +10,21 @@ body
   text-decoration: none
   &_Align_Right
     justify-content: flex-end
+  &_Size_Xxl
+    width: 340px
+    height: 100px
   &_Size_Lg
     width: 255px
     height: 55px
   &_Size_Sm
     width: 165px
     height: 45px
+  &_Color_White
+    background-color: #fff
   &_Color_Red
     background-color: $GlobalColor
+  &_Border
+    border: 1px solid #f2f2f2
   &_Color_Not
     background-color: rgba(255, 255, 255, 0)
     transition: 0.4s
@@ -39,6 +46,8 @@ body
     top: -2px
     letter-spacing: 0.07em
     font-size: 16px
+    &_Color_Grey
+      color: #828282
     &_Color_Black
       color: rgba(79, 79, 79, 1)
     &_Color_White
@@ -108,6 +117,11 @@ body
       background-position: -40px -290px
     &_Plus
       background-position: -100px -290px
+    &_CirclePlusRed
+      width: 51px
+      height: 51px
+      margin-right: 10px
+      background-position: 0 -381px
 
 
 .Button:hover

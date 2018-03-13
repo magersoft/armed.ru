@@ -1,0 +1,32 @@
+#modal_Entity.modal
+    .modal__content_Entity.modal__content
+        span#close_Entity.modal__close
+        h3.modal__head Вы юридическое лицо?
+        .modal__change
+            section.entityMod
+                .entityMod__info
+                    p Чтобы заказать&nbsp;
+                        span Облучатель-рецикулятор CH211-130 (мет. корп.)
+                        | &nbsp;введите Ваши контактные данные
+                    p Мы свяжемся с Вами в течение 15 минут (или в указанное Вами время) для уточнения деталей.
+                .entityMod__prod
+
+                .entityMod__form
+                    label.entityMod__label(for="name_entity_mod")
+                        | Ваше имя:
+                    input.entityMod__input(id="name_entity_mod" name="name_entity_mod")
+                    label.entityMod__label(for="number_entity_mod")
+                        | Телефон:
+                    input.entityMod__input(id="number_entity_mod" name="number_entity_mod")
+                    a(href="#").Button.Button_Color_Red.Button_Size_Sm
+                        span.Button-Text.Button-Text_Color_White
+                            span.Button-Icon.Button-Icon_Basket
+                            | Отправить
+                    a(href="#" data-id="Check").modalLink.Button.Button_Color_Red.Button_Size_Sm
+                        span.Button-Text.Button-Text_Color_White
+                            span.Button-Icon.Button-Icon_Basket
+                            | Регистрация
+                    a(href="#" data-id="Auth").modalLink.Button.Button_Color_Red.Button_Size_Sm
+                        span.Button-Text.Button-Text_Color_White
+                            span.Button-Icon.Button-Icon_Basket
+                            | Авторизация

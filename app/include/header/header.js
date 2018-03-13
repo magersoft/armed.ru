@@ -8,7 +8,7 @@ $(function(){
             $('.primary-menu__fix-logo').show();
             $('.burger-button').hide();
             $('.primary-menu__catalog-link').css('margin-left', '15px');
-            $('.primary-menu__catalog-link--promo').css('margin-left', '0');
+            $('.primary-menu__catalog-link--main').css('margin-left', '0');
             $('.primary-menu').css('box-shadow', '0 10px 25px rgba(0, 0, 0, 0.05)');
             $('.primary-menu__catalog-icon').css('right', '-5px');
             $('.asside_left').removeClass('asside_down').addClass('asside_up');

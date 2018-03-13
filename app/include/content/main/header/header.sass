@@ -24,7 +24,7 @@
     transform: translateX(-100%) translateZ(0)
     pointer-events: all
     transition: transform .9s ease-out 0s
-    background: #ffffff
+    background: rgba(#ffffff, 0.9)
     width: 40%
     height: 100%
     display: flex
@@ -37,6 +37,7 @@
       transform: translateX(0) translateZ(0)
       transition: transform .9s ease-out 0s
   &__nav
+    padding: 0 150px
     width: 100%
     height: 100%
     display: flex
@@ -46,7 +47,7 @@
       list-style: none
       li
         padding: 15px
-        margin-bottom: 20px
+        margin-bottom: 15px
         text-align: center
         border-bottom: 1px solid #e0e0e0
         &:last-child
@@ -56,12 +57,13 @@
           font:
             family: 'Rubik'
             size: 2em
-            weight: 500
+            weight: 400
           color: #4f4f4f
           text-transform: uppercase
+          line-height: 30px
           &:hover
             transition: color .3s
-            color: rgba(#4f4f4f, 0.8)
+            color: rgba(#4f4f4f, 0.6)
   &__close
     width: 100%
     padding: 10px 30px
