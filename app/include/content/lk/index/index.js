@@ -1,3 +1,4 @@
+/*
 var val = $('.LkIndex-ProgressBar').attr('data-value');
 var max = $('.LkIndex-ProgressBar').attr('data-max');
 var min = $('.LkIndex-ProgressBar').attr('data-min');
@@ -82,7 +83,9 @@ if (path == 'lk_index.html') {
 
     }
 
+*/
 
+/*
 var slider = $('.LkIndex-Slider');
 
 slider.on('init', function (event, slick) {
@@ -102,6 +105,7 @@ slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
     $('.LkIndex-SliderPromoCount').html(nextSlide + 1 + ' / ' + count);
 });
 
+*/
 
 var ProductSlider = $('.LkIndex-ProductWrap');
 ProductSlider.on('init', function (event, slick) {
@@ -121,6 +125,7 @@ ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide)
     $('.LkIndex-ProductCount').html(nextSlide + 1  + ' / ' + (slick.slideCount));
 });
 
+/*
 
 
 var VideoSlider = $('.LkIndex-VideoWrap');
@@ -142,4 +147,4 @@ VideoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
 $(".LkIndex-ActionList").mCustomScrollbar({
     theme:"LkAction",
     scrollbarPosition: "outside"
-});
+});*/
