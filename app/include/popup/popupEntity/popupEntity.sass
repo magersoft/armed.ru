@@ -1,11 +1,11 @@
 .entityMod
-  padding: 0 30px
-  width: 600px
+  padding: 0 40px
+  width: 557px
   height: 400px
   display: flex
   justify-content: center
   flex-direction: column
-  align-content: flex-start
+  align-content: center
   &__info
     width: 557px
     margin: 0 auto
@@ -21,26 +21,40 @@
   &__form
     margin: 15px auto
     height: 300px
-    width: 255px
+    //width: 255px
     display: flex
     flex-direction: column
-    button
-      margin: 0 auto
+    justify-content: center
+    align-items: center
+  &__links
+    display: flex
+    font:
+      family: $fontFamilyDefault
+      size: 1.6em
+      weight: 400
+    color: #4f4f4f
+    a
+      color: #c62828
+  //&__buttons
+  //  margin: 0 auto
+  //  > .Button
+  //    margin: 20px auto
   &__input
     height: 35px
-    width: 100%
+    width: 255px
     border: 1px solid #e0e0e0
     border-radius: 1px
     padding: 10px
     margin-bottom: 10px
   &__label
+    width: 255px
     margin-bottom: 6px
     text-align: left
     font:
       family: 'Roboto'
       size: 1.4em
       weight: 300
-      line-height: 1.6em
+    line-height: 1.6em
     color: #828282
   &__check
     display: flex
@@ -87,3 +101,8 @@
         weight: 600
       line-height: 1.4em
       color: #4f4f4f
+.auth__ili-entity
+  &:before
+    left: -212px
+  &:after
+    right: -212px

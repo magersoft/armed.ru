@@ -1,14 +1,14 @@
 #modal_Entity.modal
     .modal__content_Entity.modal__content
         span#close_Entity.modal__close
-        h3.modal__head Вы юридическое лицо?
-        .modal__change
+        h3.modal__head Вы - юридическое лицо?
+        .modal__change.modal_view
             section.entityMod
                 .entityMod__info
-                    p Чтобы заказать&nbsp;
-                        span Облучатель-рецикулятор CH211-130 (мет. корп.)
-                        | &nbsp;введите Ваши контактные данные
-                    p Мы свяжемся с Вами в течение 15 минут (или в указанное Вами время) для уточнения деталей.
+                    p Оставьте заявку и получите
+                        br
+                        |&nbsp;
+                        | выгодное идивидуальное предложение!
                 .entityMod__prod
 
                 .entityMod__form
@@ -18,15 +18,27 @@
                     label.entityMod__label(for="number_entity_mod")
                         | Телефон:
                     input.entityMod__input(id="number_entity_mod" name="number_entity_mod")
-                    a(href="#").Button.Button_Color_Red.Button_Size_Sm
-                        span.Button-Text.Button-Text_Color_White
-                            span.Button-Icon.Button-Icon_Basket
-                            | Отправить
-                    a(href="#" data-id="Check").modalLink.Button.Button_Color_Red.Button_Size_Sm
-                        span.Button-Text.Button-Text_Color_White
-                            span.Button-Icon.Button-Icon_Basket
-                            | Регистрация
-                    a(href="#" data-id="Auth").modalLink.Button.Button_Color_Red.Button_Size_Sm
-                        span.Button-Text.Button-Text_Color_White
-                            span.Button-Icon.Button-Icon_Basket
-                            | Авторизация
+                    .entityMod__buttons
+                        a(href="#").Button.Button_Color_Red.Button_Size_Lg#ButtonModalEntity
+                            span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                                | Получить предложение
+                    h6.auth__ili.auth__ili-entity или
+                    .entityMod__links
+                        a(href="#" data-id="Check").modalLink
+                            | зарегистрируйтесь
+                        p
+                            |&nbsp;на сайте и
+                            |&nbsp;
+                        a(href="#" data-id="Auth").modalLink
+                            |войдите
+                        p
+                            |&nbsp;в личный кабинет
+        .successRecovery.successRecovery_hide
+            img(src="/images/icon/success_icon.svg").successRecovery__img
+            p.successRecovery__text Спасибо!
+                br
+                | Наши менеджеры свяжутся с Вами в течение 15 минут!
+            button.Button.Button_Color_Red.Button_Size_Lg.close_Entity
+                span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
+                    | Вернуться на сайт
+
