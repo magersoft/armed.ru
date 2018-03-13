@@ -14,19 +14,19 @@
 
             .orders__table.table
                 .orders__head.table__head
-                    a.order__head-link.table__head-link.table__head-active(href="#")
+                    span.order__head-link.table__head-link.table__head-active
                         | Cтатус
-                        span.order__head-arrow.table__head-arrow
-                    a.order__head-link.table__head-link(href="#")
+
+                    span.order__head-link.table__head-link
                         | Номер заказа
-                        span.order__head-arrow.table__head-arrow
-                    a.order__head-link.table__head-link(href="#")
+
+                    span.order__head-link.table__head-link
                         | Дата
-                        span.order__head-arrow.table__head-arrow
-                    a.order__head-link.table__head-link(href="#")
+
+                    span.order__head-link.table__head-link
                         | Сумма
-                        span.order__head-arrow.table__head-arrow
-                .orders__body.table__body
+
+                .LkIndex-TableBody.table__body
                     - for (var i = 0; i < 10; i++)
                         .orders__row.table__row
                             p.orders__status.table__element
@@ -44,13 +44,22 @@
 
         .LkIndex-ContentInfo
             .LkIndex-ContentAction.LkIndex-Wrap
-                h2.h2.LkIndex-HeadSmall.LkIndex-ActionHead Акции
-                .LkIndex-Action
-                .LkIndex-Action
-                .LkIndex-Action
-                .LkIndex-Action
-                .LkIndex-Action
-                .LkIndex-Action
+                h2.LkIndex-HeadSmall.LkIndex-ActionHead Акции
+                .LkIndex-ActionWrap
+                    .LkIndex-Action
+                    .LkIndex-Action
+                    .LkIndex-Action
+                    .LkIndex-Action
+                    .LkIndex-Action
+                    .LkIndex-Action
 
             .LkIndex-ContentNew.LkIndex-Wrap
-                p Новинки
+                h2.LkIndex-HeadSmall.LkIndex-ActionHead Новинки
+                .LkIndex-ProductWrap
+                    include ../../../Global/product/product_new
+                    include ../../../Global/product/product_new
+                    include ../../../Global/product/product_new
+                    include ../../../Global/product/product_new
+                    include ../../../Global/product/product_new
+                    include ../../../Global/product/product_new
+                p.LkIndex-ProductCount 1/18

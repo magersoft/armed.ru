@@ -125,6 +125,11 @@ ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide)
     $('.LkIndex-ProductCount').html(nextSlide + 1  + ' / ' + (slick.slideCount));
 });
 
+$(".LkIndex-TableBody").mCustomScrollbar({
+    theme:"order",
+    scrollbarPosition: "outside"
+});
+
 /*
 
 
