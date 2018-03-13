@@ -61,6 +61,16 @@
   align-items: center
   height: 60px
   padding: 0 30px
+  &__shop
+    font:
+      family: "Exo 2"
+      size: 1.6em
+    letter-spacing: 0.05em
+    a
+      text-decoration: none
+      color: #4f4f4f
+      &:hover
+        color: #c62828
   &__center-logo
     cursor: pointer
     flex-grow: 5
@@ -85,6 +95,8 @@
   &__catalog
     position: relative
     flex-grow: 1
+    &--promo
+      flex-grow: 0
     &--main
       background: transparent
       padding-right: 25px
@@ -104,6 +116,9 @@
       letter-spacing: 0.05em
       padding: 20px 30px
       cursor: pointer
+      &--promo
+        color: #4f4f4f
+        font-family: "Exo 2"
       &--main
         text-decoration: none
         font-weight: 400
@@ -111,13 +126,13 @@
         letter-spacing: 0.05em
         cursor: pointer
         padding: 19px 16px 23px 25px
-        color: #666
+        color: #4f4f4f
         font-family: 'Exo 2'
         &:hover .burger-button--main
           background-position: -232px -355px
       &--menu
         padding: 16px 5px 20px 0
-        color: #666
+        color: #4f4f4f
         text-align: right
         font-family: 'Exo 2'
     &-icon
