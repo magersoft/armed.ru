@@ -1,0 +1,42 @@
+.fluent
+  &__active
+    transform: scale(1.03)
+    transition: 1s
+    z-index: 3
+  &__wrapper
+    height: 1040px
+  &__inner
+    //background: lightpink
+    &-background
+      background: lightgreen
+      height: 1040px
+    &-preview
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      top: -1040px
+      position: relative
+      margin: 150px 0 200px 0
+      //background: yellow
+      //width: 1120px
+      height: 700px
+  &__item
+    //border: 1px solid red
+    //width: 280px
+    height: 100%
+    //background: lightskyblue
+    &-info
+      background: none
+      flex: 3
+    &-card
+      transition: 1s
+      border: 1px solid red
+      flex: 1
+    &-business
+      background: teal
+    &-home
+      background: yellow
+    &-care
+      background: pink
+    &-pro
+      background: rebeccapurple
