@@ -13,5 +13,6 @@ function simple_tooltip(target_items, name){
     });
 }
 $(document).ready(function(){
-    simple_tooltip(".primary-menu__icon-item_personal","tooltip");
+    simple_tooltip(".tooltipShow", 'tooltip');
+    //simple_tooltip(".product__question-detail","tooltip");
 });
