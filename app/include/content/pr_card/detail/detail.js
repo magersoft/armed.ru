@@ -6,7 +6,7 @@ function simple_tooltip(target_items, name){
         $(this).removeAttr("title").mouseover(function(){
             my_tooltip.css({opacity:0.8, display:"none"}).fadeIn(400);
         }).mousemove(function(kmouse){
-            my_tooltip.css({left:kmouse.pageX+15, top:kmouse.pageY+15});
+            my_tooltip.css({left:kmouse.pageX-50, top:kmouse.pageY+15});
         }).mouseout(function(){
             my_tooltip.fadeOut(400);
         });
