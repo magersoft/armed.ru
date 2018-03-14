@@ -11,7 +11,9 @@ $('#StepFour_Ur').click(function () {
 
 var validData = [];
 $('#StepFour_Ur').click(function () {
-    var errCity = validEmpty($('#orderCity_Ur').prop('value'), $('#orderCity_Ur'));
+    //TODO Для включения валидации удалть следующую строку и раскоментить код
+    document.location.href = "orderingStepFourUr.html"
+    /*var errCity = validEmpty($('#orderCity_Ur').prop('value'), $('#orderCity_Ur'));
     if (errCity) {
         errCity = validText($('#orderCity_Ur').prop('value'), $('#orderCity_Ur'));
         if (errCity) {
@@ -91,5 +93,5 @@ $('#StepFour_Ur').click(function () {
         document.location.href = "orderingStepFourUr.html"
     }
 
-    return false
+    return false*/
 });

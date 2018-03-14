@@ -281,7 +281,9 @@ function validateSnils(snils, error) {
 var validData = [];
 
 $('#StepThree_Ur').click(function () {
-    var errCompany = validEmpty($('#company').prop('value'), $('#company'));
+    //TODO Для включения валидации удалть следующую строку и раскоментить код
+    document.location.href = "orderingStepThreeUr.html"
+    /*var errCompany = validEmpty($('#company').prop('value'), $('#company'));
     if (errCompany) {
         validData['Company'] = true;
     } else {
@@ -358,5 +360,5 @@ $('#StepThree_Ur').click(function () {
         document.location.href = "orderingStepThreeUr.html"
     }
 
-    return false;
+    return false;*/
 });
