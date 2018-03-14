@@ -78,7 +78,9 @@ function validNumber (value, obj) {
 
 
 $('#ButtonStepThree').click(function () {
-    if (!$('#orderCity').prop('value')) {
+    //TODO Для включения валидации удалть следующую строку и раскоментить код
+    document.location.href = "orderingStepThree.html"
+    /*if (!$('#orderCity').prop('value')) {
         $("#orderCity").notify(
             "Поле обязательно для заполнения",
             {
@@ -136,5 +138,5 @@ $('#ButtonStepThree').click(function () {
     if (errCity&&errStreet&&errHouse&&errFlat) {
         document.location.href = "orderingStepThree.html"
     }
-    return false;
+    return false;*/
 });

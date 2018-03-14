@@ -9,7 +9,7 @@ function clouseCodModal () {
 if (document.getElementById('cod')) {
     $('#cod').keyup(function () {
        if ($(this).prop('value').length == 4) {
-           if ($(this).prop('value') != 1234) {
+           if ($(this).prop('value') != 0000) {
                $("#cod").notify(
                    "Код не верен",
                    {
