@@ -1,13 +1,13 @@
 var images = [
-    "../images/news/1.png",
-    "../images/news/2.png",
-    "../images/news/3.png",
-    "../images/news/4.png",
-    "../images/news/5.png",
-    "../images/news/1.png",
-    "../images/news/2.png",
-    "../images/news/3.png",
-    "../images/news/4.png"
+    "images/news/1.png",
+    "images/news/2.png",
+    "images/news/3.png",
+    "images/news/4.png",
+    "images/news/5.png",
+    "images/news/1.png",
+    "images/news/2.png",
+    "images/news/3.png",
+    "images/news/4.png"
 ];
 var alt = [
     "Фотография 1",
