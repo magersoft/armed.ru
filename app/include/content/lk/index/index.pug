@@ -27,17 +27,18 @@
                         | Сумма
 
                 .LkIndex-TableBody.table__body
-                    - for (var i = 0; i < 10; i++)
-                        .orders__row.table__row
-                            p.orders__status.table__element
-                                span.orders__status-color.orders__status-color_blue
-                                | В обработке
-                            p.orders__orderNumber.table__element
-                                | ДМ000158951
-                            p.orders__data.table__element
-                                | 23.01.2018
-                            p.orders__sum.table__element
-                                | 210 000 000 000
+                    - for (var i = 0; i < 20; i++)
+                        a.LkIndex-TableRowLink(href="lk_ordersInfo.html")
+                            .orders__row.table__row
+                                p.orders__status.table__element
+                                    span.orders__status-color.orders__status-color_blue
+                                    | В обработке
+                                p.orders__orderNumber.table__element
+                                    | ДМ000158951
+                                p.orders__data.table__element
+                                    | 23.01.2018
+                                p.orders__sum.table__element
+                                    | 210 000 000 000
 
 
 
