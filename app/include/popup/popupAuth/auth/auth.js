@@ -141,7 +141,7 @@ function validPhone (value, obj) {
         return err;
     }
     //TODO Должна встать передача данных на бэк с проверкой ответа сервера методом ajax
-    if (!(validNumber == 71234567890)) { // Проверка на наличие в базе
+    /*if (!(validNumber == 71234567890)) { // Проверка на наличие в базе
         $(obj).notify(
             "Данный номер не зарегистрирован",
             {
@@ -153,5 +153,5 @@ function validPhone (value, obj) {
         );
         err = 1;
         return err;
-    }
+    }*/
 }
