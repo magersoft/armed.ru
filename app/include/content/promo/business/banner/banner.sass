@@ -1,0 +1,102 @@
+.businessBanner
+  &__wrapper
+    width: 100%
+    height: 785px
+    display: flex
+    background:
+      image: url("images/business/banner.jpg")
+      repeat: no-repeat
+  &__inner
+    &-text
+      padding:
+        left: 200px
+        //right: 80px
+      display: flex
+      justify-content: center
+      flex-direction: column
+      //align-items: flex-end
+      flex: 0.8
+      h1
+        font-family: $fontFamilyAdditionally
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        font-size: 4.3em
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #FFFFFF
+      h2
+        font-family: $fontFamilyAdditionally
+        font-style: normal
+        font-weight: normal
+        line-height: normal
+        font-size: 2.6em
+        color: #FFFFFF
+      p
+        font-family: $fontFamilyAdditionally
+        font-style: normal
+        font-weight: normal
+        line-height: normal
+        font-size: 1.9em
+        color: #FFFFFF
+      hr
+        margin:
+          top: 10px
+          bottom: 30px
+        width: 100%
+        height: 1px
+        background-color: #ffffff
+
+    &-table
+      flex: 2
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      padding:
+        left: 60px
+  &__item
+    &-table
+      width: 1010px
+      height: 509px
+      background-color: rgba(255, 255, 255, 0.9)
+  &__circle
+    width: 75px
+    height: 75px
+    background-color: #C4C4C4
+    border-radius: 50%
+    margin-bottom: 10px
+  &__plus
+    p
+      font-family: $fontFamilyAdditionally
+      font-style: normal
+      font-weight: 300
+      line-height: normal
+      font-size: 1.6em
+      text-align: center
+      color: #4f4f4f
+    h4
+      font-family: $fontFamilyAdditionally
+      font-style: normal
+      font-weight: normal
+      line-height: normal
+      font-size: 2.6em
+      text-align: center
+  &__table
+    padding: 0 10px 10px 10px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+    &-column
+      align-items: center
+      justify-content: center
+      width: 300px
+      height: 170px
+      display: flex
+      flex-direction: column
+      &:nth-child(5)
+        width: 350px
+      &:nth-child(4),
+      &:nth-child(7)
+        padding: 0 45px

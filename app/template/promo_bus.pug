@@ -1,0 +1,18 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/head/head
+    body
+        main.home
+            include ../include/Global/preloader/preload
+            include ../include/content/main/header/header
+            section
+                include ../include/content/promo/business/banner/banner
+            section
+                include ../include/content/promo/business/numbers/numbers
+        include ../include/footer/footer
+
+
+        //- Весь вонтент до данного коментария
+
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src='main.js')

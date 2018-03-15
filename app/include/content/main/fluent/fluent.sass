@@ -8,7 +8,8 @@
     &-home
       h2
         color: #8A6E5B
-      button
+      a
+
         background-color: rgba(138, 110, 91, 0.35)
         &:hover
           background-color: rgba(138, 110, 91, 0.45)
@@ -18,7 +19,7 @@
       h2
         color: #80787A
 
-      button
+      a
         background-color: rgba(#80787A, 0.35)
         &:hover
           background-color: rgba(#80787A, 0.45)
@@ -27,7 +28,7 @@
     &-care
       h2
         color: #B08B8B
-      button
+      a
         background-color: rgba(176, 139, 139, 0.35)
         &:hover
           background-color: rgba(176, 139, 139, 0.45)
@@ -37,7 +38,7 @@
       h2
         color: #6EB0B5
 
-      button
+      a
         background-color: rgba(110, 176, 181, 0.35)
         &:hover
           background-color: rgba(110, 176, 181, 0.45)
@@ -106,7 +107,11 @@
           weight: 300
         line-height: 25px
         color: #4f4f4f
-      button
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+        text-decoration: none
         cursor: pointer
         margin-top: 170px
         width: 218px
@@ -117,6 +122,8 @@
           weight: 500
         letter-spacing: 0.05em
         color: #ffffff
+        span
+          margin: 0 auto
 
     &-card
       cursor: pointer
