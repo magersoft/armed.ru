@@ -37,33 +37,50 @@
       transform: translateX(0) translateZ(0)
       transition: transform .9s ease-out 0s
   &__nav
-    padding: 0 154px
+    padding: 0 90px
     width: 100%
     height: 100%
     display: flex
     justify-content: center
     align-items: center
-    ul
+    &-menu > li
+      width: 200px
+      padding: 30px !important
+    &-main
       list-style: none
+      &__link
+        text-decoration: none
+        font:
+          family: 'Rubik'
+          size: 16px
+          weight: 400
+        color: #4f4f4f
+        text-transform: uppercase
+        line-height: 25px
+        &:hover
+          transition: color .3s
+          color: rgba(#4f4f4f, 0.6)
+      &__right
+        text-decoration: none
+        font:
+          family: 'Rubik'
+          size: 2em
+          weight: 400
+        color: #4f4f4f
+        text-transform: uppercase
+        line-height: 25px
+        &:hover
+          transition: color .3s
+          color: rgba(#4f4f4f, 0.6)
+
       li
-        padding: 15px
-        margin-bottom: 15px
+        padding: 8px
+        margin-bottom: 6px
         text-align: center
         border-bottom: 1px solid #e0e0e0
         &:last-child
           border-bottom: none
-        a
-          text-decoration: none
-          font:
-            family: 'Rubik'
-            size: 2em
-            weight: 400
-          color: #4f4f4f
-          text-transform: uppercase
-          line-height: 30px
-          &:hover
-            transition: color .3s
-            color: rgba(#4f4f4f, 0.6)
+
   &__close
     width: 100%
     padding: 10px 30px
@@ -81,3 +98,25 @@
     &--right
       a
         justify-content: flex-end
+
+.main-catalog-bottom
+  margin-top: 10px
+  display: none
+  list-style: none
+  //border-left: 1px solid #E0E0E0
+  li
+    text-align: left
+    padding: 0 0 0 20px
+    //text-indent: 2em
+    border: none
+  a
+    text-transform: none
+    text-decoration: none
+    font:
+      family: 'Rubik'
+      size: 14px
+      weight: 400
+    color: #4f4f4f
+    line-height: 30px
+    &:hover
+      color: #c62828
