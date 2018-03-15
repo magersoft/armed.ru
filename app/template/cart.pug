@@ -102,13 +102,16 @@ html(lang="ru")
                                 a(href="#" data-id="PickList").modalLink.button-cart.cart__table-footer_dostavka
                                     i.cart__table-footer_dostavka-icon
                                     | Адреса самовывозов
-                                a(href="#").button-cart.cart__table-footer_next
+                                a(href="catalog_tov.html").button-cart.cart__table-footer_next
                                     | Продолжить покупки
                                     i.cart__table-footer_next-icon
                             .cart__table-footer_right.col
                                 a(href="#" data-id="Present").modalLink.button-cart.cart__table-footer_gift
                                     i.cart__table-footer_gift-icon
                                     | Подарок
+                                a.Button.Button_Color_Red.Button_Size_Sm(href="orderingStepTwoUr.html")
+                                    span.Button-Text.Button-Text_Color_White
+                                        | Оформить заказ
                 .cart__total
                     .cart__total-coupone.col-6
                         .cart__total-title
@@ -148,7 +151,7 @@ html(lang="ru")
                                     .cart__total-check_body-item.bonus
                                         span.check-title Выгода
                                         span.check-value.green 5 740 &#8381;
-                .button-checkout
+                //.button-checkout
                     a(href="#").button.go-checkout
                         | Оформить заказ
 
