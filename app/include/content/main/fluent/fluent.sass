@@ -1,16 +1,58 @@
 .fluent
-  &__active
-    transform: scale(1.03)
-    transition: 1s
-    z-index: 3
+  &__info
+    height: 100%
+    display: flex
+    flex-direction: column
+    &-hide
+      display: none
+    &-home
+      h2
+        color: #8A6E5B
+      button
+        background-color: rgba(138, 110, 91, 0.35)
+        &:hover
+          background-color: rgba(138, 110, 91, 0.45)
+        &:active
+          background-color: rgba(138, 110, 91, 0.65)
+    &-business
+      h2
+        color: #80787A
+
+      button
+        background-color: rgba(#80787A, 0.35)
+        &:hover
+          background-color: rgba(#80787A, 0.45)
+        &:active
+          background-color: rgba(#80787A, 0.65)
+    &-care
+      h2
+        color: #B08B8B
+      button
+        background-color: rgba(176, 139, 139, 0.35)
+        &:hover
+          background-color: rgba(176, 139, 139, 0.45)
+        &:active
+          background-color: rgba(176, 139, 139, 0.65)
+    &-pro
+      h2
+        color: #6EB0B5
+
+      button
+        background-color: rgba(110, 176, 181, 0.35)
+        &:hover
+          background-color: rgba(110, 176, 181, 0.45)
+        &:active
+          background-color: rgba(110, 176, 181, 0.65)
   &__wrapper
     height: 1040px
   &__inner
     //background: lightpink
     &-background
-      background: lightgreen
+      background:
+        image: url("images/main/fluent/bis-big-bg.png")
       height: 1040px
     &-preview
+      width: 99%
       display: flex
       flex-direction: row
       justify-content: flex-end
@@ -21,22 +63,109 @@
       //width: 1120px
       height: 650px
   &__item
-    //border: 1px solid red
-    //width: 280px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-end
     height: 100%
-    //background: lightskyblue
+    padding:
+      left: 25px
+      bottom: 30px
+      right: 38px
+
     &-info
-      background: none
+      background: linear-gradient(270.52deg, rgba(255, 255, 255, 0.3) 0.38%, rgba(255, 255, 255, 0) 99.63%)
       flex: 3
+      padding: 96px 96px 58px 65px
+      h2
+        font:
+          family: $fontFamilyAdditionally
+          size: 3.6em
+          weight: 500
+        line-height: 43px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+      h3
+        color: #828282
+        font:
+          family: $fontFamilyAdditionally
+          size: 2.6em
+          weight: 400
+      hr
+        width: 100%
+        margin:
+          top: 20px
+          bottom: 50px
+        border: none
+        height: 2px
+        background-image: linear-gradient(to right, #BDBDBD 0%, rgba(0,0,0,0) 100%)
+      p
+        font:
+          family: $fontFamilyAdditionally
+          size: 1.8em
+          weight: 300
+        line-height: 25px
+        color: #4f4f4f
+      button
+        cursor: pointer
+        margin-top: 170px
+        width: 218px
+        height: 54px
+        font:
+          family: 'Exo 2'
+          size: 2em
+          weight: 500
+        letter-spacing: 0.05em
+        color: #ffffff
+
     &-card
+      cursor: pointer
+      box-shadow: 5px 5px 20px  rgba(0,0,0,0.15)
+      min-width: 280px
       transition: 1s
-      border: 1px solid red
       flex: 1
+      hr
+        background-image: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(0,0,0,0) 100%)
+        width: 100%
+        height: 2px
+        border: none
+        margin-top: 18px
+      h4
+        font:
+          family: $fontFamilyAdditionally
+          size: 3.4em
+          weight: 500
+        color: #ffffff
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        //margin-bottom: 2px
+      span
+        font:
+          family: $fontFamilyDefault
+          size: 1.6em
+        line-height: 21px
+        letter-spacing: 0.05em
+        color: #ffffff
+        text-transform: uppercase
     &-business
-      background: teal
+      z-index: 4
+      background:
+        image: url("images/main/fluent/bis-bg.png")
     &-home
-      background: yellow
+      z-index: 3
+      background:
+        image: url("images/main/fluent/home-bg.png")
     &-care
-      background: pink
+      z-index: 2
+      background:
+        image: url("images/main/fluent/care-bg.png")
     &-pro
-      background: rebeccapurple
+      z-index: 1
+      background:
+        image: url("images/main/fluent/pro-bg.png")
+  &__active
+    cursor: default
+    transform: scale(1.04)
+    transition: 1s
+    z-index: 5
+    box-shadow: 15px 15px  30px rgba(0,0,0,0.15px)

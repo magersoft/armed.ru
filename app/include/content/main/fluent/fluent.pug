@@ -1,9 +1,69 @@
 .fluent
     .fluent__wrapper
-        .fluent__inner.fluent__inner-background //для фона
+        .fluent__inner.fluent__inner-background
         .fluent__inner.fluent__inner-preview
-            .fluent__item.fluent__item-info // большая информация при раскрытии
-            .fluent__item.fluent__item-card.fluent__item-business.fluent__active
-            .fluent__item.fluent__item-card.fluent__item-home
-            .fluent__item.fluent__item-card.fluent__item-care
-            .fluent__item.fluent__item-card.fluent__item-pro
+            .fluent__item.fluent__item-info
+                .fluent__info.fluent__info-business
+                    h2
+                        | Business
+                    h3
+                        | Юридическим лицам
+                    hr
+                    p
+                        | Работа с компанией «Армед» - это целый комплекс выгод, начиная с доступной стоимости и широкого ассортимента продукции и заканчивая высочайшим уровнем сервиса и эффективной рекламной поддержкой
+                    button
+                        | Подробнее
+                .fluent__info.fluent__info-home.fluent__info-hide
+                    h2
+                        | Home
+                    h3
+                        | Для дома
+                    hr
+                    p
+                        | Огромный выбор функциональной медицинской техники для дома. Наша продукция не только полезна для всей семьи, но и отлично впишется в любой домашний интерьер благодаря стильному дизайну
+                    button
+                        | Подробнее
+                .fluent__info.fluent__info-care.fluent__info-hide
+                    h2
+                        | Care
+                    h3
+                        | Забота о близких
+                    hr
+                    p
+                        | Мы заботимся о тех, кто особенно в этом нуждается. Широкий ассортимент кресел-колясок и многих других технических средств реабилитации с высокой функциональностью и доступными ценами
+                    button
+                        | Подробнее
+                .fluent__info.fluent__info-pro.fluent__info-hide
+                    h2
+                        | Pro
+                    h3
+                        | Для медицинских учреждений
+                    hr
+                    p
+                        | Мы успешно работаем с большим количеством частных и государственных медицинских учреждений. Отлично знаем нюансы работы в системах государственных закупок по 44-ФЗ и 223-ФЗ
+                    button
+                        | Подробнее
+            .fluent__item.fluent__item-card.fluent__item-business.fluent__active#fluentBusiness
+                h4
+                    | Business
+                span
+                    | Юридическим лицам
+                hr
+            .fluent__item.fluent__item-card.fluent__item-home#fluentHome
+                h4
+                    | Home
+                span
+                    | Для дома
+                hr
+            .fluent__item.fluent__item-card.fluent__item-care#fluentCare
+                h4
+                    | Care
+                span
+                    | Забота о близких
+                hr
+            .fluent__item.fluent__item-card.fluent__item-pro#fluentPro
+                h4
+                    | Pro
+                span
+                    | Для медицинских учреждений
+                hr
