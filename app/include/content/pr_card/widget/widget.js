@@ -11,5 +11,6 @@ if(window.location.toString().indexOf('prcard_index.html')>0)
 		} else {
             $('.Tempory-BlockButtonChange_Pred').css('display', 'flex');
 		}
+
 	}
 
