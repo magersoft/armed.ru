@@ -1,0 +1,86 @@
+
+.anchor
+  z-index: 999
+  margin:
+    //left: -286px
+    bottom: 5px
+  height: 60px
+  background-color: #f8f8f8
+  display: flex
+  //position: fixed
+  //width: 100vw
+  //bottom: -5px
+  &__wrapper
+    width: 1000px
+  &__inner
+    //padding: 0 60px 0 15px
+    height: 60px
+    border: none
+    width: 1000px
+    list-style: none
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__item
+    width: 100%
+    border-right: 1px solid #ffffff
+    display: flex
+    justify-content: center
+    text-align: center
+    &:last-child
+      border-right: none
+    &:hover
+      .anchor__item-link
+        color: #c62828
+    &-link
+      //width: 150px
+      border: none
+      padding: 21px 0px
+      letter-spacing: 0.7px
+      font:
+        size: 1.4em
+        family: $fontFamilyAdditionally
+      color: #4f4f4f
+      text:
+        decoration: none
+      transition: 0.4s
+      &:hover
+        //background: #ffffff
+        color: #4f4f4f
+      &-temp
+        @extend .anchor__item-link
+      &-hide
+        display: none
+  &__sticky
+    background-color: #F2F2F2
+    width: 100vw !important
+    justify-content: space-around
+    margin-left: -286px
+    .anchor__wrapper
+      width: 1366px
+      .anchor__inner
+        padding: 0
+        width: 1366px
+        .anchor__hide
+          @extend .anchor__item
+        .anchor__item
+          width: 100%
+          .anchor__item-link
+            width: 150px
+        .active__anchor
+          background-color: #c62828
+          .anchor__item-link
+            color: #ffffff
+  &__hide
+    display: none
+.active__anchor
+  //background: $GlobalColor
+  //border-top: 2px solid $GlobalColor
+  .anchor__item-link
+    color: #c62828
+    &:hover
+      color: #ffffff
+
+
+
+

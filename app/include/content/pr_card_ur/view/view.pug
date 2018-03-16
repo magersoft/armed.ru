@@ -1,0 +1,96 @@
+#view
+    .view
+        .prcard-title
+            h2 Концентратор кислорода "8F-1"&nbsp;
+                span.prcard-title--options
+                    | с выходом для ингаляций
+        .view__wrapper
+            .view__inner-slider
+                .view-slider-main
+                    .view-slider-main__image
+                        .product__tool
+                            .product__rib.product__rib_new
+                            .product__rib.product__rib_hit
+                            .product__rib.product__rib_present
+                        img(src="images/quickview/quickview_slider_main.png")
+                    .view-slider-main__image
+                        img(src="images/quickview/quickview_slider_2.png")
+                    .view-slider-main__image
+                        img(src="images/quickview/quickview_slider_3.png")
+                    .view-slider-main__image
+                        img(src="images/quickview/quickview_slider_4.png")
+                    .view-slider-main__image
+                        img(src="images/quickview/quickview_slider_1.png")
+                .view-slider-bottom
+                    .view-slider-bottom__image
+                        img(src="images/quickview/quickview_slider_1.png")
+                    .view-slider-bottom__image
+                        img(src="images/quickview/quickview_slider_2.png")
+                    .view-slider-bottom__image
+                        img(src="images/quickview/quickview_slider_3.png")
+                    .view-slider-bottom__image
+                        img(src="images/quickview/quickview_slider_4.png")
+                    .view-slider-bottom__image
+                        img(src="images/quickview/quickview_slider_main.png")
+            .view__inner-description
+                .view__item-about
+                    //.view__item-about--special
+                        .view__item-about--special__body
+                            ul
+                                li
+                                    span
+                                        | Особенность 1
+                                li 
+                                    span
+                                        | Особенность  
+                                li
+                                    span
+                                        | Особенность 3
+                    p.view__item-about--text
+                        | Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. А стильный дизайн будет радовать глаз и прекрасно украсит любой интерьер. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны.&nbsp;
+                        a(href="#").view__item-about--link
+                            | Подробнее
+                .view__inner-feature
+                    .view__item-feature__text
+                        .view__item-feature__text-name.view-feature-title
+                            p Характеристики:
+                        .view__item-feature__text-value.view-feature-title
+                            a(href="#detail") Все характеристики
+                    - var x = 2;
+                    - for (var i=1; i<=x; i++) {
+                    .view__item-feature__text
+                        .view__item-feature__text-name
+                            p Наши предложения
+                        .view__item-feature__text-value
+                            p Хит продаж / Новинка
+                    .view__item-feature__text
+                        .view__item-feature__text-name
+                            p Цвет
+                        .view__item-feature__text-value
+                            p Черный
+                    .view__item-feature__text
+                        .view__item-feature__text-name
+                            p Гарантия
+                        .view__item-feature__text-value
+                            p 18 месяцев
+                    - }
+                .view__inner-color
+                    h5.description-item_title Другие варианты товара
+                    p.description-item_text Цвет
+                    .quickview-inner_color-box
+                        a.quickview-item_color-link
+                            img.quickview-item_color-image(src='images/quickview/quickview_color_1.png')
+                        a.quickview-item_color-link
+                            img.quickview-item_color-image(src='images/quickview/quickview_color_2.png')
+                        a.quickview-item_color-link
+                            img.quickview-item_color-image(src='images/quickview/quickview_color_3.png')
+                        a.quickview-item_color-link
+                            img.quickview-item_color-image(src='images/quickview/quickview_color_4.png')
+                .view__inner-size
+                    //тут блок для размера//
+                    p.description-item_text Размер
+                    .quickview-inner_size-box
+                        a.quickview-item_size-link 20x20
+                        a.quickview-item_size-link 40x40
+                        a.quickview-item_size-link 70x70
+                        a.quickview-item_size-link 120x30

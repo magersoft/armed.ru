@@ -1,0 +1,41 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/head/head
+    body
+        main.home.prcard
+            include ../include/Global/preloader/preload
+            include ../include/header/header
+            include ../include/Global/breadcrums/breadcrums
+            section.container.row
+                .container-prcard
+                    include ../include/content/pr_card_ur/view/view
+                    include ../include/content/pr_card_ur/anchor/anchor
+                    include ../include/content/pr_card_ur/set/set
+                    include ../include/content/pr_card_ur/advantages/advantages
+                    include ../include/content/pr_card_ur/detail/detail
+                    include ../include/content/pr_card_ur/Documents/Documents
+                    include ../include/content/pr_card_ur/video/video
+                    include ../include/content/pr_card_ur/reviews/reviews
+                    include ../include/content/pr_card_ur/reviews/form
+                    include ../include/content/pr_card_ur/same/same
+
+
+                    //include ../include/content/pr_card_ur/view/view
+                    //include ../include/content/pr_card_ur/anchor/anchor
+                    //include ../include/content/pr_card_ur/advantages/advantages
+                    //include ../include/content/pr_card_ur/Documents/Documents
+                    //include ../include/content/pr_card_ur/video/video
+                    //include ../include/content/pr_card_ur/detail/detail
+                    //include ../include/content/pr_card_ur/set/set
+                    //include ../include/content/pr_card_ur/reviews/reviews
+                    //include ../include/content/pr_card_ur/reviews/form
+                    //include ../include/content/pr_card_ur/same/same
+                .container-fixedcard
+                    include ../include/content/pr_card_ur/widget/widget
+            section.container-fluid
+                include ../include/global/recommend/recommend
+            include ../include/footer/footer
+        include ../include/popup/popup
+        //- Весь контент до данного комментария
+        link(rel="stylesheet" type="text/css" href="style.css")
+        script(src='main.js')

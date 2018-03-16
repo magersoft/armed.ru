@@ -1,5 +1,4 @@
-/*
-if(window.location.toString().indexOf('prcard_index.html')>0)
+if((window.location.toString().indexOf('prcard_index.html')>0) || (window.location.toString().indexOf('prcard_index_ur.html')>0))
 	{
 		$(function() {
 			var widget = $('.widget');
@@ -15,4 +14,3 @@ if(window.location.toString().indexOf('prcard_index.html')>0)
 
 	}
 
-*/

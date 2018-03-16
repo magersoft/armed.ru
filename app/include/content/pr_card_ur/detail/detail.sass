@@ -1,0 +1,59 @@
+.detail
+  margin-top: 30px
+  padding: 30px 15px 20px 15px
+  border-bottom: 1px solid #e0e0e0
+  &__table
+    margin: 15px 0
+    border: 1px solid #e0e0e0
+    width: 100%
+    background:
+      color: transparent
+    border-collapse: collapse
+    &-title
+      margin: 20px 0 0 0
+      font:
+        size: 1.8em 
+        family: $fontFamilyDefault
+        weight: normal
+      color: #4f4f4f
+    &-item
+      text-align: left
+      font:
+        size: 1.4em
+        family: $fontFamilyDefault
+        weight: normal
+      color: #828282
+      &__success
+        color: #7dc472
+      &__fail
+        color: #c62828
+    tbody
+      tr
+        border: none
+        th
+          width: 35%
+        td,
+        th
+          padding: 10px
+          border-color: transparent
+
+        &:nth-of-type(odd)
+          background:
+            color: #f6f6f6
+.product__question
+  &-detail
+    margin-left: 10px
+    display: inline-block
+
+.tooltip
+  position: absolute
+  z-index: 9999
+  left: -9999px
+  border: 1px solid #fff
+  color: #828282
+  font:
+    size: 13px
+  background-color: #ffffff
+  padding: 10px 10px
+  border-radius: 5px
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1)

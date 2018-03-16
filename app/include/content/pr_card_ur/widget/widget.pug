@@ -11,15 +11,42 @@
                 a(href="#" data-id="Buy").modalLink.quickview-inner_buy__icons-click
         .quickview-inner_buy__cost
             p.quickview-item_buy__newcost
-                | 25 000&nbsp;
+                | 20 000&nbsp;
                 span.quickview-item_buy__newcost-symbol
                     | &#8381;
             p.quickview-item_buy__oldcost
                 | 30 000&nbsp;
             span.quickview-item_buy__oldcost-symbol
                 | &#8381;
+            a.product__question(href="#" title="Доп информация").tooltipShow.widget__question
+                .product__question-window.widget__question-window
+                    h5.product__question-head Возможные варианты цен на этот товар
+                    .product__question-you-price.you-price_color
+                        p.product__question-name Ваша цена
+                        .product__question-price
+                            p.product__question-oldprice 67 640
+                                span.product__question-val &nbsp₽
+                            p.product__question-newprice 47 400
+                                span.product__question-val &nbsp₽
 
-        a.quickview__link.quickview__link_NotLink.modalLink(href="#" data-id="Entity") Для юридических лиц
+                    .product__question-retail-price.retail-price_color
+                        p.product__question-name Рек. розничная цена
+                        .product__question-price
+                            p.product__question-oldprice 67 640
+                                span.product__question-val &nbsp₽
+                            p.product__question-newprice 57 400
+                                span.product__question-val &nbsp₽
+
+                    .product__question-income.income_color
+                        p.product__question-name Доход
+                        .product__question-price
+                            p.product__question-newprice 10 000
+                                span.product__question-val &nbsp₽
+
+                    a.product__question-link(href="#") Узнать больше
+                        span.button__icon.button__icon_arrow
+
+        //a.quickview__link.quickview__link_NotLink.modalLink(href="#" data-id="Entity") Для юридических лиц
         .quickview-inner_buy__amount
             p.quickview-item_buy__amount-title
                 | Кол-во:
@@ -42,8 +69,8 @@
                 a.quickview__link(href="#same")
                     | Или&nbsp
                     span.quickview__link_NotLink Посмотреть аналоги
-        a.widget__socialprotection(href="#") Купить с компенсацией от соцзащиты
-        .quickview-inner_buy__delivery
+        //a.widget__socialprotection(href="#") Купить с компенсацией от соцзащиты
+        //.quickview-inner_buy__delivery
             .quickview-item_buy__delivery-select
                 .Select#CitySelect
                     a.Select-Head#SelectCity(href="#" data-value="None")
@@ -76,7 +103,7 @@
                         | Самовывоз:&nbsp;
                     a(href="#" data-id="PickList").delivery-self_link.modalLink
                         | 5 пунктов
-    .widget__social
+    //.widget__social
         p.dilevery_header Поделиться
         .quickview-item_buy__social
             a(href="#").quickview-item_buy__social-icon__vk
