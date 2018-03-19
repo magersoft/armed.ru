@@ -27,7 +27,20 @@
                         | Сумма
 
                 .LkIndex-TableBody.table__body
-                    - for (var i = 0; i < 20; i++)
+                    include IndexData
+                    each item in IndexData
+                        a.LkIndex-TableRowLink(href="lk_ordersInfo.html")
+                            .orders__row.table__row
+                                p.orders__status.table__element
+                                    span.orders__status-color(class = item.statusstyle)
+                                    | #{item.status}
+                                p.orders__orderNumber.table__element
+                                    | #{item.nomber}
+                                p.orders__data.table__element
+                                    | #{item.date}
+                                p.orders__sum.table__element
+                                    | #{item.cost}
+                    //- for (var i = 0; i < 20; i++)
                         a.LkIndex-TableRowLink(href="lk_ordersInfo.html")
                             .orders__row.table__row
                                 p.orders__status.table__element
