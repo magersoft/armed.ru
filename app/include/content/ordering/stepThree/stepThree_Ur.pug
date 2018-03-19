@@ -5,6 +5,11 @@
         p.StepTwo_fiz__Head Доставка
             p.StepTwo_fiz__Text Выберите способ получения товара:
             .StepTwo_fiz__ButtonWrap
+                a.StepOne__Tab-active
+                    | Доставка
+                a(href="#" data-id="Pick").modalLink.StepOne__Tab
+                    | Самовывоз
+            //.StepTwo_fiz__ButtonWrap
                 button.Button.Button_Color_Red.Button_Size_Lg.StepTwo_fiz__Button
                     span.Button-Text.Button-Text_Color_White.Button-Text_Uppercase
                         | Доставка
@@ -61,7 +66,7 @@
                             input.StepTwo_fiz__Form-Input.StepTwo_fiz__Form-Input_sm(type="text" name="orderTime_Ur"
                             id="orderTime_Ur" placeholder="Время")
                 .StepTwo_fiz__Form_Comment
-                    p.StepTwo_fiz__FormText Ваш заказ привезет проверенная нами недорогая курьерская служба в течении 24 ч.
+                    //p.StepTwo_fiz__FormText Ваш заказ привезет проверенная нами недорогая курьерская служба в течении 24 ч.
                     label.StepTwo_fiz__Form-Label.StepTwo_fiz__Form-Label_text(for="orderComment") Комментарий:
                         textarea.StepTwo_fiz__Form-TextArea(name="orderComment" id="orderComment")
 
