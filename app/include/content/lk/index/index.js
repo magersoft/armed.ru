@@ -117,8 +117,8 @@ $('.LkIndex-ProductWrap').slick({
     slidesToScroll: 1,
     slidesToShow: 2,
     adaptiveHeight: true,
-    nextArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_LkProduct"></i>',
-    prevArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_LkProduct"></i>'
+    prevArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_LkProduct"></i>',
+    nextArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_LkProduct"></i>'
 });
 
 ProductSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
