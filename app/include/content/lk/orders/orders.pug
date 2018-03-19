@@ -140,10 +140,34 @@
                             p.orders__sum.table__element
                                 | 210 000 000 000
                             .orders__actions.table__element.table__element_actions
-                                a(href="#").orders__icon.orders__icon_save.ClickSave
-                                a(href="#").orders__icon.orders__icon_print.ClickPrint
-                                a(href="lk_ordersInfo.html").orders__icon.orders__icon_edit
-                                a(href="#").orders__icon.orders__icon_copy
+                                a(href="#" title="Сохранить" onclick='var elem = this; var pos=this.getBoundingClientRect();Position' +
+                                '(pos,' +
+                                ' elem' +
+                                ')').orders__icon.orders__icon_save.tooltipShow
+                                .orders__menu
+                                    .orders__menu-item
+                                        a.orders__menu-close(href="#")
+                                        a.orders__menu-link(href="#") Документ 1
+                                        a.orders__menu-link(href="#") Документ 2
+                                        a.orders__menu-link(href="#") Докум 3
+                                        a.orders__menu-link(href="#") Документываувыв 4
+                                        a.orders__menu-link(href="#") Документ 5
+                                        a.orders__menu-link(href="#") До 6
+                                a(href="#" title="Печать" onclick='var elem = this; var pos=this.getBoundingClientRect();Position' +
+                                '(pos,' +
+                                ' elem' +
+                                ')').orders__icon.orders__icon_print.tooltipShow
+                                .orders__menu
+                                    .orders__menu-item
+                                        a.orders__menu-close(href="#")
+                                        a.orders__menu-link(href="#") Документ 1
+                                        a.orders__menu-link(href="#") Документ 2
+                                        a.orders__menu-link(href="#") Докум 3
+                                        a.orders__menu-link(href="#") Документываувыв 4
+                                        a.orders__menu-link(href="#") Документ 5
+                                        a.orders__menu-link(href="#") До 6
+                                a(href="lk_ordersInfo.html" title="Редактировать").orders__icon.orders__icon_edit.tooltipShow
+                                a(href="#" title="Дублировать").orders__icon.orders__icon_copy.tooltipShow
                 p.orders__quantity-text
                     | Показывать на странице
                     select.orders__quantity
@@ -199,10 +223,34 @@
                             p.orders__sum.table__element
                                 | 210 000 000 000
                             .orders__actions.table__element.table__element_actions
-                                a(href="#").orders__icon.orders__icon_save
-                                a(href="#").orders__icon.orders__icon_print
-                                a(href="lk_ordersInfo.html").orders__icon.orders__icon_edit
-                                a(href="#").orders__icon.orders__icon_copy
+                                a(href="#" title="Сохранить" onclick='var elem = this; var pos=this.getBoundingClientRect();Position' +
+                                '(pos,' +
+                                ' elem' +
+                                ')').orders__icon.orders__icon_save.tooltipShow
+                                .orders__menu
+                                    .orders__menu-item
+                                        a.orders__menu-close(href="#")
+                                        a.orders__menu-link(href="#") Документ 1
+                                        a.orders__menu-link(href="#") Документ 2
+                                        a.orders__menu-link(href="#") Докум 3
+                                        a.orders__menu-link(href="#") Документываувыв 4
+                                        a.orders__menu-link(href="#") Документ 5
+                                        a.orders__menu-link(href="#") До 6
+                                a(href="#" title="Печать" onclick='var elem = this; var pos=this.getBoundingClientRect();Position' +
+                                '(pos,' +
+                                ' elem' +
+                                ')').orders__icon.orders__icon_print.tooltipShow
+                                .orders__menu
+                                    .orders__menu-item
+                                        a.orders__menu-close(href="#")
+                                        a.orders__menu-link(href="#") Документ 1
+                                        a.orders__menu-link(href="#") Документ 2
+                                        a.orders__menu-link(href="#") Докум 3
+                                        a.orders__menu-link(href="#") Документываувыв 4
+                                        a.orders__menu-link(href="#") Документ 5
+                                        a.orders__menu-link(href="#") До 6
+                                a(href="lk_ordersInfo.html" title="Редактировать").orders__icon.orders__icon_edit.tooltipShow
+                                a(href="#" title="Дублировать").orders__icon.orders__icon_copy.tooltipShow
                 p.orders__quantity-text
                     | Показывать на странице
                     select.orders__quantity

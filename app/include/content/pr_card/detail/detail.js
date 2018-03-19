@@ -4,11 +4,11 @@ function simple_tooltip(target_items, name){
         var my_tooltip = $("#"+name+i);
 
         $(this).removeAttr("title").mouseover(function(){
-            my_tooltip.css({opacity:0.8, display:"none"}).fadeIn(400);
+            my_tooltip.css({opacity:0.8, display:"none"}).stop().fadeIn(400);
         }).mousemove(function(kmouse){
             my_tooltip.css({left:kmouse.pageX-50, top:kmouse.pageY+15});
         }).mouseout(function(){
-            my_tooltip.fadeOut(400);
+            my_tooltip.stop().fadeOut(400);
         });
     });
 }
