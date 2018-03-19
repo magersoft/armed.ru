@@ -12,3 +12,7 @@ if(window.location.toString().indexOf('prcard_index.html')>0){
 var prec = $('.percentage').attr('data-percent');
 $('.percentage').find('span').html(prec / '20');
 };
+if(window.location.toString().indexOf('prcard_index_ur.html')>0){
+    var prec = $('.percentage').attr('data-percent');
+    $('.percentage').find('span').html(prec / '20');
+};
