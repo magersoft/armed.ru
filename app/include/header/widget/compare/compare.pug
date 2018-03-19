@@ -6,27 +6,27 @@
         span
             | &nbsp;шт.
     .primary-menu__compare_inner.primary-menu__widget-inner
-        - var x = 8;
-        - for (var i=1; i<=x; i++) {
-        .primary-menu__compare_product.primary-menu__widget-item
-            .primary-menu__compare_product-col-1
-                .primary-menu__compare_product-image
-                    a(href="#")
-                        img(src="images/Header/cart_product-image.png" alt="Отсасыватель хирургический 7A-32B")
-            .primary-menu__compare_product-col-2
-                .primary-menu__compare_product-title
-                    a(href="#")
-                        | Отсасыватель хирургический 7A-23B
-                .primary-menu__compare_product-article
-                    | Артикул: 165444321894
-                .primary-menu__compare_product-price
-                    .primary-menu__compare_product-price_cost
-                        | 21 200 &#8381;
-                    .primary-menu__compare_product-price_oldcost
-                        strike
-                            | 21 200 &#8381;
-            .primary-menu__compare_delete.primary-menu__widget-delete
-        - }
+        include ../../../content/compare/CompareData/CompareData
+        each item in CompareData
+            .primary-menu__compare_product.primary-menu__widget-item
+                .primary-menu__compare_product-col-1
+                    .primary-menu__compare_product-image
+                        a(href="#")
+                            img(src=item.image alt=item.name)
+                .primary-menu__compare_product-col-2
+                    .primary-menu__compare_product-title
+                        a(href="#")
+                            | #{item.name}
+                    .primary-menu__compare_product-article
+                        | Артикул: 165444321894
+                    .primary-menu__compare_product-price
+                        .primary-menu__compare_product-price_cost
+                            | #{item.cost} &#8381;
+                        .primary-menu__compare_product-price_oldcost
+                            strike
+                                | #{item.oldcost} &#8381;
+                .primary-menu__compare_delete.primary-menu__widget-delete
+        
     .primary-menu__compare_price
         | Итого:&nbsp;
         span.primary-menu__compare_price-number#cart-price
