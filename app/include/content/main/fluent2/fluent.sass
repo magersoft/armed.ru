@@ -1,10 +1,53 @@
 .fluent
+  &__button
+    transition: 2s
+    top: 350px
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    text-decoration: none
+    cursor: pointer
+    width: 218px
+    height: 54px
+    font:
+      family: 'Exo 2'
+      size: 2em
+      weight: 500
+    letter-spacing: 0.05em
+    color: #ffffff
+    span
+      margin: 0 auto
+    &-business
+      background-color: rgba(#80787A, 0.35)
+      &:hover
+        background-color: rgba(#80787A, 0.45)
+      &:active
+        background-color: rgba(#80787A, 0.65)
+    &-home
+      background-color: rgba(138, 110, 91, 0.35)
+      &:hover
+        background-color: rgba(138, 110, 91, 0.45)
+      &:active
+        background-color: rgba(138, 110, 91, 0.65)
+    &-care
+      background-color: rgba(176, 139, 139, 0.35)
+      &:hover
+        background-color: rgba(176, 139, 139, 0.45)
+      &:active
+        background-color: rgba(176, 139, 139, 0.65)
+    &-pro
+      background-color: rgba(110, 176, 181, 0.35)
+      &:hover
+        background-color: rgba(110, 176, 181, 0.45)
+      &:active
+        background-color: rgba(110, 176, 181, 0.65)
   &__info
     position: absolute
     //left: 100px
     width: 610px
     //margin-left: -700px
-    height: 100%
+    height: auto
     opacity: 0
     visibility: hidden
     display: flex
@@ -14,42 +57,16 @@
     &-home
       h2
         color: #8A6E5B
-      a
-
-        background-color: rgba(138, 110, 91, 0.35)
-        &:hover
-          background-color: rgba(138, 110, 91, 0.45)
-        &:active
-          background-color: rgba(138, 110, 91, 0.65)
     &-business
       h2
         color: #80787A
-
-      a
-        background-color: rgba(#80787A, 0.35)
-        &:hover
-          background-color: rgba(#80787A, 0.45)
-        &:active
-          background-color: rgba(#80787A, 0.65)
     &-care
       h2
         color: #B08B8B
-      a
-        background-color: rgba(176, 139, 139, 0.35)
-        &:hover
-          background-color: rgba(176, 139, 139, 0.45)
-        &:active
-          background-color: rgba(176, 139, 139, 0.65)
     &-pro
       h2
         color: #6EB0B5
 
-      a
-        background-color: rgba(110, 176, 181, 0.35)
-        &:hover
-          background-color: rgba(110, 176, 181, 0.45)
-        &:active
-          background-color: rgba(110, 176, 181, 0.65)
   &__wrapper
     height: auto
   &__inner
@@ -118,23 +135,7 @@
           weight: 300
         line-height: 25px
         color: #4f4f4f
-      a
-        display: flex
-        justify-content: center
-        align-items: center
-        text-decoration: none
-        cursor: pointer
-        margin-top: 170px
-        width: 218px
-        height: 54px
-        font:
-          family: 'Exo 2'
-          size: 2em
-          weight: 500
-        letter-spacing: 0.05em
-        color: #ffffff
-        span
-          margin: 0 auto
+
 
     &-card
       cursor: pointer
