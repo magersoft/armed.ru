@@ -5,10 +5,12 @@
     width: 610px
     //margin-left: -700px
     height: 100%
+    opacity: 0
+    visibility: hidden
     display: flex
     flex-direction: column
     //&-hide
-    //  margin-left: 0px
+
     &-home
       h2
         color: #8A6E5B
@@ -53,17 +55,20 @@
   &__inner
     //background: lightpink
     &-background
-      //opacity: 1
-      background:
-        image: url("images/main/fluent/bis-big-bg.png")
-      height: 1040px
+      position: absolute
+      top: 0
+      opacity: 0
+      width: 100%
+      //background:
+      //  image: url("images/main/fluent/bis-big-bg.png")
+      //height: 1040px
     &-preview
       width: 99%
       display: flex
       flex-direction: row
       justify-content: flex-end
-      top: -1040px
-      position: relative
+      //top: -1040px
+      //position: relative
       margin: 150px 0 200px 0
       //background: yellow
       //width: 1120px
@@ -182,23 +187,81 @@
     transition: 1s
     z-index: 5
     box-shadow: 15px 15px  30px rgba(0,0,0,0.15px)
+
+
 .bg-off
+  margin-left: -700px
+  opacity: 0
+  visibility: hidden
   animation-name: bay
-  animation-duration: 4s
-  animation-delay: 4s
-  transition: 4s
+  animation-duration: 0.8s
+  transition-timing-function: ease
+  //animation-delay: 4s
+  transition: 0.8s
 @keyframes bay
   from
-    margin-left: -700px
-  to
+    opacity: 1
     margin-left: 0
+  to
+    opacity: 0
+    margin-left: -700px
 .bg-on
+  margin-left: 0
+  opacity: 1
+  visibility: visible
   animation-name: hello
-  //animation-duration: 4s
-  animation-delay: 4s
-  transition: 4s
+  animation-duration: 0.8s
+  transition-timing-function: ease
+﻿
+  //animation-delay: 4s
+  //transition: 4s
 @keyframes hello
   from
+    opacity: 0
     margin-left: -700px
   to
+    opacity: 1
     margin-left: 0
+
+
+.background-business
+  background:
+    image: url("images/main/fluent/bis-big-bg.png")
+  height: 1040px
+.background-home
+  //opacity: 0
+  background:
+    image: url("images/main/fluent/home-big-bg.png")
+  height: 1040px
+.background-care
+  background:
+    image: url("images/main/fluent/care-big-bg.png")
+  height: 1040px
+.background-pro
+  //opacity: 0
+  background:
+    image: url("images/main/fluent/pro-big-bg.png")
+  height: 1040px
+
+.fon-on
+  animation-name: fade-in
+  animation-duration: 2s
+  animation-timing-function: linear
+@keyframes fade-in
+  0%
+    opacity: 0.5
+  50%
+    opacity: 0.2
+  100%
+    opacity: 1
+.fon-off
+  animation-name: fade-out
+  animation-duration: 2s
+  animation-timing-function: linear
+@keyframes fade-out
+  0%
+    opacity: 1
+  50%
+    opacity: 0.2
+  100%
+    opacity: 0.5
