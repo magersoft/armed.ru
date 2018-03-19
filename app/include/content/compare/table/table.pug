@@ -10,7 +10,7 @@
                             a.tabs__link(href="#CompareTab1")
                                 span.compare__name Концентраторы
                                 span.compare__bkt &nbsp(&nbsp
-                                span.compare__count 3
+                                span.compare__count 8
                                 span.compare__bkt &nbsp)&nbsp
                         li.tabs__element
                             a.tabs__link(href="#CompareTab2")
@@ -18,7 +18,7 @@
                                 span.compare__bkt &nbsp(&nbsp
                                 span.compare__count 4
                                 span.compare__bkt &nbsp)&nbsp
-                        li.tabs__element
+                        //li.tabs__element
                             a.tabs__link(href="#CompareTab3")
                                 span.compare__name Операционные столы
                                 span.compare__bkt &nbsp(&nbsp
@@ -29,9 +29,7 @@
                             span.Button-Text.Button-Text_Color_Black
                                 span.Button-Icon.Button-Icon_Cancel
                                 | Очистить сравнение
-                        //a(href="#")
-                            span.compare-clear
-                            | Очистить сравнение
+
                     .table__inner.row#CompareTab1
                         .table__item-head
                             table.table-head
@@ -42,40 +40,67 @@
                                 tr.TrHover(data-id="first")
                                     th.table-head__th-another
                                         p
-                                            | Ширина
+                                            | Габариты
                                 tr.TrHover(data-id="second")
                                     th.table-head__th-another
                                         p
-                                            | Высота профиля
+                                            | Воздушный поток на выходе
                                 tr.TrHover(data-id="third")
                                     th.table-head__th-another
                                         p
-                                            | Производитель
+                                            | Уровень шума
                                 tr.TrHover(data-id="four")
                                     th.table-head__th-another
                                         p
-                                            | Гарантия
+                                            | Потребляемая мощность
+                                tr.TrHover(data-id="five")
+                                    th.table-head__th-another
+                                        p
+                                            | Частота сети
+                                tr.TrHover(data-id="six")
+                                    th.table-head__th-another
+                                        p
+                                            | Питание сети
+                                tr.TrHover(data-id="seven")
+                                    th.table-head__th-another
+                                        p
+                                            | Время выхода на рабочий режим
+                                tr.TrHover(data-id="eight")
+                                    th.table-head__th-another
+                                        p
+                                            | Объем увлажнителя
+                                tr.TrHover(data-id="nine")
+                                    th.table-head__th-another
+                                        p
+                                            | Дальность действия ПДУ
+                                tr.TrHover(data-id="ten")
+                                    th.table-head__th-another
+                                        p
+                                            | Срок службы
+
+
+
                         .scroll-row.scroll-row-lol
                             .table__item-body
-                                - var x = 12;
-                                - for (var i=1; i<=x; i++) {
+                                include ../CompareData/CompareData
+                                each item in CompareData
                                     .table__wrapper-body
                                         table.table-prod
                                             tr
                                                 td.td-first
                                                     span.td-del
                                                     .td-first__header
-                                                        p Концентратор кислорода 8F-1
-                                                    img(src="images/compare/product.png")
+                                                        p #{item.name}
+                                                    img(src=item.image alt=item.name)
                                                     .td-first__cost-group
                                                         .td-first__cost-group--new
                                                             p
-                                                                | 23 490
+                                                                | #{item.cost}
                                                                 span
                                                                     | &nbsp;&#8381;
                                                         .td-first__cost-group--old
                                                             p
-                                                                | 63 370
+                                                                | #{item.oldcost}
                                                                 span
                                                                     | &nbsp;&#8381;
                                                     .table-icon
@@ -84,21 +109,44 @@
                                             tr.TrHover(data-id="first")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__success
-                                                        | 560х280х480 мм
+                                                        | #{item.dimensions}
                                             tr.TrHover(data-id="second")
                                                 td.table-prod__td-another
-                                                    img(src="images/compare/stars.png")
                                                     p
-                                                        | (3 оценки)
+                                                        | #{item.airflow}
                                             tr.TrHover(data-id="third")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__fail
-                                                        | 0-3л/мин
+                                                        | #{item.noiselevel}
                                             tr.TrHover(data-id="four")
                                                 td.table-prod__td-another
                                                     p
-                                                        | 10 лет
-                                - }
+                                                        | #{item.power}
+                                            tr.TrHover(data-id="five")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.networkfrequency}
+                                            tr.TrHover(data-id="six")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.networkpower}
+                                            tr.TrHover(data-id="seven")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.operatingtime}
+                                            tr.TrHover(data-id="eight")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.volumeofhumidifier}
+                                            tr.TrHover(data-id="nine")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.rangeoftheremotecontrol}
+                                            tr.TrHover(data-id="ten")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item.lifetime}
+
                     .table__inner.row#CompareTab2
                         .table__item-head
                             table.table-head
@@ -109,40 +157,121 @@
                                 tr.TrHover(data-id="first")
                                     th.table-head__th-another
                                         p
-                                            | Ширина
+                                            | Исполнение
                                 tr.TrHover(data-id="second")
                                     th.table-head__th-another
                                         p
-                                            | Высота профиля
+                                            | Тип облучателя
                                 tr.TrHover(data-id="third")
                                     th.table-head__th-another
                                         p
-                                            | Производитель
+                                            | Материал корпуса
                                 tr.TrHover(data-id="four")
                                     th.table-head__th-another
                                         p
-                                            | Гарантия
+                                            | Количество ламп
+                                tr.TrHover(data-id="five")
+                                    th.table-head__th-another
+                                        p
+                                            | Мощность ламп, Вт
+                                tr.TrHover(data-id="six")
+                                    th.table-head__th-another
+                                        p
+                                            | Укомплектование лампами
+                                tr.TrHover(data-id="seven")
+                                    th.table-head__th-another
+                                        p
+                                            | Тип цоколя лампы
+                                tr.TrHover(data-id="eight")
+                                    th.table-head__th-another
+                                        p
+                                            | Производительность, м3/ч
+                                tr.TrHover(data-id="nine")
+                                    th.table-head__th-another
+                                        p
+                                            | Объем помещения, м3
+                                tr.TrHover(data-id="ten")
+                                    th.table-head__th-another
+                                        p
+                                            | Категории помещений
+                                tr.TrHover(data-id="eleven")
+                                    th.table-head__th-another
+                                        p
+                                            | Бактерицидный поток ламп, Вт
+                                tr.TrHover(data-id="twelve")
+                                    th.table-head__th-another
+                                        p
+                                            | Длинна волны
+                                tr.TrHover(data-id="thirteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Индикатора наработки ламп
+                                tr.TrHover(data-id="fourteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Наличие таймера
+                                tr.TrHover(data-id="fifteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Облучения в присутствии людей
+                                tr.TrHover(data-id="sixteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Электробезопасность
+                                tr.TrHover(data-id="seventeen")
+                                    th.table-head__th-another
+                                        p
+                                            | Срок службы ламп, ч
+                                tr.TrHover(data-id="eighteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Электропитание, В/Гц
+                                tr.TrHover(data-id="nineteen")
+                                    th.table-head__th-another
+                                        p
+                                            | Поторебляемая мощность, Вт
+                                tr.TrHover(data-id="twenty")
+                                    th.table-head__th-another
+                                        p
+                                            | Гарантийный срок, мес
+                                tr.TrHover(data-id="twentyone")
+                                    th.table-head__th-another
+                                        p
+                                            | Длинна, мм
+                                tr.TrHover(data-id="twentytwo")
+                                    th.table-head__th-another
+                                        p
+                                            | Ширина, мм
+                                tr.TrHover(data-id="twentythree")
+                                    th.table-head__th-another
+                                        p
+                                            | Высота, мм
+                                tr.TrHover(data-id="twentyfour")
+                                    th.table-head__th-another
+                                        p
+                                            | Уровень шума, дБ
+
                         .scroll-row.scroll-row-lol
                             .table__item-body
-                                - var x = 12;
-                                - for (var i=1; i<=x; i++) {
+                                include ../CompareData/CompareData_rec
+                                each item_rec in CompareData_Rec
                                     .table__wrapper-body
                                         table.table-prod
                                             tr
                                                 td.td-first
                                                     span.button__icon.button__icon_cancel.td-del
                                                     .td-first__header
-                                                        p Концентратор кислорода 8F-1
-                                                    img(src="images/compare/product_1.png")
+                                                        p #{item_rec.name}
+                                                    img(src=item_rec.image alt=item_rec.name)
                                                     .td-first__cost-group
                                                         .td-first__cost-group--new
                                                             p
-                                                                | 23 490
+                                                                | #{item_rec.cost}
                                                                 span
                                                                     | &nbsp;&#8381;
                                                         .td-first__cost-group--old
                                                             p
-                                                                | 63 370
+                                                                | #{item_rec.oldcost}
                                                                 span
                                                                     | &nbsp;&#8381;
                                                     .table-icon
@@ -151,22 +280,101 @@
                                             tr.TrHover(data-id="first")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__success
-                                                        | 560х280х480 мм
+                                                        | #{item_rec.application}
                                             tr.TrHover(data-id="second")
                                                 td.table-prod__td-another
-                                                    img(src="images/compare/stars.png")
                                                     p
-                                                        | (3 оценки)
+                                                        | #{item_rec.irradiatortype}
                                             tr.TrHover(data-id="third")
                                                 td.table-prod__td-another
                                                     p.detail__table-item__fail
-                                                        | 0-3л/мин
+                                                        | #{item_rec.bodymaterial}
                                             tr.TrHover(data-id="four")
                                                 td.table-prod__td-another
                                                     p
-                                                        | 10 лет
-                                - }
-                    .table__inner.row#CompareTab3
+                                                        | #{item_rec.numberoflamps}
+                                            tr.TrHover(data-id="five")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.lamppower}
+                                            tr.TrHover(data-id="six")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.completewithlamps}
+                                            tr.TrHover(data-id="seven")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.typeoflampcap}
+                                            tr.TrHover(data-id="eight")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.performance}
+                                            tr.TrHover(data-id="nine")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.roomvolume}
+                                            tr.TrHover(data-id="ten")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.categoriesofpremises}
+                                            tr.TrHover(data-id="eleven")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.flowoflamps}
+                                            tr.TrHover(data-id="twelve")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.wavelength}
+                                            tr.TrHover(data-id="thirteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.indicator}
+                                            tr.TrHover(data-id="fourteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.timer}
+                                            tr.TrHover(data-id="fifteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.possibilityofirradiation}
+                                            tr.TrHover(data-id="sixteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.electricalsafety}
+                                            tr.TrHover(data-id="seventeen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.lifetimeoflamps}
+                                            tr.TrHover(data-id="eighteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.powersupply}
+                                            tr.TrHover(data-id="nineteen")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.powerconsumption}
+                                            tr.TrHover(data-id="twenty")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.guarantee}
+                                            tr.TrHover(data-id="twentyone")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.long}
+                                            tr.TrHover(data-id="twentytwo")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.height}
+                                            tr.TrHover(data-id="twentythree")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.width}
+                                            tr.TrHover(data-id="twentyfour")
+                                                td.table-prod__td-another
+                                                    p
+                                                        | #{item_rec.noiselevel}
+
+                    //.table__inner.row#CompareTab3
                         .table__item-head
                             table.table-head
                                 tr
