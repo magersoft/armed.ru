@@ -130,18 +130,18 @@ if (ele) {
                 break;
             case 1 :
                 var childrens = $(ele[i].children);
-                $(childrens[1]).css('display', 'block');
+                $(childrens[0]).css('display', 'block');
                 break;
             case 2 :
                 var childrens = $(ele[i].children);
+                $(childrens[0]).css('display', 'block');
                 $(childrens[1]).css('display', 'block');
-                $(childrens[2]).css('display', 'block');
                 break;
             case 3 :
                 var childrens = $(ele[i].children);
+                $(childrens[0]).css('display', 'block');
                 $(childrens[1]).css('display', 'block');
                 $(childrens[2]).css('display', 'block');
-                $(childrens[3]).css('display', 'block');
                 break;
         }
     }
