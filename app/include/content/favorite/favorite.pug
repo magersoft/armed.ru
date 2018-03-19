@@ -1,5 +1,50 @@
 .favorite-main
 	.title-h2
 		h2 Избранное
-	- for (var i = 0; i < 20; i++)
+	include ../../Global/ProductData/ProductData
+	each item in ProductData
+		.product.product_entity.product_entity_nothover
+
+			.product__main.product__main_entity
+
+				.product__tool.product__tool_entity
+					.product__rib.product__rib_entity.product__rib_entity_new
+					.product__rib.product__rib_entity.product__rib_entity_hit
+					.product__rib.product__rib_entity.product__rib_entity_present
+
+
+				a.product__link.product__link_entity(href="#")
+					img.product__image.product__image_entity(src=item.image alt=item.name)
+
+				a(href="#" data-id="quickview").modalLink.product__head.product__head_entity #{item.name}
+
+				p.product__availability.product__availability_true.product__availability_entity Есть на складе
+
+				.product__price.product__price_entity
+					p.product__cost.product__cost_entity #{item.cost}
+						span.product__value &nbsp₽
+					p.product__oldcost.product__oldcost_entity #{item.oldcost} ₽
+
+				.primary-menu__cart_product_volume.product__count_entity
+					span.primary-menu__cart_product_minus
+					input.primary-menu__cart_product_entry.quickview_entry(type="text" value="0" disabled="disabled")
+					span.primary-menu__cart_product_plus
+
+				a.product__bascet-link.product__bascet_entity(href="#") В корзину
+
+				button.product__button.Button.Button_Color_Not.Button_Size_Sm.product__button_entity
+					span.Button-Text.Button-Text_Color_Black
+						span.Button-Icon.Button-Icon_BasketRed
+						| В корзину
+
+				//button.product__button.button.button_icon.button_white.button_md.product__button_entity
+					span.button__text.button__text_white
+						span.button__icon.button__icon_basketred
+						| В корзину
+
+				.product__icon-wrapp.product__icon_entity
+					a(href="#").product__icon.product__icon_entity.product__icon_favorite_list
+					a(href="compare.html").product__icon.product__icon_entity.product__icon_comparis
+
+	//- for (var i = 0; i < 20; i++)
 		include ../../Global/product/product_favorite
