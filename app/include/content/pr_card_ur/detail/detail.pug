@@ -4,43 +4,96 @@
             h2 Характеристики:
             p.detail__table-title Прочие
         table.detail__table#detail-table
-            tbody
-                tr
-                    th
-                        p.detail__table-item
-                            | Наши предложени
-                    td
-                        p.detail__table-item
-                            | Хит продаж / Новинка
-                tr
-                    th
-                        p.detail__table-item
-                            | Производитель
-                            a.product__question.product__question-detail.tooltipShow(href="#", title="123321")
-                    td
-                        p.detail__table-item
-                            | Хит продаж / Новинка
-                tr
-                    th
-                        p.detail__table-item
-                            | Гарантия
-                    td
-                        p.detail__table-item.detail__table-item__success
-                            | Есть
-                tr
-                    th
-                        p.detail__table-item
-                            | Размер одежды
-                    td
-                        p.detail__table-item.detail__table-item__fail
-                            | Нет
-        p.detail__table-title Основные характеристики
-            table.detail__table
+            include ../../pr_card/detail/detailData
+            each item in detailData
                 tbody
                     tr
                         th
                             p.detail__table-item
-                                | Наши предложени
+                                | Наши предложения
                         td
                             p.detail__table-item
-                                | Хит продаж / Новинка
+                                | Хит продаж
+                    tr
+                        th
+                            p.detail__table-item
+                                | Производитель
+                                a.product__question.product__question-detail.tooltipShow(href="#", title="Armed")
+                        td
+                            p.detail__table-item.detail__table-item__fail
+                                | Armed
+                    tr
+                        th
+                            p.detail__table-item
+                                | Гарантия
+                        td
+                            p.detail__table-item.detail__table-item__success
+                                | #{item.lifetime}
+        p.detail__table-title Основные характеристики
+            table.detail__table
+                include detailData
+                each item in detailData
+                    tbody
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Габариты
+                            td
+                                p.detail__table-item
+                                    | #{item.dimensions}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Воздушный поток на выходе
+                            td
+                                p.detail__table-item
+                                    | #{item.airflow}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Уровень шума
+                            td
+                                p.detail__table-item
+                                    | #{item.noiselevel}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Потребляемая мощность
+                            td
+                                p.detail__table-item
+                                    | #{item.power}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Частота сети
+                            td
+                                p.detail__table-item
+                                    | #{item.networkfrequency}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Питание сети
+                            td
+                                p.detail__table-item
+                                    | #{item.networkpower}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Время выхода на рабочий режим
+                            td
+                                p.detail__table-item
+                                    | #{item.operatingtime}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Объем увлажнителя
+                            td
+                                p.detail__table-item
+                                    | #{item.volumeofhumidifier}
+                        tr
+                            th
+                                p.detail__table-item
+                                    | Дальность действия ПДУ
+                            td
+                                p.detail__table-item
+                                    | #{item.rangeoftheremotecontrol}
