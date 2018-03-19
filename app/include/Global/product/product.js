@@ -115,3 +115,34 @@ $(function () {
 
     });
 });
+
+function random_elem() {
+    var min = 0, max = 3;
+    return Math.round(Math.random() * (max-min) + min);
+}
+
+var ele = document.getElementsByClassName('product__tool');
+if (ele) {
+    for (var i = 0; i< ele.length; i++) {
+        var col_elem = random_elem();
+        switch (col_elem){
+            case 0 :
+                break;
+            case 1 :
+                var childrens = $(ele[i].children);
+                $(childrens[1]).css('display', 'block');
+                break;
+            case 2 :
+                var childrens = $(ele[i].children);
+                $(childrens[1]).css('display', 'block');
+                $(childrens[2]).css('display', 'block');
+                break;
+            case 3 :
+                var childrens = $(ele[i].children);
+                $(childrens[1]).css('display', 'block');
+                $(childrens[2]).css('display', 'block');
+                $(childrens[3]).css('display', 'block');
+                break;
+        }
+    }
+}
