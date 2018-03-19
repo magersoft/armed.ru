@@ -6,9 +6,29 @@
         span
             | &nbsp;шт.
     .primary-menu__favorite_inner.primary-menu__widget-inner
-        - var x = 12;
-        - for (var i=1; i<=x; i++) {
-        .primary-menu__favorite_product.primary-menu__widget-item
+        include ../../../Global/ProductData/ProductData
+        each item in ProductData
+            .primary-menu__favorite_product.primary-menu__widget-item
+                .primary-menu__favorite_product-col-1
+                    .primary-menu__favorite_product-image
+                        a(href="#")
+                            img(src=item.image alt=item.name)
+                .primary-menu__favorite_product-col-2
+                    .primary-menu__favorite_product-title
+                        a(href="#")
+                            | #{item.name}
+                    .primary-menu__favorite_product-article
+                        | Артикул: 165444321894
+                    .primary-menu__favorite_product-price
+                        .primary-menu__favorite_product-price_cost
+                            | #{item.cost} &#8381;
+                        .primary-menu__favorite_product-price_oldcost
+                            strike
+                                | #{item.oldcost} &#8381;
+                .primary-menu__favorite_delete.primary-menu__widget-delete
+        //- var x = 12;
+        //- for (var i=1; i<=x; i++) {
+        //.primary-menu__favorite_product.primary-menu__widget-item
             .primary-menu__favorite_product-col-1
                 .primary-menu__favorite_product-image
                     a(href="#")
@@ -26,7 +46,7 @@
                         strike
                             | 21 200 &#8381;
             .primary-menu__favorite_delete.primary-menu__widget-delete
-        - }
+        //- }
     .primary-menu__favorite_price
         | Итого:&nbsp;
         span.primary-menu__favorite_price-number#cart-price

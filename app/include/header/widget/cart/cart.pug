@@ -2,39 +2,39 @@
     .primary-menu__cart_title
         | Всего товаров:&nbsp;
         span#cart-volume
-            | 12
+            | 1
         span
             | &nbsp;шт.
     .primary-menu__cart_inner.primary-menu__widget-inner
-        - var x = 12;
+        - var x = 1;
         - for (var i=1; i<=x; i++) {
         .primary-menu__cart_product.primary-menu__widget-item
             .primary-menu__cart_product-col-1
                 .primary-menu__cart_product-image
                     a(href="#")
-                        img(src="images/Header/cart_product-image.png" alt="Отсасыватель хирургический 7A-32B")
+                        img(src="images/quickview/quickview_slider_main.png" alt="Концентратор кислорода \"8F-1\"")
             .primary-menu__cart_product-col-2
                 .primary-menu__cart_product-title
                     a(href="#")
-                        | Отсасыватель хирургический 7A-23B 
+                        | Концентратор кислорода "8F-1"
                 .primary-menu__cart_product-article
-                    | Артикул: 165444321894
+                    | Артикул: 489454654898
                 .primary-menu__cart_product-price
                     .primary-menu__cart_product-price_cost
-                        | 21 200 &#8381;
+                        | 25 000 &#8381;
                     .primary-menu__cart_product-price_oldcost
                         strike
-                            | 21 200 &#8381;
+                            | 30 000 &#8381;
                     .cart_product_volume
                         span.primary-menu__cart_product_minus
-                        input.primary-menu__cart_product_entry(type="text" value="0" disabled="disabled")
+                        input.primary-menu__cart_product_entry(type="text" value="1" disabled="disabled")
                         span.primary-menu__cart_product_plus
             .primary-menu__cart_delete.primary-menu__widget-delete
         - }
     .primary-menu__cart_price
         | Итого:&nbsp;
         span.primary-menu__cart_price-number#cart-price
-            | 264 218
+            | 25 000
         span.primary-menu__cart_price-valute
             |&nbsp;&#8381;
     .primary-menu__cart_button

@@ -10,7 +10,7 @@ $(".scroll-row").mCustomScrollbar({
     axis: "x",
     advanced:{ autoExpandHorizontalScroll: true },
     scrollbarPosition: "outside",
-    snapAmount: 207
+    snapAmount: 215
 
 });
 
