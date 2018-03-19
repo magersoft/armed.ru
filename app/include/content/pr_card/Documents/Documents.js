@@ -10,7 +10,7 @@ function printZone (link, imageSrc) {
         var zone = '<div class=\"Documents-Print\">';
         zone = zone + '<a class=\"Documents-LinkOpen\" href=\"'+ imageSrc +'\" data-lightbox=\"DocumentsImage\">';
         zone = zone + '<a class=\"Documents-LinkPrint\" href=\"' + imageSrc + '\" onclick=\"imagePrint($(this).attr(\'href\'))\; return false\;\">Распечатать</a>';
-        zone = zone + '<a class=\"Documents-LinkSave\" href="' + imageSrc + '\">Сохранить</a>';
+        zone = zone + '<a class=\"Documents-LinkSave\" href="' + imageSrc + '\">Скачать</a>';
         zone = zone + '</div>';
         link.parent().append(zone);
         //console.log(zone);
