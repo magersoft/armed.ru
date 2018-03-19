@@ -63,9 +63,9 @@ $('.product__question').click(function(){
     console.log(mod);
     for (var i = 0; i < mod.length; i++) {
         var win = $(mod[i]);
-        win.slideUp(400);
+        win.stop().slideUp(400);
     }
-    $(this).next().slideDown(400);
+    $(this).next().stop().slideDown(400);
     return false
 });
 
@@ -73,7 +73,7 @@ $(document).click(function(e){
     var obj = $('.product__question-window');
     if (!obj.is(e.target) // если клик был не по нашему блоку
         && obj.has(e.target).length === 0) { // и не по его дочерним элементам
-        obj.slideUp(400); // скрываем его
+        obj.stop().slideUp(400); // скрываем его
     }
 });
 
