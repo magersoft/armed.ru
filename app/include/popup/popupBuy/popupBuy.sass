@@ -67,7 +67,6 @@
 		color: #BDBDBD
 		font:
 			family: 'Rubik'
-		cursor: pointer
 		background:
 			image: url('images/quickview/quickview__select.svg')
 			repeat: no-repeat
@@ -80,8 +79,11 @@
 		text-overflow: ''
 		-ms-appearance: none
 		appearance: none!important
+		cursor: pointer
 		&-add
 			color: rgb(130, 130, 130)
+		&:disabled
+			cursor: default
 		span
 			margin-top: 10px
 			font:
