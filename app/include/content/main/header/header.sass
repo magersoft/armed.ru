@@ -45,7 +45,7 @@
     align-items: center
     &-menu > li
       width: 200px
-      padding: 30px !important
+      padding: 30px
     &-main
       list-style: none
       &__link
@@ -61,17 +61,18 @@
           transition: color .3s
           color: rgba(#4f4f4f, 0.6)
       &__right
-        text-decoration: none
-        font:
-          family: 'Rubik'
-          size: 2em
-          weight: 400
-        color: #4f4f4f
-        text-transform: uppercase
-        line-height: 25px
-        &:hover
-          transition: color .3s
-          color: rgba(#4f4f4f, 0.6)
+        @extend .main-catalog__nav-main__link
+        //text-decoration: none
+        //font:
+        //  family: 'Rubik'
+        //  size: 2em
+        //  weight: 400
+        //color: #4f4f4f
+        //text-transform: uppercase
+        //line-height: 25px
+        //&:hover
+        //  transition: color .3s
+        //  color: rgba(#4f4f4f, 0.6)
 
       li
         padding: 8px
