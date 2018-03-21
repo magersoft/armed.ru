@@ -1,0 +1,86 @@
+[
+  {
+    "latitude": 55.78521417,
+    "longitude": 37.86572341,
+    "hintContent": "Офис / Склад \"Балашиха\"",
+    "balloonContentHeader": "Офис / Склад \"Балашиха\"",
+    "balloonContentBody": "Московская область, г. Балашиха, шоссе Энтузиастов, владение 1А строение 3Б.",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/One_Item.svg",
+    "iconImageSize": [20, 40],
+    "iconImageOffset": [-10, -40]
+  },
+  {
+    "latitude": 55.60214591,
+    "longitude": 37.45327255,
+    "hintContent": "Армед - Калужка",
+    "balloonContentHeader": "Склад",
+    "balloonContentBody": "Содержмое",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/Item.svg",
+    "iconImageSize": [12, 12],
+    "iconImageOffset": [-6, -6]
+  },
+  {
+    "latitude": 55.178372,
+    "longitude": 61.399913,
+    "hintContent": "Россия, Челябинск, улица Кирова, 9",
+    "balloonContentHeader": "Офис",
+    "balloonContentBody": "Содержмое",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/Item.svg",
+    "iconImageSize": [12, 12],
+    "iconImageOffset": [-6, -6]
+  },
+  {
+    "latitude": 57.116229,
+    "longitude": 65.57503,
+    "hintContent": "Россия, Тюмень, улица Пермякова, 56",
+    "balloonContentHeader": "Склад",
+    "balloonContentBody": "Содержмое",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/Item.svg",
+    "iconImageSize": [12, 12],
+    "iconImageOffset": [-6, -6]
+  },
+  {
+    "latitude": 53.205679,
+    "longitude": 50.193384,
+    "hintContent": "Россия, Самара, улица Дыбенко, 29",
+    "balloonContentHeader": "Склад",
+    "balloonContentBody": "Содержмое",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/Item.svg",
+    "iconImageSize": [12, 12],
+    "iconImageOffset": [-6, -6]
+  },
+  {
+    "latitude": 54.75622,
+    "longitude": 56.006005,
+    "hintContent": "Россия, Республика Башкортостан, Уфа, проспект Октября, 56к1",
+    "balloonContentHeader": "Склад",
+    "balloonContentBody": "Содержмое",
+    "balloonContentFooter": [
+      "По будням, с 10:00 до 17:30",
+      "8 (495) 106-03-17,  8 (495) 106-26-76"
+    ],
+    "iconImageHref": "images/Maps/Item.svg",
+    "iconImageSize": [12, 12],
+    "iconImageOffset": [-6, -6]
+  }
+]

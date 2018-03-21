@@ -21,6 +21,11 @@ gulp.task('sass', function () {
         //.pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('json', function () {
+    return gulp.src('app/template/*.json')
+        .pipe(gulp.dest('pre-relise'))
+});
+
 gulp.task('preload', function () {
     return gulp.src('app/include/Global/preloader/preload.sass')
         .pipe(sass())
@@ -123,8 +128,9 @@ gulp.task('prodaction', ['clean'], function() {
 });
 
 
-gulp.task('default', ['pre-clean', 'preload', /*'liveReload',*/ 'sass', 'image', 'js', 'font', 'pug'], function () {
+gulp.task('default', ['pre-clean', 'preload', /*'liveReload',*/ 'sass', 'image', 'js', 'font', 'pug', 'json'], function () {
     gulp.watch('app/**/*.sass', ['sass']);
+    gulp.watch('app/template/*.json', ['json']);
     gulp.watch('app/**/**/**/*.pug', ['pug']);
     gulp.watch('app/**/*.js', ['js']);
     gulp.watch('app/images/**/*', ['image']);

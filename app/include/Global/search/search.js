@@ -3,11 +3,19 @@ $(".search__content").mCustomScrollbar({
     scrollbarPosition: "outside"
 });
 
+$('#search').focusout(function () {
+    $('#search').animate({
+        width: '290px'},500);
+});
+
 $('#city, #search, #searchMain').focusin(function(){
     var search = $(this).val();
+    //$('#search').css('width', '450px');
+    $('#search').animate({
+        width: '450px'},500);
     if (search.length >= 2) {
         $('.search').removeClass('search_hide').addClass('search_active');
-        $('#search').css('width', '450px');
+
 
     }
     $('#city, #search, #searchMain').keypress(function(){
