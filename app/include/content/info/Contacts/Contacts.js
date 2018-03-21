@@ -1,4 +1,135 @@
-//json parcer
+
+
+ymaps.ready(init);
+
+function init () {
+    var myMap = new ymaps.Map('ContactsMap', {
+            center: [50.443705, 30.530946],
+            zoom: 14
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        menu = $('#ContactsTabs');
+
+    function createTabs(tabs) {
+
+        var str = '<li class = "tabs__element">' +
+            '<a class = "tabs__link Contacts-TabLink" href="#' + tabs.id + '">' + tabs.name + '</a></li>';
+        $('#ContactsTabs').append(str);
+
+
+        var menuItem = $('a[href="#' + tabs.id + '"]');
+        var collection = new ymaps.GeoObjectCollection(null, {});
+        myMap.geoObjects.add(collection);
+        var idHref = menuItem.attr('href');
+        menuItem
+            .bind('click', function () {
+                if (collection.getParent()) {
+                    myMap.geoObjects.remove(collection);
+                    $(menuItem.attr('href')).hide();
+                    $(menuItem).css('color', "#ccc");
+                } else {
+                    myMap.geoObjects.add(collection);
+                    $(menuItem.attr('href')).show();
+                    $(menuItem).css('color', "#000");
+                }
+                return false;
+            });
+
+        createContent(tabs.items, tabs.id, collection)
+    }
+
+    function createContent(elements, id, collection) {
+        var data = "";
+
+        for (var i = 0; i < elements.length; i++) {
+            var item = $('<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + '</a>');
+            var placemark = new ymaps.Placemark(
+                [elements[i].latitude, elements[i].longitude],
+                {
+                    hintContent: elements[i].name,
+                    balloonContentHeader: elements[i].name,
+                    balloonContentBody: elements[i].address,
+                    balloonContentFooter: elements[i].phone + elements[i].graff
+                },
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: elements[i].iconImageHref,
+                    iconImageSize: elements[i].iconImageSize,
+                    iconImageOffset: elements[i].iconImageOffset
+                }
+            );
+            collection.add(placemark);
+            item
+                .find('a')
+                .bind('click', function () {
+                    if (!placemark.balloon.isOpen()) {
+                        placemark.balloon.open();
+                    } else {
+                        placemark.balloon.close();
+                    }
+                    return false;
+                });
+
+            data += '<div class = "Contacts-Element">';
+            data += '<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + "</a>";
+            data += '<p class = "Contacts-Address">' + elements[i].address + '</p>';
+            data += '<div class = "Contacts-InfoOrganization">';
+            data += createPhone(elements[i].phone);
+            data += createGraff(elements[i].graff);
+            data += '</div>';
+            data += '</div>';
+            //str += data;
+        }
+        var idApp = '#' + id;
+        $(idApp).append(data);
+    }
+
+    function createPhone(data) {
+        var info = '<div class = "Contacts-InfoPhone">';
+        info += '<p class = "Contacts-Name">Телефоны</p>';
+        for (var i = 0; i < data.length; i++) {
+            info += '<p class = "Contacts-Item">' + data[i] + '</p>';
+        }
+        info += '</div>';
+        return info;
+    }
+
+    function createGraff(data) {
+        var info = '<div class = "Contacts-InfoGraff">';
+        info += '<p class = "Contacts-Name">График работы</p>';
+        for (var i = 0; i < data.length; i++) {
+            info += '<p class = "Contacts-Item">' + data[i] + '</p>';
+        }
+        info += '</div>';
+        return info;
+    }
+    console.log(myMap.geoObjects);
+    console.log(myMap.geoObjects.getBounds());
+    //myMap.setBounds(myCollection.getBounds());
+    //myMap.setBounds(myMap.geoObjects.getBounds());
+
+    $(function () {
+        $.getJSON('test.json', function (data) {
+            for (var i = 0; i < data.length; i++) {
+                createTabs(data[i]);
+            }
+            //$('#ContactsInfo').on('DOMSubtreeModified', tabsAdd());
+        })
+    });
+
+
+
+    function tabsAdd() {
+        $("#ContactsInfo").tabs({
+            active: 0,
+            classes: {
+                "ui-tabs-active": "tabs__active"
+            }
+        });
+    }
+}
+/*
 $(function () {
     $.getJSON('dataContactsMap.json', function (data) {
         var i = 0;
@@ -48,12 +179,12 @@ $(function () {
 
         var obj = [];
 
-        /*var clusterIcon = [
+        /!*var clusterIcon = [
             {
                 href: 'images/Maps/Grroup_Item.svg',
                 size: [50, 70],
                 offset: [-25, -35]
-            }];*/
+            }];*!/
 
         var balashihaMap;
             //MyIconContentLayout;
@@ -82,11 +213,11 @@ $(function () {
 
 
             balashihaMap = new ymaps.Map("ContactsMap", optionMap);
-            /*myClusterer = new ymaps.Clusterer({
+            /!*myClusterer = new ymaps.Clusterer({
                 clusterIcons: clusterIcon,
                 //clusterIconContentLayout: MyIconContentLayout
                 clusterIconContentLayout: null
-            });*/
+            });*!/
             //balashihaMap.geoObjects.add(myClusterer);
             //myClusterer.add(obj)
             for (var j = 0; j < obj.length; j++) {
@@ -98,6 +229,7 @@ $(function () {
     });
 });
 
+*/
 
 
 

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Склад",
+    "id": "stock",
+    "style": "default#image",
+    "items": [
+      {
+        "latitude": 55.78521417,
+        "longitude": 37.86572341,
+        "name": "Офис / Склад \"Балашиха\"",
+        "address": "Московская область, г. Балашиха, шоссе Энтузиастов, владение 1А строение 3Б.",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/One_Item.svg",
+        "iconImageSize": [20, 40],
+        "iconImageOffset": [-10, -40]
+      },
+      {
+        "latitude": 55.60214591,
+        "longitude": 37.45327255,
+        "name": "Армед - Калужка",
+        "address": "Москва (Новая Москва), Сосенский р-н, деревня Николо-Хованское поселение Сосенское, участок №9/1 - Г",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/Item.svg",
+        "iconImageSize": [12, 12],
+        "iconImageOffset": [-6, -6]
+      },
+      {
+        "latitude": 55.178372,
+        "longitude": 61.399913,
+        "name": "Экомедика",
+        "address": "Россия, Челябинск, улица Кирова, 9",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/Item.svg",
+        "iconImageSize": [12, 12],
+        "iconImageOffset": [-6, -6]
+      }
+    ]
+  },
+  {
+    "name": "Магазин",
+    "id": "score",
+    "style": "default#image",
+    "items": [
+      {
+        "latitude": 57.116229,
+        "longitude": 65.57503,
+        "name": "Магазин Экомедика 1",
+        "address": "Россия, Тюмень, улица Пермякова, 56",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/Item.svg",
+        "iconImageSize": [12, 12],
+        "iconImageOffset": [-6, -6]
+      },
+      {
+        "latitude": 53.205679,
+        "longitude": 50.193384,
+        "name": "Магазин Экомедика 2",
+        "address": "Россия, Самара, улица Дыбенко, 29",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/Item.svg",
+        "iconImageSize": [12, 12],
+        "iconImageOffset": [-6, -6]
+      },
+      {
+        "latitude": 54.75622,
+        "longitude": 56.006005,
+        "name": "Магазин Экомедика 3",
+        "address": "Россия, Республика Башкортостан, Уфа, проспект Октября, 56к1",
+        "phone": ["8 (495) 106-03-17","8 (495) 106-03-17"],
+        "graff": ["пн-пт: 8.00 - 9.00", "пн-пт: 8.00 - 9.00"],
+        "iconImageHref": "images/Maps/Item.svg",
+        "iconImageSize": [12, 12],
+        "iconImageOffset": [-6, -6]
+      }
+    ]
+  }
+]
