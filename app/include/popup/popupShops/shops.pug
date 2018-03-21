@@ -1,5 +1,6 @@
 section.pick.pick_pickup
     .pick_header
+        p.pick_header__text-logo
         p.pick_header__text-address Адрес
         p.pick_header__text-time Забрать
         p.pick_header__text-mode Режим работы
@@ -9,13 +10,17 @@ section.pick.pick_pickup
         - var x = 12;
         - for (var i=1; i<=x; i++) {
         .pick_container
+            .pick_header__text-logo
+                img(src="images/popup/shops-logo-1.png")
             p.pick_pickup__text-address м. «Калужская», ул. Обручева, д.34/63 Москва, ул. Обручева, д. 34/63
             p.pick_pickup__text-time В течение часа
-            p.pick_pickup__text-mode Ежедневно с 09:00 до 22:00
+            p.pick_pickup__text-mode Ежедневно с
+                br
+                | 09:00 до 22:00
             p.pick_pickup__text-amt много
             button.Button.Button_Color_Not.Button_Size_Sm.close_Pick.popupPick-button
                 span.Button-Text.Button-Text_Color_Black
-                    | Выбрать
+                    | Перейти
                     span.Button-Icon.Button-Icon_ArrowRedRight
             //a.pick_pickup__button(href="#") Выбрать
                 span.button__icon.pick_pickup__button__icon.button__icon_arrow
