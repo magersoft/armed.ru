@@ -19,18 +19,21 @@ section#sale
                 .col
                     .sale__product-sale
                         h3.sale__product-sale_title
-                            | Скидка до 50%
+                            | Распродажа СРАР-аппаратов
                         img.sale__product-sale_image(src="images/page/index/sale-product.png")
                         .sale__product-sale_inner.row.col-around
-                            - var x = 4;
-                            - for (var i=1; i<=x; i++) {
                             a(href="#").sale__product-sale_inner-item
                                 img(src="images/page/index/sale-product-1.jpg")
-                                span.sale__product-sale_text SC-II
-                            - }
+                                span.sale__product-sale_text ReSmart: CPAP
+                            a(href="#").sale__product-sale_inner-item
+                                img(src="images/page/index/sale-product-2.png")
+                                span.sale__product-sale_text ReSmart: Auto CPAP
+                            a(href="#").sale__product-sale_inner-item
+                                img(src="images/page/index/sale-product-3.png")
+                                span.sale__product-sale_text ReSmart: BPAP 25
                         //a.sale__product-sale_button(href="#") Подробнее
                             i.icon-right
                         a.Button.Button_Color_Not.Button_Size_Lg.sale__product-sale_button
                             span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase.Button-Text_Margin25
-                                | Подробней
+                                | Подробнее
                                 span.Button-Icon.Button-Icon_ArrowBlackRight.product-more__button_icon
