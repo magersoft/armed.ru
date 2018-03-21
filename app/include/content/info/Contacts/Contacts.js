@@ -4,12 +4,27 @@ ymaps.ready(init);
 
 function init () {
     var myMap = new ymaps.Map('ContactsMap', {
-            center: [50.443705, 30.530946],
-            zoom: 14
+            center: [54.62041446, 49.28167098],
+            zoom: 5
         }, {
             searchControlProvider: 'yandex#search'
         }),
         menu = $('#ContactsTabs');
+
+    $(function () {
+        $.getJSON('test.json', function (data) {
+            for (var i = 0; i < data.length; i++) {
+                createTabs(data[i]);
+            }
+            //console.log('3 ' + myMap.geoObjects.getBounds());
+        });
+        //$('#ContactsInfo').on('DOMSubtreeModified', tabsAdd());
+        //console.log(myMap.geoObjects);
+        //console.log('1 ' + myMap.geoObjects.getBounds());
+        //myMap.setBounds(myCollection.getBounds());
+        //myMap.setBounds([[55.17837199999447,37.45327255000001],[55.785214169993694,61.399912999999984]]);
+    });
+
 
     function createTabs(tabs) {
 
@@ -20,18 +35,31 @@ function init () {
 
         var menuItem = $('a[href="#' + tabs.id + '"]');
         var collection = new ymaps.GeoObjectCollection(null, {});
-        myMap.geoObjects.add(collection);
-        var idHref = menuItem.attr('href');
+        if (tabs.id == 'stock') {
+            myMap.geoObjects.add(collection);
+            $(menuItem).css('color', "#000");
+        }
+        //myMap.geoObjects.add(collection);
+
         menuItem
             .bind('click', function () {
-                if (collection.getParent()) {
-                    myMap.geoObjects.remove(collection);
+                //myMap.geoObjects.remove(collection);
+                //console.log(collection.getParent());
+                //console.log($(menuItem.attr('href')).css('display') == 'none');
+                if (!(collection.getParent()) && $(menuItem.attr('href')).css('display') == 'none') {
+                    /*myMap.geoObjects.remove(collection);
                     $(menuItem.attr('href')).hide();
-                    $(menuItem).css('color', "#ccc");
-                } else {
+                    $(menuItem).css('color', "#ccc");*/
                     myMap.geoObjects.add(collection);
                     $(menuItem.attr('href')).show();
                     $(menuItem).css('color', "#000");
+                } else {
+                    /*myMap.geoObjects.add(collection);
+                    $(menuItem.attr('href')).show();
+                    $(menuItem).css('color', "#000");*/
+                    myMap.geoObjects.remove(collection);
+                    $(menuItem.attr('href')).hide();
+                    $(menuItem).css('color', "#ccc");
                 }
                 return false;
             });
@@ -43,7 +71,7 @@ function init () {
         var data = "";
 
         for (var i = 0; i < elements.length; i++) {
-            var item = $('<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + '</a>');
+            var item = $('.Contacts-LinkAddress" href="#">' + elements[i].name + '</a>');
             var placemark = new ymaps.Placemark(
                 [elements[i].latitude, elements[i].longitude],
                 {
@@ -61,7 +89,7 @@ function init () {
             );
             collection.add(placemark);
             item
-                .find('a')
+                //.find('a')
                 .bind('click', function () {
                     if (!placemark.balloon.isOpen()) {
                         placemark.balloon.open();
@@ -104,30 +132,15 @@ function init () {
         info += '</div>';
         return info;
     }
-    console.log(myMap.geoObjects);
-    console.log(myMap.geoObjects.getBounds());
-    //myMap.setBounds(myCollection.getBounds());
-    //myMap.setBounds(myMap.geoObjects.getBounds());
-
-    $(function () {
-        $.getJSON('test.json', function (data) {
-            for (var i = 0; i < data.length; i++) {
-                createTabs(data[i]);
-            }
-            //$('#ContactsInfo').on('DOMSubtreeModified', tabsAdd());
-        })
-    });
-
-
-
-    function tabsAdd() {
+    /*function tabsAdd() {
         $("#ContactsInfo").tabs({
             active: 0,
             classes: {
                 "ui-tabs-active": "tabs__active"
             }
         });
-    }
+    }*/
+    //console.log('2 ' + myMap.geoObjects.getBounds());
 }
 /*
 $(function () {
@@ -260,3 +273,9 @@ $(function () {
         balloonContentFooter: '<a href="#">LINK</a>'
     }
 ];*/
+
+
+$(".Contacts-Inner").mCustomScrollbar({
+    theme: "client",
+    scrollbarPosition: "outside"
+});
