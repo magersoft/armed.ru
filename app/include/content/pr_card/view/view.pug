@@ -70,33 +70,45 @@
                                     span
                                         | Особенность 3
                     p.view__item-about--text
-                        | Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. А стильный дизайн будет радовать глаз и прекрасно украсит любой интерьер. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны. Роскошная кровать с мягким изголовьем подарит вам незабываемые сны.&nbsp;
-                        a(href="#").view__item-about--link
-                            | Подробнее
+                        | Кислородный концентратор Armed (Армед) 8F-1 - это простой, компактный и эргономичный концентратор, производящий воздушную смесь с концентрацией кислорода до 93%. Его производительности хватает для проведения сеансов профилактической кислородотерапии, а также проведения сеансов кислородной ароматерапии. Идеальный вариант для домашнего использования.
+
+                        //a(href="#").view__item-about--link
+                        //    | Подробнее
                 .view__inner-feature
                     .view__item-feature__text
                         .view__item-feature__text-name.view-feature-title
                             p Характеристики:
                         .view__item-feature__text-value.view-feature-title
                             a(href="#detail") Все характеристики
-                    - var x = 2;
-                    - for (var i=1; i<=x; i++) {
-                    .view__item-feature__text
-                        .view__item-feature__text-name
-                            p Наши предложения
-                        .view__item-feature__text-value
-                            p Хит продаж / Новинка
-                    .view__item-feature__text
-                        .view__item-feature__text-name
-                            p Цвет
-                        .view__item-feature__text-value
-                            p Черный
-                    .view__item-feature__text
-                        .view__item-feature__text-name
-                            p Гарантия
-                        .view__item-feature__text-value
-                            p 18 месяцев
-                    - }
+
+                    include ../detail/detailData
+                    each item in detailData
+                        .view__item-feature__text
+
+                            .view__item-feature__text-name
+                                p Габариты
+                            .view__item-feature__text-value
+                                p #{item.dimensions}
+                        .view__item-feature__text
+                            .view__item-feature__text-name
+                                p Воздушный поток на выходе
+                            .view__item-feature__text-value
+                                p #{item.airflow}
+                        .view__item-feature__text
+                            .view__item-feature__text-name
+                                p Уровень шума
+                            .view__item-feature__text-value
+                                p #{item.noiselevel}
+                        .view__item-feature__text
+                            .view__item-feature__text-name
+                                p Гарантия
+                            .view__item-feature__text-value
+                                p 3 года
+                        .view__item-feature__text
+                            .view__item-feature__text-name
+                                p Срок службы
+                            .view__item-feature__text-value
+                                p #{item.lifetime}
                 .view__inner-color
                     h5.description-item_title Другие варианты товара
                     p.description-item_text Цвет
