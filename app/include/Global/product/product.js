@@ -122,23 +122,38 @@ function random_elem() {
 }
 
 var ele = document.getElementsByClassName('product__tool');
+console.log(ele);
 if (ele) {
     for (var i = 0; i< ele.length; i++) {
         var col_elem = random_elem();
         switch (col_elem){
             case 0 :
+                var childrens = $(ele[i].children);
+                if (childrens.hasClass('product__rib_entity')) {
+                    $(childrens[0]).css('display', 'none');
+                    $(childrens[1]).css('display', 'none');
+                    $(childrens[2]).css('display', 'none');
+                }
                 break;
             case 1 :
                 var childrens = $(ele[i].children);
+                if (childrens.hasClass('product__rib_entity')) {
+                    $(childrens[1]).css('display', 'none');
+                    $(childrens[2]).css('display', 'none');
+                }
                 $(childrens[0]).css('display', 'block');
                 break;
             case 2 :
                 var childrens = $(ele[i].children);
+                if (childrens.hasClass('product__rib_entity')) {
+                    $(childrens[2]).css('display', 'none');
+                }
                 $(childrens[0]).css('display', 'block');
                 $(childrens[1]).css('display', 'block');
                 break;
             case 3 :
                 var childrens = $(ele[i].children);
+                console.log('3 ',childrens);
                 $(childrens[0]).css('display', 'block');
                 $(childrens[1]).css('display', 'block');
                 $(childrens[2]).css('display', 'block');
