@@ -3,12 +3,16 @@ if(window.location.toString().indexOf('info_page.html')>0) {
     ymaps.ready(init);
 
     function init() {
-        var myMap = new ymaps.Map('ContactsMap', {
-                center: [54.62041446, 49.28167098],
-                zoom: 5
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
+        var myMap = new ymaps.Map(
+                'ContactsMap',
+                {
+                    center: [54.62041446, 49.28167098],
+                    zoom: 5
+                },
+                {
+                    searchControlProvider: 'yandex#search'
+                }
+            ),
             menu = $('#ContactsTabs');
 
         $(function () {
@@ -16,13 +20,9 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                 for (var i = 0; i < data.length; i++) {
                     createTabs(data[i]);
                 }
-                //console.log('3 ' + myMap.geoObjects.getBounds());
+
             });
-            //$('#ContactsInfo').on('DOMSubtreeModified', tabsAdd());
-            //console.log(myMap.geoObjects);
-            //console.log('1 ' + myMap.geoObjects.getBounds());
-            //myMap.setBounds(myCollection.getBounds());
-            //myMap.setBounds([[55.17837199999447,37.45327255000001],[55.785214169993694,61.399912999999984]]);
+
         });
 
 
@@ -39,31 +39,23 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                 myMap.geoObjects.add(collection);
                 $(menuItem).css('color', "#000");
             }
-            //myMap.geoObjects.add(collection);
-            console.log(menuItem);
             menuItem
                 .bind('click', function () {
-                    //myMap.geoObjects.remove(collection);
-                    //console.log(collection.getParent());
-                    //console.log($(menuItem.attr('href')).css('display') == 'none');
+
                     if (!(collection.getParent()) && $(menuItem.attr('href')).css('display') == 'none') {
-                        /*myMap.geoObjects.remove(collection);
-                        $(menuItem.attr('href')).hide();
-                        $(menuItem).css('color', "#ccc");*/
+
                         myMap.geoObjects.add(collection);
-                        $(menuItem.attr('href')).show();
+                        $(menuItem.attr('href')).show(400);
                         $(menuItem).css('color', "#000");
                     } else {
-                        /*myMap.geoObjects.add(collection);
-                        $(menuItem.attr('href')).show();
-                        $(menuItem).css('color', "#000");*/
+
                         myMap.geoObjects.remove(collection);
-                        $(menuItem.attr('href')).hide();
+                        $(menuItem.attr('href')).hide(400);
                         $(menuItem).css('color', "#ccc");
                     }
                     return false;
                 });
-
+            
             createContent(tabs.items, tabs.id, collection)
         }
 
@@ -79,7 +71,7 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                 data += createGraff(elements[i].graff);
                 data += '</div>';
                 data += '</div>';
-                var linkAddress = $(data);
+
                 var placemark = new ymaps.Placemark(
                     [elements[i].latitude, elements[i].longitude],
                     {
@@ -96,10 +88,11 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                     }
                 );
                 collection.add(placemark);
+                var linkAddress = $('<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + "</a>");
                 console.log(linkAddress);
                 linkAddress
                 //.find('a')
-                    .bind('click', function () {
+                    .bind('DOMSubtreeModified', 'click', function () {
                         console.log('тыц');
                         if (!placemark.balloon.isOpen()) {
                             placemark.balloon.open();
@@ -108,9 +101,6 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                         }
                         return false;
                     });
-
-
-                //str += data;
             }
             var idApp = '#' + id;
             $(idApp).append(data);
