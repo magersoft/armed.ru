@@ -3,12 +3,16 @@ if(window.location.toString().indexOf('info_page.html')>0) {
     ymaps.ready(init);
 
     function init() {
-        var myMap = new ymaps.Map('ContactsMap', {
-                center: [54.62041446, 49.28167098],
-                zoom: 5
-            }, {
-                searchControlProvider: 'yandex#search'
-            }),
+        var myMap = new ymaps.Map(
+                'ContactsMap',
+                {
+                    center: [54.62041446, 49.28167098],
+                    zoom: 5
+                },
+                {
+                    searchControlProvider: 'yandex#search'
+                }
+            ),
             menu = $('#ContactsTabs');
 
         $(function () {
@@ -16,13 +20,9 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                 for (var i = 0; i < data.length; i++) {
                     createTabs(data[i]);
                 }
-                //console.log('3 ' + myMap.geoObjects.getBounds());
+
             });
-            //$('#ContactsInfo').on('DOMSubtreeModified', tabsAdd());
-            //console.log(myMap.geoObjects);
-            //console.log('1 ' + myMap.geoObjects.getBounds());
-            //myMap.setBounds(myCollection.getBounds());
-            //myMap.setBounds([[55.17837199999447,37.45327255000001],[55.785214169993694,61.399912999999984]]);
+
         });
 
 
@@ -39,81 +39,73 @@ if(window.location.toString().indexOf('info_page.html')>0) {
                 myMap.geoObjects.add(collection);
                 $(menuItem).css('color', "#000");
             }
-            //myMap.geoObjects.add(collection);
-            console.log(menuItem);
             menuItem
                 .bind('click', function () {
-                    //myMap.geoObjects.remove(collection);
-                    //console.log(collection.getParent());
-                    //console.log($(menuItem.attr('href')).css('display') == 'none');
+
                     if (!(collection.getParent()) && $(menuItem.attr('href')).css('display') == 'none') {
-                        /*myMap.geoObjects.remove(collection);
-                        $(menuItem.attr('href')).hide();
-                        $(menuItem).css('color', "#ccc");*/
+
                         myMap.geoObjects.add(collection);
-                        $(menuItem.attr('href')).show();
+                        $(menuItem.attr('href')).slideDown(400);
                         $(menuItem).css('color', "#000");
                     } else {
-                        /*myMap.geoObjects.add(collection);
-                        $(menuItem.attr('href')).show();
-                        $(menuItem).css('color', "#000");*/
+
                         myMap.geoObjects.remove(collection);
-                        $(menuItem.attr('href')).hide();
+                        $(menuItem.attr('href')).slideUp(400);
                         $(menuItem).css('color', "#ccc");
                     }
                     return false;
                 });
+            for (var j = 0; j < tabs.items.length; j++) {
+                createContent(tabs.items[j], tabs.id, collection)
+            }
 
-            createContent(tabs.items, tabs.id, collection)
         }
 
         function createContent(elements, id, collection) {
             var data = "";
-
-            for (var i = 0; i < elements.length; i++) {
-                data += '<div class = "Contacts-Element">';
-                data += '<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + "</a>";
-                data += '<p class = "Contacts-Address">' + elements[i].address + '</p>';
-                data += '<div class = "Contacts-InfoOrganization">';
-                data += createPhone(elements[i].phone);
-                data += createGraff(elements[i].graff);
-                data += '</div>';
-                data += '</div>';
-                var linkAddress = $(data);
-                var placemark = new ymaps.Placemark(
-                    [elements[i].latitude, elements[i].longitude],
-                    {
-                        hintContent: elements[i].name,
-                        balloonContentHeader: elements[i].name,
-                        balloonContentBody: elements[i].address,
-                        balloonContentFooter: elements[i].phone + elements[i].graff
-                    },
-                    {
-                        iconLayout: 'default#image',
-                        iconImageHref: elements[i].iconImageHref,
-                        iconImageSize: elements[i].iconImageSize,
-                        iconImageOffset: elements[i].iconImageOffset
-                    }
-                );
-                collection.add(placemark);
-                console.log(linkAddress);
-                linkAddress
-                //.find('a')
-                    .bind('click', function () {
-                        console.log('тыц');
-                        if (!placemark.balloon.isOpen()) {
-                            placemark.balloon.open();
-                        } else {
-                            placemark.balloon.close();
-                        }
-                        return false;
-                    });
-
-
-                //str += data;
-            }
+            data += '<div class = "Contacts-Element">';
+            data += '<a class = "Contacts-LinkAddress" href="#">' + elements.name + "</a>";
+            data += '<p class = "Contacts-Address">' + elements.address + '</p>';
+            data += '<div class = "Contacts-InfoOrganization">';
+            var balloonContent = createPhone(elements.phone);
+            balloonContent += createGraff(elements.graff);
+            data += createPhone(elements.phone);
+            data += createGraff(elements.graff);
+            data += '</div>';
+            data += '</div>';
+            var placemark = new ymaps.Placemark(
+                [elements.latitude, elements.longitude],
+                {
+                    hintContent: elements.name,
+                    balloonContentHeader: elements.name,
+                    balloonContentBody: elements.address,
+                    balloonContentFooter: balloonContent
+                },
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: elements.iconImageHref,
+                    iconImageSize: elements.iconImageSize,
+                    iconImageOffset: elements.iconImageOffset
+                }
+            );
+            collection.add(placemark);
             var idApp = '#' + id;
             $(idApp).append(data);
+            console.log(data);
+            var linkAddress = $('<a class = "Contacts-LinkAddress" href="#">' + elements.name + "</a>");
+            console.log(linkAddress);
+            linkAddress
+                .find('a')
+                .bind('click', function () {
+                    console.log('тыц');
+                    if (!placemark.balloon.isOpen()) {
+                        placemark.balloon.open();
+                    } else {
+                        placemark.balloon.close();
+                    }
+                    return false;
+                });
+
         }
 
         function createPhone(data) {
