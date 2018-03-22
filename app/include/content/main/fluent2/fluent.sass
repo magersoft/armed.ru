@@ -1,4 +1,35 @@
 .fluent
+  &__scroll
+    &-item
+      position: absolute
+      border: 2px solid #bdbdbd
+      width: 30px
+      height: 50px
+      z-index: 100
+      left: 50%
+      top: 868px
+      border-radius: 50px
+      &:after
+        top: 38px
+        left: 3px
+        transform: rotate(-45deg)
+        position: absolute
+        content: ''
+        width: 20px
+        height: 20px
+        border-left: 1px solid #bdbdbd
+        border-bottom: 1px solid #bdbdbd
+      &:before
+        content: ''
+        position: absolute
+        top: 10px
+        left: 37%
+        width: 8px
+        height: 8px
+        border-radius: 100%
+        box-sizing: border-box
+        background-color: #bdbdbd
+        animation: scroll 2s infinite
   &__button
     transition: 2s
     top: 350px
@@ -18,6 +49,7 @@
     color: #ffffff
     span
       margin: 0 auto
+
     &-business
       background-color: rgba(#80787A, 0.35)
       &:hover
@@ -267,3 +299,19 @@
     opacity: 0.2
   100%
     opacity: 0.5
+
+@keyframes scroll
+  0%
+    transform: translate(0, 0)
+    opacity: 0
+
+  40%
+    opacity: 1
+
+  80%
+    transform: translate(0, 20px)
+    opacity: 0
+
+  100%
+    opacity: 0
+
