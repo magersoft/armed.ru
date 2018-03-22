@@ -98,10 +98,15 @@
                     //- }
                 .cart__table-footer
                     .row.orders-change__button-group
-                        a.Button.Button_Color_Red.Button_Size_Sm
-                           span.Button-Text.Button-Text_Color_White
-                               span.Button-Icon.Button-Icon_BasketAddWhite
-                               | Добавить
+                        .row.orders-change__button-mini
+                            a.Button.Button_Color_Red.Button_Size_Sm
+                               span.Button-Text.Button-Text_Color_White
+                                   span.Button-Icon.Button-Icon_BasketAddWhite
+                                   | Добавить
+                            a(href="lk_ordersInfo.html").Button.Button_Color_Red.Button_Size_Sm
+                                span.Button-Text.Button-Text_Color_White
+                                    //span.Button-Icon.Button-Icon_BasketAddWhite
+                                    | Сохранить
                         .orders-change__search
                             .primary-menu__search
                                 label.primary-menu__search-label
@@ -127,10 +132,11 @@
                                         section.search__address
                                             h4.search__head
                                             a.search__text.search__link.search__link_header(href="#") Запчасти (17)
-                        a.Button.Button_Color_Red.Button_Size_Sm
-                           span.Button-Text.Button-Text_Color_White
-                               span.Button-Icon.Button-Icon_PresnetWhite
-                               | Подарок
+                        .row.orders-change__button-mini
+                            a.Button.Button_Color_Red.Button_Size_Sm
+                               span.Button-Text.Button-Text_Color_White
+                                   span.Button-Icon.Button-Icon_PresnetWhite
+                                   | Подарок
                     .row
                         .cart__total-coupone.col-6
                             .cart__total-title
