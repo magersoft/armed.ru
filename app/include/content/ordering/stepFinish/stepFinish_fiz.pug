@@ -6,24 +6,24 @@
         p.StepFinish_fiz__Title
             | Спасибо за Ваш заказ 
             span 
-                | №663
+                | №663 принят в работу
         p.StepFinish_fiz__Text
-            | Информация о заказе отправлена на Вашу электронную почту.
-            br
-            | Заказ будет обработан в течении 15 минут,
-            br
-            | о готовности Вас проинформирует наш оператор.
+            | В течение 15 минут заказ будет обработан. По готовности с Вами свяжется наш оператор.
+
         p.StepFinish_fiz__Text
-            | Для уточнения любой, интересующей вас информации вы можете
+            |  Не хотите получать уведомления на телефон?
             br
-            | позвонить по телефону горячей линии или связаться с нами по электронной почте
+            | Введите Ваш e-mail и отслеживайте информацию о заказе через электронную почту
+        input.StepFinish_fiz__Input(type="mail" name="email" id="mailNewsletter" placeholder="Ваш e-mail:")
+        br
+        p.StepFinish_fiz__Text
+            | Остались вопросы? Мы с удовольствием дадим подробные ответы!
+            br
+            | Связаться с нами можно по телефону горячей линии или по электронной почте:
         .StepFinish_fiz__ContactWrap
             a.StepFinish_fiz__Link.StepFinish_fiz__Link_Phone(href="tel:+78888888888") +7 (888) 888 88-88
             a.StepFinish_fiz__Link.StepFinish_fiz__Link_Mail(href="mailto:info@armed.ru") info@armed.ru
-        p.StepFinish_fiz__Text
-            |  Введите Ваш email, если желаете получать уведомления по заказу не на телефон
-        input.StepFinish_fiz__Input(type="mail" name="email" id="mailNewsletter" placeholder="Ваш e-mail:")
-        br
+
         .StepFinish_fiz__Button-wrap
             button.Button.Button_Color_White.Button_Size_Lg.StepFinish_fiz__Button#Return
                 span.Button-Text.Button-Text_Color_Black.Button-Text_Uppercase
