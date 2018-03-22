@@ -40,7 +40,7 @@ function init () {
             $(menuItem).css('color', "#000");
         }
         //myMap.geoObjects.add(collection);
-
+        console.log(menuItem);
         menuItem
             .bind('click', function () {
                 //myMap.geoObjects.remove(collection);
@@ -71,7 +71,15 @@ function init () {
         var data = "";
 
         for (var i = 0; i < elements.length; i++) {
-            var item = $('.Contacts-LinkAddress" href="#">' + elements[i].name + '</a>');
+            data += '<div class = "Contacts-Element">';
+            data += '<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + "</a>";
+            data += '<p class = "Contacts-Address">' + elements[i].address + '</p>';
+            data += '<div class = "Contacts-InfoOrganization">';
+            data += createPhone(elements[i].phone);
+            data += createGraff(elements[i].graff);
+            data += '</div>';
+            data += '</div>';
+            var linkAddress = $(data);
             var placemark = new ymaps.Placemark(
                 [elements[i].latitude, elements[i].longitude],
                 {
@@ -88,9 +96,11 @@ function init () {
                 }
             );
             collection.add(placemark);
-            item
+            console.log(linkAddress);
+            linkAddress
                 //.find('a')
                 .bind('click', function () {
+                    console.log('тыц');
                     if (!placemark.balloon.isOpen()) {
                         placemark.balloon.open();
                     } else {
@@ -99,14 +109,7 @@ function init () {
                     return false;
                 });
 
-            data += '<div class = "Contacts-Element">';
-            data += '<a class = "Contacts-LinkAddress" href="#">' + elements[i].name + "</a>";
-            data += '<p class = "Contacts-Address">' + elements[i].address + '</p>';
-            data += '<div class = "Contacts-InfoOrganization">';
-            data += createPhone(elements[i].phone);
-            data += createGraff(elements[i].graff);
-            data += '</div>';
-            data += '</div>';
+
             //str += data;
         }
         var idApp = '#' + id;
