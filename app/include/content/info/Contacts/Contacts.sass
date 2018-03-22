@@ -6,35 +6,31 @@
   &-Map
     background-color: deeppink
     width: 60%
+  &-Menu, &-Submenu
+    list-style: none
+  &-Menu
+    height: 725px
   &-Info
     width: 40%
-  &-Data
-    padding: 20px
-  &-TabLink
-    color: #ccc
-  &-Inner
-    max-height: 675px
-    //overflow: hidden
-  &-Element
-    padding-top: 30px
-    padding-bottom: 30px
-    padding-left: 65px
-    &:nth-child(odd)
-      background-color: #FBFBFB
-  &-LinkAddress
+    background-color: mediumspringgreen
+  &-HeadLink
+    font-family: 'Rubik'
+    font-size: 18px
+    letter-spacing: 0.05em
+    text-transform: uppercase
+    color: #333333
+  &-ElementHead
+    font-family: 'Roboto'
     font-size: 18px
     text-decoration-line: underline
     color: #C62828
-    margin-bottom: 5px
-    display: block
   &-Address
+    font-family: 'Roboto'
     font-size: 14px
-    color: #4F4F4F
-    margin-bottom: 10px
     width: 80%
-  &-InfoOrganization
+    color: #4F4F4F
+  &-OrganizationInfo
     display: flex
-    justify-content: flex-start
   &-InfoPhone
     margin-right: 20px
   &-Name
@@ -43,6 +39,12 @@
   &-Item
     font-size: 11px
     color: #4F4F4F
+  &-Element
+    padding: 65px 30px
+    &:nth-child(odd)
+      background-color: #FBFBFB
 
-#score
-  display: none
+.Balloon
+  &-Footer
+    display: flex
+    justify-content: space-around
