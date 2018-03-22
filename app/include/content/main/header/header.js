@@ -15,8 +15,8 @@ $('.main-catalog__close--right').click(function(){
     $('.main-catalog__wrapper--right').toggleClass('main-catalog__wrapper--active');
 });
 
-$('.main-catalog-top').click(function () {
-    var down = $(this).children('.main-catalog-bottom');
+$('.main-catalog__nav-main__link').click(function () {
+    var down = $(this).next('.main-catalog-bottom');
     $('.main-catalog-bottom').not(down).slideUp(200);
     down.slideToggle(200);
     e.preventDefault();
