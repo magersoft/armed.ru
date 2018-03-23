@@ -9,12 +9,12 @@
             | Интернет-магазин
     a(href="main.html").primary-menu__center-logo
     .primary-menu__widgets
-        .primary-menu__phone
+        .primary-menu__phone.main-catalog__phone
             span.primary-menu__phone-item.primary-menu__phone-item--main
                 a(href="tel:+74951062676") 8 (495) 106-26-76
             span.primary-menu__phone-item.primary-menu__phone-item--main
                 a(href="tel:88002006734") 8 (800) 200-67-34
-        .SearchMain.tooltipShow(title="Поиск")
+        .SearchMain.tooltipShow.main-catalog__search(title="Поиск")
             label.Label.Label_Icon.SearchMain-Icon(for='searchMain' onclick="searchShow()")
             input.Input.SearchMain-Input(type="search" id="searchMain" name="searchMain" placeholder="Поиск по сайту")
             span.Input_Button_Cancel(onclick="searchClose()")
@@ -38,7 +38,10 @@
                     section.search__address
                         h4.search__head
                         a.search__text.search__link.search__link_header(href="catalog_fiz.html") Запчасти (17)
-        a(href="#" data-id='Auth' title="Личный кабинет").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal.tooltipShow
+        //a(href="#" data-id='Auth' title="Личный кабинет").modalLink.primary-menu__icon-item.primary-menu__icon-item_personal.tooltipShow
+        .primary-menu__shop
+            a(href="index.html")
+                | Войти
         .primary-menu__catalog--main
             .primary-menu__catalog_wrapper--menu
                 .primary-menu__catalog-link.primary-menu__catalog-link--menu
@@ -216,3 +219,5 @@
                     a.main-catalog__nav-main__right(href='error.html') Обучение
                 li
                     a.main-catalog__nav-main__right(href='error.html') Франшиза
+                li
+                    a.main-catalog__nav-main__right(href='error.html') Контакты
