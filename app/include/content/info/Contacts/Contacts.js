@@ -112,14 +112,19 @@ if(window.location.toString().indexOf('info_page.html')>0) {
             return info;
         }
         // Добавляем меню в тэг BODY.
-        menu.appendTo($('.Contacts'));
+        //menu.appendTo($('.Contacts-MenuWrap'));
+        $('.Contacts-MenuWrap').html(menu);
         // Выставляем масштаб карты чтобы были видны все группы.
         //myMap.setBounds(myMap.geoObjects.getBounds());
     }
 }
 
-$(".Contacts-Menu").mCustomScrollbar({
-    theme: "client",
-    scrollbarPosition: "outside"
-});
+$('.Contacts-MenuWrap').on('DOMSubtreeModified', addScrol());
+
+function addScrol() {
+    $(".Contacts-MenuWrap").mCustomScrollbar({
+        theme: "client",
+        scrollbarPosition: "outside"
+    });
+}
 
