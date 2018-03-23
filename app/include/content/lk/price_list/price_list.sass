@@ -1,0 +1,93 @@
+.PriceList
+  width: 100%
+  height: auto
+  background-color: #fff
+  padding: 30px
+  margin-right: 50px
+  margin-left: 50px
+  &-Main
+    margin-top: 30px
+    width: 100%
+    height: 730px
+    display: flex
+    justify-content: space-between
+  &-ContentWrap
+    width: 70%
+    padding: 15px 15px 17px 15px
+    height: 100%
+    box-shadow: 0 0 10px rgba(0,0,0,0.05)
+  &-Content
+    width: 100%
+    padding: 10px 0 0 0
+    height: 97%
+    display: flex
+    flex-direction: column
+  &-ContentHead
+    display: flex
+    width: 100%
+  &-Name
+    font-family: 'Roboto'
+    font-size: 12px
+    font-weight: 500
+    color: rgb(130, 130, 130)
+    &_Position
+      flex-basis: 60%
+    &_Availability
+      flex-basis: 12%
+    &_PriceRRC
+      flex-basis: 6%
+    &_Sum, &_MinPrice, &_Buy
+      flex-basis: 8%
+  &-Info
+    width: 29%
+    padding: 13px 15px 0 15px
+    box-shadow: 0 0 10px rgba(0,0,0,0.05)
+  &-InfoHead, &-ItogHead
+    font-size: 1.6em
+  &-InfoHead
+    margin-bottom: 10px
+  &-ItogHead
+    //margin-top: 20px
+    //margin-left: 10px
+    flex-basis: 68%
+  &-InfoMain
+    height: 570px
+    overflow: hidden
+  &-InfoWrap
+    padding: 5px 10px
+    margin-bottom: 15px
+    position: relative
+    &:after
+      content: "";
+      position: absolute;
+      width: 96%;
+      height: 1px;
+      background: #f2f2f2;
+      bottom: -5px;
+  &-ItogWrap
+    display: flex
+    justify-content: space-between
+  &-DateWrap, &-Itog
+    display: flex
+    justify-content: flex-end
+  &-Itog
+    //margin-bottom: 3px
+    padding: 20px 10px 20px 0
+    //flex-basis: 100%
+  &-Nomination
+    font-size: 1.4em
+    color: #4f4f4f
+    margin-bottom: 5px
+  &-Amount, &-Value
+    font-size: 1.4em
+    color: #4f4f4f
+  &-Amount
+    flex-basis: 10%
+  &-Value
+    flex-basis: 20%
+    text-align: right
+  &-Count
+    flex-basis: 15%
+  &-Button
+    margin: 0 auto
+    margin-right: 8px

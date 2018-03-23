@@ -1,0 +1,46 @@
+.ProductPrice
+  width: 100%
+  &:nth-child(odd)
+    background-color: #efefef
+  &-Main
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: space-between
+    padding: 5px 5px
+
+  &-Link
+    flex-basis: 60%
+    font-family: 'Roboto'
+    font-size: 14px
+    color: rgb(79, 79, 79)
+    text-decoration: none
+    position: relative
+    &:hover
+      .ProductPrice-Image
+        display: block
+  &-Image
+    display: none
+    position: absolute
+    width: 150px
+    height: 150px
+    top: -5px
+    background-color: #fff
+    border-radius: 5px
+    border: 1px solid #ccc
+    z-index: 100
+
+  &-Cost
+    flex-basis: 6%
+  &-Count, &-MinCost, &-Checkbox
+    flex-basis: 8%
+  &-Cost, &-MinCost
+    font-family: 'Roboto'
+    font-size: 12px
+    color: rgb(79, 79, 79)
+
+  &-Availability
+    flex-basis: 12%
+    font-size: 1.2em
+    &_True
+      color: $ConfirmColor
