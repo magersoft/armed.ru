@@ -38,9 +38,10 @@ if (gallery) {
         NewsGalleryWrapper.appendChild(NewsGallery);
         gallery.appendChild(NewsGalleryWrapper);
     }
+    lightbox.option({
+            albumLabel: " ",
+            alwaysShowNavOnTouchDevices: true
+        }
+    );
+
 }
-lightbox.option({
-    albumLabel: " ",
-    alwaysShowNavOnTouchDevices: true
-    }
-);

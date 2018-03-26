@@ -21,7 +21,7 @@ $.notify.addStyle(
         html: "<div><span data-notify-text/></div>",
         classes:{
             base: {
-                "background-color": "rgba(255, 0, 0, 0.9)",
+                "background-color": "rgba(214, 75, 75, 0.8)",
                 "color": "white",
                 "font-size": "15px",
                 "width": "375px",

@@ -122,7 +122,7 @@ function random_elem() {
 }
 
 var ele = document.getElementsByClassName('product__tool');
-console.log(ele);
+//console.log(ele);
 if (ele) {
     for (var i = 0; i< ele.length; i++) {
         var col_elem = random_elem();
@@ -153,7 +153,7 @@ if (ele) {
                 break;
             case 3 :
                 var childrens = $(ele[i].children);
-                console.log('3 ',childrens);
+                //console.log('3 ',childrens);
                 $(childrens[0]).css('display', 'block');
                 $(childrens[1]).css('display', 'block');
                 $(childrens[2]).css('display', 'block');

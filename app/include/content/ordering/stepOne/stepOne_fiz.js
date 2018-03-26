@@ -7,7 +7,7 @@ function validNameUser (value) {
             {
                 position:"top left",
                 style: 'phoneAlertEmpty',
-                autoHide: true,
+                autoHide: false,
                 autoHideDelay: 3000
             }
         );
@@ -29,7 +29,7 @@ $('#ButtonStepTwo').on('click', function () {
             {
                 position:"top left",
                 style: 'orderAlert',
-                autoHide: true,
+                autoHide: false,
                 autoHideDelay: 3000
             }
         );

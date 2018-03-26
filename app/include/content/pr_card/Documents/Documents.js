@@ -1,11 +1,3 @@
-$('.Documents-Slider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: '<i class="slide-right slide-right-video"></i>',
-    prevArrow: '<i class="slide-left slide-left-video"></i>'
-});
-
 function printZone (link, imageSrc) {
         var zone = '<div class=\"Documents-Print\">';
         zone = zone + '<a class=\"Documents-LinkOpen\" href=\"'+ imageSrc +'\" data-lightbox=\"DocumentsImage\">';
@@ -13,7 +5,7 @@ function printZone (link, imageSrc) {
         zone = zone + '<a class=\"Documents-LinkSave\" href="' + imageSrc + '\">Скачать</a>';
         zone = zone + '</div>';
         link.parent().append(zone);
-        //console.log(zone);
+        console.log(zone);
 }
 
 function imagePrint (image) {
@@ -32,7 +24,17 @@ if (elemen) {
 
         printZone($(obj[i]), $(obj[i]).children('.Documents-Image').attr('src'));
     }
+
 }
+
+$('.Documents-Slider').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    nextArrow: '<i class="slide-right slide-right-video"></i>',
+    prevArrow: '<i class="slide-left slide-left-video"></i>'
+});
 
 /*
 <div class="Documents-Print">
