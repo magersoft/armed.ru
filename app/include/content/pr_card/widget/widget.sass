@@ -5,28 +5,25 @@
   transition: 0.5s all
   position: relative
   z-index: 2
+  &__vendor
+    margin-bottom: 9px
   &__inner
     display: flex
     flex-direction: row
-    max-width: 160px
-    max-height: 180px
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px
 
     img
-      max-height: 100%
-      max-width: 100%
-      margin: 15px 0
+      max-height: 141px
+      max-width: 141px
+      //margin: 15px 0
   &__icon
     padding: 10px
     display: flex
     flex-direction: column
     a
       margin: 6px
-  &__waranty
-    margin-top: 5px
-    font-family: Rubik
-    font-size: 14px
-    letter-spacing: 0.7px
-    color: rgb(125, 196, 114)
   &__socialprotection
     margin-top: 30px
     width: 255px
@@ -43,11 +40,52 @@
     color: rgb(198, 40, 40)
     text-decoration: none
     text-align: center
+  &__linkUr
+    margin-bottom: 14px
+  &__cost
+    margin-top: 0
+    margin-bottom: 0
+  &__amount
+    margin-top: 20px
+  &__buy-button
+    margin-top: 5px
+    margin-bottom: 29px
+  &__link
+    margin-top: 5px
+  &__delivery
+    margin-top: 0
+    margin-bottom: 70px
+  &__delivery-popup
+    margin-top: 8px
+    margin-bottom: 0
   &__question
     margin-left: 5px
     margin-bottom: 5px
     text-decoration: none
     &-window
       bottom: 150px
+  &__image
+    width: 29px
+    height: 29px
+  &__info
+    margin-bottom: 20px
+  &__waranty, &__offset
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 203px
+    height: 45px
+    background-color: rgb(246, 246, 246)
+    padding-right: 0
+    padding-left: 20px
+    padding-top: 9px
+    padding-bottom: 9px
+    margin-bottom: 6px
+  &__text
+    width: 100%
+    text-align: center
+    font-family: 'Rubik'
+    font-size: 12px
+    color: rgb(130, 130, 130)
 .test
   background: red
