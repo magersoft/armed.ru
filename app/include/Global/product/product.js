@@ -58,6 +58,9 @@ $('.product').hover(
 
     }
 );
+
+
+//TODO Выпилить после интеграции новой карточки
 $('.product__question').click(function(){
     var mod = $('.product__main').find('.product__question').next();
     console.log(mod);
@@ -68,6 +71,20 @@ $('.product__question').click(function(){
     $(this).next().stop().slideDown(400);
     return false
 });
+
+
+
+$('.ProductNew-Question').click(function(){
+    var mod = $('.ProductNew-Main').find('.ProductNew-Question').next();
+    console.log(mod);
+    for (var i = 0; i < mod.length; i++) {
+        var win = $(mod[i]);
+        win.stop().slideUp(400);
+    }
+    $(this).next().stop().slideDown(400);
+    return false
+});
+
 
 $(document).click(function(e){
     var obj = $('.product__question-window');

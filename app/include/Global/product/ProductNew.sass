@@ -1,0 +1,157 @@
+.ProductNew
+  background-color: $productBgColor
+  width: 255px
+  height: 380px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  margin-bottom: 20px
+  text-align: center
+  position: relative
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.05)
+  &:hover
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.10)
+  &-Image
+    height: 210px
+  &-Question
+    position: absolute
+    right: -28px
+    top: 11px
+  &-Asside
+    width: 100%;
+    height: 42px;
+    right: 0;
+    padding-top: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  &-Icon
+    width: 33px
+    height: 33px
+    border-radius: 50%
+    background-color: rgba(255, 255, 255, 0)
+    background-image: url("images/sprite.svg")
+    background-repeat: no-repeat
+    margin-bottom: 15px
+    border: 1px solid #f2f2f2
+    &:hover
+      background-color: $productIconBgColor
+    &_favorite
+      background-position: -88px -138px
+      &:active
+        background-position: -121px -138px
+    &_comparis
+      background-position: -88px -171px
+      &:active
+        background-position: -121px -171px
+    &_info
+      background-position: -88px -204px
+      &:active
+        background-position: -121px -204px
+    &_buy
+      background-position: -88px -237px
+      &:active
+        background-position: -121px -237px
+  &-Price
+    padding-left: 5px
+    padding-top: 2px;
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    position: relative
+  &-Wrap
+    padding: 0 10px
+    display: flex
+    justify-content: space-between
+  &-Cost
+    color: $productCostColor
+    font-size: 1.8em
+    font-weight: 500
+  &-Value
+    font-size: 0.9em
+    font-weight: 400
+  &-OldCost
+    color: $productOldCostColor
+    font-size: 1.2em
+    text-decoration: line-through
+    font-weight: 500
+    padding-bottom: 10px
+  &-Question
+    position: absolute
+    right: -28px
+    top: 11px
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background-color: $productQuestionBgColor
+    background-image: url("images/product/product__question.svg")
+    background-repeat: no-repeat
+    background-position: 1px 1px
+    &:hover
+      background-color: $productQuestionHovertBgColor
+    &_close
+      position: absolute
+      width: 17px
+      height: 17px
+      top: 5px
+      right: 12px
+      background-image: url("images/product/question__close.svg")
+      background-position: 0 0
+      background-repeat: no-repeat
+      cursor: pointer
+      &:hover
+        background-position: 0px -17px
+  &-Button
+    position: relative
+    width: 40px
+    height: 40px
+    border: 1px solid #e06565
+    border-radius: 20px
+    background: #D64B4B
+    cursor: pointer
+    overflow: hidden
+    transition: all 0.4s
+    &:hover
+      width: 140px
+      transition: 0.4s
+      span
+        margin-right: 0
+      .ProductNew-ButtonIcon
+        transition: 0.4s
+        transform: rotate(-360deg)
+      .ProductNew-ButtonText
+        margin-left: 18px
+        animation-name: text
+        animation-duration: 0.2s
+        animation-delay: 0.4s
+        animation-fill-mode: forwards
+  &-ButtonIcon
+    top: 10px
+    left: 10px
+    transition: 0.4s
+  &-ButtonText
+    font-family: "Exo 2", sans-serif
+    font-weight: 400
+    font-size: 15px
+    letter-spacing: .05em
+    transition: 0.4s all ease
+    color: #fff
+    visibility: hidden
+  &-ButtonIcon
+    position: absolute
+    width: 20px
+    height: 20px
+    background-image: url('images/sprite.svg')
+    background-position: -122px -104px
+    right: -18px
+
+
+
+
+@keyframes text
+  from
+    visibility: hidden
+  to
+    visibility: visible
