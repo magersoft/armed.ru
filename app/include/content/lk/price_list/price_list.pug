@@ -12,63 +12,57 @@
                 .PriceList-Name.PriceList-Name_Sum Количество
                 .PriceList-Name.PriceList-Name_Buy Добавить
             .PriceList-Content
-                - var i
-                - for (i = 0; i < 500; i++)
-                    .ProductPrice
-                        .ProductPrice-Main
-                            a(href="#").ProductPrice-Link Кресло-кровать для родовспоможения ЫС-М1
-                                img.ProductPrice-Image(src="images/product/product__image.png" alt="Кресло-кровать для " +
-                                "родовспоможения ЫС-М1")
-                            p.ProductPrice-Availability.ProductPrice-Availability_True Есть на складе
-                            p.ProductPrice-Cost 52 232
-                                span.ProductPrice-Value &nbsp₽
-                            p.ProductPrice-MinCost 46 128
-                                span.ProductPrice-Value &nbsp₽
-                            .primary-menu__cart_product_volume.product__count_entitySmal.ProductPrice-Count
-                                span.primary-menu__cart_product_minus
-                                input.primary-menu__cart_product_entry.quickview_entry(type="text" value="0" disabled="disabled")
-                                span.primary-menu__cart_product_plus
-                            //a.ProductPrice-Checkbox(href="#") В корзину
-                            label.control.control-checkbox.ProductPrice-Checkbox(for="checkbox")
-                                input.check__form-input--checkbox(type="checkbox" id="checkbox")
-                                .control_indicator
-                                span.check__form-checkbox--information
-                                    | Добавить
+                include PriceListData
+                - for (var i = 0; i < 100; i++)
+                    each item in PriceData
+                        .ProductPrice
+                            .ProductPrice-Main
+                                a(href="#").ProductPrice-Link #{item.name}
+                                    img.ProductPrice-Image(src="images/product/product__image.png" alt=item.name)
+                                case item.presence
+                                    when 1
+                                        p.ProductPrice-Availability.ProductPrice-Availability_True Есть на складе
+                                    when 0
+                                        p.ProductPrice-Availability.ProductPrice-Availability_False Ожидается поставка
+                                p.ProductPrice-Cost #{item.costRRC}
+                                    span.ProductPrice-Value &nbsp₽
+                                p.ProductPrice-MinCost #{item.costMin}
+                                    span.ProductPrice-Value &nbsp₽
+                                .primary-menu__cart_product_volume.product__count_entitySmal.ProductPrice-Count
+                                    span.primary-menu__cart_product_minus
+                                    input.primary-menu__cart_product_entry.quickview_entry(type="text" value="0" disabled="disabled")
+                                    span.primary-menu__cart_product_plus
+                                //a.ProductPrice-Checkbox(href="#") В корзину
+                                label.control.control-checkbox.ProductPrice-Checkbox(for=item.id)
+                                    input.check__form-input--checkbox(type="checkbox" id=item.id)
+                                    .control_indicator
+                                    span.check__form-checkbox--information
+                                        | Добавить
 
         .PriceList-Info
             p.PriceList-InfoHead Вы выбрали:
             .PriceList-InfoMain
-                - for (var i = 0; i < 15; i++)
+                - var i = 0
+                each item in PriceData.slice(0,7)
                     .PriceList-InfoWrap
-                        p.PriceList-Nomination Кресло-кровать для родовспоможения SC-V1
+                        p.PriceList-Nomination #{item.name}
                         .PriceList-DateWrap
                             .primary-menu__cart_product_volume.product__count_entitySmal.PriceList-Count
                                 span.primary-menu__cart_product_minus
-                                input.primary-menu__cart_product_entry.quickview_entry(type="text" value="0" disabled="disabled")
+                                input.primary-menu__cart_product_entry.quickview_entry(type="text" value="1" disabled="disabled")
                                 span.primary-menu__cart_product_plus
                             p.PriceList-Amount 50 м
                                 sup 3
-                            p.PriceList-Value 250 000
-                                span &nbsp₽
-                    .PriceList-InfoWrap
-                        p.PriceList-Nomination Кресло-кровать для родовспоможения SC-V1
-                        .PriceList-DateWrap
-                            .primary-menu__cart_product_volume.product__count_entitySmal.PriceList-Count
-                                span.primary-menu__cart_product_minus
-                                input.primary-menu__cart_product_entry.quickview_entry(type="text" value="0" disabled="disabled")
-                                span.primary-menu__cart_product_plus
-                            p.PriceList-Amount 50 м
-                                sup 3
-                            p.PriceList-Value 250 000
+                            p.PriceList-Value #{item.costMin}
                                 span &nbsp₽
 
 
 
             .PriceList-Itog
                 p.PriceList-ItogHead Итого:
-                p.PriceList-Amount 50 м
+                p.PriceList-Amount 350 м
                     sup 3
-                p.PriceList-Value 250 000
+                p.PriceList-Value 493 400
                     span &nbsp₽
             button.Button.Button_Color_Red.Button_Size_Sm.PriceList-Button
                 span.Button-Text.Button-Text_Color_White
