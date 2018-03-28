@@ -1,6 +1,6 @@
 $('.reviews__slider').slick({
-    nextArrow: '<i class="slide-right"></i>',
-    prevArrow: '<i class="slide-left"></i>',
+    nextArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_Feedback"></i>',
+    prevArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_Feedback"></i>',
     dots: true,
     infinite: true,
     speed: 300,

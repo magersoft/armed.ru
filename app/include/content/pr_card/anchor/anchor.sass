@@ -1,42 +1,32 @@
 
 .anchor
   z-index: 999
-  margin:
-    //left: -286px
-    bottom: 5px
-  height: 60px
   background-color: #f8f8f8
   display: flex
-  //position: fixed
-  //width: 100vw
-  //bottom: -5px
   &__wrapper
     width: 1000px
   &__inner
-    //padding: 0 60px 0 15px
-    height: 60px
     border: none
-    width: 1000px
     list-style: none
     display: flex
     flex-direction: row
     justify-content: space-between
   &__item
-    width: 100%
-    border-right: 1px solid #ffffff
     display: flex
     justify-content: center
     text-align: center
     align-items: center
-    &:last-child
-      border-right: none
+    height: 60px
     &:hover
       .anchor__item-link
+        background-color: #fff
         color: #d64b4b
     &-link
-      //width: 150px
+      height: 100%
+      display: flex
+      align-items: center
       border: none
-      padding: 21px 0px
+      padding: 0 20px
       letter-spacing: 0.7px
       font:
         size: 1.2em
@@ -46,7 +36,7 @@
         decoration: none
       transition: 0.4s
       &:hover
-        //background: #ffffff
+        background: #ffffff
         color: #4f4f4f
       &-temp
         @extend .anchor__item-link
@@ -58,16 +48,16 @@
     justify-content: space-around
     margin-left: -286px
     .anchor__wrapper
-      width: 1366px
+      width: 1500px
       .anchor__inner
         padding: 0
-        width: 1366px
+        width: 1500px
         .anchor__hide
           @extend .anchor__item
         .anchor__item
-          width: 100%
+          //width: 100%
           .anchor__item-link
-            width: 150px
+            //width: 150px
         .active__anchor
           background-color: #d64b4b
           .anchor__item-link

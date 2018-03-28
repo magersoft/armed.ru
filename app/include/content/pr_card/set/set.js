@@ -3,8 +3,8 @@ $('.set__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 2,
     arrows: true,
-    nextArrow: '<i class="slide-right slide-right-set"></i>',
-    prevArrow: '<i class="slide-left slide-left-set"></i>'
+    nextArrow: '<i class="Slider-ArrowRight Slider-ArrowRight_PrCard_Set"></i>',
+    prevArrow: '<i class="Slider-ArrowLeft Slider-ArrowLeft_PrCard_Set"></i>'
 });
 $('.set__slider-item__check').click(function () {
     $(this).toggleClass('set__slider-item__check-ok');
