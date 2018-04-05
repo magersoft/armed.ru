@@ -3,7 +3,7 @@
   background-repeat: no-repeat
   width: 100%
   height: 100vh
-  overflow-x: hidden
+  //overflow-x: hidden
 
   &-Wrap
     width: 1366px
@@ -13,8 +13,6 @@
     position: relative
     padding-top: 340px;
   &-Images
-    width: 816px
-    height: 693px
     opacity: 0
     position: absolute
     top: 183px
@@ -45,7 +43,7 @@
   &-Description
     margin-top: 46px
     width: 576px
-    font-family: Rubik
+    font-family: 'Rubik'
     font-size: 19px
     color: rgb(79, 79, 79)
   &-Map
@@ -56,7 +54,7 @@
     top: 474px
   &-Circle
     z-index: 100
-    opacity: 0
+    opacity: 1
     position: absolute
     width: 8px
     height: 8px
@@ -73,6 +71,8 @@
     background-color: #D64B4B
     height: 1px
     transform-origin: 0 0
+  &-Obl
+    position: absolute
 //box-shadow: 0 0 4px rgba(214, 75, 75, 0.85)
 
 .tooltip
@@ -88,134 +88,426 @@
   border-radius: 5px
   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1)
 
-#City0
-  top: 36px
-  left: 28px
 #City1
-#City2
-  top: 16px
-  left: 45px
-#City3
-  top: 78px
-  left: 19px
-#City4
-  top: 99px
-  left: 51px
-#City5
-  top: 136px
-  left: 45px
-#City6
-  top: 145px
+  top: -104px
   left: 69px
+#Kalinegrad
+  opacity: 1
+  top: -110px
+  right: 322px
+  transition: 0.5s
+
+#City2
+  top: -138px
+  left: 205px
+#Murmanska
+  opacity: 1
+  top: -159px
+  right: 173px
+  transition: 0.5s
+
+#City3
+  top: -111px
+  left: 168px
+#Kareliay
+  opacity: 1
+  top: -141px
+  right: 206px
+  transition: 0.5s
+
+#City4
+  top: -95px
+  left: 137px
+#Leningrad
+  opacity: 1
+  top: -110px
+  right: 245px
+  transition: 0.5s
+
+#City5
+  top: -84px
+  left: 110px
+#Pskovs
+  opacity: 1
+  top: -99px
+  right: 274px
+  transition: 0.5s
+
+#City6
+  top: -80px
+  left: 128px
+#Novgorodsk
+  opacity: 1
+  top: -87px
+  right: 251px
+  transition: 0.5s
+
 #City7
-  top: -6px
-  left: 108px
+  top: -62px
+  left: 128px
+#Tverska
+  opacity: 1
+  top: -74px
+  right: 247px
+  transition: 0.5s
+
 #City8
-  top: -16px
-  left: 190px
+  top: -55px
+  left: 108px
+#Smolenska
+  opacity: 1
+  top: -66px
+  right: 273px
+  transition: 0.5s
+
 #City9
-  left: 150px
-  top: 15px
+  top: -39px
+  left: 130px
+#Moskovska
+  opacity: 1
+  top: -53px
+  right: 256px
+  transition: 0.5s
+
 #City10
-  top: 74px
-  left: 92px
+  top: -41px
+  left: 114px
+#Kalujska
+  opacity: 1
+  top: -45px
+  right: 271px
+  transition: 0.5s
+
 #City11
-  top: 50px
-  left: 139px
+  top: -39px
+  left: 97px
+#Braynska
+  opacity: 1
+  top: -47px
+  right: 290px
+  transition: 0.5s
+
 #City12
-  left: 196px
-  top: 22px
+  top: -20px
+  left: 96px
+#Kurska
+  opacity: 1
+  top: -26px
+  right: 285px
+  transition: 0.5s
+
 #City13
-  right: 139px
-  top: 46px
+  top: -25px
+  left: 106px
+#Orlovska
+  opacity: 1
+  top: -32px
+  right: 280px
+  transition: 0.5s
+
 #City14
-  right: 109px
-  top: 22px
+  top: -29px
+  left: 118px
+#Tulska
+  opacity: 1
+  top: -34px
+  right: 271px
+  transition: 0.5s
+
 #City15
-  right: 99px
-  top: 74px
+  top: -21px
+  left: 133px
+#Rayzanska
+  opacity: 1
+  top: -26px
+  right: 250px
+  transition: 0.5s
+
 #City16
-  right: 11px
-  top: 49px
+  top: -14px
+  left: 116px
+#Lipecka
+  opacity: 1
+  top: -21px
+  right: 269px
+  transition: 0.5s
 
+#City17
+  top: 2px
+  left: 112px
+#Voronejska
+  opacity: 1
+  top: -9px
+  right: 269px
+  transition: 0.5s
 
-#line1
-  width: 51px
-  transform: rotate(231deg)
-  top: 44px
-  left: 36px
-#line2
-  top: 44px
-  left: 35px
-  width: 41px
-  transform: rotate(107deg)
-#line3
-  top: 54px
-  left: 144px
-  width: 55px
-  transform: rotate(153deg)
-#line4
-  top: 44px
-  left: 37px
-  width: 62px
-  transform: rotate(73deg)
-#line5
-  top: 44px
-  left: 34px
-  width: 28px
-  transform: rotate(301deg)
-#line6
-  top: 103px
-  left: 56px
-  width: 39px
-  transform: rotate(460deg)
-#line7
-  top: 140px
-  left: 49px
-  width: 26px
-  transform: rotate(379deg)
-#line8
-  top: 44px
-  left: 37px
-  width: 107px
-  transform: rotate(365deg)
-#line9
-  top: 54px
-  left: 143px
-  width: 37px
-  transform: rotate(286deg)
-#line10
-  top: 20px
-  left: 154px
-  width: 48px
-  transform: rotate(207deg)
-#line11
-  top: 54px
-  left: 143px
-  width: 64px
-  transform: rotate(333deg)
-#line12
+#City18
+  top: -5px
+  left: 99px
+#Belgorodska
+  opacity: 1
+  top: -11px
+  right: 289px
+  transition: 0.5s
+
+#City19
+  top: 30px
+  left: 96px
+#Rostovska
+  opacity: 1
+  top: 15px
+  right: 281px
+  transition: 0.5s
+
+#City20
+  top: 38px
+  left: 72px
+#Krasnodarsk
+  opacity: 1
   top: 26px
-  left: 200px
-  width: 39px
-  transform: rotate(260deg)
-#line13
-  top: 26px
-  left: 200px
-  width: 62px
-  transform: rotate(23deg)
-#line14
-  top: 50px
-  left: 257px
-  width: 39px
-  transform: rotate(-39deg)
-#line15
-  top: 50px
-  left: 257px
-  width: 49px
-  transform: rotate(395deg)
-#line16
+  right: 308px
+  transition: 0.5s
+
+#City21
+  top: 63px
+  left: 76px
+#KarachChrkesk
+  opacity: 1
+  top: 59px
+  right: 312px
+  transition: 0.5s
+
+#City22
+  top: 58px
+  left: 91px
+#Stavropolsk
+  opacity: 1
+  top: 46px
+  right: 291px
+  transition: 0.5s
+
+#City23
+  top: 55px
+  left: 111px
+#Kalmiki
+  opacity: 1
+  top: 43px
+  right: 271px
+  transition: 0.5s
+
+#City24
+  top: 71px
+  left: 82px
+#KabardinoBalkan
+  opacity: 1
+  top: 70px
+  right: 305px
+  transition: 0.5s
+
+#City25
+  top: 82px
+  left: 86px
+#SeverOsetia
+  opacity: 1
+  top: 77px
+  right: 301px
+  transition: 0.5s
+
+#City26
+  top: 83px
+  left: 96px
+#Chechenska
+  opacity: 1
   top: 78px
-  left: 296px
-  width: 93px
-  transform: rotate(-16deg)
+  right: 292px
+  transition: 0.5s
+
+#City27
+  top: 95px
+  left: 100px
+#Dagestan
+  opacity: 1
+  top: 73px
+  right: 287px
+  transition: 0.5s
+
+#City28
+  top: 67px
+  left: 126px
+#Astrahan
+  opacity: 1
+  top: 44px
+  right: 260px
+  transition: 0.5s
+
+#City29
+  top: 25px
+  left: 123px
+#Volgogradska
+  opacity: 1
+  top: 10px
+  right: 251px
+  transition: 0.5s
+
+#City30
+  top: 25px
+  left: 149px
+#Saratovska
+  opacity: 1
+  top: 5px
+  right: 225px
+  transition: 0.5s
+
+#City31
+  top: -4px
+  left: 128px
+#Tambovska
+  opacity: 1
+  top: -14px
+  right: 258px
+  transition: 0.5s
+
+#City32
+  top: 22px
+  left: 174px
+#Samarska
+  opacity: 1
+  top: 14px
+  right: 207px
+  transition: 0.5s
+
+#City33
+  top: 6px
+  left: 163px
+#Ulaynovska
+  opacity: 1
+  top: -1px
+  right: 216px
+  transition: 0.5s
+
+#City34
+  top: 2px
+  left: 144px
+#Penzenska
+  opacity: 1
+  top: -8px
+  right: 239px
+  transition: 0.5s
+
+#City35
+  top: -8px
+  left: 148px
+#Mordovia
+  opacity: 1
+  top: -14px
+  right: 233px
+  transition: 0.5s
+
+#City36
+  top: -20px
+  left: 157px
+#Nihegorodska
+  opacity: 1
+  top: -32px
+  right: 212px
+  transition: 0.5s
+
+#City37
+  top: -32px
+  left: 144px
+#Vladimerska
+  opacity: 1
+  top: -44px
+  right: 245px
+  transition: 0.5s
+
+#City38
+  top: -52px
+  left: 150px
+#Ayroslavska
+  opacity: 1
+  top: -61px
+  right: 233px
+  transition: 0.5s
+
+#City39
+  top: -68px
+  left: 160px
+#Vologodska
+  opacity: 1
+  top: -85px
+  right: 197px
+  transition: 0.5s
+
+#City40
+  top: -42px
+  left: 170px
+#Kostromska
+  opacity: 1
+  top: -50px
+  right: 205px
+  transition: 0.5s
+
+#City41
+  top: -36px
+  left: 154px
+#Ivanovska
+  opacity: 1
+  top: -43px
+  right: 230px
+  transition: 0.5s
+
+#City42
+  top: -86px
+  left: 194px
+#Arhangelska
+  opacity: 1
+  top: -163px
+  right: 54px
+  transition: 0.5s
+
+#City43
+  top: -23px
+  left: 193px
+#Kirovska
+  opacity: 1
+  top: -48px
+  right: 174px
+  transition: 0.5s
+
+#City44
+  top: -13px
+  left: 179px
+#Mariel
+  opacity: 1
+  top: -18px
+  right: 207px
+  transition: 0.5s
+
+#City45
+  top: -9px
+  left: 168px
+#Chuvashska
+  opacity: 1
+  top: -12px
+  right: 220px
+  transition: 0.5s
+
+#City46
+  top: 3px
+  left: 184px
+#Tatrstan
+  opacity: 1
+  top: -5px
+  right: 193px
+  transition: 0.5s
+
+#City47
+  top: 43px
+  left: 187px
+#Orenburgska
+  opacity: 1
+  top: 22px
+  right: 171px
+  transition: 0.5s
+
