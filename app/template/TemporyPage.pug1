@@ -1,0 +1,34 @@
+doctype html
+html(lang="ru")
+    include ../include/Global/product/ProductNew
+
+
+    link(rel="stylesheet" type="text/css" href="style.css")
+    script(src='main.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
