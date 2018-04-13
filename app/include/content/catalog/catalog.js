@@ -18,3 +18,14 @@ $( "#assideRange" ).slider({
 });
 $('#amountMin').val($( "#assideRange" ).slider( "values", 0 ));
 $('#amountMax').val($( "#assideRange" ).slider( "values", 1 ));
+
+/*
+
+$('.FilterTabs-Label').on('click', function () {
+    var chec = $(this).children('input').prop('checked');
+    if (chec) {
+        console.log('Выбран');
+    } else {
+	    console.log('Отменен');
+    }
+});*/
